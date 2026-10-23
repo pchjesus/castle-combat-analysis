@@ -42,3 +42,17 @@
 - `.github/workflows/pages.yml`: `main` 수정 시 검증 후 Pages 배포. Pages가 비활성이라면 GitHub Settings → Pages → Source = GitHub Actions 활성화가 별도로 필요하다.
 
 **주의:** 기존 v2.1 계약 본문과 근거 데이터는 현재 저장소에 연결되지 않았다. 이 공개 시안의 0건은 '미연결'이지 원작에서 근거가 없음을 뜻하지 않는다. 점수·정식 서열·승률·원작 컷 이미지는 게시하지 않았다. 원작 직접 대조, 평가 승인, 실제 공개 페이지 검증은 별도 단계다.
+
+## 후속 개발 브랜치: v2.1 검수 후보 자료 연계 (미배포)
+
+브랜치: [work/v2.1-evidence-readonly](https://github.com/pchjesus/castle-combat-analysis/tree/work/v2.1-evidence-readonly) · 기존 공개 `main`에 미반영.
+
+- 사용자 제공 v2.1 데이터 계약 번들에서 **원작 미검증** 후보 3 Battle / 12 Evidence / 7 Statement / 4 DecisionCase / 4 Outcome을 읽기 전용 UI에 연계했다. 파일의 `schemaVersion=2.1-ui-projection-draft`는 **운영 데이터 정식 스키마가 아닌 화면용 투영물**이다.
+- 인물 도감·근거·검수의 ID 참조 및 모바일 대응을 검토했다. 현재도 원작 직접 대조 0건, 정식 평가 0건, Phase 0건, M0 점수 미입력이다.
+- 시점별 평가 조사 후보 5명(오도화·현석·임무열·최민욱·강민성)은 동일 Character ID를 유지한다. 시점별 점수/이원화 적용은 미정.
+- 명대사는 `data/quotation-review.v0.1.json`에 독립 연구 목록만 구성했다. **인용 대사 0건**, 원문·권리 확인 전에는 인물 화면에 표시하지 않는다. 인물 평가용 Statement와 별개다.
+- 이미지 레지스트리 초안은 비공개/미승인 이미지의 공개 표시를 막는 구조 검증만 포함하며 실제 이미지 0장이다.
+- [후속 조사 기준](docs/TEMPORAL_AND_QUOTES_RESEARCH_DRAFT.md), [기존 계약 원문 보존본](docs/contracts/v2.1/ARCHIVED_DATA_CONTRACT_READINESS_DRAFT.md), [이미지 관리 초안](docs/CHARACTER_IMAGE_REGISTRY_DRAFT.md)을 참고한다.
+- 브랜치 검증: `node scripts/check-mvp.mjs`, `node scripts/check-pilot-v2.1.mjs`; 별도 CI의 Chromium 데스크톱·모바일 smoke 검사. 실제 공개 Pages 사이트로의 새 배포 및 사용자 원작 검수는 하지 않았다.
+
+**주의:** 앞부분의 '사전 설계', '근거 미연결' 안내는 과거 `main` 단계의 기록이다. 이 개발 브랜치에서만 위 데이터 연결이 이뤄졌다.
