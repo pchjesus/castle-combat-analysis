@@ -60,7 +60,7 @@
 - 시점별 평가 조사 후보 5명(오도화·현석·임무열·최민욱·강민성)은 동일 Character ID를 유지한다. 시점별 점수/이원화 적용은 미정.
 - 명대사는 `data/quotation-review.v0.1.json`에 독립 연구 목록만 구성했다. **인용 대사 0건**, 원문·권리 확인 전에는 인물 화면에 표시하지 않는다. 인물 평가용 Statement와 별개다.
 - 이미지 레지스트리 초안은 비공개/미승인 이미지의 공개 표시를 막는 구조 검증만 포함하며 실제 이미지 0장이다.
-- [후속 조사 기준](docs/TEMPORAL_AND_QUOTES_RESEARCH_DRAFT.md), [기존 계약 원문 보존본](docs/contracts/v2.1/ARCHIVED_DATA_CONTRACT_READINESS_DRAFT.md), [이미지 관리 초안](docs/CHARACTER_IMAGE_REGISTRY_DRAFT.md)을 참고한다.
+- [후속 조사 기준](docs/TEMPORAL_AND_QUOTES_RESEARCH_DRAFT.md), [기존 계약 원문 보존본](docs/contracts/v2.1/castle_v2.1/CASTLE_DATA_CONTRACT_READINESS_v2.1_DRAFT.md), [이미지 관리 초안](docs/CHARACTER_IMAGE_REGISTRY_DRAFT.md)을 참고한다.
 - 브랜치 검증: `node scripts/check-mvp.mjs`, `node scripts/check-pilot-v2.1.mjs`; 별도 CI의 Chromium 데스크톱·모바일 smoke 검사. 실제 공개 Pages 사이트로의 새 배포 및 사용자 원작 검수는 하지 않았다.
 
 **주의:** 앞부분의 '사전 설계', '근거 미연결' 안내는 과거 `main` 단계의 기록이다. 이 개발 브랜치에서만 위 데이터 연결이 이뤄졌다.
