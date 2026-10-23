@@ -43,6 +43,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install Korean fonts for visual verification
+        run: sudo apt-get update -qq && sudo apt-get install -y fonts-noto-cjk
       - name: Prepare browser test tooling outside the project
         run: |
           npm install --prefix "$RUNNER_TEMP/castle-browser-tools" playwright@1.56.1

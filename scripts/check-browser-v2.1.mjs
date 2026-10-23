@@ -36,6 +36,7 @@ async function inspect(viewport){
     const compact=await page.locator('#sidebar').evaluate(el=>el.getBoundingClientRect().width);
     assert.ok(compact>=64 && compact<=85,'compact rail should be narrow');
     assert.equal(await page.locator('#character-search').isVisible(),false,'collapsed search hidden');
+    if(process.env.SCREENSHOT_DIR){await mkdir(process.env.SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:resolve(process.env.SCREENSHOT_DIR,'rail-'+viewport.width+'.png')});}
     await page.locator('.rail-character[data-character="char-071"]').click();
     assert.match(await page.locator('.hero-title').innerText(),/류지학/);
     await page.locator('[data-sidebar-search]').click();
@@ -64,6 +65,7 @@ async function inspect(viewport){
     assert.deepEqual(geometry,{inside:true,overlap:false,touch:true,mark:true},'brand alignment');
   }
   if(viewport.width<=760)await page.locator('#mobile-menu').click();
+  if(process.env.SCREENSHOT_DIR&&viewport.width<=760){await mkdir(process.env.SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:resolve(process.env.SCREENSHOT_DIR,'drawer-'+viewport.width+'.png')});}
   await page.locator('#org-select').selectOption('iskra');
   assert.equal(await page.locator('#result-count').innerText(),'19명');
   await page.locator('#org-select').selectOption('all');
@@ -73,6 +75,14 @@ async function inspect(viewport){
   await page.locator('#record-A01').waitFor();
   assert.equal(await page.locator('.pilot-record').count(),8,'Akila 4 evidence + 2 statements + 2 linked cases');
   await page.locator('#record-A01 summary').click();
+  if(process.env.SCREENSHOT_DIR){await mkdir(process.env.SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:resolve(process.env.SCREENSHOT_DIR,'evidence-'+viewport.width+'.png'),fullPage:true});}
+  const evidenceContrast=await page.evaluate(()=>{
+    const l=s=>{const a=s.match(/[\d.]+/g).slice(0,3).map(Number).map(x=>x/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return a[0]*.2126+a[1]*.7152+a[2]*.0722};
+    const bg=e=>{for(let p=e;p;p=p.parentElement){const c=getComputedStyle(p).backgroundColor;if(c!=='rgba(0, 0, 0, 0)'&&c!=='transparent')return c}return 'rgb(255,255,255)'};
+    return ['#record-A01 .pilot-code','#record-A01 .pilot-tag','#record-A01 .pilot-detail-row strong','#record-A01 .pilot-detail-row p','#record-A01 .pilot-meta','#record-A01 .pilot-source small'].map(sel=>{const e=document.querySelector(sel),x=l(getComputedStyle(e).color),y=l(bg(e));return {sel,ratio:(Math.max(x,y)+.05)/(Math.min(x,y)+.05)}});
+  });
+  for(const c of evidenceContrast)assert.ok(c.ratio>=4.5,'evidence contrast '+c.sel+': '+c.ratio);
+  console.log('Evidence contrast',viewport.width,JSON.stringify(evidenceContrast));
   assert.match(await page.locator('#record-A01').innerText(),/원작 미대조/);
   if(viewport.width<=760)await page.locator('#mobile-menu').click();
   await page.locator('.pilot-btn[data-character="char-087"]').click();
