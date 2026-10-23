@@ -1,0 +1,438 @@
+{
+  "schemaVersion": "v2.2-review-queue-draft",
+  "recordType": "verification-questions-not-canon",
+  "sourceDataset": "data/pilot-evidence.v2.1.json",
+  "generatedFrom": "v2.1 existing candidate review questions plus editorial follow-up prompts",
+  "createdOn": "2026-10-23",
+  "summary": {
+    "battleEvidenceCount": 12,
+    "statementCount": 7,
+    "directCanonVerified": 0,
+    "approvedEvaluations": 0,
+    "verifiedQuotes": 0
+  },
+  "records": [
+    {
+      "recordId": "A01",
+      "kind": "battleEvidence",
+      "characterId": "char-033",
+      "parentBattleId": "pilot-A",
+      "chapterCandidate": null,
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "견제 범위와 실제 위치·시간·탄 소모 확인",
+      "questions": [
+        "차문·엄폐·방패의 정확한 위치와 시간 순서를 컷별 기록",
+        "사격으로 상대의 선택지가 실제 제한됐는지 방해물 영향과 분리"
+      ],
+      "duplicateRisk": "구스타프의 방패·엄폐가 효과에 미친 영향",
+      "reviewGroup": "akila-blockade",
+      "sourceIds": [
+        "pilot:SA"
+      ]
+    },
+    {
+      "recordId": "A02",
+      "kind": "battleEvidence",
+      "characterId": "char-033",
+      "parentBattleId": "pilot-A",
+      "chapterCandidate": null,
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "표적 인지와 명중의 시계열 및 참가자 ID 확인",
+      "questions": [
+        "경호원의 식별과 위치·선제 조준 여부 확인",
+        "구스타프에 대한 성과와 제3자 대응을 분리"
+      ],
+      "duplicateRisk": "제3자에 대한 사격 성과를 구스타프에 대한 공격 실효성으로 오인할 위험",
+      "reviewGroup": "akila-third-party",
+      "sourceIds": [
+        "pilot:SA"
+      ]
+    },
+    {
+      "recordId": "A03",
+      "kind": "battleEvidence",
+      "characterId": "char-033",
+      "parentBattleId": "pilot-A",
+      "chapterCandidate": null,
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "재장전 중 대응 사격·접근의 실제 선후관계 확인",
+      "questions": [
+        "재장전·총기 교체·거리 변화를 컷 순서대로 정리",
+        "계획된 숙련과 예상 밖 대응의 구분"
+      ],
+      "duplicateRisk": "계획된 무장 운용을 예상 밖 변수에 대한 적응으로 오인할 위험",
+      "reviewGroup": "akila-reload",
+      "sourceIds": [
+        "pilot:SA"
+      ]
+    },
+    {
+      "recordId": "A04",
+      "kind": "battleEvidence",
+      "characterId": "char-033",
+      "parentBattleId": "pilot-A",
+      "chapterCandidate": null,
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "무기와 주먹 동작의 연쇄 및 실제 유효타 결과 확인",
+      "questions": [
+        "무장·맨손 동작과 유효타·방어 성공을 분리",
+        "근접 기술과 신체 역량 중복 평가 경계"
+      ],
+      "duplicateRisk": "무장 활용과 맨손 신체능력을 혼합 평가할 위험",
+      "reviewGroup": "akila-melee",
+      "sourceIds": [
+        "pilot:SA"
+      ]
+    },
+    {
+      "recordId": "L01",
+      "kind": "battleEvidence",
+      "characterId": "char-087",
+      "parentBattleId": "pilot-L",
+      "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "타격 수·제압 시점·표영의 당시 상태 확인",
+      "questions": [
+        "급소 공격의 정확한 횟수·순서·표영 상태를 확인",
+        "기술·기동·공격 결과의 동일 행동 중복 위험 확인"
+      ],
+      "duplicateRisk": "기술·속도·공격 실효성에 동일 연속타를 중복 가산할 위험",
+      "reviewGroup": "lichen-close",
+      "sourceIds": [
+        "pilot:SL"
+      ]
+    },
+    {
+      "recordId": "L02",
+      "kind": "battleEvidence",
+      "characterId": "char-087",
+      "parentBattleId": "pilot-L",
+      "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "시간 표현의 원작 근거와 방호·피해 상태 확인",
+      "questions": [
+        "명중 여부와 방탄 장비·피해·전투 지속 여부 각각 확인",
+        "특정 소요 시간 수치는 원작에 존재하는지 독립 검증"
+      ],
+      "duplicateRisk": "명중과 실질 무력화 효과는 별개; 0.5초 숫자 2차자료에만 존재",
+      "reviewGroup": "lichen-gun",
+      "sourceIds": [
+        "pilot:SL"
+      ]
+    },
+    {
+      "recordId": "L03",
+      "kind": "battleEvidence",
+      "characterId": "char-087",
+      "parentBattleId": "pilot-L",
+      "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "실제 총기 상태·유도 여부·연속 동작 검수",
+      "questions": [
+        "총탄 잔량·기만의 의도와 상대의 인지 상태 확인",
+        "후속 공격이 유도에 따른 것인지 우연인지 검증"
+      ],
+      "duplicateRisk": "계획적 기만과 돌발 대응 구분 및 동일 기만의 중복 가산 필요",
+      "reviewGroup": "lichen-feint",
+      "sourceIds": [
+        "pilot:SL"
+      ]
+    },
+    {
+      "recordId": "L04",
+      "kind": "battleEvidence",
+      "characterId": "char-087",
+      "parentBattleId": "pilot-L",
+      "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "표영의 시간 벌기·라텔의 부상·크리사 개입 등 단계 확인",
+      "questions": [
+        "2부 28~29화 장면 후보에서 표영·라텔·크리사 개입을 실제 시점별 기록",
+        "연속 교전을 동시 다수전으로 왜곡하지 않기"
+      ],
+      "duplicateRisk": "29화 후속 교전을 L03과 한 사건으로 중복 계산할 위험",
+      "reviewGroup": "lichen-followup",
+      "sourceIds": [
+        "pilot:SR"
+      ]
+    },
+    {
+      "recordId": "R01",
+      "kind": "battleEvidence",
+      "characterId": "char-071",
+      "parentBattleId": "pilot-R",
+      "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "움직임·공격 속도와 상대 호흡 변화의 인과 확인",
+      "questions": [
+        "1부 99~100화 후보에서 최달천 호흡·움직임의 실제 장면을 구분",
+        "상대 피로 유도와 류지학 자신의 지속력 분리"
+      ],
+      "duplicateRisk": "상대 피로 유발을 류지학의 지속전으로 직접 환산할 수 없음",
+      "reviewGroup": "ryujihak-tempo",
+      "sourceIds": [
+        "pilot:SJ"
+      ]
+    },
+    {
+      "recordId": "R02",
+      "kind": "battleEvidence",
+      "characterId": "char-071",
+      "parentBattleId": "pilot-R",
+      "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "상대 공격의 원인·회피 동작·판단 시점 확인",
+      "questions": [
+        "상대 공격 선택을 유도했는지 순간 대응했는지 구분",
+        "공격 전후 거리·시간 압박 기록"
+      ],
+      "duplicateRisk": "사전 유도인지 순간 포착인지 확정할 수 없음",
+      "reviewGroup": "ryujihak-open",
+      "sourceIds": [
+        "pilot:SJ"
+      ]
+    },
+    {
+      "recordId": "R03",
+      "kind": "battleEvidence",
+      "characterId": "char-071",
+      "parentBattleId": "pilot-R",
+      "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "실제 공격 부위·연속성·결과 원작 대조",
+      "questions": [
+        "도검 부위·상대 기능 저하·결과의 인과를 분리",
+        "결정타를 공격·기술·상황 대응 모두에 중복 가산하지 않기"
+      ],
+      "duplicateRisk": "기술 정확도와 결정적 성과를 동일한 기여로 중복 가산할 위험",
+      "reviewGroup": "ryujihak-cut",
+      "sourceIds": [
+        "pilot:SJ"
+      ]
+    },
+    {
+      "recordId": "R04",
+      "kind": "battleEvidence",
+      "characterId": "char-071",
+      "parentBattleId": "pilot-R",
+      "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+      "chapterStatus": "unverified-secondary-hint",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "approval": "none",
+      "originalQuestion": "99~100화 부상 발생·직후 수행능력 및 조건 확인",
+      "questions": [
+        "부상이 발생한 정확한 시점과 이후 상지 기능 변화 확인",
+        "누적 피로와 부상으로 인한 감소를 구분"
+      ],
+      "duplicateRisk": "부상의 발생 방식과 피로 누적은 구별해야 함",
+      "reviewGroup": "ryujihak-injury",
+      "sourceIds": [
+        "pilot:SM",
+        "pilot:SC"
+      ]
+    },
+    {
+      "recordId": "ST01",
+      "kind": "statement",
+      "speakerRef": "person-draft-lisa",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "원작 대사와 회차 · 티그로/김신 호칭과 비교 집단 범위 · 비교 기준: 순수 전력 vs 운영 편의 · 양 팀의 대등한 조건 비교",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC01의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "iskra-organization",
+      "sourceIds": [
+        "testimony:SRC01",
+        "testimony:SRC05",
+        "testimony:SRC06"
+      ]
+    },
+    {
+      "recordId": "ST02",
+      "kind": "statement",
+      "speakerRef": "person-draft-lisa",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "원작 직접 대조 · 발언 시점과 목적 · 리사에게 제공된 블랙맘바 임무 정보 · 비슷한 조건에서의 후속 교전",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC03의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "blackmamba-reputation",
+      "sourceIds": [
+        "testimony:SRC02"
+      ]
+    },
+    {
+      "recordId": "ST03",
+      "kind": "statement",
+      "speakerRef": "char-027",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "발언 부·회차 및 정확한 문구 · 직접 관찰·경험 범위 · 서로 동일한 총종·거리·장비 조건인지",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC03의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "akila-blackmamba-matchup",
+      "sourceIds": [
+        "testimony:SRC02",
+        "testimony:SRC06"
+      ]
+    },
+    {
+      "recordId": "ST04",
+      "kind": "statement",
+      "speakerRef": "char-033",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "발언 원문·시점·상대가 들었는지 여부 · 작전 실제 참가자와 전투 선후 · 아킬라가 사건 이전에 알았던 정보",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC02의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "akila-removal",
+      "sourceIds": [
+        "testimony:SRC06",
+        "testimony:SRC03",
+        "testimony:SRC04"
+      ]
+    },
+    {
+      "recordId": "ST05",
+      "kind": "statement",
+      "speakerRef": "person-draft-iwashiro",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P1",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "발언 원문·회차 · 발언 당시 이와시로의 정보 · 기존 킬러의 실제 이탈·독단 사례",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC01의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "iskra-organization",
+      "sourceIds": [
+        "testimony:SRC06",
+        "testimony:SRC01"
+      ]
+    },
+    {
+      "recordId": "ST06",
+      "kind": "statement",
+      "speakerRef": "char-001",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "원작 대사 확인 · 정확한 시점과 인용 대상",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC04의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "lisa-past-appraisal",
+      "sourceIds": [
+        "testimony:SRC01",
+        "testimony:SRC06"
+      ]
+    },
+    {
+      "recordId": "ST07",
+      "kind": "statement",
+      "speakerRef": "char-042",
+      "chapterCandidate": null,
+      "chapterStatus": "not-determined",
+      "priority": "P2",
+      "verification": "not-directly-checked",
+      "statementOccurredVerified": false,
+      "claimTruthVerified": false,
+      "verbatimVerified": false,
+      "approval": "none",
+      "originalQuestion": "원문·회차 · 김신 평가와 정보의 독립성",
+      "questions": [
+        "실제 원작의 발언 위치·말한 사람·청자·문맥을 기록",
+        "발언자의 정보 범위·이해관계·주장의 진위·반증과 독립된 사건 결과 분리"
+      ],
+      "duplicateRisk": "연결 사건 DC04의 후속 결과를 동일 사건의 독립 표본으로 중복 계산하지 않기",
+      "reviewGroup": "lisa-past-appraisal",
+      "sourceIds": [
+        "testimony:SRC01",
+        "testimony:SRC06"
+      ]
+    }
+  ]
+}
