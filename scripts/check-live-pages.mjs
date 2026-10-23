@@ -25,8 +25,8 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     }
     const html = content['index.html'];
     if (!html.includes('sidebar-collapsed') || !html.includes('data-sidebar-toggle') ||
-        !html.includes('data/pilot-review-queue.v2.2.json')) throw Error('Unexpected stale public HTML');
-    if (!content['scripts/pilot-v2.1-view.js'].includes('CastlePilotView')) throw Error('Missing public renderer');
+        !html.includes('data/pilot-review-queue.v2.2.json') || !html.includes('v2.4: slate navigation') || html.includes("?'› 펼치기':'‹ 접기'")) throw Error('Unexpected stale public HTML');
+    if (!content['scripts/pilot-v2.1-view.js'].includes('출처 유형 · 자료 위치')) throw Error('Missing public renderer');
     const evidence = content['data/pilot-evidence.v2.1.json'];
     if (evidence.schemaVersion !== '2.1-ui-projection-draft' ||
         evidence.evidence.length !== 12 || evidence.statements.length !== 7 ||
@@ -37,7 +37,7 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     if (era.candidates.length !== 5 || era.candidates.some(x => x.evaluationStates.length !== 0)) throw Error('Published era state mismatch');
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
-    console.log('PASS: public HTTPS / + 5 dependent assets, v2.2 UI markers and read-only draft safety');
+    console.log('PASS: public HTTPS / + 5 dependent assets, v2.4 UI markers and read-only draft safety');
     process.exit(0);
   } catch (error) {
     lastError = error;

@@ -1,11 +1,12 @@
 name: Publish read-only Castle MVP
 on:
   push:
-    branches: [main]
+    branches: [main, codex/v2.4-ui-research]
     paths:
       - 'index.html'
       - 'data/roster.v0.1.json'
       - 'scripts/check-mvp.mjs'
+      - 'scripts/check-browser-v2.1.mjs'
       - 'scripts/check-pilot-v2.1.mjs'
       - 'scripts/pilot-v2.1-view.js'
       - 'data/pilot-evidence.v2.1.json'
@@ -20,7 +21,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: github-pages
+  group: github-pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   verify:
@@ -35,8 +36,33 @@ jobs:
           node scripts/check-mvp.mjs
           node scripts/check-pilot-v2.1.mjs
           node scripts/check-character-images.mjs
+  browser-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Korean fonts for visual verification
+        run: sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+      - name: Prepare browser test tooling outside the project
+        run: |
+          npm install --prefix "$RUNNER_TEMP/castle-browser-tools" playwright@1.56.1
+          ln -s "$RUNNER_TEMP/castle-browser-tools/node_modules" node_modules
+      - name: Check six responsive viewports and navigation contrast
+        env:
+          CHROME_EXECUTABLE: /usr/bin/google-chrome
+          SCREENSHOT_DIR: browser-screenshots
+        run: node scripts/check-browser-v2.1.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: castle-responsive-screenshots
+          path: browser-screenshots
+          if-no-files-found: ignore
   deploy:
-    needs: verify
+    if: github.ref == 'refs/heads/main'
+    needs: [verify, browser-regression]
     runs-on: ubuntu-latest
     environment:
       name: github-pages
