@@ -84,5 +84,8 @@ try{
   browser=await chromium.launch({channel:'chrome',headless:true,args:['--no-sandbox']});
   await inspect({width:1440,height:900});
   await inspect({width:1024,height:768});
+  await inspect({width:761,height:820});
+  await inspect({width:760,height:820});
   await inspect({width:390,height:844});
+  await inspect({width:320,height:700});
 }finally{await browser?.close();await new Promise(resolve=>server.close(resolve));}
