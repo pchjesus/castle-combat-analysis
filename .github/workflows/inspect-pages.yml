@@ -1,0 +1,27 @@
+name: Inspect public Pages availability
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inspect-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect Pages configuration (read only)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '{status,url,html_url,build_type,source,cname,https_enforced,public}' || echo "Pages configuration API unavailable"
+      - name: Probe public URLs
+        run: |
+          for addr in "https://pchjesus.github.io/" "https://pchjesus.github.io/castle-combat-analysis/" "https://pchjesus.github.io/castle-combat-analysis/index.html" "https://pchjesus.github.io/castle-combat-analysis/data/pilot-evidence.v2.1.json"; do
+            code=$(curl -L -sS --max-time 12 -w '%{http_code}' -o /tmp/pages-probe "$addr" || echo "connection-failed")
+            echo "$addr -> HTTP $code"
+            head -c 180 /tmp/pages-probe 2>/dev/null | tr '\n' ' ' || true
+            echo
+          done
