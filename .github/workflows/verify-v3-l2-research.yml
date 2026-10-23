@@ -1,0 +1,28 @@
+name: Verify v3.0 L2 research only
+on:
+  push:
+    branches:
+      - research/v3.0-l2-axis-fairness-pilot
+    paths:
+      - 'data/research/**'
+      - 'docs/research/V3_0_L2_AXIS_FAIRNESS_PILOT_DRAFT.md'
+      - 'scripts/check-l2-axis-fairness-v3.0.mjs'
+      - '.github/workflows/verify-v3-l2-research.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Existing read-only regression checks
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-analysis-depth-coverage-v2.9.mjs
+      - name: New v3.0 L2 separation and fairness checks
+        run: node scripts/check-l2-axis-fairness-v3.0.mjs
