@@ -1,0 +1,23 @@
+name: Verify v2.7 community research
+on:
+  push:
+    branches:
+      - research/v2.7-community-evidence-crosscheck
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Protect original Castle roster, sources and candidate-only UI
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-character-images.mjs
+      - name: Verify research source independence and references
+        run: node scripts/check-community-source-ledger-v2.7.mjs
