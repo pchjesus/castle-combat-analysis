@@ -6,6 +6,13 @@ const view=require('./pilot-v2.1-view.js');
 const get=path=>JSON.parse(readFileSync(path,'utf8'));
 const roster=get('data/roster.v0.1.json');
 const raw=get('data/pilot-evidence.v2.1.json');
+const contract=get('docs/contracts/v2.1/castle_v2.1/castle_contract_fixture_v2.1_DRAFT.json');
+assert.equal(contract.schemaVersion,'2.1-draft');
+assert.deepEqual(raw.sourceCatalog,contract.sourceCatalog,'do not fabricate source catalog');
+assert.deepEqual(raw.battles,contract.pilot.battles,'do not rewrite Battle records');
+assert.deepEqual(raw.evidence,contract.pilot.battleEvidenceCandidates,'do not rewrite Evidence records');
+for(const key of ['statements','decisionCases','outcomes'])assert.deepEqual(raw[key],contract.testimonies[key],'do not rewrite '+key);
+
 const temporal=get('data/temporal-evaluation-candidates.v0.1.json');
 const quotes=get('data/quotation-review.v0.1.json');
 const html=readFileSync('index.html','utf8');
