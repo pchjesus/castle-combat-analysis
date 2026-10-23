@@ -53,7 +53,7 @@ async function inspect(viewport){
   assert.equal(await page.locator('.pilot-record').count(),8,'Akila 4 evidence + 2 statements + 2 linked cases');
   await page.locator('#record-A01 summary').click();
   assert.match(await page.locator('#record-A01').innerText(),/원작 미대조/);
-  if(viewport.width<760)await page.locator('#mobile-menu').click();
+  if(viewport.width<=760)await page.locator('#mobile-menu').click();
   await page.locator('.pilot-btn[data-character="char-087"]').click();
   await page.locator('#record-L01').waitFor();
   assert.equal(await page.locator('#record-A01').count(),0,'changing character must not leak prior character records');
@@ -67,7 +67,7 @@ async function inspect(viewport){
   assert.match(await page.locator('.hero-title').innerText(),/아킬라/);
   await page.locator('#tab-stats').click();
   assert.equal(await page.getByText('M1 보류',{exact:false}).count()>=1,true);
-  if(viewport.width<760)await page.locator('#mobile-menu').click();
+  if(viewport.width<=760)await page.locator('#mobile-menu').click();
   await page.locator('#character-search').fill('오도화');
   await page.locator('.character-btn[data-character="char-052"]').click();
   await page.locator('.era-note').waitFor();
