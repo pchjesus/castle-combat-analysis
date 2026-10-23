@@ -74,16 +74,16 @@
       '<summary><span class="pilot-record-title"><small class="pilot-code">' + safe(record.id,h) + ' · 전투 관찰 후보</small>' +
       '<strong>' + safe(record.summary,h) + '</strong></span>' + badge('원작 미대조',h) + '</summary>' +
       '<div class="pilot-record-detail">' +
-      '<div class="pilot-detail-row"><strong>원작 사실 여부</strong><p>2차 자료의 설명을 옮긴 검토 후보. 원작에서 직접 확인된 사실이 아님.</p></div>' +
+      '<div class="pilot-detail-row"><strong>원작 사실 후보</strong><p>2차 자료의 설명을 옮긴 검토 후보. 원작에서 직접 확인된 사실이 아님.</p></div>' +
       '<div class="pilot-detail-row"><strong>전투 맥락 / Phase</strong><p>' + safe(b?.title || '전투 참조 미확인',h) +
       ' · Phase 미등록 / 실제 교전 시점·무장·개입 여부 미확인</p></div>' +
-      '<div class="pilot-detail-row"><strong>능력치 연결 가설</strong><p>주요: ' +
+      '<div class="pilot-detail-row"><strong>해석 · 능력치 연결 가설</strong><p>주요: ' +
       safe(record.primaryRoleCandidate?.primary || '미지정',h) + ' / 중복 검토: ' +
       safe(record.primaryRoleCandidate?.secondaryReview || '미지정',h) + ' (가산·평가 없음)</p></div>' +
       '<div class="pilot-detail-row"><strong>반론·과대해석 위험</strong><p>' + safe(record.doubleCountRisk || '검토 중',h) + '</p></div>' +
       '<div class="pilot-detail-row"><strong>원작 검수 질문</strong><p>' + safe(record.reviewQuestion || '검수 대기',h) + '</p></div>' +
-      '<div class="pilot-detail-row"><strong>출처 / 확인 상태</strong>' + sources(data,record.sourceIds,h) + '</div>' +
-      '<p class="pilot-meta">평가 영향: 없음 · 근거 충분도: 미판정 · 평가 승인: 없음 · 원작 대조: 미완료</p>' +
+      '<div class="pilot-detail-row"><strong>출처 유형 · 자료 위치</strong>' + sources(data,record.sourceIds,h) + '</div>' +
+      '<p class="pilot-meta"><strong>원작 직접 확인:</strong> 미완료<br><strong>평가 상태:</strong> 영향 없음 · 충분도 미판정 · 승인 없음</p>' +
       '</div></details>';
   }
   function statementCard(data, record, h, opened) {
@@ -100,9 +100,9 @@
       '<div class="pilot-detail-row"><strong>사건 연결</strong><p>' + safe(c?.id || '사건 미연결',h) + ' · ' + safe(c?.title || '',h) + '</p>' +
       linked.map(o => '<p class="pilot-linked">' + safe(o.id,h) + ' 결과 후보: ' + safe(o.summary,h) +
       ' / 한계: ' + safe(o.causalLimit,h) + '</p>').join('') + '</div>' +
-      '<div class="pilot-detail-row"><strong>출처 / 확인 상태</strong>' + sources(data,record.sourceIds,h) + '</div>' +
+      '<div class="pilot-detail-row"><strong>출처 유형 · 자료 위치</strong>' + sources(data,record.sourceIds,h) + '</div>' +
       '<div class="pilot-detail-row"><strong>검수 항목</strong><p>' + safe((record.pendingReview || []).join(' · ') || '미등록',h) + '</p></div>' +
-      '<p class="pilot-meta">발언 존재: 원작 미검수 · 주장 진위: 확정 안 됨 · 점수 영향: 없음</p>' +
+      '<p class="pilot-meta"><strong>원작 직접 확인:</strong> 발언 존재·원문 미검수<br><strong>평가 상태:</strong> 주장 진위 미확정 · 점수 영향 없음</p>' +
       '</div></details>';
   }
   function caseCard(data, record, h, opened) {
