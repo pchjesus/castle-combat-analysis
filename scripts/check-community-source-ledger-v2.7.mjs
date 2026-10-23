@@ -46,6 +46,8 @@ const sourceMap = new Map(research.sources.map(s=>[s.id,s]));
 assert.equal(sourceMap.get('C01').independenceGroup,sourceMap.get('C02').independenceGroup,
   'Odoha serialized posts cannot be counted as two independent observations');
 assert.equal(sourceMap.get('C06').independenceGroup,'wiki-derived-287144','copied wiki ranking is not independent corroboration');
+assert.notEqual(sourceMap.get('C10').independenceGroup,sourceMap.get('C11').independenceGroup,
+  'opposing independent author posts must not be deduplicated');
 const allGroups = new Set(research.sources.map(s=>s.independenceGroup));
 assert.ok(allGroups.size < research.sources.length,'must de-duplicate author series');
 for(const issue of research.issues){
