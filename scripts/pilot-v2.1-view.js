@@ -38,6 +38,7 @@
       for (const id of s.linkedOutcomeIds || []) if (!outcomes.has(id)) throw Error('Broken outcome reference: ' + id);
       for (const id of s.sourceIds || []) if (!sources.has(id)) throw Error('Broken statement source: ' + id);
     }
+    for (const o of data.outcomes) if (!cases.has(o.decisionCaseId) || o.sceneCanonVerified !== false) throw Error('Invalid draft outcome: ' + o.id);
     for (const c of data.decisionCases) {
       if (c.parentCaseId && !cases.has(c.parentCaseId)) throw Error('Broken parent case: ' + c.id);
       for (const id of c.linkedOutcomeIds || []) if (outcomes.get(id)?.decisionCaseId !== c.id) throw Error('Wrong outcome case: ' + id);
