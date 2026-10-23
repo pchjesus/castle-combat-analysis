@@ -1,0 +1,178 @@
+{
+  "artifact": "v2.1 local design fixture",
+  "status": "PASS",
+  "testsRun": 32,
+  "passed": 32,
+  "failed": 0,
+  "scope": "schema/refs/preservation/negative cases ONLY",
+  "notChecked": [
+    "original webtoon scenes",
+    "original quotes",
+    "real website/browser",
+    "deploy",
+    "production migration",
+    "remote repo file checksum match"
+  ],
+  "cases": [
+    {
+      "name": "JSON Schema v2.1 is valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fixture satisfies JSON Schema and all semantic constraints",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legacy roster: 109 stable IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legacy groups: 17 stable IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "pilot: 3 distinct characters and battles",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "pilot: 12 observation candidates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "5 proposed-only people",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all non-fighter profiles carry sources and a timeline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "7 statements resolve to canon or candidate person IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "4 decision cases / 4 outcomes remain linked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "9 historical trial anchors remain unapproved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all evaluation and ranking outputs remain empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "unknown phases have not been fabricated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "quotes all paraphrases and not canon verified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exact-name collision guard for 리사 / 크리사",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "UI view models cover all 3 pilot people",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "UI view models cover all 5 narrative people",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "UI fighter pages contain no misleading zero scores",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "UI narrative profiles show no combat score",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "UI shows source-status for all 12 observation cards",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject duplicate draft-person IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject invalid speaker ref",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject orphan evidence battle ref",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject unknown source ref",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject unsourced canon verification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject fabricated exact quote",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject official score in trial anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject fake matchup/ranking entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject invalid 2.5-point precision",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject case-parent cycle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject outcome attached to another case",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject unsupported battle phase",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

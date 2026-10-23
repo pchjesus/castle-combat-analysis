@@ -1,0 +1,394 @@
+{
+  "schemaVersion": "2.1-preview",
+  "notice": "UI projection fixture; no website or implemented UI",
+  "legacyUniqueRosterCount": 109,
+  "potentialMasterIfApproved": 114,
+  "fighterPages": [
+    {
+      "id": "char-033",
+      "name": "아킬라",
+      "viewType": "combat-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "combat": {
+        "status": "unrated",
+        "message": "아직 전투력 평가가 없습니다. 0점이 아닙니다.",
+        "score": null,
+        "overallRank": null,
+        "defaultProfileId": null
+      },
+      "battles": [
+        {
+          "id": "pilot-A",
+          "title": "아킬라 vs 구스타프 및 인접 전투",
+          "sceneVerified": false,
+          "phaseCount": 0
+        }
+      ],
+      "evidenceCards": [
+        {
+          "id": "A01",
+          "summary": "차문 부근 견제사격으로 상대의 대응을 제한했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "아킬라(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "구스타프의 방패·엄폐가 효과에 미친 영향"
+        },
+        {
+          "id": "A02",
+          "summary": "측면에서 사격을 시도한 경호원을 사격했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "아킬라(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "제3자에 대한 사격 성과를 구스타프에 대한 공격 실효성으로 오인할 위험"
+        },
+        {
+          "id": "A03",
+          "summary": "재장전, 이동 및 복수 총기 운용을 결합했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "아킬라(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "계획된 무장 운용을 예상 밖 변수에 대한 적응으로 오인할 위험"
+        },
+        {
+          "id": "A04",
+          "summary": "근접 공방에서 구스타프의 무장·공격을 견제했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "아킬라(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "무장 활용과 맨손 신체능력을 혼합 평가할 위험"
+        }
+      ],
+      "statementCards": [
+        {
+          "id": "ST03",
+          "summary": "아킬라와 블랙맘바가 정면으로 총격 대치하면 아킬라가 우세하리라는 취지",
+          "speakerName": "크로트",
+          "isExactQuote": false
+        },
+        {
+          "id": "ST04",
+          "summary": "확실한 수가 아니라면 아킬라 제거 시도는 투입된 부하의 피해만 초래하리라는 취지",
+          "speakerName": "아킬라",
+          "isExactQuote": false
+        }
+      ]
+    },
+    {
+      "id": "char-087",
+      "name": "리천",
+      "viewType": "combat-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "combat": {
+        "status": "unrated",
+        "message": "아직 전투력 평가가 없습니다. 0점이 아닙니다.",
+        "score": null,
+        "overallRank": null,
+        "defaultProfileId": null
+      },
+      "battles": [
+        {
+          "id": "pilot-L",
+          "title": "리천 vs 라텔·표영",
+          "sceneVerified": false,
+          "phaseCount": 0
+        }
+      ],
+      "evidenceCards": [
+        {
+          "id": "L01",
+          "summary": "표영의 급소를 연속 타격해 제압했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "리천(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "기술·속도·공격 실효성에 동일 연속타를 중복 가산할 위험"
+        },
+        {
+          "id": "L02",
+          "summary": "라텔의 흉부에 사격을 명중시켰다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "리천(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "명중과 실질 무력화 효과는 별개; 0.5초 숫자 2차자료에만 존재"
+        },
+        {
+          "id": "L03",
+          "summary": "탄창 없는 총기를 이용한 기만 후 관절 공격을 했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "리천(캐슬)/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "계획적 기만과 돌발 대응 구분 및 동일 기만의 중복 가산 필요"
+        },
+        {
+          "id": "L04",
+          "summary": "라텔 재교전에서 무장 시도를 읽고 대응했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "라텔(캐슬)"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "29화 후속 교전을 L03과 한 사건으로 중복 계산할 위험"
+        }
+      ],
+      "statementCards": []
+    },
+    {
+      "id": "char-071",
+      "name": "류지학",
+      "viewType": "combat-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "combat": {
+        "status": "unrated",
+        "message": "아직 전투력 평가가 없습니다. 0점이 아닙니다.",
+        "score": null,
+        "overallRank": null,
+        "defaultProfileId": null
+      },
+      "battles": [
+        {
+          "id": "pilot-R",
+          "title": "류지학 vs 최달천",
+          "sceneVerified": false,
+          "phaseCount": 0
+        }
+      ],
+      "evidenceCards": [
+        {
+          "id": "R01",
+          "summary": "빠른 연속 공방으로 최달천의 템포와 호흡을 흔들었다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "류지학/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "상대 피로 유발을 류지학의 지속전으로 직접 환산할 수 없음"
+        },
+        {
+          "id": "R02",
+          "summary": "최달천이 무리한 공격을 시도한 틈을 포착했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "류지학/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "사전 유도인지 순간 포착인지 확정할 수 없음"
+        },
+        {
+          "id": "R03",
+          "summary": "틈을 이용한 절단 기술로 승부를 결정했다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "류지학/전투력"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "기술 정확도와 결정적 성과를 동일한 기여로 중복 가산할 위험"
+        },
+        {
+          "id": "R04",
+          "summary": "교전 후 왼팔/왼쪽 상지 기능 제약이 언급된다는 서술",
+          "verification": "secondary-only",
+          "sourceTitles": [
+            "조명식(캐슬)",
+            "최달천"
+          ],
+          "evaluatedScoreImpact": "none",
+          "counterargument": "부상의 발생 방식과 피로 누적은 구별해야 함"
+        }
+      ],
+      "statementCards": []
+    }
+  ],
+  "narrativePages": [
+    {
+      "id": "person-draft-lisa",
+      "name": "리사",
+      "viewType": "narrative-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "registrationStatus": "proposed",
+      "overview": "이스크라의 청부 업무와 킬러 조직 운영에 관여한 핵심 인물.",
+      "timeline": [
+        {
+          "period": "1부",
+          "summary": "김신·김태훈과의 협력 및 캐슬 내 세력 재편에 관여",
+          "verification": "secondary-only"
+        },
+        {
+          "period": "2부",
+          "summary": "이스크라 개편과 킬러들에 대한 통제·전력 운용 문제가 주요 갈등으로 나타남",
+          "verification": "secondary-only"
+        }
+      ],
+      "combat": {
+        "status": "not-planned",
+        "message": "현재 전투력 평가 대상이 아닙니다.",
+        "score": null,
+        "overallRank": null
+      },
+      "statementCards": [
+        {
+          "id": "ST01",
+          "summary": "새 뜨거운 피가 기존 티그로/김신 중심 팀보다 더 강한 창이라는 취지의 평가",
+          "claimDomain": "group-combat-strength",
+          "contextBoundary": "집단 전력과 명령 이행력 중 무엇을 비교했는지 미확정",
+          "isExactQuote": false
+        },
+        {
+          "id": "ST02",
+          "summary": "수단을 제한하지 않는 조건에서 블랙맘바의 상대가 드물다는 취지",
+          "claimDomain": "unrestricted-combat-threat",
+          "contextBoundary": "무제한 수단을 동원하는 전투. 순수 총격전·종합 점수 등으로 무단 일반화 금지",
+          "isExactQuote": false
+        }
+      ]
+    },
+    {
+      "id": "person-draft-iwashiro",
+      "name": "이와시로 신스케",
+      "viewType": "narrative-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "registrationStatus": "proposed",
+      "overview": "일본 야쿠자 세력의 주요 지도자로서 조직 간 관계와 교섭에 관여한 인물.",
+      "timeline": [
+        {
+          "period": "1부",
+          "summary": "일본 야쿠자 세력 회의를 주재하며 내부 문제에 대응",
+          "verification": "secondary-only"
+        },
+        {
+          "period": "2부",
+          "summary": "다른 주요 세력과의 교섭 및 전략적 대화에 등장",
+          "verification": "secondary-only"
+        }
+      ],
+      "combat": {
+        "status": "not-planned",
+        "message": "현재 전투력 평가 대상이 아닙니다.",
+        "score": null,
+        "overallRank": null
+      },
+      "statementCards": [
+        {
+          "id": "ST05",
+          "summary": "리사가 킬러 개개인을 모두 통제할 수 있다는 기대를 비판하는 취지",
+          "claimDomain": "organizational-control",
+          "contextBoundary": "조직 통제력 평가이며 전투 전문기술 판정과 직접 동치가 아님",
+          "isExactQuote": false
+        }
+      ]
+    },
+    {
+      "id": "person-draft-kimhwang",
+      "name": "김황",
+      "viewType": "narrative-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "registrationStatus": "proposed",
+      "overview": "골드캐피탈 회장으로, 자금력과 금융업 기반의 영향력을 행사하던 구 캐슬의 기둥.",
+      "timeline": [
+        {
+          "period": "1부",
+          "summary": "임무열과 최민욱을 견제하는 계획에 가담",
+          "verification": "secondary-only"
+        },
+        {
+          "period": "1부",
+          "summary": "계획이 실패하자 임무열을 배신하려다가 살해된 것으로 정리됨",
+          "verification": "secondary-only"
+        }
+      ],
+      "combat": {
+        "status": "not-planned",
+        "message": "현재 전투력 평가 대상이 아닙니다.",
+        "score": null,
+        "overallRank": null
+      },
+      "statementCards": []
+    },
+    {
+      "id": "person-draft-kimtaehoon",
+      "name": "김태훈",
+      "viewType": "narrative-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "registrationStatus": "proposed",
+      "overview": "하성의 경영과 권력 투쟁에 관여하며, 이해관계와 신뢰의 문제를 겪으며 변화하는 인물.",
+      "timeline": [
+        {
+          "period": "1부",
+          "summary": "김신·리사와의 접촉을 통해 캐슬 내부 세력 관계에 개입",
+          "verification": "secondary-only"
+        },
+        {
+          "period": "1부",
+          "summary": "류지학과의 갈등 뒤 자신의 태도를 돌아보고 관계를 재정립하는 장면이 정리됨",
+          "verification": "secondary-only"
+        },
+        {
+          "period": "2부",
+          "summary": "하성의 권력 다툼과 최민욱에 대한 대응에서 주요 결정을 내림",
+          "verification": "secondary-only"
+        }
+      ],
+      "combat": {
+        "status": "not-planned",
+        "message": "현재 전투력 평가 대상이 아닙니다.",
+        "score": null,
+        "overallRank": null
+      },
+      "statementCards": []
+    },
+    {
+      "id": "person-draft-kimseongyu",
+      "name": "김선규",
+      "viewType": "narrative-candidate",
+      "canOpenProfile": true,
+      "defaultTab": "overview",
+      "registrationStatus": "proposed",
+      "overview": "캐슬의 정치적 후원을 받는 대선 후보로서, 권력과 범죄조직의 관계를 보여주는 인물.",
+      "timeline": [
+        {
+          "period": "1부",
+          "summary": "대선 후보이자 캐슬의 정치적 연결고리로 언급됨",
+          "verification": "secondary-only"
+        },
+        {
+          "period": "2부",
+          "summary": "최민욱과의 갈등 및 김태훈의 폭로로 정치적 위기를 겪음",
+          "verification": "secondary-only"
+        }
+      ],
+      "combat": {
+        "status": "not-planned",
+        "message": "현재 전투력 평가 대상이 아닙니다.",
+        "score": null,
+        "overallRank": null
+      },
+      "statementCards": []
+    }
+  ],
+  "linkedCaseExample": {
+    "parentCaseId": "DC01",
+    "childCaseId": "DC02",
+    "statementId": "ST05",
+    "crossCaseOutcomeId": "O02",
+    "rule": "A statement from a parent decision case may cite an outcome in a descendant case; independent-error count must not increment automatically."
+  }
+}

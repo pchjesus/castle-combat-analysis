@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "schemaVersion": "castle-person-master-evidence-v1.8-1.9-draft",
+    "status": "draft-not-persisted",
+    "generatedAtDate": "2026-10-23",
+    "canonDirectlyChecked": false,
+    "repositoryWritten": false,
+    "originalRosterPreserved": true,
+    "note": "인물 5명의 신규 등록 후보. 모든 근거는 커뮤니티 2차 자료를 간접 확인한 것이며 원작 직접 검수 전. candidateId는 GitHub의 최종 Character ID가 아님."
+  },
+  "sources": {
+    "S_LISA": {
+      "title": "리사(캐슬)",
+      "url": "https://d.namu.moe/w/%EB%A6%AC%EC%82%AC(%EC%BA%90%EC%8A%AC)",
+      "type": "community-secondary",
+      "verification": "indirect"
+    },
+    "S_IWASHIRO": {
+      "title": "이와시로 신스케",
+      "url": "https://d.namu.moe/w/%EC%9D%B4%EC%99%80%EC%8B%9C%EB%A1%9C%20%EC%8B%A0%EC%8A%A4%EC%BC%80",
+      "type": "community-secondary",
+      "verification": "indirect"
+    },
+    "S_KIMHWANG": {
+      "title": "김황",
+      "url": "https://www.namu.moe/w/%EA%B9%80%ED%99%A9",
+      "type": "community-secondary",
+      "verification": "indirect"
+    },
+    "S_KIMTAEHOON": {
+      "title": "김태훈(캐슬)/작중 행적",
+      "url": "https://namu.moe/w/%EA%B9%80%ED%83%9C%ED%9B%88(%EC%BA%90%EC%8A%AC)/%EC%9E%91%EC%A4%91%20%ED%96%89%EC%A0%81",
+      "type": "community-secondary",
+      "verification": "indirect"
+    },
+    "S_KIMSEONGYU": {
+      "title": "김선규(캐슬)",
+      "url": "https://www.namu.moe/w/%EA%B9%80%EC%84%A0%EA%B7%9C(%EC%BA%90%EC%8A%AC)",
+      "type": "community-secondary",
+      "verification": "indirect"
+    }
+  },
+  "candidatePeople": [
+    {
+      "candidateId": "person-draft-lisa",
+      "displayName": "리사",
+      "aliases": [
+        "여우"
+      ],
+      "roles": [
+        "narrative",
+        "statement-speaker",
+        "decision-actor"
+      ],
+      "evaluationIntent": "not-planned",
+      "groupLinks": [
+        {
+          "name": "이스크라",
+          "existingGroupId": "iskra",
+          "status": "period-dependent"
+        }
+      ],
+      "summary": "이스크라의 청부 업무와 킬러 조직 운영에 관여한 핵심 인물.",
+      "traits": [
+        {
+          "text": "정보·협상·킬러 선발과 통제를 중심으로 움직이는 조직 운영자",
+          "kind": "role-description"
+        },
+        {
+          "text": "전력 평가 및 통제 가능성에 관한 판단의 한계를 후속 사건과 함께 검토해야 함",
+          "kind": "interpretation-pending-review"
+        }
+      ],
+      "events": [
+        {
+          "period": "1부",
+          "summary": "김신·김태훈과의 협력 및 캐슬 내 세력 재편에 관여",
+          "sourceIds": [
+            "S_LISA"
+          ],
+          "verification": "needs-canon-check"
+        },
+        {
+          "period": "2부",
+          "summary": "이스크라 개편과 킬러들에 대한 통제·전력 운용 문제가 주요 갈등으로 나타남",
+          "sourceIds": [
+            "S_LISA"
+          ],
+          "verification": "needs-canon-check"
+        }
+      ],
+      "relationships": [
+        {
+          "name": "김신",
+          "type": "전략적 협력·갈등 양상 변화"
+        },
+        {
+          "name": "아킬라",
+          "type": "조직 내 갈등·전력 판단"
+        },
+        {
+          "name": "그롤라",
+          "type": "신 뜨거운 피 인력 운용"
+        }
+      ],
+      "sources": [
+        "S_LISA"
+      ],
+      "flags": [
+        "직책·코드네임의 시점 및 계승 관계 원작 확인",
+        "판단 실패와 직접 전투력 평가 혼동 금지"
+      ]
+    },
+    {
+      "candidateId": "person-draft-iwashiro",
+      "displayName": "이와시로 신스케",
+      "aliases": [
+        "이와시로"
+      ],
+      "roles": [
+        "narrative",
+        "statement-speaker",
+        "decision-actor"
+      ],
+      "evaluationIntent": "not-planned",
+      "groupLinks": [
+        {
+          "name": "야마구치구미",
+          "existingGroupId": "yamaguchi-gumi",
+          "status": "period-dependent"
+        }
+      ],
+      "summary": "일본 야쿠자 세력의 주요 지도자로서 조직 간 관계와 교섭에 관여한 인물.",
+      "traits": [
+        {
+          "text": "조직 대표·협상 주체로서 세력 간 정세를 논의하는 역할",
+          "kind": "role-description"
+        }
+      ],
+      "events": [
+        {
+          "period": "1부",
+          "summary": "일본 야쿠자 세력 회의를 주재하며 내부 문제에 대응",
+          "sourceIds": [
+            "S_IWASHIRO"
+          ],
+          "verification": "needs-canon-check"
+        },
+        {
+          "period": "2부",
+          "summary": "다른 주요 세력과의 교섭 및 전략적 대화에 등장",
+          "sourceIds": [
+            "S_IWASHIRO"
+          ],
+          "verification": "needs-canon-check"
+        }
+      ],
+      "relationships": [
+        {
+          "name": "리사",
+          "type": "판단·통제 관련 발언 연결 검토"
+        },
+        {
+          "name": "최민욱",
+          "type": "세력 간 교섭"
+        }
+      ],
+      "sources": [
+        "S_IWASHIRO"
+      ],
+      "flags": [
+        "이와시로/이와시로 신스케 동일 인물 확인 후 alias 확정",
+        "리사에 대한 정확한 평가 발언 원작 검수"
+      ]
+    },
+    {
+      "candidateId": "person-draft-kimhwang",
+      "displayName": "김황",
+      "aliases": [],
+      "roles": [
+        "narrative",
+        "decision-actor"
+      ],
+      "evaluationIntent": "not-planned",
+      "groupLinks": [
+        {
+          "name": "골드캐피탈",
+          "existingGroupId": "gold-capital",
+          "status": "historical"
+        }
+      ],
+      "summary": "골드캐피탈 회장으로, 자금력과 금융업 기반의 영향력을 행사하던 구 캐슬의 기둥.",
+      "traits": [
+        {
+          "text": "자금·이해관계 중심의 조직 지도자",
+          "kind": "role-description"
+        },
+        {
+          "text": "위기 상황의 배신 시도는 위험 판단·조직 충성 문제의 해석 후보",
+          "kind": "interpretation-pending-review"
+        }
+      ],
+      "events": [
+        {
+          "period": "1부",
+          "summary": "임무열과 최민욱을 견제하는 계획에 가담",
+          "sourceIds": [
+            "S_KIMHWANG"
+          ],
+          "verification": "needs-canon-check"
+        },
+        {
+          "period": "1부",
+          "summary": "계획이 실패하자 임무열을 배신하려다가 살해된 것으로 정리됨",
+          "sourceIds": [
+            "S_KIMHWANG"
+          ],
+          "verification": "needs-canon-check"
+        }
+      ],
+      "relationships": [
+        {
+          "name": "임무열",
+          "type": "협력 후 배신 시도"
+        },
+        {
+          "name": "최달천",
+          "type": "휘하 전투 인력 관련"
+        },
+        {
+          "name": "최민욱",
+          "type": "견제 대상"
+        }
+      ],
+      "sources": [
+        "S_KIMHWANG"
+      ],
+      "flags": [
+        "시점별 소속·사망 장면 원작 검수"
+      ]
+    },
+    {
+      "candidateId": "person-draft-kimtaehoon",
+      "displayName": "김태훈",
+      "aliases": [],
+      "roles": [
+        "narrative",
+        "decision-actor",
+        "statement-speaker"
+      ],
+      "evaluationIntent": "not-planned",
+      "groupLinks": [
+        {
+          "name": "하성",
+          "existingGroupId": "haseong",
+          "status": "period-dependent"
+        }
+      ],
+      "summary": "하성의 경영과 권력 투쟁에 관여하며, 이해관계와 신뢰의 문제를 겪으며 변화하는 인물.",
+      "traits": [
+        {
+          "text": "경영·협상에서의 수완이 강조됨",
+          "kind": "secondary-characterization"
+        },
+        {
+          "text": "류지학과의 관계에서 태도 변화가 관찰되는 성장 서사의 인물",
+          "kind": "interpretation-pending-review"
+        }
+      ],
+      "events": [
+        {
+          "period": "1부",
+          "summary": "김신·리사와의 접촉을 통해 캐슬 내부 세력 관계에 개입",
+          "sourceIds": [
+            "S_KIMTAEHOON"
+          ],
+          "verification": "needs-canon-check"
+        },
+        {
+          "period": "1부",
+          "summary": "류지학과의 갈등 뒤 자신의 태도를 돌아보고 관계를 재정립하는 장면이 정리됨",
+          "sourceIds": [
+            "S_KIMTAEHOON"
+          ],
+          "verification": "needs-canon-check"
+        },
+        {
+          "period": "2부",
+          "summary": "하성의 권력 다툼과 최민욱에 대한 대응에서 주요 결정을 내림",
+          "sourceIds": [
+            "S_KIMTAEHOON"
+          ],
+          "verification": "needs-canon-check"
+        }
+      ],
+      "relationships": [
+        {
+          "name": "김신",
+          "type": "이해관계에 따른 협력"
+        },
+        {
+          "name": "류지학",
+          "type": "충성·신뢰 관계 변화"
+        },
+        {
+          "name": "김용성",
+          "type": "하성 권력 갈등"
+        }
+      ],
+      "sources": [
+        "S_KIMTAEHOON"
+      ],
+      "flags": [
+        "태도 변화의 전후 시점 및 직접 대사 확인",
+        "경영 능력과 전투 능력을 동일한 척도로 평가하지 않음"
+      ]
+    },
+    {
+      "candidateId": "person-draft-kimseongyu",
+      "displayName": "김선규",
+      "aliases": [
+        "VIP"
+      ],
+      "roles": [
+        "narrative",
+        "decision-actor",
+        "statement-speaker"
+      ],
+      "evaluationIntent": "not-planned",
+      "groupLinks": [
+        {
+          "name": "혁신당",
+          "existingGroupId": null,
+          "status": "period-dependent",
+          "groupCandidate": true
+        }
+      ],
+      "summary": "캐슬의 정치적 후원을 받는 대선 후보로서, 권력과 범죄조직의 관계를 보여주는 인물.",
+      "traits": [
+        {
+          "text": "정치적 이해관계와 조직 간 유착을 드러내는 서사적 역할",
+          "kind": "role-description"
+        }
+      ],
+      "events": [
+        {
+          "period": "1부",
+          "summary": "대선 후보이자 캐슬의 정치적 연결고리로 언급됨",
+          "sourceIds": [
+            "S_KIMSEONGYU"
+          ],
+          "verification": "needs-canon-check"
+        },
+        {
+          "period": "2부",
+          "summary": "최민욱과의 갈등 및 김태훈의 폭로로 정치적 위기를 겪음",
+          "sourceIds": [
+            "S_KIMSEONGYU"
+          ],
+          "verification": "needs-canon-check"
+        }
+      ],
+      "relationships": [
+        {
+          "name": "최민욱",
+          "type": "후원·압박 관계"
+        },
+        {
+          "name": "김태훈",
+          "type": "폭로·권력 갈등"
+        },
+        {
+          "name": "김신",
+          "type": "캐슬 세력과의 간접 관계"
+        }
+      ],
+      "sources": [
+        "S_KIMSEONGYU"
+      ],
+      "flags": [
+        "VIP 호칭은 시점·참조 대상 범위를 원작 검수",
+        "혁신당은 기존 17개 Group에 없는 신규 조직 후보; 아직 Group을 만들지 않음"
+      ]
+    }
+  ],
+  "linkedCases": [
+    {
+      "caseId": "decision-draft-lisa-iskra",
+      "title": "이스크라 인력 개편 및 킬러 운용",
+      "subjectPersonIds": [
+        "person-draft-lisa"
+      ],
+      "existingCharacterNames": [
+        "아킬라",
+        "그롤라",
+        "콘",
+        "헤론",
+        "오울"
+      ],
+      "unitOfAnalysis": "one strategic decision with dependent events; do not triple-count casualties as independent decision failures",
+      "status": "hypothesis-not-canon-checked"
+    },
+    {
+      "caseId": "statement-draft-iwashiro-lisa",
+      "title": "이와시로의 리사 판단에 대한 작중 발언",
+      "speakerCandidateId": "person-draft-iwashiro",
+      "targetCandidateId": "person-draft-lisa",
+      "factOfUtteranceVerified": false,
+      "claimTruthVerified": false,
+      "use": "qualitative trust-review only; no combat score adjustment"
+    }
+  ],
+  "presentationContract": {
+    "profileSummaryMaxSentences": 2,
+    "sections": [
+      "요약",
+      "주요 행적",
+      "특징·성격",
+      "관계",
+      "작중 발언·판단",
+      "전투 분석(있는 경우)",
+      "출처·검증 상태"
+    ],
+    "entryLayers": [
+      "요약 한눈에",
+      "근거 상세",
+      "반대 해석·신뢰성",
+      "평가 연결"
+    ],
+    "factVsInterpretationExplicit": true,
+    "noFakeZeros": true,
+    "unratedPeopleAppearInSearch": true,
+    "onlyLinkQuotesWithSourceAndVerification": true,
+    "copyrightMediaMustHaveRightsCheck": true
+  }
+}

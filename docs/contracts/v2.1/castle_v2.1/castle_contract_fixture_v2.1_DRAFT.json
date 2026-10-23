@@ -1,0 +1,1480 @@
+{
+  "schemaVersion": "2.1-draft",
+  "meta": {
+    "project": "캐슬 전투력 분석",
+    "artifactStatus": "local-design-fixture",
+    "draftOnly": true,
+    "originalCanonScenesVerified": 0,
+    "formalEvaluations": 0,
+    "githubChanged": false,
+    "websiteImplemented": false,
+    "note": "Local contract fixture, not canonical database or original-scene verification."
+  },
+  "rosterReference": {
+    "url": "https://github.com/pchjesus/castle-combat-analysis/blob/main/data/roster.v0.1.json",
+    "schemaVersion": "0.1",
+    "characterCount": 109,
+    "organizationCount": 17,
+    "originalCharacterIds": [
+      "char-001",
+      "char-002",
+      "char-003",
+      "char-004",
+      "char-005",
+      "char-006",
+      "char-007",
+      "char-008",
+      "char-009",
+      "char-010",
+      "char-011",
+      "char-012",
+      "char-013",
+      "char-014",
+      "char-015",
+      "char-016",
+      "char-017",
+      "char-018",
+      "char-019",
+      "char-020",
+      "char-021",
+      "char-022",
+      "char-023",
+      "char-024",
+      "char-025",
+      "char-026",
+      "char-027",
+      "char-028",
+      "char-029",
+      "char-030",
+      "char-031",
+      "char-032",
+      "char-033",
+      "char-034",
+      "char-035",
+      "char-036",
+      "char-037",
+      "char-038",
+      "char-039",
+      "char-040",
+      "char-041",
+      "char-042",
+      "char-043",
+      "char-044",
+      "char-045",
+      "char-046",
+      "char-047",
+      "char-048",
+      "char-049",
+      "char-050",
+      "char-051",
+      "char-052",
+      "char-053",
+      "char-054",
+      "char-055",
+      "char-056",
+      "char-057",
+      "char-058",
+      "char-059",
+      "char-060",
+      "char-061",
+      "char-062",
+      "char-063",
+      "char-064",
+      "char-065",
+      "char-066",
+      "char-067",
+      "char-068",
+      "char-069",
+      "char-070",
+      "char-071",
+      "char-072",
+      "char-073",
+      "char-074",
+      "char-075",
+      "char-076",
+      "char-077",
+      "char-078",
+      "char-079",
+      "char-080",
+      "char-081",
+      "char-082",
+      "char-083",
+      "char-084",
+      "char-085",
+      "char-086",
+      "char-087",
+      "char-088",
+      "char-089",
+      "char-090",
+      "char-091",
+      "char-092",
+      "char-093",
+      "char-094",
+      "char-095",
+      "char-096",
+      "char-097",
+      "char-098",
+      "char-099",
+      "char-100",
+      "char-101",
+      "char-102",
+      "char-103",
+      "char-104",
+      "char-105",
+      "char-106",
+      "char-107",
+      "char-108",
+      "char-109"
+    ],
+    "originalGroupIds": [
+      "baekui",
+      "iskra",
+      "seonjin-trading",
+      "mori-investment-trust",
+      "gold-capital",
+      "castle-holdings",
+      "hotel-castle",
+      "haseong",
+      "ds-security",
+      "hwajin",
+      "yamaguchi-gumi",
+      "dongcheon-bang",
+      "anti-yamaguchi-alliance",
+      "hong-kong-factions",
+      "pacheon",
+      "daeguk",
+      "other"
+    ],
+    "confirmedNameById": {
+      "char-001": "김신",
+      "char-003": "표영",
+      "char-026": "크리사",
+      "char-027": "크로트",
+      "char-028": "라텔",
+      "char-030": "그롤라",
+      "char-033": "아킬라",
+      "char-036": "콘",
+      "char-037": "헤론",
+      "char-038": "오울",
+      "char-042": "구스타프",
+      "char-043": "블랙맘바",
+      "char-055": "최달천",
+      "char-071": "류지학",
+      "char-087": "리천"
+    },
+    "status": "read-only-original-preserved",
+    "completeness": "ID index + group index + selected verified names; not a full roster copy"
+  },
+  "newPersonCandidates": [
+    {
+      "id": "person-draft-lisa",
+      "displayName": "리사",
+      "roles": [
+        "narrative",
+        "statement-speaker",
+        "decision-actor"
+      ],
+      "registrationStatus": "proposed",
+      "evaluationIntent": "not-planned",
+      "profileSummary": "이스크라의 청부 업무와 킬러 조직 운영에 관여한 핵심 인물.",
+      "overviewVerification": "secondary-only",
+      "groupLinks": [
+        {
+          "groupId": "iskra",
+          "label": "이스크라",
+          "status": "unverified"
+        }
+      ],
+      "timeline": [
+        {
+          "periodCandidate": "1부",
+          "summary": "김신·김태훈과의 협력 및 캐슬 내 세력 재편에 관여",
+          "sourceIds": [
+            "people:S_LISA"
+          ],
+          "verification": "secondary-only"
+        },
+        {
+          "periodCandidate": "2부",
+          "summary": "이스크라 개편과 킬러들에 대한 통제·전력 운용 문제가 주요 갈등으로 나타남",
+          "sourceIds": [
+            "people:S_LISA"
+          ],
+          "verification": "secondary-only"
+        }
+      ],
+      "sourceIds": [
+        "people:S_LISA"
+      ],
+      "aliasesToVerify": [
+        "여우"
+      ],
+      "reviewFlags": [
+        "직책·코드네임의 시점 및 계승 관계 원작 확인",
+        "판단 실패와 직접 전투력 평가 혼동 금지"
+      ]
+    },
+    {
+      "id": "person-draft-iwashiro",
+      "displayName": "이와시로 신스케",
+      "roles": [
+        "narrative",
+        "statement-speaker",
+        "decision-actor"
+      ],
+      "registrationStatus": "proposed",
+      "evaluationIntent": "not-planned",
+      "profileSummary": "일본 야쿠자 세력의 주요 지도자로서 조직 간 관계와 교섭에 관여한 인물.",
+      "overviewVerification": "secondary-only",
+      "groupLinks": [
+        {
+          "groupId": "yamaguchi-gumi",
+          "label": "야마구치구미",
+          "status": "unverified"
+        }
+      ],
+      "timeline": [
+        {
+          "periodCandidate": "1부",
+          "summary": "일본 야쿠자 세력 회의를 주재하며 내부 문제에 대응",
+          "sourceIds": [
+            "people:S_IWASHIRO"
+          ],
+          "verification": "secondary-only"
+        },
+        {
+          "periodCandidate": "2부",
+          "summary": "다른 주요 세력과의 교섭 및 전략적 대화에 등장",
+          "sourceIds": [
+            "people:S_IWASHIRO"
+          ],
+          "verification": "secondary-only"
+        }
+      ],
+      "sourceIds": [
+        "people:S_IWASHIRO"
+      ],
+      "aliasesToVerify": [
+        "이와시로"
+      ],
+      "reviewFlags": [
+        "이와시로/이와시로 신스케 동일 인물 확인 후 alias 확정",
+        "리사에 대한 정확한 평가 발언 원작 검수"
+      ]
+    },
+    {
+      "id": "person-draft-kimhwang",
+      "displayName": "김황",
+      "roles": [
+        "narrative",
+        "decision-actor"
+      ],
+      "registrationStatus": "proposed",
+      "evaluationIntent": "not-planned",
+      "profileSummary": "골드캐피탈 회장으로, 자금력과 금융업 기반의 영향력을 행사하던 구 캐슬의 기둥.",
+      "overviewVerification": "secondary-only",
+      "groupLinks": [
+        {
+          "groupId": "gold-capital",
+          "label": "골드캐피탈",
+          "status": "unverified"
+        }
+      ],
+      "timeline": [
+        {
+          "periodCandidate": "1부",
+          "summary": "임무열과 최민욱을 견제하는 계획에 가담",
+          "sourceIds": [
+            "people:S_KIMHWANG"
+          ],
+          "verification": "secondary-only"
+        },
+        {
+          "periodCandidate": "1부",
+          "summary": "계획이 실패하자 임무열을 배신하려다가 살해된 것으로 정리됨",
+          "sourceIds": [
+            "people:S_KIMHWANG"
+          ],
+          "verification": "secondary-only"
+        }
+      ],
+      "sourceIds": [
+        "people:S_KIMHWANG"
+      ],
+      "aliasesToVerify": [],
+      "reviewFlags": [
+        "시점별 소속·사망 장면 원작 검수"
+      ]
+    },
+    {
+      "id": "person-draft-kimtaehoon",
+      "displayName": "김태훈",
+      "roles": [
+        "narrative",
+        "decision-actor",
+        "statement-speaker"
+      ],
+      "registrationStatus": "proposed",
+      "evaluationIntent": "not-planned",
+      "profileSummary": "하성의 경영과 권력 투쟁에 관여하며, 이해관계와 신뢰의 문제를 겪으며 변화하는 인물.",
+      "overviewVerification": "secondary-only",
+      "groupLinks": [
+        {
+          "groupId": "haseong",
+          "label": "하성",
+          "status": "unverified"
+        }
+      ],
+      "timeline": [
+        {
+          "periodCandidate": "1부",
+          "summary": "김신·리사와의 접촉을 통해 캐슬 내부 세력 관계에 개입",
+          "sourceIds": [
+            "people:S_KIMTAEHOON"
+          ],
+          "verification": "secondary-only"
+        },
+        {
+          "periodCandidate": "1부",
+          "summary": "류지학과의 갈등 뒤 자신의 태도를 돌아보고 관계를 재정립하는 장면이 정리됨",
+          "sourceIds": [
+            "people:S_KIMTAEHOON"
+          ],
+          "verification": "secondary-only"
+        },
+        {
+          "periodCandidate": "2부",
+          "summary": "하성의 권력 다툼과 최민욱에 대한 대응에서 주요 결정을 내림",
+          "sourceIds": [
+            "people:S_KIMTAEHOON"
+          ],
+          "verification": "secondary-only"
+        }
+      ],
+      "sourceIds": [
+        "people:S_KIMTAEHOON"
+      ],
+      "aliasesToVerify": [],
+      "reviewFlags": [
+        "태도 변화의 전후 시점 및 직접 대사 확인",
+        "경영 능력과 전투 능력을 동일한 척도로 평가하지 않음"
+      ]
+    },
+    {
+      "id": "person-draft-kimseongyu",
+      "displayName": "김선규",
+      "roles": [
+        "narrative",
+        "decision-actor",
+        "statement-speaker"
+      ],
+      "registrationStatus": "proposed",
+      "evaluationIntent": "not-planned",
+      "profileSummary": "캐슬의 정치적 후원을 받는 대선 후보로서, 권력과 범죄조직의 관계를 보여주는 인물.",
+      "overviewVerification": "secondary-only",
+      "groupLinks": [
+        {
+          "groupId": null,
+          "label": "혁신당",
+          "status": "unverified"
+        }
+      ],
+      "timeline": [
+        {
+          "periodCandidate": "1부",
+          "summary": "대선 후보이자 캐슬의 정치적 연결고리로 언급됨",
+          "sourceIds": [
+            "people:S_KIMSEONGYU"
+          ],
+          "verification": "secondary-only"
+        },
+        {
+          "periodCandidate": "2부",
+          "summary": "최민욱과의 갈등 및 김태훈의 폭로로 정치적 위기를 겪음",
+          "sourceIds": [
+            "people:S_KIMSEONGYU"
+          ],
+          "verification": "secondary-only"
+        }
+      ],
+      "sourceIds": [
+        "people:S_KIMSEONGYU"
+      ],
+      "aliasesToVerify": [
+        "VIP"
+      ],
+      "reviewFlags": [
+        "VIP 호칭은 시점·참조 대상 범위를 원작 검수",
+        "혁신당은 기존 17개 Group에 없는 신규 조직 후보; 아직 Group을 만들지 않음"
+      ]
+    }
+  ],
+  "sourceCatalog": [
+    {
+      "id": "pilot:NW1",
+      "title": "캐슬 (1부) — 네이버웹툰 작품 목록",
+      "kind": "official-series-index",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=736744",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "작품 및 회차 목록 확인; 컷 내용 미확인"
+    },
+    {
+      "id": "pilot:NW2",
+      "title": "캐슬2:만인지상 — 네이버웹툰 작품 목록",
+      "kind": "official-series-index",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=807178",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "작품 및 28·29화 목록 확인; 컷 내용 미확인"
+    },
+    {
+      "id": "pilot:SA",
+      "title": "아킬라(캐슬)/전투력",
+      "kind": "secondary-community-edited",
+      "url": "https://d.namu.moe/w/%EC%95%84%ED%82%AC%EB%9D%BC%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "해당 페이지 텍스트만 확인"
+    },
+    {
+      "id": "pilot:SL",
+      "title": "리천(캐슬)/전투력",
+      "kind": "secondary-community-edited",
+      "url": "https://d.namu.moe/w/%EB%A6%AC%EC%B2%9C%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "해당 페이지 텍스트만 확인"
+    },
+    {
+      "id": "pilot:SR",
+      "title": "라텔(캐슬)",
+      "kind": "secondary-community-edited",
+      "url": "https://namu.moe/w/%EB%9D%BC%ED%85%94%28%EC%BA%90%EC%8A%AC%29",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "해당 페이지 텍스트만 확인"
+    },
+    {
+      "id": "pilot:SJ",
+      "title": "류지학/전투력",
+      "kind": "secondary-community-edited",
+      "url": "https://namu.moe/w/%EB%A5%98%EC%A7%80%ED%95%99/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "해당 페이지 텍스트만 확인"
+    },
+    {
+      "id": "pilot:SM",
+      "title": "조명식(캐슬)",
+      "kind": "secondary-community-edited",
+      "url": "https://www.namu.moe/w/%EC%A1%B0%EB%AA%85%EC%8B%9D%28%EC%BA%90%EC%8A%AC%29",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "해당 페이지 텍스트만 확인"
+    },
+    {
+      "id": "pilot:SC",
+      "title": "최달천",
+      "kind": "secondary-community-edited",
+      "url": "https://m.namu.moe/w/%EC%B5%9C%EB%8B%AC%EC%B2%9C",
+      "provenance": "prior-draft-pilot",
+      "sceneCanonVerified": false,
+      "accessNote": "해당 페이지 텍스트만 확인"
+    },
+    {
+      "id": "testimony:SRC01",
+      "title": "리사(캐슬)",
+      "kind": "community-secondary",
+      "url": "https://d.namu.moe/w/%EB%A6%AC%EC%82%AC%28%EC%BA%90%EC%8A%AC%29",
+      "provenance": "prior-draft-testimony",
+      "sceneCanonVerified": false,
+      "accessNote": "secondary-text-seen"
+    },
+    {
+      "id": "testimony:SRC02",
+      "title": "블랙맘바(캐슬)/전투력",
+      "kind": "community-secondary",
+      "url": "https://www.namu.moe/w/%EB%B8%94%EB%9E%99%EB%A7%98%EB%B0%94%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "provenance": "prior-draft-testimony",
+      "sceneCanonVerified": false,
+      "accessNote": "secondary-text-seen"
+    },
+    {
+      "id": "testimony:SRC03",
+      "title": "아킬라(캐슬)/전투력",
+      "kind": "community-secondary",
+      "url": "https://www.namu.moe/w/%EC%95%84%ED%82%AC%EB%9D%BC%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "provenance": "prior-draft-testimony",
+      "sceneCanonVerified": false,
+      "accessNote": "secondary-text-seen"
+    },
+    {
+      "id": "testimony:SRC04",
+      "title": "헤론(캐슬)",
+      "kind": "community-secondary",
+      "url": "https://www.namu.moe/w/%ED%97%A4%EB%A1%A0%28%EC%BA%90%EC%8A%AC%29",
+      "provenance": "prior-draft-testimony",
+      "sceneCanonVerified": false,
+      "accessNote": "secondary-text-seen"
+    },
+    {
+      "id": "testimony:SRC05",
+      "title": "그롤라/전투력",
+      "kind": "community-secondary",
+      "url": "https://www.namu.moe/w/%EA%B7%B8%EB%A1%A4%EB%9D%BC/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "provenance": "prior-draft-testimony",
+      "sceneCanonVerified": false,
+      "accessNote": "secondary-text-seen"
+    },
+    {
+      "id": "testimony:SRC06",
+      "title": "사용자 제공 원작 대사 기억",
+      "kind": "user-recollection",
+      "url": null,
+      "provenance": "prior-draft-testimony",
+      "sceneCanonVerified": false,
+      "accessNote": "user-statement"
+    },
+    {
+      "id": "people:S_LISA",
+      "title": "리사(캐슬)",
+      "kind": "community-secondary",
+      "url": "https://d.namu.moe/w/%EB%A6%AC%EC%82%AC(%EC%BA%90%EC%8A%AC)",
+      "provenance": "prior-draft-people",
+      "sceneCanonVerified": false,
+      "accessNote": "indirect"
+    },
+    {
+      "id": "people:S_IWASHIRO",
+      "title": "이와시로 신스케",
+      "kind": "community-secondary",
+      "url": "https://d.namu.moe/w/%EC%9D%B4%EC%99%80%EC%8B%9C%EB%A1%9C%20%EC%8B%A0%EC%8A%A4%EC%BC%80",
+      "provenance": "prior-draft-people",
+      "sceneCanonVerified": false,
+      "accessNote": "indirect"
+    },
+    {
+      "id": "people:S_KIMHWANG",
+      "title": "김황",
+      "kind": "community-secondary",
+      "url": "https://www.namu.moe/w/%EA%B9%80%ED%99%A9",
+      "provenance": "prior-draft-people",
+      "sceneCanonVerified": false,
+      "accessNote": "indirect"
+    },
+    {
+      "id": "people:S_KIMTAEHOON",
+      "title": "김태훈(캐슬)/작중 행적",
+      "kind": "community-secondary",
+      "url": "https://namu.moe/w/%EA%B9%80%ED%83%9C%ED%9B%88(%EC%BA%90%EC%8A%AC)/%EC%9E%91%EC%A4%91%20%ED%96%89%EC%A0%81",
+      "provenance": "prior-draft-people",
+      "sceneCanonVerified": false,
+      "accessNote": "indirect"
+    },
+    {
+      "id": "people:S_KIMSEONGYU",
+      "title": "김선규(캐슬)",
+      "kind": "community-secondary",
+      "url": "https://www.namu.moe/w/%EA%B9%80%EC%84%A0%EA%B7%9C(%EC%BA%90%EC%8A%AC)",
+      "provenance": "prior-draft-people",
+      "sceneCanonVerified": false,
+      "accessNote": "indirect"
+    }
+  ],
+  "pilot": {
+    "characterIds": [
+      "char-033",
+      "char-087",
+      "char-071"
+    ],
+    "battles": [
+      {
+        "id": "pilot-A",
+        "title": "아킬라 vs 구스타프 및 인접 전투",
+        "subjectCharacterId": "char-033",
+        "participantCandidateCharacterIds": [
+          "char-033",
+          "char-042"
+        ],
+        "unresolvedActorLabels": [
+          "블루 경호원"
+        ],
+        "episodeCandidate": null,
+        "episodeVerification": "candidate-only",
+        "phaseRecords": [],
+        "phaseStatus": "awaiting-original-scene-review",
+        "warning": "블루 경호원 등 제3자 행동을 구스타프와의 순수 1:1 성과로 환원하지 말 것",
+        "sourceDraft": "v1.1"
+      },
+      {
+        "id": "pilot-L",
+        "title": "리천 vs 라텔·표영",
+        "subjectCharacterId": "char-087",
+        "participantCandidateCharacterIds": [
+          "char-087",
+          "char-028",
+          "char-003",
+          "char-026"
+        ],
+        "unresolvedActorLabels": [],
+        "episodeCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+        "episodeVerification": "candidate-only",
+        "phaseRecords": [],
+        "phaseStatus": "awaiting-original-scene-review",
+        "warning": "표영 제압과 라텔 개입·재교전을 동시 1:2로 뭉뚱그리지 말 것",
+        "sourceDraft": "v1.1"
+      },
+      {
+        "id": "pilot-R",
+        "title": "류지학 vs 최달천",
+        "subjectCharacterId": "char-071",
+        "participantCandidateCharacterIds": [
+          "char-071",
+          "char-055"
+        ],
+        "unresolvedActorLabels": [
+          "TF팀"
+        ],
+        "episodeCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+        "episodeVerification": "candidate-only",
+        "phaseRecords": [],
+        "phaseStatus": "awaiting-original-scene-review",
+        "warning": "상대 호흡 악화 ≠ 류지학 자신의 지속전; 시간 압박·왼팔 부상 별도 기록",
+        "sourceDraft": "v1.1"
+      }
+    ],
+    "battleEvidenceCandidates": [
+      {
+        "id": "A01",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-A",
+        "summary": "차문 부근 견제사격으로 상대의 대응을 제한했다는 서술",
+        "sourceIds": [
+          "pilot:SA"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "사격 전문기술",
+          "secondaryReview": "전술·판단"
+        },
+        "doubleCountRisk": "구스타프의 방패·엄폐가 효과에 미친 영향",
+        "reviewQuestion": "견제 범위와 실제 위치·시간·탄 소모 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "A02",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-A",
+        "summary": "측면에서 사격을 시도한 경호원을 사격했다는 서술",
+        "sourceIds": [
+          "pilot:SA"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "사격 전문기술",
+          "secondaryReview": "반응속도"
+        },
+        "doubleCountRisk": "제3자에 대한 사격 성과를 구스타프에 대한 공격 실효성으로 오인할 위험",
+        "reviewQuestion": "표적 인지와 명중의 시계열 및 참가자 ID 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "A03",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-A",
+        "summary": "재장전, 이동 및 복수 총기 운용을 결합했다는 서술",
+        "sourceIds": [
+          "pilot:SA"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "사격 전문기술",
+          "secondaryReview": "상황대응력"
+        },
+        "doubleCountRisk": "계획된 무장 운용을 예상 밖 변수에 대한 적응으로 오인할 위험",
+        "reviewQuestion": "재장전 중 대응 사격·접근의 실제 선후관계 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "A04",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-A",
+        "summary": "근접 공방에서 구스타프의 무장·공격을 견제했다는 서술",
+        "sourceIds": [
+          "pilot:SA"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "근접 전문기술",
+          "secondaryReview": "방어·생존력"
+        },
+        "doubleCountRisk": "무장 활용과 맨손 신체능력을 혼합 평가할 위험",
+        "reviewQuestion": "무기와 주먹 동작의 연쇄 및 실제 유효타 결과 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "L01",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-L",
+        "summary": "표영의 급소를 연속 타격해 제압했다는 서술",
+        "sourceIds": [
+          "pilot:SL"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "맨손 전문기술",
+          "secondaryReview": "공격 실효성"
+        },
+        "doubleCountRisk": "기술·속도·공격 실효성에 동일 연속타를 중복 가산할 위험",
+        "reviewQuestion": "타격 수·제압 시점·표영의 당시 상태 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "L02",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-L",
+        "summary": "라텔의 흉부에 사격을 명중시켰다는 서술",
+        "sourceIds": [
+          "pilot:SL"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "사격 전문기술",
+          "secondaryReview": "반응속도"
+        },
+        "doubleCountRisk": "명중과 실질 무력화 효과는 별개; 0.5초 숫자 2차자료에만 존재",
+        "reviewQuestion": "시간 표현의 원작 근거와 방호·피해 상태 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "L03",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-L",
+        "summary": "탄창 없는 총기를 이용한 기만 후 관절 공격을 했다는 서술",
+        "sourceIds": [
+          "pilot:SL"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "전술·판단",
+          "secondaryReview": "맨손 전문기술"
+        },
+        "doubleCountRisk": "계획적 기만과 돌발 대응 구분 및 동일 기만의 중복 가산 필요",
+        "reviewQuestion": "실제 총기 상태·유도 여부·연속 동작 검수",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "L04",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-L",
+        "summary": "라텔 재교전에서 무장 시도를 읽고 대응했다는 서술",
+        "sourceIds": [
+          "pilot:SR"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "전술·판단",
+          "secondaryReview": "상황대응력"
+        },
+        "doubleCountRisk": "29화 후속 교전을 L03과 한 사건으로 중복 계산할 위험",
+        "reviewQuestion": "표영의 시간 벌기·라텔의 부상·크리사 개입 등 단계 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "R01",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-R",
+        "summary": "빠른 연속 공방으로 최달천의 템포와 호흡을 흔들었다는 서술",
+        "sourceIds": [
+          "pilot:SJ"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "속도·기동력",
+          "secondaryReview": "도검 전문기술"
+        },
+        "doubleCountRisk": "상대 피로 유발을 류지학의 지속전으로 직접 환산할 수 없음",
+        "reviewQuestion": "움직임·공격 속도와 상대 호흡 변화의 인과 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "R02",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-R",
+        "summary": "최달천이 무리한 공격을 시도한 틈을 포착했다는 서술",
+        "sourceIds": [
+          "pilot:SJ"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "전술·판단",
+          "secondaryReview": "반응속도"
+        },
+        "doubleCountRisk": "사전 유도인지 순간 포착인지 확정할 수 없음",
+        "reviewQuestion": "상대 공격의 원인·회피 동작·판단 시점 확인",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "R03",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-R",
+        "summary": "틈을 이용한 절단 기술로 승부를 결정했다는 서술",
+        "sourceIds": [
+          "pilot:SJ"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "도검 전문기술",
+          "secondaryReview": "공격 실효성"
+        },
+        "doubleCountRisk": "기술 정확도와 결정적 성과를 동일한 기여로 중복 가산할 위험",
+        "reviewQuestion": "실제 공격 부위·연속성·결과 원작 대조",
+        "scoreImpact": "none"
+      },
+      {
+        "id": "R04",
+        "kind": "battle-observation-candidate",
+        "battleId": "pilot-R",
+        "summary": "교전 후 왼팔/왼쪽 상지 기능 제약이 언급된다는 서술",
+        "sourceIds": [
+          "pilot:SM",
+          "pilot:SC"
+        ],
+        "sourceVerification": "secondary-only",
+        "sceneCanonVerified": false,
+        "sourceTextForm": "secondary-paraphrase",
+        "phaseId": null,
+        "linkedEvaluationItemIds": [],
+        "status": "candidate",
+        "primaryRoleCandidate": {
+          "primary": "방어·생존력",
+          "secondaryReview": "지속전"
+        },
+        "doubleCountRisk": "부상의 발생 방식과 피로 누적은 구별해야 함",
+        "reviewQuestion": "99~100화 부상 발생·직후 수행능력 및 조건 확인",
+        "scoreImpact": "none"
+      }
+    ],
+    "evaluationStates": [],
+    "combatProfiles": [],
+    "evaluations": [],
+    "calculationResults": [],
+    "rankings": [],
+    "trialAnchors": [
+      {
+        "characterId": "char-033",
+        "axis": "사격 전문기술",
+        "trialValue": 100,
+        "rangeHypothesis": [
+          95,
+          100
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_unverified",
+        "evidenceCandidateIds": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-033",
+        "axis": "전술·판단",
+        "trialValue": 90,
+        "rangeHypothesis": [
+          85,
+          95
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_overlap_review",
+        "evidenceCandidateIds": [
+          "A01",
+          "A03"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-033",
+        "axis": "부동심",
+        "trialValue": 100,
+        "rangeHypothesis": [
+          95,
+          100
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "suspend_numeric",
+        "evidenceCandidateIds": [],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-087",
+        "axis": "맨손격투 전문기술",
+        "trialValue": 95,
+        "rangeHypothesis": [
+          90,
+          100
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_peer_needed",
+        "evidenceCandidateIds": [
+          "L01",
+          "L03"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-087",
+        "axis": "사격 전문기술",
+        "trialValue": 90,
+        "rangeHypothesis": [
+          85,
+          95
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_unverified",
+        "evidenceCandidateIds": [
+          "L02"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-087",
+        "axis": "전술·판단",
+        "trialValue": 90,
+        "rangeHypothesis": [
+          85,
+          95
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_overlap_review",
+        "evidenceCandidateIds": [
+          "L03",
+          "L04"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-071",
+        "axis": "속도·기동력",
+        "trialValue": 95,
+        "rangeHypothesis": [
+          90,
+          100
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "suspend_numeric",
+        "evidenceCandidateIds": [
+          "R01"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-071",
+        "axis": "도검 전문기술",
+        "trialValue": 95,
+        "rangeHypothesis": [
+          90,
+          100
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_overlap_review",
+        "evidenceCandidateIds": [
+          "R01",
+          "R03"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      },
+      {
+        "characterId": "char-071",
+        "axis": "전술·판단",
+        "trialValue": 85,
+        "rangeHypothesis": [
+          80,
+          90
+        ],
+        "origin": "v1.2-v1.3-provisional-hypothesis",
+        "v13Status": "retain_overlap_review",
+        "evidenceCandidateIds": [
+          "R02"
+        ],
+        "evaluationScore": null,
+        "approved": false
+      }
+    ]
+  },
+  "testimonies": {
+    "statements": [
+      {
+        "id": "ST01",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "person-draft-lisa",
+        "speakerName": "리사",
+        "speakerRefResolution": "exact-name",
+        "targetCharacterIds": [
+          "char-001",
+          "char-030"
+        ],
+        "subjectNamesForReview": [
+          "티그로/김신",
+          "그롤라",
+          "신·구 뜨거운 피"
+        ],
+        "claimDomain": "group-combat-strength",
+        "claimKind": "comparative",
+        "summary": "새 뜨거운 피가 기존 티그로/김신 중심 팀보다 더 강한 창이라는 취지의 평가",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC01",
+          "testimony:SRC05",
+          "testimony:SRC06"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "집단 전력과 명령 이행력 중 무엇을 비교했는지 미확정",
+        "speakerPerspective": "이스크라를 재편하는 의사결정자; 전력 운용과 통제 가능성에 이해관계",
+        "decisionCaseId": "DC01",
+        "linkedOutcomeIds": [
+          "O01"
+        ],
+        "assessment": "materially-challenged",
+        "limitations": "커뮤니티 자료가 새 팀의 후속 전력 성과 부족을 비판함. 그롤라 개인의 실력까지 자동으로 낮추지 않음",
+        "pendingReview": [
+          "원작 대사와 회차",
+          "티그로/김신 호칭과 비교 집단 범위",
+          "비교 기준: 순수 전력 vs 운영 편의",
+          "양 팀의 대등한 조건 비교"
+        ],
+        "scoreImpact": "none"
+      },
+      {
+        "id": "ST02",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "person-draft-lisa",
+        "speakerName": "리사",
+        "speakerRefResolution": "exact-name",
+        "targetCharacterIds": [
+          "char-043"
+        ],
+        "subjectNamesForReview": [
+          "블랙맘바"
+        ],
+        "claimDomain": "unrestricted-combat-threat",
+        "claimKind": "conditional-appraisal",
+        "summary": "수단을 제한하지 않는 조건에서 블랙맘바의 상대가 드물다는 취지",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC02"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "무제한 수단을 동원하는 전투. 순수 총격전·종합 점수 등으로 무단 일반화 금지",
+        "speakerPerspective": "킬러 임무 정보 접근 가능하나 현장 경험과 예측 정확도 검토 필요",
+        "decisionCaseId": "DC03",
+        "linkedOutcomeIds": [
+          "O03"
+        ],
+        "assessment": "unresolved",
+        "limitations": "발언 자체의 해당 조건하 참·거짓을 확인하는 독립 시험이 없음. 리사의 다른 오판을 곧바로 이 발언의 반증으로 쓰지 않음",
+        "pendingReview": [
+          "원작 직접 대조",
+          "발언 시점과 목적",
+          "리사에게 제공된 블랙맘바 임무 정보",
+          "비슷한 조건에서의 후속 교전"
+        ],
+        "scoreImpact": "none"
+      },
+      {
+        "id": "ST03",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "char-027",
+        "speakerName": "크로트",
+        "speakerRefResolution": "exact-name",
+        "targetCharacterIds": [
+          "char-033",
+          "char-043"
+        ],
+        "subjectNamesForReview": [
+          "아킬라",
+          "블랙맘바"
+        ],
+        "claimDomain": "face-to-face-firearms",
+        "claimKind": "comparative",
+        "summary": "아킬라와 블랙맘바가 정면으로 총격 대치하면 아킬라가 우세하리라는 취지",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC02",
+          "testimony:SRC06"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "정면 총격 대결로 한정",
+        "speakerPerspective": "해당 킬러들을 알고 있는 동료/전 구성원. 직접 관찰의 상세 범위 추가 검증 필요",
+        "decisionCaseId": "DC03",
+        "linkedOutcomeIds": [
+          "O03"
+        ],
+        "assessment": "informative-but-unverified",
+        "limitations": "비교 대상과 조건이 명확해 방향성 증언으로 사용 가능. 실제 해당 조건의 전투 결과는 미검증",
+        "pendingReview": [
+          "발언 부·회차 및 정확한 문구",
+          "직접 관찰·경험 범위",
+          "서로 동일한 총종·거리·장비 조건인지"
+        ],
+        "scoreImpact": "none"
+      },
+      {
+        "id": "ST04",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "char-033",
+        "speakerName": "아킬라",
+        "speakerRefResolution": "exact-name",
+        "targetCharacterIds": [
+          "char-036",
+          "char-037",
+          "char-038"
+        ],
+        "subjectNamesForReview": [
+          "리사의 제거 작전",
+          "신 자유로운 영혼"
+        ],
+        "claimDomain": "operation-risk-forecast",
+        "claimKind": "warning-or-forecast",
+        "summary": "확실한 수가 아니라면 아킬라 제거 시도는 투입된 부하의 피해만 초래하리라는 취지",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC06",
+          "testimony:SRC03",
+          "testimony:SRC04"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "아킬라를 노리는 해당 작전 상황",
+        "speakerPerspective": "본인 전투 능력과 위험을 직접 인지하나 위협·심리전의 의도도 있을 수 있음",
+        "decisionCaseId": "DC02",
+        "linkedOutcomeIds": [
+          "O02"
+        ],
+        "assessment": "outcome-aligned",
+        "limitations": "후속 작전 결과와 방향성이 부합. 특정 작전 성공/실패 판단이며 모든 전투 예측의 정확성을 입증하지 않음",
+        "pendingReview": [
+          "발언 원문·시점·상대가 들었는지 여부",
+          "작전 실제 참가자와 전투 선후",
+          "아킬라가 사건 이전에 알았던 정보"
+        ],
+        "scoreImpact": "none"
+      },
+      {
+        "id": "ST05",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "person-draft-iwashiro",
+        "speakerName": "이와시로",
+        "speakerRefResolution": "draft-alias",
+        "targetCharacterIds": [],
+        "subjectNamesForReview": [
+          "리사",
+          "이스크라 킬러들"
+        ],
+        "claimDomain": "organizational-control",
+        "claimKind": "criticism",
+        "summary": "리사가 킬러 개개인을 모두 통제할 수 있다는 기대를 비판하는 취지",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC06",
+          "testimony:SRC01"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "조직 통제력 평가이며 전투 전문기술 판정과 직접 동치가 아님",
+        "speakerPerspective": "독립적인 외부 이해관계자일 수 있어 발언 의도와 관련 정보 수준 검수 필요",
+        "decisionCaseId": "DC01",
+        "linkedOutcomeIds": [
+          "O01",
+          "O02"
+        ],
+        "assessment": "partly-consistent-with-outcomes",
+        "limitations": "조직 개편의 역효과 및 제거 작전 실패와 정합적인 부분이 있으나 인과관계를 분리해야 함",
+        "pendingReview": [
+          "발언 원문·회차",
+          "발언 당시 이와시로의 정보",
+          "기존 킬러의 실제 이탈·독단 사례"
+        ],
+        "scoreImpact": "none"
+      },
+      {
+        "id": "ST06",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "char-001",
+        "speakerName": "김신",
+        "speakerRefResolution": "exact-name",
+        "targetCharacterIds": [],
+        "subjectNamesForReview": [
+          "리사"
+        ],
+        "claimDomain": "historical-strategic-threat",
+        "claimKind": "reputation",
+        "summary": "과거 시점 리사의 위험성과 지략을 높게 평가한 취지",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC01",
+          "testimony:SRC06"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "초기 시점의 정치적·전략적 위험성, 후반 킬러 전력 판별과 다른 영역",
+        "speakerPerspective": "리사와 직접 상호작용한 인물이라는 2차 서술이나 발언 맥락 별도 검증 필요",
+        "decisionCaseId": "DC04",
+        "linkedOutcomeIds": [
+          "O04"
+        ],
+        "assessment": "historically-plausible-but-unverified",
+        "limitations": "초기 작전·협상 성과와 양립 가능. 후반 판단 실패가 이 판단을 일괄 취소하지 않음",
+        "pendingReview": [
+          "원작 대사 확인",
+          "정확한 시점과 인용 대상"
+        ],
+        "scoreImpact": "none"
+      },
+      {
+        "id": "ST07",
+        "kind": "in-universe-judgment-candidate",
+        "speakerRef": "char-042",
+        "speakerName": "구스타프",
+        "speakerRefResolution": "exact-name",
+        "targetCharacterIds": [],
+        "subjectNamesForReview": [
+          "리사"
+        ],
+        "claimDomain": "historical-strategic-threat",
+        "claimKind": "reputation",
+        "summary": "과거 리사를 위험한 여우로 평가한 취지",
+        "isExactQuote": false,
+        "sourceIds": [
+          "testimony:SRC01",
+          "testimony:SRC06"
+        ],
+        "sourceVerification": "secondary-or-recollection-only",
+        "sceneCanonVerified": false,
+        "contextBoundary": "과거 리사의 영향력에 대한 평가, 개별 킬러의 정확한 실력 감정과는 별개",
+        "speakerPerspective": "리사와 교섭한 경험이 있는 인물로 서술되지만 발언 맥락 및 독립성 확인 필요",
+        "decisionCaseId": "DC04",
+        "linkedOutcomeIds": [
+          "O04"
+        ],
+        "assessment": "historically-plausible-but-unverified",
+        "limitations": "당시 영향력에 대한 평가로 해석 가능. 김신 발언과 동일한 평판에서 비롯된 것인지 불명확",
+        "pendingReview": [
+          "원문·회차",
+          "김신 평가와 정보의 독립성"
+        ],
+        "scoreImpact": "none"
+      }
+    ],
+    "decisionCases": [
+      {
+        "id": "DC01",
+        "title": "이스크라 조직 개편과 신 뜨거운 피 전력 평가",
+        "parentCaseId": null,
+        "linkedOutcomeIds": [
+          "O01"
+        ],
+        "sharedCausalityNote": "하나의 조직 개편 판단에서 파생된 집단·개인 성과를 각각 독립적인 오판 건수로 합산 금지",
+        "status": "draft"
+      },
+      {
+        "id": "DC02",
+        "title": "신 자유로운 영혼을 통한 아킬라 제거 시도",
+        "parentCaseId": "DC01",
+        "linkedOutcomeIds": [
+          "O02"
+        ],
+        "sharedCausalityNote": "콘·헤론·오울 각각의 사망을 동일 작전 실패의 독립 표본 세 건으로 취급 금지",
+        "status": "draft"
+      },
+      {
+        "id": "DC03",
+        "title": "블랙맘바 전투 위협 평가",
+        "parentCaseId": null,
+        "linkedOutcomeIds": [
+          "O03"
+        ],
+        "sharedCausalityNote": "리사·크로트 발언을 서로 반증으로 즉시 처리하지 않음: 가정이 다름",
+        "status": "draft"
+      },
+      {
+        "id": "DC04",
+        "title": "리사에 대한 과거 전략적 평가",
+        "parentCaseId": null,
+        "linkedOutcomeIds": [
+          "O04"
+        ],
+        "sharedCausalityNote": "김신·구스타프가 같은 평판을 공유해 말한 경우 독립 관찰 2건으로 간주하지 않음",
+        "status": "draft"
+      }
+    ],
+    "outcomes": [
+      {
+        "id": "O01",
+        "decisionCaseId": "DC01",
+        "summary": "2차 자료는 새 뜨거운 피의 실전 성과가 리사의 비교 발언을 충분히 지지하지 못했다고 평가",
+        "sourceIds": [
+          "testimony:SRC01",
+          "testimony:SRC05"
+        ],
+        "status": "secondary-interpretation",
+        "sceneCanonVerified": false,
+        "causalLimit": "집단의 총합 전투력 우열 자체는 동일 조건 반복 교전으로 검증된 것은 아님"
+      },
+      {
+        "id": "O02",
+        "decisionCaseId": "DC02",
+        "summary": "2차 자료에 따르면 아킬라 제거 작전의 콘·헤론·오울이 아킬라에게 살해됨",
+        "sourceIds": [
+          "testimony:SRC03",
+          "testimony:SRC04"
+        ],
+        "status": "secondary-reported-battle-result",
+        "sceneCanonVerified": false,
+        "causalLimit": "하나의 작전 성패이지 리사의 모든 전투 예측이 틀렸음을 뜻하지 않음"
+      },
+      {
+        "id": "O03",
+        "decisionCaseId": "DC03",
+        "summary": "해당 두 발언과 정확히 동일한 사전 조건에서 직접 대결 결과는 검증되지 않음",
+        "sourceIds": [
+          "testimony:SRC02"
+        ],
+        "status": "unresolved",
+        "sceneCanonVerified": false,
+        "causalLimit": "정면 총격 대결과 무제한 전투의 가정이 다름"
+      },
+      {
+        "id": "O04",
+        "decisionCaseId": "DC04",
+        "summary": "2차 자료는 리사의 초기 정치·거래·조직 운용 성과를 서술하나 후반 전력 관리에는 반례를 서술",
+        "sourceIds": [
+          "testimony:SRC01"
+        ],
+        "status": "mixed-and-temporal",
+        "sceneCanonVerified": false,
+        "causalLimit": "초기 명성과 후반 판단 실패는 시점·영역이 달라 양립할 수 있음"
+      }
+    ]
+  },
+  "uiContract": {
+    "tabs": [
+      "overview",
+      "combat",
+      "evidence",
+      "review"
+    ],
+    "emptyEvaluation": "평가 자료 없음 — 0점 아님",
+    "evidenceOrder": [
+      "one-line-summary",
+      "source-and-context",
+      "support-and-rebuttal",
+      "evaluation-trace"
+    ],
+    "defaultStatePolicy": "no-fabricated-default",
+    "spoilerPolicy": "not-finalized",
+    "allQuotesUnverified": true,
+    "noProvisionalAutomaticRanking": true,
+    "reviewApprovalExplicit": true
+  },
+  "openIssues": [
+    {
+      "code": "ID_ALIAS_KIMSEONGYU",
+      "severity": "review",
+      "note": "김선규 candidateId person-draft-kimseongyu의 로마자 표기 불일치 가능성; 신규 공식 ID 확정 전 검수"
+    },
+    {
+      "code": "LISA_KRISA_SUBSTRING",
+      "severity": "validation",
+      "note": "리사는 크리사의 부분문자열; exact name+alias matching, not substring matching"
+    },
+    {
+      "code": "BATTLE_PHASE_PENDING",
+      "severity": "blocker",
+      "note": "원작 컷 미대조로 Phase 0건, 참가자별 세부 시점 미확정"
+    },
+    {
+      "code": "SCORING_GATE_PENDING",
+      "severity": "blocker",
+      "note": "M1/M2 수치 산정 및 정규 순위 불가"
+    },
+    {
+      "code": "SPOILER_POLICY_PENDING",
+      "severity": "ux",
+      "note": "1부/2부 스포일러 표시 정책 미승인"
+    },
+    {
+      "code": "REVIEW_PERMISSION_PENDING",
+      "severity": "ux",
+      "note": "검수 기록과 사용자 평가 승인 단계의 권한·저장 정책 미승인"
+    }
+  ]
+}
