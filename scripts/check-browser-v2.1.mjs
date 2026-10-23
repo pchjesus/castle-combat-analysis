@@ -47,7 +47,7 @@ async function inspect(viewport){
   await page.locator('.era-note').waitFor();
   assert.match(await page.locator('.era-note').innerText(),/이원화 결정 보류/);
   await page.locator('#tab-overview').click();
-  assert.match(await page.locator('.quote-note').innerText(),/원문 대조/);
+  assert.equal(await page.locator('.quote-note').count(),0,'pending/unreviewed quotes must remain hidden');
   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
   assert.ok(overflow<=2,'horizontal page overflow at '+viewport.width+'px: '+overflow);
   assert.deepEqual(errors,[],'browser errors');
