@@ -84,7 +84,7 @@ function initial(name){const pure=[...name.replace(/\s+/g,'')];return pure.lengt
 function header(){const c=getCharacter();return `<header class="topbar"><div class="top-left"><button type="button" id="mobile-menu" class="mobile-menu" aria-label="인물 찾기 메뉴 열기" aria-expanded="${state.sidebarOpen}" aria-controls="sidebar">☰</button><div class="breadcrumb">PROJECT / <strong>CASTLE COMBAT</strong> / ${h(VIEWS.find(v=>v.id===state.view).short)}</div></div><div class="top-meta"><span><i class="top-dot"></i>읽기 전용 · 공개 MVP</span><span>기준: ${h(c.id)}</span></div></header>`;}
 function sidebar(){
  const matches=filteredCharacters();
- return `<aside class="sidebar ${state.sidebarOpen?'open':''}" id="sidebar" aria-label="인물 탐색">
+ return `<aside class="sidebar ${state.sidebarOpen?'open':''} ${state.sidebarCollapsed?'collapsed':''}" id="sidebar" aria-label="인물 탐색">
  <div class="brand"><span class="brand-mark" aria-hidden="true">C</span><div class="brand-text"><strong>CASTLE</strong><small>COMBAT ARCHIVE</small></div></div>
  <button type="button" class="desktop-sidebar-toggle" data-sidebar-toggle aria-controls="sidebar-main" aria-expanded="${!state.sidebarCollapsed}" aria-label="${state.sidebarCollapsed?'인물 탐색 사이드바 펼치기':'인물 탐색 사이드바 접기'}" title="${state.sidebarCollapsed?'사이드바 펼치기':'사이드바 접기'}">${state.sidebarCollapsed?'› 펼치기':'‹ 접기'}</button>
  <div class="sidebar-rail" aria-label="접힌 인물 탐색"><span class="rail-caption">인물</span>${PILOTS.map(id=>{const c=rosterById.get(id);return `<button type="button" class="rail-character ${state.selectedId===id?'current':''}" data-character="${id}" aria-label="${h(c.name)} 선택" aria-current="${state.selectedId===id?'true':'false'}" title="${h(c.name)}">${h([...c.name][0])}</button>`}).join('')}
