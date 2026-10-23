@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "0.1-draft",
+  "purpose": "User-nominated candidates for comparing historical/prime and later/current evaluations. Not canonical claims.",
+  "candidates": [
+    {
+      "characterId": "char-052",
+      "name": "오도화",
+      "nominationSource": "user-request-2026-10-23",
+      "verificationStatus": "not-started",
+      "splitDecision": "not-decided",
+      "evaluationStates": [],
+      "reviewQuestions": [
+        "원작 또는 공식 자료에 전성기/노쇠 언급이 실제 있는가?",
+        "과거와 현재 장면의 부·회차와 상대·무장·부상·심리 상태는 무엇인가?",
+        "시점 차이와 일반적인 상성을 분리할 수 있는가?",
+        "동시에 성립할 수 없는 최고 상태가 합성되는 것을 막았는가?"
+      ]
+    },
+    {
+      "characterId": "char-068",
+      "name": "현석",
+      "nominationSource": "user-request-2026-10-23",
+      "verificationStatus": "not-started",
+      "splitDecision": "not-decided",
+      "evaluationStates": [],
+      "reviewQuestions": [
+        "원작 또는 공식 자료에 전성기/노쇠 언급이 실제 있는가?",
+        "과거와 현재 장면의 부·회차와 상대·무장·부상·심리 상태는 무엇인가?",
+        "시점 차이와 일반적인 상성을 분리할 수 있는가?",
+        "동시에 성립할 수 없는 최고 상태가 합성되는 것을 막았는가?"
+      ]
+    },
+    {
+      "characterId": "char-051",
+      "name": "임무열",
+      "nominationSource": "user-request-2026-10-23",
+      "verificationStatus": "not-started",
+      "splitDecision": "not-decided",
+      "evaluationStates": [],
+      "reviewQuestions": [
+        "원작 또는 공식 자료에 전성기/노쇠 언급이 실제 있는가?",
+        "과거와 현재 장면의 부·회차와 상대·무장·부상·심리 상태는 무엇인가?",
+        "시점 차이와 일반적인 상성을 분리할 수 있는가?",
+        "동시에 성립할 수 없는 최고 상태가 합성되는 것을 막았는가?"
+      ]
+    },
+    {
+      "characterId": "char-056",
+      "name": "최민욱",
+      "nominationSource": "user-request-2026-10-23",
+      "verificationStatus": "not-started",
+      "splitDecision": "not-decided",
+      "evaluationStates": [],
+      "reviewQuestions": [
+        "원작 또는 공식 자료에 전성기/노쇠 언급이 실제 있는가?",
+        "과거와 현재 장면의 부·회차와 상대·무장·부상·심리 상태는 무엇인가?",
+        "시점 차이와 일반적인 상성을 분리할 수 있는가?",
+        "동시에 성립할 수 없는 최고 상태가 합성되는 것을 막았는가?"
+      ]
+    },
+    {
+      "characterId": "char-099",
+      "name": "강민성",
+      "nominationSource": "user-request-2026-10-23",
+      "verificationStatus": "not-started",
+      "splitDecision": "not-decided",
+      "evaluationStates": [],
+      "reviewQuestions": [
+        "원작 또는 공식 자료에 전성기/노쇠 언급이 실제 있는가?",
+        "과거와 현재 장면의 부·회차와 상대·무장·부상·심리 상태는 무엇인가?",
+        "시점 차이와 일반적인 상성을 분리할 수 있는가?",
+        "동시에 성립할 수 없는 최고 상태가 합성되는 것을 막았는가?"
+      ]
+    }
+  ]
+}
