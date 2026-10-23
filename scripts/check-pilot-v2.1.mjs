@@ -15,6 +15,25 @@ for(const key of ['statements','decisionCases','outcomes'])assert.deepEqual(raw[
 
 const temporal=get('data/temporal-evaluation-candidates.v0.1.json');
 const quotes=get('data/quotation-review.v0.1.json');
+const reviewQueue=get('data/pilot-review-queue.v2.2.json');
+assert.equal(reviewQueue.schemaVersion,'v2.2-review-queue-draft');
+assert.equal(reviewQueue.records.length,19,'12 Evidence + 7 Statement review questions');
+const rawRecordIds=new Set([...raw.evidence,...raw.statements].map(x=>x.id));
+assert.equal(new Set(reviewQueue.records.map(x=>x.recordId)).size,19);
+assert.deepEqual(new Set(reviewQueue.records.map(x=>x.recordId)),rawRecordIds,'all candidate IDs are tracked');
+for(const entry of reviewQueue.records){
+  assert.equal(entry.verification,'not-directly-checked');
+  assert.equal(entry.approval,'none');
+  assert.ok(entry.questions.length>=2);
+  for(const id of entry.sourceIds||[])assert.ok(raw.sourceCatalog.some(s=>s.id===id));
+  if(entry.chapterCandidate)assert.equal(entry.chapterStatus,'unverified-secondary-hint');
+  if(entry.kind==='statement')assert.equal(entry.claimTruthVerified,false);
+}
+assert.equal(reviewQueue.summary.directCanonVerified,0);
+assert.ok(reviewQueue.records.some(x=>x.recordId==='A02'&&x.questions.some(q=>q.includes('제3자'))));
+assert.ok(reviewQueue.records.some(x=>x.recordId==='L04'&&x.questions.some(q=>q.includes('동시 다수전'))));
+assert.ok(reviewQueue.records.some(x=>x.recordId==='R04'&&x.questions.some(q=>q.includes('부상'))));
+
 const html=readFileSync('index.html','utf8');
 assert.equal(view.check(raw,roster),raw,'v2.1 draft view adapter should accept original projection');
 assert.equal(roster.characters.length,109);
@@ -61,6 +80,9 @@ assert.match(html,/scripts\/pilot-v2\.1-view\.js/);
 assert.match(html,/data\/pilot-evidence\.v2\.1\.json/);
 assert.match(html,/data\/quotation-review\.v0\.1\.json/);
 assert.match(html,/data\/temporal-evaluation-candidates\.v0\.1\.json/);
+assert.match(html,/data\/pilot-review-queue\.v2\.2\.json/);
+assert.match(html,/data-sidebar-toggle/);
+assert.match(html,/sidebar-collapsed/);
 assert.match(html,/M1 보류/);
 assert.match(html,/M2 보류/);
 console.log('PASS: pilot records, references, 3 pilots, 5 temporal candidates, quotes deferred, display boundaries');
