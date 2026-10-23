@@ -160,17 +160,35 @@
       '<button class="pilot-text-button" data-view="evidence" type="button">근거 후보 ' + records.evidence.length + '건 보기 →</button>' +
       '</div>').join('');
   }
-  function reviewPanel(data,h) {
+  function reviewPanel(data,h,queue) {
+    const reviewMap = new Map((queue?.records || []).map(r=>[r.recordId,r]));
     const rows = [...data.evidence.map(r=>({id:r.id,type:'전투 관찰',prompt:r.reviewQuestion,source:r.sourceVerification})),
       ...data.statements.map(r=>({id:r.id,type:'발언',prompt:(r.pendingReview||[]).join(' · '),source:r.sourceVerification}))];
+    function linkToPilot(id) {
+      for(const characterId of ['char-033','char-087','char-071']) {
+        const linked=forCharacter(data,characterId);
+        if(linked.evidence.some(e=>e.id===id)||linked.statements.some(s=>s.id===id))return characterId;
+      }
+      return null;
+    }
+    const priorityHint = '<p class="panel-sub">P1은 시간 순서·참가자·발언 진위를 먼저 대조할 필요가 있는 질문이야. P2도 원작 검수 전이며 점수 가중치는 아니야.</p>';
     return '<div class="summary-metrics pilot-metrics"><div class="metric"><span class="big">12</span><small>전투 Evidence 후보</small></div>' +
       '<div class="metric"><span class="big">7</span><small>발언 후보</small></div>' +
       '<div class="metric"><span class="big">4</span><small>DecisionCase·Outcome 각 4건</small></div>' +
       '<div class="metric"><span class="big">0</span><small>원작 직접 대조 / 정식 점수</small></div></div>' +
       '<div class="pilot-evidence-layout"><section class="panel pilot-reading"><h2>검수 대장 · 원본 ID 추적</h2>' +
-      '<p class="panel-sub">아래 19건은 실재하는 원작 사실 목록이 아니라 원작 검수가 필요한 질문과 기록 후보야.</p>' +
-      '<div class="pilot-review-list">' + rows.map(r => '<div class="pilot-review-row"><span class="pilot-code">' + safe(r.id,h) + ' · ' + safe(r.type,h) + '</span>' +
-      '<strong>' + safe(r.prompt || '원작 직접 검수 필요',h) + '</strong><span>원작 대조: 미완료 · 출처: ' + safe(r.source,h) + ' · 평가 승인: 없음</span></div>').join('') +
+      '<p class="panel-sub">아래 19건은 원작 사실이 아닌 후보 기록 및 검수 질문이야. 시점·회차도 원문 직접 확인 전까지 후보로만 표시해.</p>' + priorityHint +
+      '<div class="pilot-review-list">' + rows.map(r=>{
+        const q=reviewMap.get(r.id);
+        const target=linkToPilot(r.id);
+        const label=q?.chapterCandidate ? ' · 회차 후보: '+q.chapterCandidate+' (2차 자료)' : '';
+        const questions=q?.questions?.length ? '<ul class="audit-questions">'+q.questions.map(item=>'<li>'+safe(item,h)+'</li>').join('')+'</ul>' : '';
+        const action=target?'<button type="button" class="pilot-text-button" data-review-open="'+safe(r.id,h)+'" data-review-character="'+safe(target,h)+'">근거 화면에서 '+safe(r.id,h)+' 펼치기 ↗</button>' : '<span class="pilot-unlinked">3인 파일럿 상세와 직접 연결되지 않은 발언 후보</span>';
+        return '<div class="pilot-review-row"><span class="pilot-code">'+safe(r.id,h)+' · '+safe(r.type,h)+(q?' · '+safe(q.priority,h):'')+safe(label,h)+'</span>'+
+          '<strong>'+safe(r.prompt || '원작 직접 검수 필요',h)+'</strong>'+questions+
+          (q?.duplicateRisk?'<p class="audit-risk"><strong>반론·중복 위험:</strong> '+safe(q.duplicateRisk,h)+'</p>':'')+
+          '<span>원작 대조: 미완료 · 출처: '+safe(r.source,h)+' · 평가 승인: 없음</span>'+action+'</div>';
+      }).join('') +
       '</div></section><aside class="panel pilot-aside"><h2>사건·결과 연계 검수</h2><p>부모·자식 사건과 후속 결과를 독립 표본으로 중복 집계하지 않아.</p>' +
       cardList(data,data.decisionCases.map(item=>({type:'case',item})),h,null) +
       '<p class="pilot-aside-note">출처 유형 / 원작 확인 / E1·E2·E3 / 평가 승인 상태는 서로 독립적이며 현재 모두 미확정.</p>' +
