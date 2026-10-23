@@ -12,6 +12,10 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Inspect Pages configuration (read only)
         env:
           GH_TOKEN: ${{ github.token }}
@@ -25,3 +29,5 @@ jobs:
             head -c 180 /tmp/pages-probe 2>/dev/null | tr '\n' ' ' || true
             echo
           done
+      - name: Verify all live v2.2 public assets without redeploying
+        run: node scripts/check-live-pages.mjs
