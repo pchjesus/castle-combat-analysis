@@ -25,7 +25,7 @@ export function validateCharacterImages(registry, roster, assetExists = existsSy
     if (!allowedReview.includes(image.canonReview)) errors.push(`${id}.canonReview invalid`);
     if (!allowedRights.includes(image.rightsStatus)) errors.push(`${id}.rightsStatus invalid`);
     if (typeof image.publish !== 'boolean') errors.push(`${id}.publish must be boolean`);
-    if (image.assetPath !== null && !/^assets\\/characters\\/[A-Za-z0-9/_-]+\\.(?:png|jpe?g|webp)$/i.test(image.assetPath ?? '')) errors.push(`${id}.assetPath must be a safe local image path or null`);
+    if (image.assetPath !== null && !/^assets\/characters\/[A-Za-z0-9/_-]+\.(?:png|jpe?g|webp)$/i.test(image.assetPath ?? '')) errors.push(`${id}.assetPath must be a safe local image path or null`);
     if (image.publish) {
       if (publishedCharacters.has(image.characterId)) errors.push(`${id}: multiple public images for character`);
       publishedCharacters.add(image.characterId);
