@@ -20,4 +20,6 @@ jobs:
           node scripts/check-pilot-v2.1.mjs
           node scripts/check-character-images.mjs
       - name: Verify research source independence and references
-        run: node scripts/check-community-source-ledger-v2.7.mjs
+        run: |
+          node scripts/check-community-source-ledger-v2.7.mjs
+          node scripts/check-aquila-domestic-v2.8.mjs
