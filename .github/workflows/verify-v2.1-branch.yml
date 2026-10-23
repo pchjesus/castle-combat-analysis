@@ -18,3 +18,7 @@ jobs:
         run: |
           node scripts/check-mvp.mjs
           node scripts/check-pilot-v2.1.mjs
+      - name: Install headless browser harness
+        run: npm install --no-save --no-audit --no-fund playwright@1.56.1
+      - name: Chromium desktop/mobile smoke
+        run: node scripts/check-browser-v2.1.mjs
