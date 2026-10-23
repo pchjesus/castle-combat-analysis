@@ -6,6 +6,11 @@ on:
       - 'index.html'
       - 'data/roster.v0.1.json'
       - 'scripts/check-mvp.mjs'
+      - 'scripts/check-pilot-v2.1.mjs'
+      - 'scripts/pilot-v2.1-view.js'
+      - 'data/pilot-evidence.v2.1.json'
+      - 'data/temporal-evaluation-candidates.v0.1.json'
+      - 'data/quotation-review.v0.1.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -24,7 +29,9 @@ jobs:
         with:
           node-version: '22'
       - name: Check source and read-only boundaries
-        run: node scripts/check-mvp.mjs
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
   deploy:
     needs: verify
     runs-on: ubuntu-latest
@@ -36,8 +43,12 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Stage static site only
         run: |
-          mkdir -p _site
+          mkdir -p _site/data _site/scripts
           cp index.html _site/index.html
+          cp scripts/pilot-v2.1-view.js _site/scripts/
+          cp data/pilot-evidence.v2.1.json _site/data/
+          cp data/temporal-evaluation-candidates.v0.1.json _site/data/
+          cp data/quotation-review.v0.1.json _site/data/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:
