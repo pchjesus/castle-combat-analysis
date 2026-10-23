@@ -1,0 +1,22 @@
+name: Verify official chapter access audit v2.6
+on:
+  push:
+    branches: [research/v2.6-official-episode-access-audit]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify existing safe source boundary
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-character-images.mjs
+      - name: Check new official-index metadata does not promote unseen scenes
+        run: node scripts/check-official-episode-access-v2.6.mjs
