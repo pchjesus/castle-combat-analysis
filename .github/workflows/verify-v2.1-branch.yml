@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - work/v2.1-evidence-readonly
+      - work/v2.2-collapsible-sidebar-review
   workflow_dispatch:
 permissions:
   contents: read
