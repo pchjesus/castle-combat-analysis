@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "0.1-experiment-only",
+  "documentVersion": "v1.3 DRAFT",
+  "date": "2026-10-23",
+  "purpose": "v1.2 9개 앵커 가설 교차검증; 점수 추가 및 공식 Evaluation 기록 금지",
+  "sourceFiles": [
+    "castle_3person_anchor_pilot_v1.2_DRAFT.json",
+    "castle_pilot_evidence_v1.1_DRAFT.json"
+  ],
+  "sourceVerification": "secondary-only; canon panel crosschecks 0",
+  "constraints": {
+    "writesToGitHub": false,
+    "publishedSite": false,
+    "approvedEvaluationScores": 0,
+    "regularRankingEligible": false,
+    "matchedScenarioComparisonsEstablished": 0
+  },
+  "anchors": [
+    {
+      "characterId": "char-033",
+      "character": "아킬라",
+      "axis": "사격 전문기술",
+      "v12TrialAnchor": 100,
+      "v12Range": [
+        95,
+        100
+      ],
+      "v12EvidenceIds": [
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "v13Status": "retain_unverified",
+      "interpretation": "동일 사격축의 리천과 비교는 가능하나 다중 운용 vs 단일 명중의 과제 불일치",
+      "nextProof": "연속 교전 정확도·상대 조건·오발/실패 사례·동일 조건 비교 표본",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-033",
+      "character": "아킬라",
+      "axis": "전술·판단",
+      "v12TrialAnchor": 90,
+      "v12Range": [
+        85,
+        95
+      ],
+      "v12EvidenceIds": [
+        "A01",
+        "A03"
+      ],
+      "v13Status": "retain_overlap_review",
+      "interpretation": "견제사격의 정확도와 접근 제한이라는 전략적 효과를 같은 성과로 중복 가산할 위험",
+      "nextProof": "실제 계획·예측·선택을 기술적 숙련에서 독립 증명",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-033",
+      "character": "아킬라",
+      "axis": "부동심",
+      "v12TrialAnchor": 100,
+      "v12Range": [
+        95,
+        100
+      ],
+      "v12EvidenceIds": [],
+      "v13Status": "suspend_numeric",
+      "interpretation": "12개 파일럿 Evidence에는 직접 심리 근거가 연결되지 않음",
+      "nextProof": "별도 심리 Evidence의 원작 대조와 수행 변화 확인 후 재평가",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-087",
+      "character": "리천",
+      "axis": "맨손격투 전문기술",
+      "v12TrialAnchor": 95,
+      "v12Range": [
+        90,
+        100
+      ],
+      "v12EvidenceIds": [
+        "L01",
+        "L03"
+      ],
+      "v13Status": "retain_peer_needed",
+      "interpretation": "다른 동일 축 앵커 인물의 근거가 없어 95의 절대 위치 미검증",
+      "nextProof": "중간 및 최상위 맨손격투 비교 표본·방해 조건 검토",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-087",
+      "character": "리천",
+      "axis": "사격 전문기술",
+      "v12TrialAnchor": 90,
+      "v12Range": [
+        85,
+        95
+      ],
+      "v12EvidenceIds": [
+        "L02"
+      ],
+      "v13Status": "retain_unverified",
+      "interpretation": "아킬라와 같은 사격축이지만 사격 목적·거리·엄폐·연속성 불일치",
+      "nextProof": "단일 명중을 반복 숙련의 대표로 일반화할 수 있는지 검증",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-087",
+      "character": "리천",
+      "axis": "전술·판단",
+      "v12TrialAnchor": 90,
+      "v12Range": [
+        85,
+        95
+      ],
+      "v12EvidenceIds": [
+        "L03",
+        "L04"
+      ],
+      "v13Status": "retain_overlap_review",
+      "interpretation": "빈 총 기만의 계획성과 돌발 반응의 경계가 불명확",
+      "nextProof": "기만 의도·상대 인식·후속 반응의 시간 순서 원작 검수",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-071",
+      "character": "류지학",
+      "axis": "속도·기동력",
+      "v12TrialAnchor": 95,
+      "v12Range": [
+        90,
+        100
+      ],
+      "v12EvidenceIds": [
+        "R01"
+      ],
+      "v13Status": "suspend_numeric",
+      "interpretation": "R01의 공격 연속성·검술 템포만으로 이동/접근/이탈 기동력을 추론할 수 없음",
+      "nextProof": "이동·위치 선점·거리를 벌리거나 좁히는 장면의 독립 근거",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-071",
+      "character": "류지학",
+      "axis": "도검 전문기술",
+      "v12TrialAnchor": 95,
+      "v12Range": [
+        90,
+        100
+      ],
+      "v12EvidenceIds": [
+        "R01",
+        "R03"
+      ],
+      "v13Status": "retain_overlap_review",
+      "interpretation": "쌍검 연속공격과 유효타는 전문기술·공격 실효성에 중복 가산될 수 있음",
+      "nextProof": "동작 정확도·운용 다양성·유효타 결과를 각각 구분",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    },
+    {
+      "characterId": "char-071",
+      "character": "류지학",
+      "axis": "전술·판단",
+      "v12TrialAnchor": 85,
+      "v12Range": [
+        80,
+        90
+      ],
+      "v12EvidenceIds": [
+        "R02"
+      ],
+      "v13Status": "retain_overlap_review",
+      "interpretation": "리스크 감수와 의도된 틈 유도/즉흥적 대응을 분리하지 못함",
+      "nextProof": "목적, 압박, 선택 가능한 대안, 상황 변화의 선후관계 검수",
+      "independentCanonVerified": false,
+      "evaluationScore": null,
+      "evidenceReadiness": "unassessed",
+      "approvalStatus": "AI DRAFT"
+    }
+  ],
+  "comparisons": [
+    {
+      "axis": "사격 전문기술",
+      "left": "아킬라",
+      "right": "리천",
+      "trialValues": [
+        100,
+        90
+      ],
+      "verdict": "insufficient_for_numeric_gap",
+      "reason": "사격 사례의 목적, 거리, 엄폐, 표적 및 연속성이 맞춰지지 않았음; 상대 우위의 10점 크기는 검증 불가",
+      "dataNeeded": [
+        "동일 조건 표적/무장",
+        "반복 사격과 실패 사례",
+        "원작 직접 대조"
+      ]
+    },
+    {
+      "axis": "전술·판단",
+      "left": "아킬라/리천/류지학",
+      "trialValues": [
+        90,
+        90,
+        85
+      ],
+      "verdict": "incomparable_current_conditions",
+      "reason": "견제 및 무장 전환, 기만, 위험 감수가 서로 다른 상황에서 나타남",
+      "dataNeeded": [
+        "전투 목적",
+        "가용 정보",
+        "사전 계획",
+        "대안",
+        "실제 결과"
+      ]
+    },
+    {
+      "axis": "전문기술(서로 다른 종류)",
+      "left": "리천 맨손격투",
+      "right": "류지학 도검",
+      "trialValues": [
+        95,
+        95
+      ],
+      "verdict": "no_cross_specialty_equivalence",
+      "reason": "서로 다른 전문기술의 95는 동등한 결투 능력이나 실전 교환비를 의미하지 않음",
+      "dataNeeded": [
+        "각 기술군 내부의 앵커 인물"
+      ]
+    }
+  ],
+  "evidenceRoleAudits": [
+    {
+      "evidenceId": "A01",
+      "primaryCandidate": "사격 전문기술",
+      "additional": "전술·판단",
+      "check": "접근 제한이 기술적 견제의 결과인지 독립적인 전략적 의사결정인지"
+    },
+    {
+      "evidenceId": "A03",
+      "primaryCandidate": "총기 운용/재장전 전문기술",
+      "additional": "상황대응력·전술·판단",
+      "check": "사전 계획인지 돌발 상황 즉응인지"
+    },
+    {
+      "evidenceId": "L03",
+      "primaryCandidate": "전술·판단",
+      "additional": "맨손격투 전문기술",
+      "check": "기만의 판단과 관절 공격의 수행을 구별"
+    },
+    {
+      "evidenceId": "R01",
+      "primaryCandidate": "도검 전문기술/기술 수행 템포",
+      "additional": "속도·기동력",
+      "check": "이동·위치 선점이 별도로 확인되지 않으면 기동력 근거 사용 금지"
+    },
+    {
+      "evidenceId": "R02",
+      "primaryCandidate": "전술·판단 (조건부)",
+      "additional": "상황대응력",
+      "check": "사전 선택·압박·우발적 반응을 분리"
+    }
+  ],
+  "numericalSensitivityDemo": {
+    "syntheticOnly": true,
+    "method": "B=8개 공통 축 평균, A=공격 실효성, M9=(8*B+A)/9",
+    "profiles": [
+      {
+        "label": "가상 X",
+        "B": 86,
+        "A": 60,
+        "M9": 83.111
+      },
+      {
+        "label": "가상 Y",
+        "B": 83,
+        "A": 95,
+        "M9": 84.333
+      }
+    ],
+    "result": "8축은 X>Y, 9축 동일가중 합산은 X<Y; 점수의 구조적 의미·중복 여부 확인 없이 순위를 공표하면 안 됨",
+    "derivation": "M9-B=(A-B)/9; 별도 공격 실효성 축의 편차가 종합을 바꿈",
+    "notActualCharacterScores": true
+  },
+  "nextCanonChecks": [
+    "A01~A03 원작 검수 및 아킬라·리천 총기 운용 비교 조건 정리",
+    "아킬라 심리 Evidence 확보 전 부동심 수치 보류",
+    "R01에서 이동과 공격동작 템포 구분",
+    "리천 기만 L03의 사전 계획 여부 확인",
+    "도검/맨손 각 기술군의 비교 앵커 확보"
+  ],
+  "references": {
+    "NW1": {
+      "kind": "official-series-index",
+      "title": "캐슬 (1부) — 네이버웹툰 작품 목록",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=736744",
+      "verification": "작품 및 회차 목록 확인; 컷 내용 미확인"
+    },
+    "NW2": {
+      "kind": "official-series-index",
+      "title": "캐슬2:만인지상 — 네이버웹툰 작품 목록",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=807178",
+      "verification": "작품 및 28·29화 목록 확인; 컷 내용 미확인"
+    },
+    "SA": {
+      "kind": "secondary-community-edited",
+      "title": "아킬라(캐슬)/전투력",
+      "url": "https://d.namu.moe/w/%EC%95%84%ED%82%AC%EB%9D%BC%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "verification": "해당 페이지 텍스트만 확인"
+    },
+    "SL": {
+      "kind": "secondary-community-edited",
+      "title": "리천(캐슬)/전투력",
+      "url": "https://d.namu.moe/w/%EB%A6%AC%EC%B2%9C%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "verification": "해당 페이지 텍스트만 확인"
+    },
+    "SR": {
+      "kind": "secondary-community-edited",
+      "title": "라텔(캐슬)",
+      "url": "https://namu.moe/w/%EB%9D%BC%ED%85%94%28%EC%BA%90%EC%8A%AC%29",
+      "verification": "해당 페이지 텍스트만 확인"
+    },
+    "SJ": {
+      "kind": "secondary-community-edited",
+      "title": "류지학/전투력",
+      "url": "https://namu.moe/w/%EB%A5%98%EC%A7%80%ED%95%99/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "verification": "해당 페이지 텍스트만 확인"
+    },
+    "SM": {
+      "kind": "secondary-community-edited",
+      "title": "조명식(캐슬)",
+      "url": "https://www.namu.moe/w/%EC%A1%B0%EB%AA%85%EC%8B%9D%28%EC%BA%90%EC%8A%AC%29",
+      "verification": "해당 페이지 텍스트만 확인"
+    },
+    "SC": {
+      "kind": "secondary-community-edited",
+      "title": "최달천",
+      "url": "https://m.namu.moe/w/%EC%B5%9C%EB%8B%AC%EC%B2%9C",
+      "verification": "해당 페이지 텍스트만 확인"
+    }
+  }
+}
