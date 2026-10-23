@@ -64,3 +64,13 @@
 - 브랜치 검증: `node scripts/check-mvp.mjs`, `node scripts/check-pilot-v2.1.mjs`; 별도 CI의 Chromium 데스크톱·모바일 smoke 검사. 실제 공개 Pages 사이트로의 새 배포 및 사용자 원작 검수는 하지 않았다.
 
 **주의:** 앞부분의 '사전 설계', '근거 미연결' 안내는 과거 `main` 단계의 기록이다. 이 개발 브랜치에서만 위 데이터 연결이 이뤄졌다.
+
+## 후속 개발 v2.2 — 접이식 탐색 및 원작 검수 우선순위 (개발 브랜치)
+
+브랜치: [work/v2.2-collapsible-sidebar-review](https://github.com/pchjesus/castle-combat-analysis/tree/work/v2.2-collapsible-sidebar-review). **main 미병합·공개 Pages 미배포**.
+
+- PC 사이드바: **펼침(검색·조직·109명) ↔ 접힘(76px, 파일럿 바로가기·검색으로 펼침)**. 현재 선택한 인물·탭·검색 조건은 화면 안에서 유지. 모바일은 기존 오버레이 서랍 방식 유지; 기기별 재시작 시 접힘 저장은 하지 않음.
+- 원작 검수 질문: [19건 질문 대장](data/pilot-review-queue.v2.2.json) (Evidence 12 + Statement 7) 연결. 검수 대장에서 적절한 인물의 근거 상세를 Record ID로 직접 펼치도록 구현.
+- 연구: [8+1 중복 축·3인 사건 검수·시점별 평가 후보 분석](docs/V2_2_EVIDENCE_MODEL_ERA_AUDIT_DRAFT.md). 원작 컷 직접 대조 전 / E1·E2·E3 및 정식 점수 아직 미판정.
+- 과거·전성기 연구 후보 5명과 명대사 빈 후보 상태·이미지 권리 검증 기반은 그대로 보존. 원작 공식 회차 목록의 존재 확인과 장면 대조 상태는 분리.
+- 검증은 별도 브랜치 CI의 Node 계약/근거/이미지 검증과 Chromium 가로폭별 PC·모바일 UI 회귀검사로 수행한다. 로컬 실제 실기기·공개 Pages 사이트의 새 버전 사용성 검증은 별도 단계다.
