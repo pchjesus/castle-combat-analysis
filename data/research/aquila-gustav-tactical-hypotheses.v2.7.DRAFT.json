@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "v2.7-aquila-cognitive-tactics-addendum",
+  "status": "unapproved-research",
+  "characterId": "char-033",
+  "opponentCharacterId": null,
+  "opponentName": "구스타프",
+  "battleId": "pilot-A",
+  "linkedEvidenceIds": [
+    "A01",
+    "A02",
+    "A03",
+    "A04"
+  ],
+  "linkedCommunityIssueIds": [
+    "A04-close-range",
+    "A02-third-party",
+    "MATCHUP-arms"
+  ],
+  "originalCanonVerified": false,
+  "originalSceneDirectlyReviewed": false,
+  "scoresApproved": false,
+  "userHypothesis": {
+    "origin": "user-analysis-2026-10-23",
+    "claim": "아킬라의 전투지능이 구스타프보다 뛰어나고, 일부러 접근해 심리를 흔든 후 재이격하는 과정을 반복하면서 소모전을 유도할 수 있었을 것",
+    "epistemicClass": "user-interpretation-plus-counterfactual",
+    "components": [
+      {
+        "id": "UH1",
+        "claim": "아킬라는 구스타프보다 전투지능이 높다",
+        "type": "comparative-interpretation",
+        "verified": false
+      },
+      {
+        "id": "UH2",
+        "claim": "접근 후 재이격해 거리 우위를 되찾을 수 있다",
+        "type": "tactical-capability-hypothesis",
+        "verified": false
+      },
+      {
+        "id": "UH3",
+        "claim": "접근과 이격을 반복해 심리·체력을 소모시킬 수 있었을 것이다",
+        "type": "unobserved-counterfactual",
+        "verified": false
+      }
+    ]
+  },
+  "sourceLeads": [
+    {
+      "id": "SL1",
+      "sourceType": "secondary-community-edited",
+      "verification": "web-text-checked-not-canon",
+      "url": "https://www.namu.moe/w/아킬라(캐슬)/전투력",
+      "claimSummary": "차문 발차기 후 반동 재이격·사격, 근접 기만과 급소 타격, 고지에서 내려온 이유를 혼란과 시간 제약으로 서술",
+      "supportBoundary": "특정 한 차례의 재이격 서술이며 실제 반복 횟수/심리적 인과는 원작 미검수"
+    },
+    {
+      "id": "SL2",
+      "sourceType": "community-discussion",
+      "verification": "thread-text-checked-not-canon",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1gc6w2v",
+      "communityLedgerId": "C12",
+      "claimSummary": "근접 진입이 비합리적인 거리 상실이라는 문제제기 vs 심리 교란·함정 위험·빠른 종결을 위한 선택이라는 반론; 탄 소모·차문 접근 경계",
+      "supportBoundary": "참가자의 해석이지 공식 설정이나 실제 전투 실험은 아님"
+    },
+    {
+      "id": "SL3",
+      "sourceType": "community-discussion",
+      "verification": "thread-text-checked-not-canon",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1g9kh3v",
+      "communityLedgerId": "C15",
+      "claimSummary": "아킬라의 손상·제3자 기습과 구스타프 상대 수행을 놓고 독자 사이에 이견",
+      "supportBoundary": "부상 인과·교전 인원·독자 승부 예측은 직접 확인 전 불확정"
+    },
+    {
+      "id": "SL4",
+      "sourceType": "community-discussion",
+      "verification": "thread-text-checked-not-canon",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1cvp61n",
+      "claimSummary": "크로트의 원거리 사격 우위 평가가 전체 전투력 비교와 같은지 논쟁; 비공식 영어 번역의 어감 차이 우려",
+      "supportBoundary": "원작 발언과 정확한 한국어 원문 검증 전 Statement의 사실·진위 분리"
+    },
+    {
+      "id": "SL5",
+      "sourceType": "secondary-community-edited",
+      "verification": "web-text-checked-not-canon",
+      "url": "https://m.namu.moe/w/아킬라(캐슬)/전투력",
+      "claimSummary": "다른 교전에서 상대 탄약·지형·위치 제약을 이용한 아킬라의 판단력에 대한 서술",
+      "supportBoundary": "구스타프전의 반복 접근/재이격을 증명하는 독립 장면이 아니라 전반적 전투 판단 능력 비교를 위한 별도 후보"
+    }
+  ],
+  "competingModels": [
+    {
+      "id": "H1",
+      "name": "제한적 접근을 통한 심리 압박과 재이격",
+      "classification": "possible-intended-strategy",
+      "predicts": [
+        "접근 전에 아킬라가 목표·상대 심리 상태를 고려했다는 직접 근거",
+        "접근 후 구스타프의 인지·선택이 바뀌고 아킬라가 그 변화를 활용",
+        "발차기·후퇴가 단순 탈출이 아니라 의도적 거리 재확보라는 선후"
+      ],
+      "falsifiers": [
+        "당시 구스타프 행동 변화가 없거나, 단순 방어·제압 회피가 전부",
+        "아킬라가 접근 후의 이탈을 전혀 계획하거나 시도하지 못한 경우"
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "접근·교란·이탈을 여러 번 반복하는 장기 소모전",
+      "classification": "counterfactual-not-observed",
+      "predicts": [
+        "원작에 최소 두 차례 구분되는 접근과 의도적 재이격이 존재하거나 작중 실현 가능하다는 구체적 근거",
+        "반복으로 구스타프의 결정 오류·피로·탄약 변화가 누적된 관찰",
+        "아킬라에게 충분한 탄약·시간·재이격 통로가 존재"
+      ],
+      "falsifiers": [
+        "한 차례 이격만 관찰되고 그 후엔 교전 조건이 바뀜",
+        "제3자 증원·시간 제한·탄약 고갈·부상 때문에 반복이 불가능"
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "기습/증원 위험에 따라 빨리 결착하려는 복합적 선택",
+      "classification": "alternative-causal-motive",
+      "predicts": [
+        "전투 시작 전/중 지원 적군 또는 함정 위험을 아킬라가 인식한 근거",
+        "시간이 길어지는 것 자체가 아킬라에게 불리한 상황",
+        "심리 교란은 빠른 종결을 위한 보조 수단"
+      ],
+      "falsifiers": [
+        "추가 위험을 예측하지 않았다는 원작 근거",
+        "충분한 시간·탄약·후퇴 경로가 있었고 빠른 종결 필요성이 없었다는 확인"
+      ]
+    },
+    {
+      "id": "H4",
+      "name": "거리 상실이 선택상 손실이었다",
+      "classification": "counter-interpretation",
+      "predicts": [
+        "근접 진입 뒤 상대에 노출된 피격·상지 손상 위험 상승",
+        "재이격에 실질적 제약이 있었거나 거리 통제 주도권 상실"
+      ],
+      "falsifiers": [
+        "접근이 상대의 수를 분명히 봉쇄하고 곧 거리 재확보로 이어진 다수 독립 동작",
+        "시간 압박·추가 인원 위험이 명시되어 장기 유지가 더 위험했던 사실"
+      ]
+    }
+  ],
+  "canonChecklist": [
+    {
+      "key": "T01",
+      "recordIds": [
+        "A01",
+        "A03"
+      ],
+      "question": "고지→접근→차문 접촉→반동 재이격→사격의 정확한 컷·시점을 확인",
+      "separation": "움직임 자체·전략적 의도·실제 효과를 구분"
+    },
+    {
+      "key": "T02",
+      "recordIds": [
+        "A03",
+        "A04"
+      ],
+      "question": "근접 진입과 이탈이 독립적으로 몇 차례 반복되었는지 세기",
+      "separation": "관찰된 횟수와 가능했을 것이라는 반사실 추론 분리"
+    },
+    {
+      "key": "T03",
+      "recordIds": [
+        "A04"
+      ],
+      "question": "구스타프의 행동·판단이 실제 바뀌었다면 무엇 때문이었는지 근거 추적",
+      "separation": "심리전 '시도' vs 상대 판단 변화의 관찰 vs 성공한 심리전"
+    },
+    {
+      "key": "T04",
+      "recordIds": [
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "question": "아킬라가 알고 있던 제3자·함정 가능성, 남은 탄약, 시간 압박, 부상과 이탈 경로 확인",
+      "separation": "원거리 유지의 대체 비용과 근접 위험을 같은 조건에서 비교"
+    },
+    {
+      "key": "T05",
+      "recordIds": [
+        "A01",
+        "A03",
+        "A04"
+      ],
+      "question": "구스타프 본인의 합리적 대응·예상·접근 성공/실패를 독립 관찰해 비교",
+      "separation": "아킬라의 우수 수행을 곧 구스타프의 전술지능 저하로 단정하지 않기"
+    }
+  ],
+  "abilityAssignments": [
+    {
+      "ability": "전술·판단",
+      "role": "primary-proposal",
+      "condition": "무장·거리 선택과 교전 목표 및 대안 비용을 고려한 의도가 원작 장면으로 확인될 때",
+      "score": "unassigned"
+    },
+    {
+      "ability": "심리전",
+      "role": "separate-contextual-competence",
+      "condition": "상대의 판단에 개입하려는 시도와 구스타프의 실제 행동 변화 사이 연결이 확인될 때",
+      "score": "unassigned"
+    },
+    {
+      "ability": "기동/거리 통제",
+      "role": "combat-profile-observation",
+      "condition": "접근·재이격의 물리적 성공과 이탈 경로가 확인될 때",
+      "score": "unassigned"
+    },
+    {
+      "ability": "사격 전문기술",
+      "role": "specialized-action",
+      "condition": "유효한 사격 조작·엄폐/탄 관리가 관찰될 때",
+      "score": "unassigned"
+    },
+    {
+      "ability": "부동심",
+      "role": "self-stability-only",
+      "condition": "압박/부상 아래 자기 판단이 유지되는 별도 행동 근거가 있을 때; 상대 심리 교란과 혼합하지 않음",
+      "score": "unassigned"
+    }
+  ],
+  "matchupScenarios": [
+    {
+      "id": "S1",
+      "setting": "증원 없음·탄약/시간 충분·퇴로 확보",
+      "feasibility": "unknown",
+      "implication": "거리 재확보 후 소모전을 지속할 가능성 검토",
+      "verified": false
+    },
+    {
+      "id": "S2",
+      "setting": "제3자 증원 임박·위치 파악 미흡·탄약 제한",
+      "feasibility": "unknown",
+      "implication": "장기전보다 조기 종결의 예상 편익이 증가할 수 있음",
+      "verified": false
+    },
+    {
+      "id": "S3",
+      "setting": "구스타프의 차문 엄폐·접근 성공 또는 아킬라 부상",
+      "feasibility": "unknown",
+      "implication": "다시 빠지는 비용과 반복 중 사고 위험 증가",
+      "verified": false
+    }
+  ],
+  "prohibitions": [
+    "근접 접근→반복 심리소모전 실제 실행으로 자동 승격 금지",
+    "사용자 해석을 Canon Fact/원작 직접 검수로 승격 금지",
+    "한 차례 재이격으로 여러 번의 반복 전법 확정 금지",
+    "아킬라 전투지능 우세를 양측 검증 없이 수치·티어·승률로 확정 금지",
+    "심리전/부동심/전술·판단에 한 행동 중복 가산 금지",
+    "추가 Phase·원작 컷·정확한 대사·숫자 반응 시간 창작 금지"
+  ],
+  "approval": "none"
+}
