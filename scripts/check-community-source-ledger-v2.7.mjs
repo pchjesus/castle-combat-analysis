@@ -87,7 +87,7 @@ assert.ok(tactics.userHypothesis.components.every(c=>c.verified===false));
 assert.deepEqual(tactics.competingModels.map(m=>m.id), ['H1','H2','H3','H4']);
 for(const model of tactics.competingModels) {
   assert.ok(model.predicts.length>=2 && model.falsifiers.length>=2);
-  assert.ok(['possible-intended-strategy','counterfactual-not-observed','alternative-causal-motive','counter-interpretation'].includes(model.classification));
+  assert.ok(['possible-intended-strategy','user-original-reported-intended-strategy-awaiting-panel-location','counterfactual-not-observed','alternative-causal-motive','counter-interpretation'].includes(model.classification));
 }
 assert.equal(tactics.competingModels.find(x=>x.id==='H2').classification,'counterfactual-not-observed');
 assert.equal(tactics.competingModels.find(x=>x.id==='H1').classification,'user-original-reported-intended-strategy-awaiting-panel-location');
