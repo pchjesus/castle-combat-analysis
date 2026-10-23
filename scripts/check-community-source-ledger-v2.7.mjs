@@ -65,4 +65,38 @@ assert.equal(research.methodology.communityAgreementDoesNotVerifyCanon,true);
 assert.equal(research.methodology.wikiCopiedPerformanceTablesNotIndependent,true);
 assert.equal(research.methodology.tierPercentNumbersAreNotEvaluation,true);
 assert.equal(research.methodology.imageRedistributionAllowed,false);
-console.log('PASS: 17 sourced community posts, 7 paired interpretations; original IDs, scores and independence gates preserved');
+const tactics = read('data/research/aquila-gustav-tactical-hypotheses.v2.7.DRAFT.json');
+assert.equal(tactics.schemaVersion, 'v2.7-aquila-cognitive-tactics-addendum');
+assert.equal(tactics.characterId, 'char-033');
+assert.equal(tactics.opponentCharacterId, 'char-042');
+assert.equal(roster.characters.find(c=>c.id===tactics.opponentCharacterId)?.name, '구스타프');
+assert.equal(tactics.battleId, 'pilot-A');
+assert.deepEqual(tactics.linkedEvidenceIds, ['A01','A02','A03','A04']);
+for (const id of tactics.linkedEvidenceIds) assert.ok(evidenceIds.has(id));
+for (const id of tactics.linkedCommunityIssueIds) assert.ok(issueIds.has(id));
+assert.equal(tactics.originalCanonVerified, false);
+assert.equal(tactics.originalSceneDirectlyReviewed, false);
+assert.equal(tactics.scoresApproved, false);
+assert.equal(tactics.approval, 'none');
+assert.equal(tactics.userHypothesis.origin, 'user-analysis-2026-10-23');
+assert.equal(tactics.userHypothesis.epistemicClass, 'user-interpretation-plus-counterfactual');
+assert.ok(tactics.userHypothesis.components.every(c=>c.verified===false));
+assert.deepEqual(tactics.competingModels.map(m=>m.id), ['H1','H2','H3','H4']);
+for(const model of tactics.competingModels) {
+  assert.ok(model.predicts.length>=2 && model.falsifiers.length>=2);
+  assert.ok(['possible-intended-strategy','counterfactual-not-observed','alternative-causal-motive','counter-interpretation'].includes(model.classification));
+}
+assert.equal(tactics.competingModels.find(x=>x.id==='H2').classification,'counterfactual-not-observed');
+assert.equal(tactics.sourceLeads.length, 5);
+assert.ok(tactics.sourceLeads.some(x=>x.communityLedgerId==='C12'));
+for(const ref of tactics.sourceLeads) {
+  assert.equal(ref.verification.endsWith('not-canon'), true);
+  assert.ok(/^https:\/\//.test(ref.url));
+  if (ref.communityLedgerId) assert.ok(sourceIds.has(ref.communityLedgerId));
+}
+assert.equal(tactics.abilityAssignments.length, 5);
+assert.ok(tactics.abilityAssignments.every(a=>a.score==='unassigned'));
+assert.ok(tactics.matchupScenarios.every(s=>s.verified===false));
+assert.ok(tactics.prohibitions.some(x=>x.includes('반복')));
+
+console.log('PASS: 17 community posts, 7 debates, Akila tactical alternatives and 0 canon/score promotions');
