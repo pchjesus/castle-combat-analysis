@@ -65,6 +65,9 @@ assert.equal(research.methodology.communityAgreementDoesNotVerifyCanon,true);
 assert.equal(research.methodology.wikiCopiedPerformanceTablesNotIndependent,true);
 assert.equal(research.methodology.tierPercentNumbersAreNotEvaluation,true);
 assert.equal(research.methodology.imageRedistributionAllowed,false);
+assert.ok(research.methodology.preferredDiscoveryOrder[3].includes('Korean'));
+assert.ok(research.methodology.overseasDiscussionRole.includes('supplementary'));
+assert.ok(research.methodology.caveat.includes('not blanket'));
 const tactics = read('data/research/aquila-gustav-tactical-hypotheses.v2.7.DRAFT.json');
 assert.equal(tactics.schemaVersion, 'v2.7-aquila-cognitive-tactics-addendum');
 assert.equal(tactics.characterId, 'char-033');
@@ -87,7 +90,23 @@ for(const model of tactics.competingModels) {
   assert.ok(['possible-intended-strategy','counterfactual-not-observed','alternative-causal-motive','counter-interpretation'].includes(model.classification));
 }
 assert.equal(tactics.competingModels.find(x=>x.id==='H2').classification,'counterfactual-not-observed');
-assert.equal(tactics.sourceLeads.length, 5);
+assert.equal(tactics.competingModels.find(x=>x.id==='H1').classification,'user-original-reported-intended-strategy-awaiting-panel-location');
+assert.equal(tactics.userReportedOriginalDetails.sourceType,'user-firsthand-original-reading-report');
+assert.equal(tactics.userReportedOriginalDetails.originalDirectlyCheckedByUser,true);
+assert.equal(tactics.userReportedOriginalDetails.originalDirectlyCheckedByAssistant,false);
+assert.equal(tactics.userReportedOriginalDetails.episodeAndPanelLocatorVerified,false);
+assert.equal(tactics.userReportedOriginalDetails.formalProjectApproval,false);
+assert.equal(tactics.userReportedOriginalDetails.reports.length,2);
+assert.deepEqual(tactics.userReportedOriginalDetails.reports[0].literalStatusMarkers,['0발','사거리 미달','8/10발']);
+assert.equal(tactics.userReportedOriginalDetails.reports[0].markerToSpecificOpponentMapping,'not-explicitly-mapped-in-user-message');
+assert.equal(tactics.userReportedOriginalDetails.reports[1].shortPhraseAsUserReported,'구스타프가 흔들린다');
+assert.equal(tactics.userReportedOriginalDetails.reports[1].verbatimQuotePrimaryVerified,false);
+assert.equal(tactics.sourcePreferencePolicy.priorityOrder[0],'original-panels-directly-verified');
+assert.equal(tactics.sourcePreferencePolicy.priorityOrder.at(-1),'overseas-translated-discussion');
+assert.ok(tactics.sourceLeads.some(s=>s.id==='SL6'&&s.url.includes('castlewebtoon&no=341783')));
+assert.ok(tactics.canonChecklist.some(s=>s.key==='T07'));
+assert.ok(tactics.canonChecklist.some(s=>s.key==='T06'));
+assert.equal(tactics.sourceLeads.length, 6);
 assert.ok(tactics.sourceLeads.some(x=>x.communityLedgerId==='C12'));
 for(const ref of tactics.sourceLeads) {
   assert.equal(ref.verification.endsWith('not-canon'), true);
