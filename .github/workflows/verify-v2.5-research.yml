@@ -1,0 +1,24 @@
+name: Verify v2.5 research candidate invariants
+on:
+  push:
+    branches: [research/v2.5-observation-discriminators]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check original roster and existing v2.4 contracts
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-character-images.mjs
+      - name: Validate new unapproved research and unchanged references
+        run: |
+          node --check scripts/check-observation-discriminators-v2.5.mjs
+          node scripts/check-observation-discriminators-v2.5.mjs
