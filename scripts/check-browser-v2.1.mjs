@@ -30,9 +30,10 @@ async function inspect(viewport){
   assert.equal(await page.locator('.pilot-timeline-item').count(),1,'pilot timeline should connect');
   await page.locator('#tab-evidence').click();
   await page.locator('#record-A01').waitFor();
-  assert.equal(await page.locator('.pilot-record').count(),6,'Akila 4 evidence + 2 statements');
+  assert.equal(await page.locator('.pilot-record').count(),8,'Akila 4 evidence + 2 statements + 2 linked cases');
   await page.locator('#record-A01 summary').click();
   assert.match(await page.locator('#record-A01').innerText(),/원작 미대조/);
+  if(viewport.width<760)await page.locator('#mobile-menu').click();
   await page.locator('.pilot-btn[data-character="char-087"]').click();
   await page.locator('#record-L01').waitFor();
   assert.equal(await page.locator('#record-A01').count(),0,'changing character must not leak prior character records');
