@@ -12,6 +12,7 @@ on:
       - 'data/pilot-review-queue.v2.2.json'
       - 'data/temporal-evaluation-candidates.v0.1.json'
       - 'data/quotation-review.v0.1.json'
+      - 'scripts/check-live-pages.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -58,3 +59,7 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Check public HTTPS site and v2.2 assets
+        env:
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: node scripts/check-live-pages.mjs
