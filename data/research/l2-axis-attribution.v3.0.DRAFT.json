@@ -1,0 +1,1534 @@
+{
+  "schemaVersion": "v3.0-l2-axis-fairness-experiment-draft",
+  "state": "research-only-unapproved",
+  "baseMainCommit": "4766cad4ea61be7727ee0949e4c65bc228dc36c9",
+  "sourceContracts": {
+    "roster": "data/roster.v0.1.json",
+    "pilot": "data/pilot-evidence.v2.1.json",
+    "review": "data/pilot-review-queue.v2.2.json",
+    "coverage": "data/research/analysis-depth-coverage.v2.9.DRAFT.json"
+  },
+  "controlledVocabulary": {
+    "commonAxes": [
+      "신체 역량",
+      "기동",
+      "반응",
+      "방어",
+      "지속전",
+      "전술·판단",
+      "부동심",
+      "상황 대응"
+    ],
+    "specialistDomains": [
+      "사격",
+      "도검",
+      "단검",
+      "맨손",
+      "근접"
+    ],
+    "nonScoredLenses": [
+      "심리전",
+      "공격 실효성",
+      "상대 피로·템포",
+      "부상·일시 상태"
+    ],
+    "note": "심리전은 임시 평가축이 아닌 해석 렌즈. 전문 1축은 복수 숙련 평균 또는 제로 패널티를 뜻하지 않음"
+  },
+  "scoringPolicy": {
+    "allScoresNull": true,
+    "sufficiencyIndependent": true,
+    "scoreFromDocumentCount": false,
+    "sourceRepeatIndependence": "not assumed",
+    "sharedOutcomeCountOnce": true,
+    "modelWeights": null,
+    "winProbabilities": null,
+    "ranking": null
+  },
+  "separationPolicy": {
+    "canonFact": "unverified candidates only",
+    "combatContext": "unknown when not checked",
+    "interpretation": "alternative required",
+    "evaluation": "not approved",
+    "calculation": "disabled",
+    "statement": "do not treat character speech as battle evidence"
+  },
+  "userOriginalObservationMemo": [
+    {
+      "id": "U01",
+      "subjectCharacterId": "char-033",
+      "sourceDocument": "docs/research/V2_8_AQUILA_DOMESTIC_TACTICAL_REVIEW_DRAFT.md",
+      "kind": "user-reported-original-reading",
+      "eventCandidate": "AK-KHO",
+      "notes": "0발/사거리 미달/8/10발 target mapping unresolved",
+      "assistantChecked": false,
+      "mergedIntoPilotA": false
+    },
+    {
+      "id": "G-intent",
+      "subjectCharacterId": "char-033",
+      "sourceDocument": "docs/research/V2_8_AQUILA_DOMESTIC_TACTICAL_REVIEW_DRAFT.md",
+      "kind": "user-reported-original-reading",
+      "eventCandidate": "pilot-A",
+      "notes": "심리적 우위 약화 목적에 대한 사용자 관찰; 효과·후퇴 시계열 원작 대조 전",
+      "assistantChecked": false,
+      "treatedAsIndependentBattleScore": false
+    }
+  ],
+  "profiles": [
+    {
+      "characterId": "char-033",
+      "battleCandidateIds": [
+        "pilot-A"
+      ],
+      "existingEvidenceIds": [
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "existingReviewIds": [
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "linkedStatementCandidateIds": [
+        "ST03"
+      ],
+      "identityVerifiedBy": "roster-index-only",
+      "l2Status": "structured-candidates-not-verified",
+      "sharedTemplate": {
+        "canonFactCandidateStatus": "secondary-unverified",
+        "combatContext": {
+          "objective": null,
+          "initialDistance": null,
+          "terrain": null,
+          "cover": null,
+          "ammo": null,
+          "preparation": null,
+          "timePressure": null,
+          "knownParticipants": [
+            "char-033",
+            "char-042"
+          ],
+          "injuryAndFatigue": "not-verified",
+          "phase": "not-verified"
+        },
+        "interpretationStatus": "hypothesis-with-counter",
+        "evaluation": {
+          "score": null,
+          "sufficiency": "unassessed",
+          "approval": "none"
+        },
+        "calculation": {
+          "model": null,
+          "enabled": false,
+          "result": null
+        },
+        "temporal": {
+          "splitDecision": "not-decided"
+        }
+      },
+      "representativeSpecialty": {
+        "decision": "not-selected",
+        "candidates": [
+          "사격",
+          "근접"
+        ],
+        "rule": "do not choose a best domain without original-checked context and comparable coverage"
+      },
+      "stateBoundaries": "pilot-A/Gustav engagement only; AK-KHO separate",
+      "sourceCoverageStatus": "additional user-reported original reading and domestic analysis exist, but are not AI original verified"
+    },
+    {
+      "characterId": "char-087",
+      "battleCandidateIds": [
+        "pilot-L"
+      ],
+      "existingEvidenceIds": [
+        "L01",
+        "L02",
+        "L03",
+        "L04"
+      ],
+      "existingReviewIds": [
+        "L01",
+        "L02",
+        "L03",
+        "L04"
+      ],
+      "linkedStatementCandidateIds": [],
+      "identityVerifiedBy": "roster-index-only",
+      "l2Status": "structured-candidates-not-verified",
+      "sharedTemplate": {
+        "canonFactCandidateStatus": "secondary-unverified",
+        "combatContext": {
+          "objective": null,
+          "initialDistance": null,
+          "terrain": null,
+          "cover": null,
+          "ammo": null,
+          "preparation": null,
+          "timePressure": null,
+          "knownParticipants": [
+            "char-087",
+            "char-028",
+            "char-003",
+            "char-026"
+          ],
+          "injuryAndFatigue": "not-verified",
+          "phase": "not-verified"
+        },
+        "interpretationStatus": "hypothesis-with-counter",
+        "evaluation": {
+          "score": null,
+          "sufficiency": "unassessed",
+          "approval": "none"
+        },
+        "calculation": {
+          "model": null,
+          "enabled": false,
+          "result": null
+        },
+        "temporal": {
+          "splitDecision": "not-decided"
+        }
+      },
+      "representativeSpecialty": {
+        "decision": "not-selected",
+        "candidates": [
+          "맨손",
+          "사격"
+        ],
+        "rule": "do not choose a best domain without original-checked context and comparable coverage"
+      },
+      "stateBoundaries": "L01-L04 sequence and injuries not confirmed",
+      "sourceCoverageStatus": "existing secondary paraphrases; no assistant direct original check"
+    },
+    {
+      "characterId": "char-071",
+      "battleCandidateIds": [
+        "pilot-R"
+      ],
+      "existingEvidenceIds": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "existingReviewIds": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "linkedStatementCandidateIds": [],
+      "identityVerifiedBy": "roster-index-only",
+      "l2Status": "structured-candidates-not-verified",
+      "sharedTemplate": {
+        "canonFactCandidateStatus": "secondary-unverified",
+        "combatContext": {
+          "objective": null,
+          "initialDistance": null,
+          "terrain": null,
+          "cover": null,
+          "ammo": null,
+          "preparation": null,
+          "timePressure": null,
+          "knownParticipants": [
+            "char-071",
+            "char-055"
+          ],
+          "injuryAndFatigue": "not-verified",
+          "phase": "not-verified"
+        },
+        "interpretationStatus": "hypothesis-with-counter",
+        "evaluation": {
+          "score": null,
+          "sufficiency": "unassessed",
+          "approval": "none"
+        },
+        "calculation": {
+          "model": null,
+          "enabled": false,
+          "result": null
+        },
+        "temporal": {
+          "splitDecision": "not-decided"
+        }
+      },
+      "representativeSpecialty": {
+        "decision": "not-selected",
+        "candidates": [
+          "도검"
+        ],
+        "rule": "do not choose a best domain without original-checked context and comparable coverage"
+      },
+      "stateBoundaries": "R04 injury-before/after and other encounters separate",
+      "sourceCoverageStatus": "existing secondary paraphrases; no assistant direct original check"
+    }
+  ],
+  "records": [
+    {
+      "existingEvidenceId": "A01",
+      "existingReviewId": "A01",
+      "battleCandidateId": "pilot-A",
+      "characterId": "char-033",
+      "sourceIds": [
+        "pilot:SA"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "A01",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "견제사격이 상대 행동을 제한했을 가능성",
+        "competing": "상대 움직임의 제한은 차문·방패·엄폐·회피 목표로도 설명 가능",
+        "reviewGate": "사격 행위와 실제 선택지 제한을 각각 확인해야 기술 외 영역으로 확대 가능"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "전술·판단"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "A-blockade",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "A02",
+      "existingReviewId": "A02",
+      "battleCandidateId": "pilot-A",
+      "characterId": "char-033",
+      "sourceIds": [
+        "pilot:SA"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "A02",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "새 제3자 위협에 표적을 옮겼을 가능성",
+        "competing": "사전 위협 인지 또는 조준 준비가 있었다면 순간 반응으로 설명 불가",
+        "reviewGate": "제3자 등장-인지-발사-결과의 실제 선후와 사전 인지를 확인"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "A-thirdparty",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "A03",
+      "existingReviewId": "A03",
+      "battleCandidateId": "pilot-A",
+      "characterId": "char-033",
+      "sourceIds": [
+        "pilot:SA"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "A03",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "총기 교체와 접근·이탈을 조직적으로 운용했을 가능성",
+        "competing": "예정된 무장 운용은 예기치 않은 변화에 대한 대응과 다름",
+        "reviewGate": "무장 조작·거리 변화·예상 밖 변수·계획 여부를 독립적으로 확인"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "기동"
+          },
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "전술·판단"
+          }
+        ],
+        "nonScoredLenses": [],
+        "exclusiveOutcomeCluster": "A-weaponcycle",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "A04",
+      "existingReviewId": "A04",
+      "battleCandidateId": "pilot-A",
+      "characterId": "char-033",
+      "sourceIds": [
+        "pilot:SA"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "A04",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "무장과 맨손이 얽힌 근접 대응 후보",
+        "competing": "무기 이용 방어를 맨손 완력의 증거로 일반화할 수 없음",
+        "reviewGate": "접촉 방식·기술·피격 방지·유효타를 별도 관찰"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "근접"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "방어"
+          },
+          {
+            "lane": "common-axis",
+            "name": "신체 역량"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "A-close",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "L01",
+      "existingReviewId": "L01",
+      "battleCandidateId": "pilot-L",
+      "characterId": "char-087",
+      "sourceIds": [
+        "pilot:SL"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "L01",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "연속 급소 타격의 숙련 후보",
+        "competing": "상대의 선행 부상과 공격 당시 방비가 성과에 기여했을 수 있음",
+        "reviewGate": "타격별 위치·방어 반응·제압 시점 검수 전 추가 축 귀속 금지"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "맨손"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "신체 역량"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "L-vital",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "L02",
+      "existingReviewId": "L02",
+      "battleCandidateId": "pilot-L",
+      "characterId": "char-087",
+      "sourceIds": [
+        "pilot:SL"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "L02",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "라텔 상대 명중 후보",
+        "competing": "방호 상태에 따라 명중과 무력화는 다르고 0.5초 표현은 미검증",
+        "reviewGate": "무장·방호·발사 전후 순서와 외부 시간 수치의 원작 여부 확인"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "L-shot",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "L03",
+      "existingReviewId": "L03",
+      "battleCandidateId": "pilot-L",
+      "characterId": "char-087",
+      "sourceIds": [
+        "pilot:SL"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "L03",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "총기의 상태를 이용한 기만이 행동 선택을 유도했을 가능성",
+        "competing": "상대의 해석 변화가 없었다면 기만 성공이라 할 수 없고, 연속 동작이 사전 준비였을 수 있음",
+        "reviewGate": "의도-상대 인지-상대 선택-관절 타격을 분리; 맨손 수행 독립 관찰 필요"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "전술·판단"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          },
+          {
+            "lane": "specialty",
+            "name": "맨손"
+          }
+        ],
+        "nonScoredLenses": [
+          "심리전",
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "L-feint",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "L04",
+      "existingReviewId": "L04",
+      "battleCandidateId": "pilot-L",
+      "characterId": "char-087",
+      "sourceIds": [
+        "pilot:SR"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "L04",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "라텔의 재교전 상황에서 무장 의도를 읽었다는 서술 후보",
+        "competing": "사전 정보로 예상했다면 돌발 대응으로 평가하기 어려움; 크리사·표영이 동시였는지 불분명",
+        "reviewGate": "참가자별 진입·이탈과 돌발 변수 발생·계획 수정 순서 검수"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "전술·판단"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [],
+        "exclusiveOutcomeCluster": "L-followup",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "R01",
+      "existingReviewId": "R01",
+      "battleCandidateId": "pilot-R",
+      "characterId": "char-071",
+      "sourceIds": [
+        "pilot:SJ"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "R01",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "빠른 위치 변경·공방 템포로 상대 호흡에 영향을 줬을 가능성",
+        "competing": "최달천의 선행 피로·자체 소모가 원인일 수 있고 상대 피로는 류지학 자신의 지속력 근거가 아님",
+        "reviewGate": "양측 독립 호흡·시간경과 및 발놀림/도검 동작을 구분"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "기동"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "specialty",
+            "name": "도검"
+          },
+          {
+            "lane": "common-axis",
+            "name": "지속전"
+          }
+        ],
+        "nonScoredLenses": [
+          "상대 피로·템포"
+        ],
+        "exclusiveOutcomeCluster": "R-tempo",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "R02",
+      "existingReviewId": "R02",
+      "battleCandidateId": "pilot-R",
+      "characterId": "char-071",
+      "sourceIds": [
+        "pilot:SJ"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "R02",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "상대 공격의 틈을 의도적으로 유도·활용했을 가능성",
+        "competing": "상대가 자발적으로 무리했거나 미리 예상하지 못한 공격에 즉시 대응했을 수 있음",
+        "reviewGate": "유도 행동/정보 보유/공격 개시와 대응 시차를 확인"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "전술·판단"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          }
+        ],
+        "nonScoredLenses": [],
+        "exclusiveOutcomeCluster": "R-opening",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "R03",
+      "existingReviewId": "R03",
+      "battleCandidateId": "pilot-R",
+      "characterId": "char-071",
+      "sourceIds": [
+        "pilot:SJ"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "R03",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "빈틈을 이용한 도검 절단 기술 후보",
+        "competing": "결정적 결과만으로 기술 정확도와 복수 능력치가 모두 높다고 추론 불가",
+        "reviewGate": "동작의 정확도·도검 조작과 결과 발생의 독립 관찰 필요"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "도검"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "exclusiveOutcomeCluster": "R-cut",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    },
+    {
+      "existingEvidenceId": "R04",
+      "existingReviewId": "R04",
+      "battleCandidateId": "pilot-R",
+      "characterId": "char-071",
+      "sourceIds": [
+        "pilot:SM",
+        "pilot:SC"
+      ],
+      "sourceVerification": "secondary-only",
+      "verification": {
+        "assistantOriginalChecked": false,
+        "secondaryTextFromPriorResearch": true,
+        "userOriginalObservationLinkedToThisSpecificRecord": false,
+        "originalSceneLocation": null
+      },
+      "canonFact": {
+        "candidateEvidenceReference": "R04",
+        "confirmed": false,
+        "observedAction": null
+      },
+      "combatContext": {
+        "objective": null,
+        "distance": null,
+        "cover": null,
+        "weapon": null,
+        "injury": null,
+        "phase": null,
+        "participantSequence": null,
+        "sceneCheckRequired": true
+      },
+      "interpretation": {
+        "candidate": "왼쪽 상지의 기능 제한이 전투 과정에 있었을 가능성",
+        "competing": "부상 발생 시점·직후 기능 변화·피로와 별개의 후속 손상이 불명확",
+        "reviewGate": "발생 전후 조건과 별도 교전 손상을 대조할 때까지 방어 감점/지속전 가산 모두 보류"
+      },
+      "attribution": {
+        "primaryCandidate": {
+          "lane": "combat-context",
+          "name": null
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "방어"
+          },
+          {
+            "lane": "common-axis",
+            "name": "지속전"
+          }
+        ],
+        "nonScoredLenses": [
+          "부상·일시 상태"
+        ],
+        "exclusiveOutcomeCluster": "R-injury",
+        "secondaryDoesNotCountAsIndependent": true,
+        "readyToScore": false
+      },
+      "evaluation": {
+        "commonAxes": {
+          "신체 역량": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "기동": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "반응": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "방어": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "지속전": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "전술·판단": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "부동심": {
+            "score": null,
+            "assessment": "unassessed"
+          },
+          "상황 대응": {
+            "score": null,
+            "assessment": "unassessed"
+          }
+        },
+        "specialty": {
+          "domain": null,
+          "score": null,
+          "usageStatus": "unassessed"
+        },
+        "sufficiency": "unassessed",
+        "approval": "none"
+      },
+      "calculation": {
+        "enabled": false,
+        "result": null
+      }
+    }
+  ],
+  "biasAudit": {
+    "rawEvidencePerPilot": [
+      4,
+      4,
+      4
+    ],
+    "independenceRule": "do not treat multiple candidate records or shared wiki / reposts as independent original scenes",
+    "lengthBias": "Aquila has deeper domestic/user research; review depth is not an ability score",
+    "absenceRule": "unobserved / not-used / unknown / not-applicable are different",
+    "treatment": "no automated counts-to-E-rating or scores"
+  },
+  "approval": {
+    "originalDirectChecks": 0,
+    "approvedRatings": 0,
+    "confirmedPhaseRecords": 0,
+    "modelStatus": "unapproved"
+  }
+}
