@@ -724,6 +724,17 @@
     "tierPercentNumbersAreNotEvaluation": true,
     "requireExactEpisodeAndCutForCanon": true,
     "imageRedistributionAllowed": false,
-    "approvedScoreImpact": "none"
+    "approvedScoreImpact": "none",
+    "preferredDiscoveryOrder": [
+      "Original Korean webtoon panels independently checked and precisely located",
+      "Official Korean materials directly inspected",
+      "User's firsthand original-reading report (record exact location separately)",
+      "Korean scene-specific firsthand fan analysis",
+      "Korean contemporary serialization discussion",
+      "Korean wiki and later recollections",
+      "Foreign-language translated discussion for alternate interpretations"
+    ],
+    "caveat": "This ordering prioritizes original-language context and discovery suitability, not blanket domestic infallibility or canonical verification; provenance, translation fidelity, independence and access mode remain per-source.",
+    "overseasDiscussionRole": "supplementary counterhypothesis, never final arbiter over independently checked Korean original"
   }
 }
