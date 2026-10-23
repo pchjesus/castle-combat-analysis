@@ -2,7 +2,7 @@
   "schemaVersion": "v2.7-aquila-cognitive-tactics-addendum",
   "status": "unapproved-research",
   "characterId": "char-033",
-  "opponentCharacterId": null,
+  "opponentCharacterId": "char-042",
   "opponentName": "구스타프",
   "battleId": "pilot-A",
   "linkedEvidenceIds": [
