@@ -9,6 +9,7 @@ on:
       - 'scripts/check-pilot-v2.1.mjs'
       - 'scripts/pilot-v2.1-view.js'
       - 'data/pilot-evidence.v2.1.json'
+      - 'data/pilot-review-queue.v2.2.json'
       - 'data/temporal-evaluation-candidates.v0.1.json'
       - 'data/quotation-review.v0.1.json'
       - '.github/workflows/pages.yml'
@@ -48,6 +49,7 @@ jobs:
           cp index.html _site/index.html
           cp scripts/pilot-v2.1-view.js _site/scripts/
           cp data/pilot-evidence.v2.1.json _site/data/
+          cp data/pilot-review-queue.v2.2.json _site/data/
           cp data/temporal-evaluation-candidates.v0.1.json _site/data/
           cp data/quotation-review.v0.1.json _site/data/
           touch _site/.nojekyll
