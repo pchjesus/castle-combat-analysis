@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "v2.8-aquila-domestic-crosscheck-draft",
+  "status": "research-unapproved",
+  "characterId": "char-033",
+  "characterName": "아킬라",
+  "episodes": [
+    {
+      "episodeId": "AK-G",
+      "battleCandidate": "pilot-A",
+      "opponentCharacterId": "char-042",
+      "opponents": [
+        "구스타프"
+      ],
+      "existingEvidenceIds": [
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "originalPanelCheck": "not-done-by-assistant"
+    },
+    {
+      "episodeId": "AK-KHO",
+      "battleCandidate": null,
+      "opponents": [
+        "콘",
+        "헤론",
+        "오울"
+      ],
+      "existingEvidenceIds": [],
+      "candidateEvidenceId": "research-only:AK-KHO-INTEL",
+      "originalPanelCheck": "not-done-by-assistant",
+      "note": "Separate incident candidate; do not silently add Battle, Phase or Evidence to the public 3-person projection."
+    }
+  ],
+  "sourceCatalog": [
+    {
+      "id": "D01",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=229507",
+      "platform": "korean-dcinside",
+      "date": "2024-07-27",
+      "title": "아킬라는 구스타프를 홀드하러온게아님",
+      "access": "text-observed",
+      "kind": "community-original-reading-interpretation",
+      "independenceGroup": "post-229507",
+      "claims": [
+        "원거리 우위를 일부 포기하고 구스타프를 흔들어 빠르게 사냥하려 했다는 독자 판단",
+        "이상 징후와 추가 신호 뒤 크로트·샤이어의 위험 때문에 교전 결착보다 동료 관련 판단이 중요해졌다는 해석",
+        "신 자유로운 영혼 팀의 개입으로 퇴로가 봉쇄됐다는 독자 분석"
+      ],
+      "limits": [
+        "원작 이미지 첨부를 독립 직접검수로 사용하지 않음",
+        "추가 신호·퇴각 결정의 실제 원작 컷과 정확한 순서 미검증"
+      ]
+    },
+    {
+      "id": "D02",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=341783",
+      "platform": "korean-dcinside",
+      "date": "2025-08-16",
+      "title": "마학영 총기술이 아킬라 급이라고 하는데,",
+      "access": "text-observed",
+      "kind": "community-performance-analysis",
+      "independenceGroup": "post-341783",
+      "claims": [
+        "신 자유로운 영혼 팀 3인의 탄창 상태를 전투 중 계산했다고 서술",
+        "총탄 방향으로 적의 인원과 위치를 추론했다고 서술",
+        "구스타프 근접 공방 중 무장해제 후 거리를 다시 벌렸다고 서술"
+      ],
+      "limits": [
+        "아킬라의 전투지능 서술이지 수치별 특정 상대 매핑 원문 검증 아님"
+      ]
+    },
+    {
+      "id": "D03",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=346361",
+      "platform": "korean-dcinside",
+      "date": "2025-08-24",
+      "title": "근데 아킬라 이 ㅂㅅ은",
+      "access": "text-observed",
+      "kind": "community-purpose-counterview",
+      "independenceGroup": "post-346361",
+      "claims": [
+        "구스타프를 죽일 의도가 없었다면 현장 진입 목적이 불분명하다는 독자 문제제기",
+        "제압이 목표였다면 위험 대비 현실성에 의문을 제시"
+      ],
+      "limits": [
+        "논쟁성 가정이며 아킬라의 실제 목적 원작 직접 확증 아님"
+      ]
+    },
+    {
+      "id": "D04",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=431827",
+      "platform": "korean-dcinside",
+      "date": "2026-04-28",
+      "title": "캐슬 완결 기념 최종 티어표",
+      "access": "text-observed",
+      "kind": "later-global-interpretation",
+      "independenceGroup": "post-431827",
+      "claims": [
+        "원거리만 고수하면 교전이 장기화될 수 있다는 팬의 문제제기",
+        "일정 수준 상대에 대한 심리적 우위를 위해 근접전을 일부 감수했을 수 있다는 해석"
+      ],
+      "limits": [
+        "완결 후 후기 평가·티어 중심, 주관적 무장 전제; 원작 당시 시점과 동일 가중치 불가"
+      ]
+    },
+    {
+      "id": "D05",
+      "url": "https://d.namu.moe/w/%EC%95%84%ED%82%AC%EB%9D%BC%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "platform": "korean-namu-wiki",
+      "date": null,
+      "title": "아킬라(캐슬)/전투력",
+      "access": "text-observed",
+      "kind": "editable-secondary-derivative",
+      "independenceGroup": "wiki-aquila",
+      "claims": [
+        "고지 이탈의 심리 교란 목적과 비정상 상황에 대한 제약을 함께 설명",
+        "신 자유로운 영혼 팀의 탄약 소진 유도·상대 거리 제한·사격 방향을 활용하는 것으로 설명"
+      ],
+      "limits": [
+        "하위 인물별 위키 글과 중복될 수 있어 독립 여러 건으로 세지 않음",
+        "발언/시간/도식은 원작 직접 대조 전 미확인"
+      ]
+    },
+    {
+      "id": "D06",
+      "url": "https://www.namu.moe/w/%ED%97%A4%EB%A1%A0%28%EC%BA%90%EC%8A%AC%29",
+      "platform": "korean-namu-wiki",
+      "date": null,
+      "title": "헤론(캐슬)",
+      "access": "text-observed",
+      "kind": "editable-secondary-derivative",
+      "independenceGroup": "wiki-aquila",
+      "claims": [
+        "신 자유로운 영혼 팀의 과도한 자신감·탄창 확인 실패와 아킬라의 계산을 대비하는 설명"
+      ],
+      "limits": [
+        "위키 아킬라 문서와 같은 계열 출처이며 원작 독립 교차 검증으로 집계 불가"
+      ]
+    }
+  ],
+  "firsthandUserReports": [
+    {
+      "id": "U01",
+      "type": "user-firsthand-original-reading-report",
+      "statement": "콘·헤론·오울 상대 장면에 0발, 사거리 미달, 8/10발 계산 표기가 직접 나온다",
+      "literalMarkers": [
+        "0발",
+        "사거리 미달",
+        "8/10발"
+      ],
+      "markerAssignment": "not-verified",
+      "simultaneousDefeat": "not-established",
+      "userSaysDirectlyRead": true,
+      "assistantCheckedOriginalPanel": false,
+      "exactEpisodeAndPanel": null
+    },
+    {
+      "id": "U02",
+      "type": "user-firsthand-original-reading-report",
+      "statement": "아킬라는 자신의 평소 스타일대로 할 여유가 없고 구스타프를 흔들어 심리적 우위를 얻기 위해 고지에서 내려왔다",
+      "reportedKeyPhrase": "구스타프가 흔들린다",
+      "verbatimKoreanOriginalCheckedByAssistant": false,
+      "userSaysDirectlyRead": true,
+      "assistantCheckedOriginalPanel": false,
+      "exactEpisodeAndPanel": null
+    }
+  ],
+  "chronologicalDiscriminators": [
+    {
+      "id": "G1",
+      "episode": "AK-G",
+      "stage": "initial",
+      "workingDescription": "사격 거리에서 우위와 차문 방호를 인지",
+      "needsReview": [
+        "실제 유리한 고지/엄폐 위치",
+        "구스타프의 사전 정보와 접근·방패 역할"
+      ],
+      "epistemic": "community-derived-candidate"
+    },
+    {
+      "id": "G2",
+      "episode": "AK-G",
+      "stage": "decision",
+      "workingDescription": "고지에서 내려와 심리적 압박 및 빠른 결착 시도",
+      "needsReview": [
+        "'구스타프가 흔들린다' 독백/발언의 정확한 원문·장면",
+        "시간 여유 없음과 이탈 이유가 같은 시점에서 연결되는지"
+      ],
+      "epistemic": "user-firsthand-report-plus-korean-scene-commentary"
+    },
+    {
+      "id": "G3",
+      "episode": "AK-G",
+      "stage": "execution",
+      "workingDescription": "한 차례 이상 근접 접근·접촉·재이격·사격 설명",
+      "needsReview": [
+        "근접 접근과 재이격이 각각 몇 차례인지",
+        "상대의 실제 시야/무장/판단 변화",
+        "실효타·부상·퇴로 손실의 시점"
+      ],
+      "epistemic": "community-derived-candidate"
+    },
+    {
+      "id": "G4",
+      "episode": "AK-G",
+      "stage": "context-change",
+      "workingDescription": "동료 위험과 제3자 개입으로 전투 목적·퇴로·시간 선택지가 변했다는 해석",
+      "needsReview": [
+        "크로트·샤이어 관련 실제 경고 수신 시점",
+        "그 경고 전후로 아킬라 목표가 전환되었는지",
+        "신 자유로운 영혼 팀의 도착 및 퇴로 차단 시점"
+      ],
+      "epistemic": "community-derived-candidate"
+    },
+    {
+      "id": "K1",
+      "episode": "AK-KHO",
+      "stage": "intelligence",
+      "workingDescription": "탄약 수와 사거리, 상대 위치·인원 추론",
+      "needsReview": [
+        "0발, 사거리 미달, 8/10발 각각 대응하는 상대·무기",
+        "계산 당시 시점과 실제 사격 결과",
+        "사격 방향에 따른 추론인지 사전 정보를 알았는지"
+      ],
+      "epistemic": "user-firsthand-report-plus-korean-scene-commentary"
+    },
+    {
+      "id": "K2",
+      "episode": "AK-KHO",
+      "stage": "execution",
+      "workingDescription": "상대의 재장전/무장 변경과 거리를 이용해 반격한 것으로 정리됨",
+      "needsReview": [
+        "오울·헤론의 행동 중첩과 콘의 후속 대응",
+        "신 자유로운 영혼 세 명이 한순간에 쓰러진 것인지 구간상 연속인지"
+      ],
+      "epistemic": "editable-wiki-synthesis-only"
+    }
+  ],
+  "causalHypotheses": [
+    {
+      "id": "FAST",
+      "hypothesis": "심리적 압박으로 구스타프를 빠르게 무력화하려는 전술",
+      "support": [
+        "U02",
+        "D01",
+        "D05"
+      ],
+      "critique": "실제 심리 효과 및 목표가 사살·제압 중 무엇인지 원작에서 확인해야 함",
+      "validation": "intention-versus-effect-separated"
+    },
+    {
+      "id": "ATTRITION",
+      "hypothesis": "접근·이탈을 반복해 누적 소모전을 진행할 역량이 있었을 가능성",
+      "support": [
+        "U02",
+        "D02"
+      ],
+      "critique": "반복 수행이 실제로 나타난 것이 아니며 동료 위험·증원·탄약·퇴로가 장기전을 막을 수 있음",
+      "validation": "counterfactual-not-observed"
+    },
+    {
+      "id": "WITHDRAW",
+      "hypothesis": "외부 지원팀·동료 위험으로 교전 목표를 수정하고 후퇴를 택한 전략적 판단",
+      "support": [
+        "D01"
+      ],
+      "critique": "다른 독자는 처음부터 교전 목적이 무엇인지 문제 제기; 퇴각·난입의 장면 순서 확인 필요",
+      "validation": "community-narrative-not-canon"
+    },
+    {
+      "id": "LOSS",
+      "hypothesis": "위험한 근접 진입 자체가 손실을 낳은 전술적 오판",
+      "support": [
+        "D03"
+      ],
+      "critique": "빠른 결착을 요구한 외부 조건·심리 교란 성과를 고려하지 않으면 hindsight bias",
+      "validation": "community-counterinterpretation"
+    }
+  ],
+  "statMapping": [
+    {
+      "axis": "전술·판단",
+      "evidenceUse": "상대 화력·사거리·위치 정보를 이용하고 행동 목적을 수정",
+      "guard": "사전정보/인지/실제 계획 변경을 독립 컷에서 확인",
+      "numericScore": null
+    },
+    {
+      "axis": "상황 대응",
+      "evidenceUse": "처음 작전이 무너지거나 외부 위협이 추가된 뒤 대응을 바꾼 사실",
+      "guard": "처음부터 예상한 조건이면 상황 대응과 무차별 중복 금지",
+      "numericScore": null
+    },
+    {
+      "axis": "심리전 (전술 프로필)",
+      "evidenceUse": "흔들기 의도 vs 구스타프 실제 선택 변경",
+      "guard": "심리전 의도만으로 부동심/기술/승률 자동 가산 금지",
+      "numericScore": null
+    },
+    {
+      "axis": "부동심",
+      "evidenceUse": "포위·피격·궁지에서도 자기 판단 안정 유지",
+      "guard": "콘/헤론/오울전 실제 심리 표현과 대조해 별도 근거가 있을 때만",
+      "numericScore": null
+    },
+    {
+      "axis": "사격 전문기술",
+      "evidenceUse": "정확한 무기 조작·타점·장전/사거리 관리",
+      "guard": "정보 계산이 실제 정확한 사격 조작과 같은 사건에서 겹치면 이중 가산 금지",
+      "numericScore": null
+    },
+    {
+      "axis": "기동·거리 통제 (프로필 맥락)",
+      "evidenceUse": "접근·재이격과 퇴각 가능성",
+      "guard": "재이격 1회만으로 반복적 누적전 성공 가능 확정 금지",
+      "numericScore": null
+    }
+  ],
+  "approval": {
+    "canonPanelsDirectlyCheckedByAssistant": 0,
+    "approvedOfficialEvidence": 0,
+    "formalScores": 0,
+    "confirmedNewBattles": 0,
+    "confirmedPhases": 0,
+    "publicQuoteApprovals": 0
+  },
+  "noEditsTo": [
+    "data/pilot-evidence.v2.1.json",
+    "data/pilot-review-queue.v2.2.json",
+    "data/roster.v0.1.json",
+    "data/quotation-review.v0.1.json"
+  ],
+  "notes": "Original first-hand user's reading is tracked separately from assistant canon validation. Forum snapshots differ in date and context; domestic analysis has discovery preference, not automatic correctness."
+}

@@ -1,0 +1,740 @@
+{
+  "schemaVersion": "v2.7-community-review-draft",
+  "asOf": "2026-10-23",
+  "project": "캐슬 전투력 분석",
+  "status": "research-unapproved",
+  "baselineMainSha": "4766cad4ea61be7727ee0949e4c65bc228dc36c9",
+  "verification": {
+    "originalPanelsDirectlyVerified": 0,
+    "officialQuotesDirectlyVerified": 0,
+    "formalEvaluations": 0,
+    "phaseRecordsApproved": 0,
+    "sourceFactType": "community-post-reports-only",
+    "criteria": "Secondary fan analysis assists counterhypotheses and scene search, never canon promotion"
+  },
+  "sources": [
+    {
+      "id": "C01",
+      "platform": "dcinside",
+      "url": "https://m.dcinside.com/board/castlewebtoon/361869",
+      "title": "봐도봐도 개꼴리는 기술 (2): 오도화의 초절기교[1]",
+      "publishedAt": "2025-09-30",
+      "accessMode": "full-text-read",
+      "independenceGroup": "odoha-tech-series-175123",
+      "characterIds": [
+        "char-052"
+      ],
+      "linkedEvidenceIds": [],
+      "communityClaims": [
+        "1부 104화의 도끼 수수·파지·회전·타이밍을 독자 관점에서 연속 분석함"
+      ],
+      "limitations": [
+        "관찰이라고 기술한 손·도끼 위치를 원작 컷에서 다시 확인",
+        "기다린 이유와 눈의 방향에 대한 추론은 사실과 분리"
+      ],
+      "role": "technique-interpretation",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C02",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=361900",
+      "title": "봐도봐도 개꼴리는 기술 (3): 오도화의 초절기교[2]",
+      "publishedAt": "2025-09-30",
+      "accessMode": "full-text-read",
+      "independenceGroup": "odoha-tech-series-175123",
+      "characterIds": [
+        "char-052"
+      ],
+      "linkedEvidenceIds": [],
+      "communityClaims": [
+        "1부 97화 히데와의 공방을 소재로 도끼 파지 변환과 도끼날 방향 전환을 설명함"
+      ],
+      "limitations": [
+        "C01과 같은 작성자의 연재이므로 독립된 원작 확인 자료 2건으로 집계 금지",
+        "동작·기술의 의도와 장면 사실을 분리"
+      ],
+      "role": "technique-interpretation",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C03",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=107902",
+      "title": "캐슬 스토리 진행과 직결되는 라이벌구도 및 부상관리",
+      "publishedAt": null,
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-independent-107902",
+      "characterIds": [
+        "char-071"
+      ],
+      "linkedEvidenceIds": [
+        "R04"
+      ],
+      "communityClaims": [
+        "류지학과 최달천 교전을 왼팔·어깨 손상 및 빨리 승부를 끝내려는 선택과 연결하는 해석이 있음"
+      ],
+      "limitations": [
+        "부상 그 자체와 빨리 끝내려는 의도는 증명 수준이 다름",
+        "후속 현석 대치 등의 장면을 당시 교전과 혼합 금지"
+      ],
+      "role": "causal-interpretation",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C04",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=100982",
+      "title": "최달천 왤케 저평가하냐? 류지학 왼팔 아웃시켰는데 나름",
+      "publishedAt": "2023-05-29",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-independent-100982",
+      "characterIds": [
+        "char-071"
+      ],
+      "linkedEvidenceIds": [
+        "R04"
+      ],
+      "communityClaims": [
+        "최달천이 류지학의 왼팔에 유효한 손상을 남겼다는 독자 해석; 시간에 쫓겼다는 해명을 동시에 언급"
+      ],
+      "limitations": [
+        "피해가 발생했다는 서술과 해당 위험 감수의 전술적 적절성은 별개",
+        "다른 상대와의 강약 전이는 허용하지 않음"
+      ],
+      "role": "debate-counterpoint",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C05",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=225526",
+      "title": "캐슬 10강은 어떻게 명예를 지키는지 알아보자",
+      "publishedAt": "2024-07-17",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-independent-225526",
+      "characterIds": [
+        "char-071",
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "R04",
+        "A04"
+      ],
+      "communityClaims": [
+        "류지학·최달천전을 지원병력 없이 치른 1대1이라는 인상으로, 아킬라전은 추가 사격 인원의 조건과 대비해 설명"
+      ],
+      "limitations": [
+        "'명예로운 전투'라는 윤리적 평가가 전투력 성과의 배율이 될 수 없음",
+        "부수 인원·무장·부상 상태가 다르므로 단순 결과 비교 불가"
+      ],
+      "role": "battle-condition-comparison",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C06",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=287144",
+      "title": "리천vs신겐은 어그로가 아니라 진짜 신겐이 필승임",
+      "publishedAt": "2025-01-13",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "wiki-derived-287144",
+      "characterIds": [
+        "char-087"
+      ],
+      "linkedEvidenceIds": [
+        "L04"
+      ],
+      "communityClaims": [
+        "팬 서열논쟁의 전적표에서 2부 27화 표영·라텔, 30화 크리사를 다른 행으로 나눔"
+      ],
+      "limitations": [
+        "본문이 나무위키 전적을 그대로 가져왔다고 밝힘: 독립 장면 관찰로 집계 금지",
+        "27/30화 모두 커뮤니티 회차 힌트이고 원작 전투 범위를 확정하지 않음"
+      ],
+      "role": "episode-hint-only",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C07",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=351088",
+      "title": "캐슬 2부 중반 도파민 터지던 순간들",
+      "publishedAt": null,
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-independent-351088",
+      "characterIds": [
+        "char-087"
+      ],
+      "linkedEvidenceIds": [
+        "L01",
+        "L04"
+      ],
+      "communityClaims": [
+        "표영의 준비와 라텔의 뒤이은 등장 등 데뷔전 전개를 회상하며 리천의 동작을 적게 움직여 효율적이었다고 평가함"
+      ],
+      "limitations": [
+        "장면의 자세/각도 및 참가자별 시간순서는 본문만으로 확정 불가",
+        "대사의 심리적 효과가 명시적으로 수행에 작용했는지 검수"
+      ],
+      "role": "reader-scene-impression",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C08",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=254238",
+      "title": "(분석) 인물마다 자신의 최대치를 뽑는 무기, 싸움 방식이 존재함(장문)",
+      "publishedAt": null,
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-independent-254238",
+      "characterIds": [
+        "char-033",
+        "char-071"
+      ],
+      "linkedEvidenceIds": [
+        "A01",
+        "A03"
+      ],
+      "communityClaims": [
+        "최대 성과를 내는 무장·거리·전법의 인물별 차이를 강조함"
+      ],
+      "limitations": [
+        "가상의 풀무장 최고상태를 기본 종합전투력으로 합성하지 않기",
+        "일반 전투 프로필과 특정 매치업 조건을 분리"
+      ],
+      "role": "methodological-opinion",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C09",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=431827",
+      "title": "캐슬 완결 기념 최종 티어표",
+      "publishedAt": "2026-04-28",
+      "accessMode": "full-text-read",
+      "independenceGroup": "forum-independent-431827",
+      "characterIds": [
+        "char-033",
+        "char-071",
+        "char-056"
+      ],
+      "linkedEvidenceIds": [
+        "A04",
+        "R04"
+      ],
+      "communityClaims": [
+        "작성자는 1:1 칼+권총 기본 무장을 전제로 등급을 부여하며 아킬라의 '상대가 접근하지 않으면 끝이 길어지는' 문제와 심리전 근접 진입을 논의함"
+      ],
+      "limitations": [
+        "칼+권총 기준은 작성자 임의 설정이지 원작 기본 조건이 아님",
+        "게시물 내 승률·점수·티어는 재사용 불가"
+      ],
+      "role": "matchup-assumption",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C10",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=311604",
+      "title": "이보다 더 완벽한 티어표가 있을까",
+      "publishedAt": "2025-06-01",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-311604",
+      "characterIds": [
+        "char-099",
+        "char-056",
+        "char-051"
+      ],
+      "linkedEvidenceIds": [],
+      "communityClaims": [
+        "저자가 직접 싸운 장면이 없는 최민욱·강민성 등의 인물을 순위 평가에서 제외한다고 명시"
+      ],
+      "limitations": [
+        "출전 장면 부족=실력이 낮음을 의미하지 않음",
+        "C11처럼 원작 장면이 없는데도 전성기 서열을 매긴 글과 평가 기준이 충돌"
+      ],
+      "role": "missing-performance-policy",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C11",
+      "platform": "dcinside",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=391822",
+      "title": "가장 객관적인 내성 티어표",
+      "publishedAt": "2026-01-07",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "forum-391822",
+      "characterIds": [
+        "char-099",
+        "char-056"
+      ],
+      "linkedEvidenceIds": [],
+      "communityClaims": [
+        "최민욱 전성기를 조직 장악·위상 논리로 최상위권에 배치한 독자 서열 주장"
+      ],
+      "limitations": [
+        "높은 조직 지위가 전성기 개인 무력의 직접 관찰은 아님",
+        "C10의 미출전 인물 평가 보류 기준과 대비할 반례"
+      ],
+      "role": "status-to-strength-inference",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C12",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1gc6w2v",
+      "title": "Why did aquilla close the distance against Gustav?",
+      "publishedAt": "2024-10-25",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "reddit-1gc6w2v",
+      "characterIds": [
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "A04",
+        "A03"
+      ],
+      "communityClaims": [
+        "질문자는 근접 접근을 불필요한 위험으로, 답변자는 함정 의심·빠른 종결과 심리 압박으로 해석"
+      ],
+      "limitations": [
+        "답변의 '2부 52화' 회차 지목은 원문 미검수 힌트",
+        "심리전 성공의 관찰 결과를 직접 확인하기 전 점수화 불가"
+      ],
+      "role": "explicit-opposed-motives",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C13",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1ee239w",
+      "title": "How Strong is Aquila without a gun",
+      "publishedAt": "2024-07-28",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "reddit-1ee239w",
+      "characterIds": [
+        "char-033",
+        "char-087",
+        "char-052"
+      ],
+      "linkedEvidenceIds": [
+        "A04"
+      ],
+      "communityClaims": [
+        "총기 없이 리천·오도화와 비교할 때 독자들이 극단적으로 다른 결론을 냄"
+      ],
+      "limitations": [
+        "무장 유무 조건과 상대의 시점을 고정하지 않은 팬 승부 예측",
+        "서로 다른 독자의 댓글을 하나의 합의로 집계하지 않음"
+      ],
+      "role": "weapon-dependence-dispute",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C14",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1crullz",
+      "title": "Aquila vs Gustav",
+      "publishedAt": "2024-05-14",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "reddit-1crullz",
+      "characterIds": [
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "A01",
+        "A04"
+      ],
+      "communityClaims": [
+        "교전 당시 독자들은 아킬라의 사격과 맨손 공방을 구분하면서 구스타프의 실제 피격 여부에 불확실성을 표시"
+      ],
+      "limitations": [
+        "연재 중 초기 독자 예측과 최종 결말을 뒤섞지 않음",
+        "선행 컷에서 보지 못한 후속 타격을 확정적으로 서술하지 않음"
+      ],
+      "role": "contemporaneous-view",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C15",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1g9kh3v",
+      "title": "You were strong Gustav....just not strong enough",
+      "publishedAt": "2024-10-22",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "reddit-1g9kh3v",
+      "characterIds": [
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "A02",
+        "A04"
+      ],
+      "communityClaims": [
+        "아킬라의 부상 시점, 구스타프와 제3자 기습·근접 성과를 놓고 독자들이 상호 반박"
+      ],
+      "limitations": [
+        "서로 공방 중인 인물들이 근거 제시 없이 '사실'로 부르는 부분 분리",
+        "팔·갈비뼈 부상/다대일의 실제 타임라인은 원작 대조 전 미확정"
+      ],
+      "role": "explicit-contradiction",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C16",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1p1ro99/magneficent_fight/",
+      "title": "Magneficent fight.",
+      "publishedAt": "2025-11-20",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "reddit-1p1ro99",
+      "characterIds": [
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "A04"
+      ],
+      "communityClaims": [
+        "총기전은 아킬라가, 맨손은 구스타프가 우세하다는 관점과 다수 인원 교전이었다는 주장이 공존함"
+      ],
+      "limitations": [
+        "팬덤 호평이나 특정 1대N 주장만으로 독립 교전 Phase를 생성하지 않음",
+        "무장 조건이 다르면 동일 1:1로 평가하지 않음"
+      ],
+      "role": "weapon-context-debate",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    },
+    {
+      "id": "C17",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/castlewebtoon/comments/1mkeb3m",
+      "title": "Tier List !!!!!!",
+      "publishedAt": "2025-08-07",
+      "accessMode": "search-excerpt-read",
+      "independenceGroup": "reddit-1mkeb3m",
+      "characterIds": [
+        "char-099",
+        "char-056",
+        "char-033",
+        "char-071",
+        "char-087"
+      ],
+      "linkedEvidenceIds": [],
+      "communityClaims": [
+        "전성기 강민성의 위치에 대한 서열 주장에 독자들이 직접 이견을 제기함"
+      ],
+      "limitations": [
+        "투표/댓글 동의가 실전 능력치 직접 검증이 아님",
+        "서열 비교 기준·무장·시점이 다르면 통계적 합의 추정 불가"
+      ],
+      "role": "unverified-prime-rank-debate",
+      "sourceType": "community",
+      "originalSceneVerification": "not-checked",
+      "independentCanonCorroboration": false,
+      "scoreImpact": "none",
+      "quoteRights": "not-reviewed"
+    }
+  ],
+  "issues": [
+    {
+      "id": "A04-close-range",
+      "subjectIds": [
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "A03",
+        "A04"
+      ],
+      "sourceIds": [
+        "C09",
+        "C12",
+        "C13",
+        "C15",
+        "C16"
+      ],
+      "question": "아킬라의 자발적인 근접 진입은 함정 회피·심리전·빠른 종결 의도인가, 불필요한 거리 상실인가?",
+      "alternatives": [
+        "거리 유지가 전략적으로 유리했지만 자발적으로 불리한 근접전을 선택",
+        "원거리 지연이 위험하다는 판단 및 심리 압박을 위한 제한적 근접 수용",
+        "제3자 기습이 먼저 전투 조건을 바꿔 근접을 강제"
+      ],
+      "requiredCanonObservations": [
+        "교전 목표·상대 정보·주변 위협의 인지 표현",
+        "근접 시작 전에 이미 제3자 존재를 알았는지",
+        "실제 근접 시작과 부상·교전 결과의 선후",
+        "심리 압박 후 구스타프의 판단 또는 행동이 실제 변화했는지"
+      ],
+      "doNotInfer": [
+        "자동적인 전술 점수 가감",
+        "미검수 2부 52화의 대사나 컷 확정"
+      ]
+    },
+    {
+      "id": "A02-third-party",
+      "subjectIds": [
+        "char-033"
+      ],
+      "linkedEvidenceIds": [
+        "A02",
+        "A03"
+      ],
+      "sourceIds": [
+        "C05",
+        "C14",
+        "C15"
+      ],
+      "question": "추가 사격 인원과 부상 타이밍이 아킬라의 표적전환·사격 수행에 어떤 조건으로 작용했나?",
+      "alternatives": [
+        "미리 경계를 하던 표적에 대한 사전 조준",
+        "예상 못 한 위협에 대한 시각적 반응·표적 전환",
+        "기습 이후 신체 손상으로 대응이 달라진 경우"
+      ],
+      "requiredCanonObservations": [
+        "각 참가자의 최초 출현·무장·공격 시점",
+        "아킬라의 시야·총구와 실제 발사·명중 순서",
+        "왼팔 등 손상과 다음 무장 운용 동작"
+      ],
+      "doNotInfer": [
+        "구스타프 1:1 성과와 섞어 계산",
+        "게시물의 1대N을 공식 인원 수로 확정"
+      ]
+    },
+    {
+      "id": "L04-sequence",
+      "subjectIds": [
+        "char-087"
+      ],
+      "linkedEvidenceIds": [
+        "L01",
+        "L04"
+      ],
+      "sourceIds": [
+        "C06",
+        "C07"
+      ],
+      "question": "리천 상대 표영·라텔·크리사의 직접 타격은 동시인가 순차인가, 서로 다른 화에 걸친 교전인가?",
+      "alternatives": [
+        "표영·라텔의 연계 공격이 실제 중첩",
+        "교대·재교전이 연속 발생하고 크리사는 후속 독립 접촉",
+        "회상/생략 컷 때문에 게시물에 적힌 회차가 실제 순서와 다름"
+      ],
+      "requiredCanonObservations": [
+        "2부 27~30화 *후보*의 참가자·무장·손상별 타임라인",
+        "겹쳐서 가한 공격의 실제 같은 컷/연속 컷 근거",
+        "30화 크리사 교전 장면이 별도 국면인지"
+      ],
+      "doNotInfer": [
+        "2부 27/30화 팬 전적표를 독립 원작 증거라고 간주",
+        "승패·동시 1:3 확정"
+      ]
+    },
+    {
+      "id": "R04-arm",
+      "subjectIds": [
+        "char-071"
+      ],
+      "linkedEvidenceIds": [
+        "R04"
+      ],
+      "sourceIds": [
+        "C03",
+        "C04",
+        "C05"
+      ],
+      "question": "왼팔/어깨 손상은 언제 생겼고, 빠른 결착을 위한 의도적 교환이라는 해석이 가능한가?",
+      "alternatives": [
+        "목적상 시간 압박 때문에 위험을 의식적으로 감수한 교환",
+        "예상치 못한 유효타 또는 방어 실패",
+        "시간 제약은 독자가 사후에 붙인 해석"
+      ],
+      "requiredCanonObservations": [
+        "99~100화 *후보*에서 손상 전후 왼팔 사용 컷",
+        "작중 제시된 시급한 목표·제한 시간",
+        "부상 전후 방어·무장·움직임의 실제 기능 변화"
+      ],
+      "doNotInfer": [
+        "부상 하나만으로 방어·지속전 점수 감산",
+        "상대 부상과 자신의 지속력 동일시"
+      ]
+    },
+    {
+      "id": "OD-axe-tech",
+      "subjectIds": [
+        "char-052"
+      ],
+      "linkedEvidenceIds": [],
+      "sourceIds": [
+        "C01",
+        "C02"
+      ],
+      "question": "오도화의 도끼 파지와 조작 세부 동작이 전문기술 능력치의 별도 관찰을 지원하는가?",
+      "alternatives": [
+        "실제 컷에서 파지·방향·접촉 과정이 연결되는 독립 기술 수행",
+        "컷 사이 비연속 구도를 독자가 연속 동작처럼 해석",
+        "도끼 파지와 완력/전술은 같은 결과에 중복 연결"
+      ],
+      "requiredCanonObservations": [
+        "1부 97·104화 *후보*의 손·도끼 자루·도끼날 방향 컷별 기록",
+        "특정 기술을 사용한 상황·상대 수·거리",
+        "힘과 회전·거리 통제에 대한 직접 묘사와 독자 추론 구분"
+      ],
+      "doNotInfer": [
+        "같은 작성자의 연재글을 독립 2건 증거로 셈",
+        "도끼 전문기술=도검 전문기술로 자동 치환",
+        "전성기 대비 기량 저하 자동 확정"
+      ]
+    },
+    {
+      "id": "ERA-prime-ranking",
+      "subjectIds": [
+        "char-099",
+        "char-056",
+        "char-051"
+      ],
+      "linkedEvidenceIds": [],
+      "sourceIds": [
+        "C10",
+        "C11",
+        "C17"
+      ],
+      "question": "직접 전투 장면이 적은 과거 인물의 전성기 평가를 직책·명성·팬 서열로 대체해도 되는가?",
+      "alternatives": [
+        "자료 부족으로 평가 보류",
+        "정식 회상 전투 장면·검증 가능한 공식 시점이 있으면 한 상태만 임시평가",
+        "직책·명성은 배경 정보이지 전성기 개인 무력의 직접 증거가 아님"
+      ],
+      "requiredCanonObservations": [
+        "시기별 실제 독립 전투/공식 프로필 원본",
+        "본편 이전과 후기의 혼동 여부",
+        "상대 성장/부상 등 교전 조건 차이"
+      ],
+      "doNotInfer": [
+        "커뮤니티 평점을 0~100 점수 앵커로 입력",
+        "젊은 최민욱=전성기 최민욱",
+        "강민성 사후 현재 시점 생성"
+      ]
+    },
+    {
+      "id": "MATCHUP-arms",
+      "subjectIds": [
+        "char-033",
+        "char-087",
+        "char-071"
+      ],
+      "linkedEvidenceIds": [
+        "A01",
+        "A03"
+      ],
+      "sourceIds": [
+        "C08",
+        "C09",
+        "C13",
+        "C16"
+      ],
+      "question": "캐릭터의 '일반적 전투 프로필'과 총기·도검·맨손 특정 무장 조건을 하나의 순위로 합쳐도 되는가?",
+      "alternatives": [
+        "무장에 따라 달라지는 특화 역량과 일반 8축을 분리",
+        "모든 캐릭터를 일률적 칼+총 조건에 두고 비교하는 팬 가정",
+        "풀무장 최대 상태를 일반 평균과 혼합"
+      ],
+      "requiredCanonObservations": [
+        "기본적으로 사용하는 무장과 실전 사용 시점",
+        "무장/거리별 전술 성과",
+        "상대의 엄폐/부상/제3자 등 외부 상황"
+      ],
+      "doNotInfer": [
+        "본편에 없는 무장/거리에서의 확정 승률",
+        "총기를 쓰지 않은 상대의 사격 0점"
+      ]
+    }
+  ],
+  "methodology": {
+    "readModes": [
+      "full-text-read",
+      "search-excerpt-read"
+    ],
+    "identicalAuthorSerialIsSingleIndependentGroup": true,
+    "communityAgreementDoesNotVerifyCanon": true,
+    "wikiCopiedPerformanceTablesNotIndependent": true,
+    "tierPercentNumbersAreNotEvaluation": true,
+    "requireExactEpisodeAndCutForCanon": true,
+    "imageRedistributionAllowed": false,
+    "approvedScoreImpact": "none",
+    "preferredDiscoveryOrder": [
+      "Original Korean webtoon panels independently checked and precisely located",
+      "Official Korean materials directly inspected",
+      "User's firsthand original-reading report (record exact location separately)",
+      "Korean scene-specific firsthand fan analysis",
+      "Korean contemporary serialization discussion",
+      "Korean wiki and later recollections",
+      "Foreign-language translated discussion for alternate interpretations"
+    ],
+    "caveat": "This ordering prioritizes original-language context and discovery suitability, not blanket domestic infallibility or canonical verification; provenance, translation fidelity, independence and access mode remain per-source.",
+    "overseasDiscussionRole": "supplementary counterhypothesis, never final arbiter over independently checked Korean original"
+  }
+}
