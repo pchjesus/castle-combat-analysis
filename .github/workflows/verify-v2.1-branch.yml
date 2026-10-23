@@ -1,0 +1,26 @@
+name: Verify Castle v2.1 draft branch
+on:
+  push:
+    branches:
+      - work/v2.1-evidence-readonly
+      - work/v2.2-collapsible-sidebar-review
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify original roster and draft safety gates
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-character-images.mjs
+      - name: Install headless browser harness
+        run: npm install --no-save --no-audit --no-fund playwright@1.56.1
+      - name: Chromium desktop/mobile smoke
+        run: node scripts/check-browser-v2.1.mjs
