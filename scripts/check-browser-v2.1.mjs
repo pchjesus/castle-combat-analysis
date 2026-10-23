@@ -28,6 +28,26 @@ async function inspect(viewport){
   await page.goto('http://127.0.0.1:'+port+'/',{waitUntil:'networkidle'});
   assert.match(await page.title(),/캐슬/);
   assert.equal(await page.locator('.pilot-timeline-item').count(),1,'pilot timeline should connect');
+  if(viewport.width>=761){
+    const before=await page.locator('#sidebar').evaluate(el=>el.getBoundingClientRect().width);
+    assert.ok(before>=200,'desktop navigation should begin expanded');
+    await page.locator('[data-sidebar-toggle]').click();
+    assert.equal(await page.locator('[data-sidebar-toggle]').getAttribute('aria-expanded'),'false');
+    const compact=await page.locator('#sidebar').evaluate(el=>el.getBoundingClientRect().width);
+    assert.ok(compact>=64 && compact<=85,'compact rail should be narrow');
+    assert.equal(await page.locator('#character-search').isVisible(),false,'collapsed search hidden');
+    await page.locator('.rail-character[data-character="char-071"]').click();
+    assert.match(await page.locator('.hero-title').innerText(),/류지학/);
+    await page.locator('[data-sidebar-search]').click();
+    assert.equal(await page.locator('[data-sidebar-toggle]').getAttribute('aria-expanded'),'true');
+    assert.equal(await page.locator('#character-search').isVisible(),true);
+    assert.equal(await page.locator('#character-search').evaluate(el=>el===document.activeElement),true);
+    await page.locator('#character-search').fill('아킬라');
+    await page.locator('.character-btn[data-character="char-033"]').click();
+  }else{
+    assert.equal(await page.locator('[data-sidebar-toggle]').isVisible(),false,'mobile remains drawer-only');
+    assert.equal(await page.locator('.rail-character').first().isVisible(),false);
+  }
   await page.locator('#tab-evidence').click();
   await page.locator('#record-A01').waitFor();
   assert.equal(await page.locator('.pilot-record').count(),8,'Akila 4 evidence + 2 statements + 2 linked cases');
@@ -39,6 +59,12 @@ async function inspect(viewport){
   assert.equal(await page.locator('#record-A01').count(),0,'changing character must not leak prior character records');
   await page.locator('#tab-review').click();
   assert.ok(await page.getByText('ST07',{exact:false}).count()>=1,'review register should list ST07');
+  assert.equal(await page.locator('.pilot-review-row').count(),19,'audit queue must list 19 records');
+  assert.ok(await page.locator('.audit-questions').count()>=19,'review questions must load');
+  await page.locator('[data-review-open="A01"]').click();
+  await page.locator('#record-A01').waitFor();
+  assert.equal(await page.locator('#record-A01').getAttribute('open'),'','review ID should open correct detail');
+  assert.match(await page.locator('.hero-title').innerText(),/아킬라/);
   await page.locator('#tab-stats').click();
   assert.equal(await page.getByText('M1 보류',{exact:false}).count()>=1,true);
   if(viewport.width<760)await page.locator('#mobile-menu').click();
@@ -52,10 +78,11 @@ async function inspect(viewport){
   assert.ok(overflow<=2,'horizontal page overflow at '+viewport.width+'px: '+overflow);
   assert.deepEqual(errors,[],'browser errors');
   await page.close();
-  console.log('PASS: Chromium '+viewport.width+'x'+viewport.height+' / search, tabs, evidence, review, era, quote');
+  console.log('PASS: Chromium '+viewport.width+'x'+viewport.height+' / collapsible rail, search, tabs, evidence, review links, era, quote');
 }
 try{
   browser=await chromium.launch({channel:'chrome',headless:true,args:['--no-sandbox']});
   await inspect({width:1440,height:900});
+  await inspect({width:1024,height:768});
   await inspect({width:390,height:844});
 }finally{await browser?.close();await new Promise(resolve=>server.close(resolve));}
