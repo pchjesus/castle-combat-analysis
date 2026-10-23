@@ -1,0 +1,699 @@
+{
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "meta",
+    "rosterReference",
+    "newPersonCandidates",
+    "sourceCatalog",
+    "pilot",
+    "testimonies",
+    "uiContract",
+    "openIssues"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "2.1-draft"
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "draftOnly",
+        "originalCanonScenesVerified",
+        "formalEvaluations",
+        "githubChanged",
+        "websiteImplemented"
+      ],
+      "properties": {
+        "draftOnly": {
+          "const": true
+        },
+        "originalCanonScenesVerified": {
+          "const": 0
+        },
+        "formalEvaluations": {
+          "const": 0
+        },
+        "githubChanged": {
+          "const": false
+        },
+        "websiteImplemented": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "rosterReference": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "characterCount",
+        "organizationCount",
+        "originalCharacterIds",
+        "originalGroupIds",
+        "status"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1"
+        },
+        "characterCount": {
+          "const": 109
+        },
+        "organizationCount": {
+          "const": 17
+        },
+        "originalCharacterIds": {
+          "type": "array",
+          "minItems": 109,
+          "maxItems": 109,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^char-[0-9]{3}$"
+          }
+        },
+        "originalGroupIds": {
+          "type": "array",
+          "minItems": 17,
+          "maxItems": 17,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "status": {
+          "const": "read-only-original-preserved"
+        }
+      },
+      "additionalProperties": true
+    },
+    "newPersonCandidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "displayName",
+          "roles",
+          "registrationStatus",
+          "evaluationIntent",
+          "profileSummary",
+          "overviewVerification",
+          "groupLinks",
+          "timeline",
+          "sourceIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^person-draft-"
+          },
+          "displayName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "registrationStatus": {
+            "const": "proposed"
+          },
+          "evaluationIntent": {
+            "enum": [
+              "planned",
+              "not-planned",
+              "undecided"
+            ]
+          },
+          "profileSummary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "overviewVerification": {
+            "const": "secondary-only"
+          },
+          "groupLinks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "groupId",
+                "label",
+                "status"
+              ],
+              "properties": {
+                "groupId": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "status": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "timeline": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "summary",
+                "sourceIds",
+                "verification"
+              ],
+              "properties": {
+                "summary": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sourceIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "verification": {
+                  "const": "secondary-only"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "aliasesToVerify": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reviewFlags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "sourceCatalog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "kind",
+          "url",
+          "sceneCanonVerified"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sceneCanonVerified": {
+            "const": false
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "pilot": {
+      "type": "object",
+      "required": [
+        "characterIds",
+        "battles",
+        "battleEvidenceCandidates",
+        "evaluationStates",
+        "combatProfiles",
+        "evaluations",
+        "calculationResults",
+        "rankings",
+        "trialAnchors"
+      ],
+      "properties": {
+        "characterIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "battles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "subjectCharacterId",
+              "participantCandidateCharacterIds",
+              "unresolvedActorLabels",
+              "episodeVerification",
+              "phaseRecords",
+              "phaseStatus"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "subjectCharacterId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "participantCandidateCharacterIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "unresolvedActorLabels": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "episodeVerification": {
+                "const": "candidate-only"
+              },
+              "phaseRecords": {
+                "type": "array",
+                "maxItems": 0
+              },
+              "phaseStatus": {
+                "const": "awaiting-original-scene-review"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "battleEvidenceCandidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "battleId",
+              "sourceIds",
+              "sourceVerification",
+              "sceneCanonVerified",
+              "sourceTextForm",
+              "phaseId",
+              "linkedEvaluationItemIds",
+              "scoreImpact"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "const": "battle-observation-candidate"
+              },
+              "battleId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "sourceVerification": {
+                "const": "secondary-only"
+              },
+              "sceneCanonVerified": {
+                "const": false
+              },
+              "sourceTextForm": {
+                "const": "secondary-paraphrase"
+              },
+              "phaseId": {
+                "type": "null"
+              },
+              "linkedEvaluationItemIds": {
+                "type": "array",
+                "maxItems": 0
+              },
+              "scoreImpact": {
+                "const": "none"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "evaluationStates": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "combatProfiles": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "evaluations": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "calculationResults": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "rankings": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "trialAnchors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "characterId",
+              "axis",
+              "trialValue",
+              "rangeHypothesis",
+              "evaluationScore",
+              "approved",
+              "evidenceCandidateIds"
+            ],
+            "properties": {
+              "characterId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "axis": {
+                "type": "string",
+                "minLength": 1
+              },
+              "trialValue": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100,
+                "multipleOf": 2.5
+              },
+              "rangeHypothesis": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "evaluationScore": {
+                "type": "null"
+              },
+              "approved": {
+                "const": false
+              },
+              "evidenceCandidateIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "testimonies": {
+      "type": "object",
+      "required": [
+        "statements",
+        "decisionCases",
+        "outcomes"
+      ],
+      "properties": {
+        "statements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "speakerRef",
+              "speakerName",
+              "targetCharacterIds",
+              "sourceIds",
+              "decisionCaseId",
+              "linkedOutcomeIds",
+              "summary",
+              "isExactQuote",
+              "sceneCanonVerified",
+              "scoreImpact"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "speakerRef": {
+                "type": "string",
+                "minLength": 1
+              },
+              "speakerName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "targetCharacterIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "decisionCaseId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "linkedOutcomeIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "summary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "isExactQuote": {
+                "const": false
+              },
+              "sceneCanonVerified": {
+                "const": false
+              },
+              "scoreImpact": {
+                "const": "none"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "decisionCases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "parentCaseId",
+              "linkedOutcomeIds"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "parentCaseId": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "linkedOutcomeIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "decisionCaseId",
+              "sourceIds",
+              "sceneCanonVerified"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "decisionCaseId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "sceneCanonVerified": {
+                "const": false
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "uiContract": {
+      "type": "object",
+      "required": [
+        "tabs",
+        "emptyEvaluation",
+        "noProvisionalAutomaticRanking",
+        "allQuotesUnverified"
+      ],
+      "properties": {
+        "tabs": {
+          "const": [
+            "overview",
+            "combat",
+            "evidence",
+            "review"
+          ]
+        },
+        "emptyEvaluation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "noProvisionalAutomaticRanking": {
+          "const": true
+        },
+        "allQuotesUnverified": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "openIssues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "severity",
+          "note"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/castle/v2.1-draft-local-fixture.schema.json",
+  "title": "CASTLE v2.1 local non-authoritative contract fixture (NOT production contract)"
+}
