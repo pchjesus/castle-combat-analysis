@@ -8,7 +8,7 @@ const read = async (path) => {
   return response.text();
 };
 const requests = [
-  ['/', 'text'],
+  ['index.html', 'text'],
   ['scripts/pilot-v2.1-view.js', 'text'],
   ['data/pilot-evidence.v2.1.json', 'json'],
   ['data/pilot-review-queue.v2.2.json', 'json'],
@@ -23,7 +23,7 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       const body = await read(path);
       content[path] = kind === 'json' ? JSON.parse(body) : body;
     }
-    const html = content['/'];
+    const html = content['index.html'];
     if (!html.includes('sidebar-collapsed') || !html.includes('data-sidebar-toggle') ||
         !html.includes('data/pilot-review-queue.v2.2.json')) throw Error('Unexpected stale public HTML');
     if (!content['scripts/pilot-v2.1-view.js'].includes('CastlePilotView')) throw Error('Missing public renderer');
