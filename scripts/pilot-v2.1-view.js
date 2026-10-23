@@ -6,8 +6,8 @@
   const has = (a, x) => Array.isArray(a) && a.includes(x);
   const safe = (v, escapeHtml) => escapeHtml(String(v == null ? '' : v));
   const statusLabel = v => v === false ? '원작 직접 대조 전' : '검수 상태 재확인 필요';
-  const sourceTag = v => /official-series-index/.test(v) ? '공식 작품 목록(장면 미대조)' :
-    /secondary|community/.test(v) ? '2차 정리 자료' : '기타 출처(직접 대조 전)';
+  const sourceTag = v => /official-series-index/.test(v) ? '공식 작품 목록' :
+    /secondary|community/.test(v) ? '2차 정리 자료' : '기타 출처';
   function check(data, roster) {
     if (data?.schemaVersion !== '2.1-ui-projection-draft' || !data.meta?.draftOnly) throw Error('Unexpected pilot contract');
     if (data.meta.originalCanonScenesVerified !== 0 || data.meta.formalEvaluations !== 0) throw Error('Unexpected approval state');
