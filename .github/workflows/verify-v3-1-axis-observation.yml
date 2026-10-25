@@ -1,0 +1,32 @@
+name: Verify v3.1 axis observation research (no deployment)
+on:
+  push:
+    branches:
+      - research/v3.1-axis-observation-validation
+    paths:
+      - 'data/research/axis-observation-rubric.v3.1.DRAFT.json'
+      - 'data/research/pilot-scene-review.v3.1.DRAFT.json'
+      - 'docs/research/V3_1_AXIS_OBSERVATION_VALIDATION_DRAFT.md'
+      - 'scripts/check-axis-observation-v3.1.mjs'
+      - '.github/workflows/verify-v3-1-axis-observation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-research-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preserve 109-character roster and public MVP contract
+        run: node scripts/check-mvp.mjs
+      - name: Preserve source and review linkage
+        run: node scripts/check-pilot-v2.1.mjs
+      - name: Preserve v2.9 analysis depth contract
+        run: node scripts/check-analysis-depth-coverage-v2.9.mjs
+      - name: Preserve v3.0 L2 attribution safety
+        run: node scripts/check-l2-axis-fairness-v3.0.mjs
+      - name: Validate v3.1 axis rubric and pending original-scene review sheets
+        run: node scripts/check-axis-observation-v3.1.mjs
