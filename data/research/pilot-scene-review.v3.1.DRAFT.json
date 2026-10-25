@@ -1,0 +1,1696 @@
+{
+  "schemaVersion": "v3.1-scene-review-packets-draft",
+  "state": "research-only-not-canon",
+  "basedOn": "v3.0-l2-axis-fairness-experiment-draft",
+  "asOf": "2026-10-25",
+  "provenance": {
+    "roster": "data/roster.v0.1.json",
+    "pilot": "data/pilot-evidence.v2.1.json",
+    "reviewQueue": "data/pilot-review-queue.v2.2.json",
+    "v30": "data/research/l2-axis-attribution.v3.0.DRAFT.json",
+    "rubric": "data/research/axis-observation-rubric.v3.1.DRAFT.json",
+    "originalComicScenesReadThisTurn": 0
+  },
+  "scope": {
+    "characterIds": [
+      "char-033",
+      "char-087",
+      "char-071"
+    ],
+    "pilotIds": [
+      "pilot-A",
+      "pilot-L",
+      "pilot-R"
+    ],
+    "existingEvidenceCount": 12,
+    "originalSceneChecksCompleted": 0,
+    "independentCoderReviewsCompleted": 0,
+    "formalEvaluations": 0
+  },
+  "statusVocabulary": {
+    "originalReview": [
+      "not-started",
+      "under-review",
+      "checked-by-user",
+      "checked-by-assistant"
+    ],
+    "attributionReview": [
+      "not-started",
+      "coder1-done",
+      "coder2-done",
+      "conflicted",
+      "reconciled-unapproved",
+      "user-approved"
+    ],
+    "specialistUsage": [
+      "used-with-observation",
+      "not-used",
+      "ability-unknown",
+      "not-applicable",
+      "unassessed"
+    ],
+    "missingIsNotZero": true
+  },
+  "reviewSheets": [
+    {
+      "reviewSheetId": "V31-A01",
+      "characterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "evidenceId": "A01",
+      "reviewRecordId": "A01",
+      "originalSourceIds": [
+        "pilot:SA"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "전술·판단"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "A01",
+      "evidenceDuplicationCluster": "A-blockade",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-A02",
+      "characterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "evidenceId": "A02",
+      "reviewRecordId": "A02",
+      "originalSourceIds": [
+        "pilot:SA"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "A02",
+      "evidenceDuplicationCluster": "A-thirdparty",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-A03",
+      "characterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "evidenceId": "A03",
+      "reviewRecordId": "A03",
+      "originalSourceIds": [
+        "pilot:SA"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "기동"
+          },
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "전술·판단"
+          }
+        ],
+        "nonScoredLenses": [],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": "A03",
+      "openOriginalReviewQuestionRef": "A03",
+      "evidenceDuplicationCluster": "A-weaponcycle",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-A04",
+      "characterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "evidenceId": "A04",
+      "reviewRecordId": "A04",
+      "originalSourceIds": [
+        "pilot:SA"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "근접"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "방어"
+          },
+          {
+            "lane": "common-axis",
+            "name": "신체 역량"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "A04",
+      "evidenceDuplicationCluster": "A-close",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-L01",
+      "characterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "evidenceId": "L01",
+      "reviewRecordId": "L01",
+      "originalSourceIds": [
+        "pilot:SL"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "맨손"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "신체 역량"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "L01",
+      "evidenceDuplicationCluster": "L-vital",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-L02",
+      "characterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "evidenceId": "L02",
+      "reviewRecordId": "L02",
+      "originalSourceIds": [
+        "pilot:SL"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "사격"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "L02",
+      "evidenceDuplicationCluster": "L-shot",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-L03",
+      "characterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "evidenceId": "L03",
+      "reviewRecordId": "L03",
+      "originalSourceIds": [
+        "pilot:SL"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "전술·판단"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          },
+          {
+            "lane": "specialty",
+            "name": "맨손"
+          }
+        ],
+        "nonScoredLenses": [
+          "심리전",
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": "L03",
+      "openOriginalReviewQuestionRef": "L03",
+      "evidenceDuplicationCluster": "L-feint",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-L04",
+      "characterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "evidenceId": "L04",
+      "reviewRecordId": "L04",
+      "originalSourceIds": [
+        "pilot:SR"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "전술·판단"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "L04",
+      "evidenceDuplicationCluster": "L-followup",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-R01",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "evidenceId": "R01",
+      "reviewRecordId": "R01",
+      "originalSourceIds": [
+        "pilot:SJ"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "기동"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "specialty",
+            "name": "도검"
+          },
+          {
+            "lane": "common-axis",
+            "name": "지속전"
+          }
+        ],
+        "nonScoredLenses": [
+          "상대 피로·템포"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": null,
+      "openOriginalReviewQuestionRef": "R01",
+      "evidenceDuplicationCluster": "R-tempo",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-R02",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "evidenceId": "R02",
+      "reviewRecordId": "R02",
+      "originalSourceIds": [
+        "pilot:SJ"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "common-axis",
+          "name": "전술·판단"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          },
+          {
+            "lane": "common-axis",
+            "name": "상황 대응"
+          }
+        ],
+        "nonScoredLenses": [],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": "R02",
+      "openOriginalReviewQuestionRef": "R02",
+      "evidenceDuplicationCluster": "R-opening",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-R03",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "evidenceId": "R03",
+      "reviewRecordId": "R03",
+      "originalSourceIds": [
+        "pilot:SJ"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "specialty",
+          "name": "도검"
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "반응"
+          }
+        ],
+        "nonScoredLenses": [
+          "공격 실효성"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": "R03",
+      "openOriginalReviewQuestionRef": "R03",
+      "evidenceDuplicationCluster": "R-cut",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    },
+    {
+      "reviewSheetId": "V31-R04",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "evidenceId": "R04",
+      "reviewRecordId": "R04",
+      "originalSourceIds": [
+        "pilot:SM",
+        "pilot:SC"
+      ],
+      "sourceStatus": {
+        "sourceType": "secondary-paraphrase",
+        "assistantOriginalCheck": "not-directly-checked",
+        "userOriginalCheckForThisEvidence": "not-recorded",
+        "originalSceneCanonVerified": false,
+        "independentSourceClusters": [],
+        "originalWorkCitation": null
+      },
+      "originalReview": {
+        "status": "not-started",
+        "reviewer": null,
+        "reviewedAt": null,
+        "part": null,
+        "episode": null,
+        "sceneLocator": null,
+        "originalSourceUrl": null,
+        "originalLineOrPanelSummary": null,
+        "originalQuoteVerified": false,
+        "originalQuote": null,
+        "publicationRightsChecked": false
+      },
+      "sceneContext": {
+        "objective": null,
+        "initialDistance": null,
+        "terrain": null,
+        "cover": null,
+        "weapons": null,
+        "ammo": null,
+        "thirdParties": null,
+        "timePressure": null,
+        "priorInformation": null,
+        "participantSequence": null,
+        "injury": null,
+        "fatigue": null,
+        "temporalState": null
+      },
+      "observationUnits": [],
+      "causalSequence": {
+        "priorInformation": null,
+        "actorAction": null,
+        "opponentAwareness": null,
+        "opponentChoiceChange": null,
+        "outcome": null,
+        "alternativeCauses": []
+      },
+      "initialHypothesis": {
+        "primaryCandidate": {
+          "lane": "combat-context",
+          "name": null
+        },
+        "conditionalSecondary": [
+          {
+            "lane": "common-axis",
+            "name": "방어"
+          },
+          {
+            "lane": "common-axis",
+            "name": "지속전"
+          }
+        ],
+        "nonScoredLenses": [
+          "부상·일시 상태"
+        ],
+        "researchOnly": true,
+        "note": "Inherits v3.0 provisional attribution, not a scene observation or approved evaluation"
+      },
+      "classification": {
+        "analyst1": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "analyst2": {
+          "reviewer": null,
+          "axisAttributions": [],
+          "rationales": [],
+          "independentObservationIds": [],
+          "completedAt": null
+        },
+        "reconciliation": {
+          "status": "not-started",
+          "conflictingAxes": [],
+          "decision": null,
+          "reason": null,
+          "approvedByUser": false
+        }
+      },
+      "candidateConflictGateId": "R04",
+      "openOriginalReviewQuestionRef": "R04",
+      "evidenceDuplicationCluster": "R-injury",
+      "specialty": {
+        "domainsReviewed": [],
+        "usageStatus": "unassessed",
+        "representativeDecision": "not-selected",
+        "score": null
+      },
+      "evaluation": {
+        "commonAxisScores": {
+          "신체 역량": null,
+          "기동": null,
+          "반응": null,
+          "방어": null,
+          "지속전": null,
+          "전술·판단": null,
+          "부동심": null,
+          "상황 대응": null
+        },
+        "sufficiency": "unassessed",
+        "approval": "none",
+        "score": null
+      },
+      "calculation": {
+        "enabled": false,
+        "model": null,
+        "score": null
+      },
+      "temporal": {
+        "candidateEra": null,
+        "injuryState": null,
+        "splitDecision": "not-decided"
+      },
+      "completion": "awaiting-original-scene-review"
+    }
+  ],
+  "separateUserOriginalObservationMemos": [
+    {
+      "id": "U01",
+      "subjectCharacterId": "char-033",
+      "sourceDocument": "docs/research/V2_8_AQUILA_DOMESTIC_TACTICAL_REVIEW_DRAFT.md",
+      "kind": "user-reported-original-reading",
+      "eventCandidate": "AK-KHO",
+      "notes": "0발/사거리 미달/8/10발 target mapping unresolved",
+      "assistantChecked": false,
+      "mergedIntoPilotA": false,
+      "linkedEvidenceId": null,
+      "userOriginalSceneRecheckedByAssistant": false,
+      "verificationPending": true
+    },
+    {
+      "id": "G-intent",
+      "subjectCharacterId": "char-033",
+      "sourceDocument": "docs/research/V2_8_AQUILA_DOMESTIC_TACTICAL_REVIEW_DRAFT.md",
+      "kind": "user-reported-original-reading",
+      "eventCandidate": "pilot-A",
+      "notes": "심리적 우위 약화 목적에 대한 사용자 관찰; 효과·후퇴 시계열 원작 대조 전",
+      "assistantChecked": false,
+      "treatedAsIndependentBattleScore": false,
+      "linkedEvidenceId": null,
+      "userOriginalSceneRecheckedByAssistant": false,
+      "verificationPending": true
+    }
+  ],
+  "methodAudit": {
+    "missingSpecialtyMeans": "unassessed, not not-used/ability-unknown/0 unless direct evidence specifies state",
+    "noInventedPhase": true,
+    "noInventedQuotes": true,
+    "noScoring": true,
+    "noSameOutcomeScoredTwice": true,
+    "secondarySourceClusterNeedsIndependentVerification": true,
+    "noPromotionByResearchLength": true,
+    "sceneContextNullRepresents": "not recorded/verified; not absent in canon"
+  },
+  "futureExpansion": {
+    "nextCaseCriteria": [
+      "근거가 실제 있는 방어·지속전 행동 사례",
+      "복수 전문기술의 독립 관찰 사례",
+      "작중 교전 자료가 드문 인물",
+      "시점별 부상 조건을 분리할 수 있는 인물"
+    ],
+    "namedAdditionalCharacters": [],
+    "gate": "only after original scene verification, divergent-review logging and explicit user approval; no mass expansion now"
+  }
+}
