@@ -2,7 +2,7 @@
   "schemaVersion": "v3.3-user-quotation-curation-draft",
   "state": "user-submitted-wording-received-not-original-canon-verified",
   "date": "2026-10-25",
-  "source": "current conversation user-provided quotation text (not external canon source)",
+  "source": "Nine user-submitted quotation transcriptions copied with reference to Namuwiki, a fan-edited secondary source; user states the wording matches the original comic; no independent direct-canon comparison in this research turn",
   "governingPolicies": [
     "data/research/quotation-intake-policy.v3.2.DRAFT.json",
     "data/research/quotation-shortlist.v3.3.DRAFT.json"
@@ -17,7 +17,11 @@
     "allCharacterAttributionsFromUser": true,
     "selectedCharacterId": "char-033",
     "selectedCandidateId": "CQ-012",
-    "selectionMeaning": "user's first-choice representative quote motif; not a public-quote license, verified canon text, or approved combat evaluation"
+    "selectionMeaning": "user's first-choice representative quote motif; not a public-quote license, verified canon text, or approved combat evaluation",
+    "transcriptionBasis": "Namuwiki fan-edited secondary quotations (user clarification 2026-10-25)",
+    "userStatesMatchesOriginalVerbatim": true,
+    "userDirectlyRecheckedAllNineAgainstOriginalThisTurn": false,
+    "secondarySourceUrlsForIndividualQuotes": "not-collected"
   },
   "crosswalk": [
     {
@@ -37,7 +41,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-002",
@@ -56,7 +63,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-003",
@@ -75,7 +85,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-004",
@@ -94,7 +107,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-005",
@@ -113,7 +129,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-006",
@@ -133,7 +152,10 @@
       "independentlyChecked": false,
       "publishClearance": "pending",
       "combatScoringImpact": "none",
-      "editorialPriority": "first-choice"
+      "editorialPriority": "first-choice",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-007",
@@ -152,7 +174,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-008",
@@ -172,7 +197,10 @@
       "independentlyChecked": false,
       "publishClearance": "pending",
       "combatScoringImpact": "none",
-      "candidateWordingConflict": "earlier secondary listings differ; user's submission uses the '맹수' interpretation, not yet canon verified"
+      "candidateWordingConflict": "earlier secondary listings differ; user's submission uses the '맹수' interpretation, not yet canon verified",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     },
     {
       "userSubmissionId": "UQ-009",
@@ -191,7 +219,10 @@
       "rank": null,
       "independentlyChecked": false,
       "publishClearance": "pending",
-      "combatScoringImpact": "none"
+      "combatScoringImpact": "none",
+      "transcriptionOrigin": "namuwiki-fan-edited-secondary-as-reported-by-user",
+      "userStatesTextMatchesOriginal": true,
+      "directOriginalVerification": "not-demonstrated-in-current-research"
     }
   ],
   "newDistinctCandidates": [
@@ -258,7 +289,8 @@
     "priorAquilaTaunt": "CQ-007 is an independent prior candidate; do not silently overwrite it with CQ-012.",
     "priorChoiWinter": "CQ-005 remains an independent candidate; the user's honor-themed passage is CQ-011.",
     "priorOdoHwaCaption": "CQ-010 remains a narration/caption lead; the user's dialogue-submission is CQ-013.",
-    "nextOriginalQuestion": "Was Aquila wording transcribed while viewing the original? If yes, please provide part/episode or distinctive scene locator."
+    "nextOriginalQuestion": "Was Aquila wording transcribed while viewing the original? If yes, please provide part/episode or distinctive scene locator.",
+    "provenanceCorrection": "All nine original chat passages were transcribed from Namuwiki, not independently typed from an original episode. The user reports identical comic wording; archive this as the user's accuracy assertion and preserve secondhand source status until exact chapter scenes are compared."
   },
   "guard": {
     "existingRosterUnchanged": true,
