@@ -17,10 +17,10 @@ assert.equal(curation.crosswalk.length,9);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
 assert.equal(quotes.state,'feature-branch-preview-not-canon-verified');
 assert.equal(quotes.priorityCharacterId,'char-033');
-assert.equal(quotes.counts.userProvided,9);
+assert.equal(quotes.counts.userProvided,16);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,9);
+assert.equal(quotes.quotes.length,16);
 assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,9);
 assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,9);
 const expected=new Map([
@@ -33,6 +33,13 @@ const expected=new Map([
  ['char-070',{name:'신태진',start:'오늘 두 악인이'}],
  ['char-088',{name:'사사키신겐',start:'맹수의 기분이 곧..'}],
  ['char-052',{name:'오도화',start:'기왕에 멍석 깔린거..'}],
+ ['char-057',{name:'마학영',start:'저는 끝까지 남아'}],
+ ['char-004',{name:'피우진',start:'대건이 네가 마지막으로'}],
+ ['char-002',{name:'서진태',start:'범\u00a0가는 길에'}],
+ ['char-025',{name:'메드베디',start:'그래도… 홀드.. 완료했다.'}],
+ ['char-065',{name:'주로',start:'그런 식으론...'}],
+ ['char-028',{name:'라텔',start:'메드베디가 찍은 후임은'}],
+ ['char-042',{name:'구스타프',start:'끝내주는군.'}],
 ]);
 for(const q of quotes.quotes){
  const match=expected.get(q.characterId);
@@ -52,11 +59,12 @@ for(const q of quotes.quotes){
  assert.equal(q.provenance.episode,null);
  assert.equal(q.provenance.rightsReview,'not-established');
  assert.equal(q.provenance.scoringImpact,'none');
- assert.ok(curation.crosswalk.some(c=>c.characterId===q.characterId&&c.candidateId===q.id));
+ assert.ok(curation.crosswalk.some(c=>c.characterId===q.characterId&&c.candidateId===q.id) || quotes.newlyAddedUserSelections?.some(c=>c.characterId===q.characterId&&c.quoteId===q.id));
 }
 const ak=quotes.quotes.find(q=>q.characterId==='char-033');
 assert.equal(ak.representativePriority,'first');
 assert.equal(quotes.quotes.filter(x=>x.representativePriority==='first').length,1);
+assert.equal(expected.size,16);
 assert.ok(ak.exactText.includes('자신의 자유 의지를'));
 assert.equal(candidate.candidateCount,7);
 assert.equal(candidate.publicDisplayCount,0);
@@ -74,7 +82,7 @@ for(const x of candidate.candidates){
  assert.equal(x.scoreEffect,'none');
 }
 assert.ok(html.includes('data/character-quotes.v3.4.DRAFT.json'));
-assert.ok(html.includes("x.quotes.length===9"));
+assert.ok(html.includes("x.quotes.length===16"));
 assert.ok(html.includes('quotationPreviewData?.quotes?.find'));
 assert.ok(html.includes("q.verificationStatus==='user-transcribed-secondary'"));
 assert.ok(html.includes("q.display?.enabledInPreview===true"));
