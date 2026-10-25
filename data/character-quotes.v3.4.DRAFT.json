@@ -2,10 +2,10 @@
   "schemaVersion": "v3.4-character-quotes-preview",
   "state": "feature-branch-preview-not-canon-verified",
   "asOf": "2026-10-25",
-  "source": "16 passages supplied directly by the user in this conversation; first nine from Namuwiki according to the user; final seven supplied as user-selected replacements for previously researched Namuwiki suggestions, original chapters not directly rechecked",
+  "source": "Twenty-two user-supplied character quotes; first nine from Namuwiki per user's report; subsequent thirteen user-selected passages. Original comic text was not independently verified. Character IDs follow initial roster.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 16,
+    "userProvided": 22,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -512,6 +512,192 @@
         "isCanonChecked": false
       },
       "priorCandidateId": "QX-007"
+    },
+    {
+      "id": "CQ-021",
+      "characterId": "char-026",
+      "characterName": "크리사",
+      "exactText": "어떻게 그럴 수 있나, 티그로. 너도 나를 형제로 여긴다면, 네 입으로 함께 목숨 걸어달라고 해야지.",
+      "theme": "형제애·공동 운명",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-secondary-transcription",
+        "sourceName": "사용자 직접 제공 · 출처 페이지 미확인",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 제공 · 원문 출처 검수 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-022",
+      "characterId": "char-027",
+      "characterName": "크로트",
+      "exactText": "너같이 강한 놈들… 이미 숱하게 붙어봤지. 그러나 자, 봐라. 내가 죽었나, 살아있나.",
+      "theme": "생존자의 관록",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-secondary-transcription",
+        "sourceName": "사용자 직접 제공 · 출처 페이지 미확인",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 제공 · 원문 출처 검수 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-023",
+      "characterId": "char-035",
+      "characterName": "프리깃",
+      "exactText": "됐다, 선택했으니 난 자유인 거야.",
+      "theme": "자유·주체적 선택",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-secondary-transcription",
+        "sourceName": "사용자 직접 제공 · 출처 페이지 미확인",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 제공 · 원문 출처 검수 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-024",
+      "characterId": "char-034",
+      "characterName": "샤모",
+      "exactText": "아킬라가 어떻게 지켜볼라고 한 건데... 그게 너무 꼴 받아서 눈이 안 감겨",
+      "theme": "동료애·분노",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-secondary-transcription",
+        "sourceName": "사용자 직접 제공 · 출처 페이지 미확인",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 제공 · 원문 출처 검수 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-025",
+      "characterId": "char-043",
+      "characterName": "블랙맘바",
+      "exactText": "너, 영 소질없다. 돌아가서 메드베디 품에나 안기렴, 애송아.",
+      "theme": "독설·조롱",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-secondary-transcription",
+        "sourceName": "사용자 직접 제공 · 출처 페이지 미확인",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 제공 · 원문 출처 검수 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-026",
+      "characterId": "char-030",
+      "characterName": "그롤라",
+      "exactText": "이딴식으로... 잘도 이 좁은 땅덩어리에서 해 처먹었군, 그래..",
+      "theme": "오만·멸시",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-secondary-transcription",
+        "sourceName": "사용자 직접 제공 · 출처 페이지 미확인",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 제공 · 원문 출처 검수 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -553,5 +739,45 @@
       "quoteId": "CQ-020",
       "priorCandidateId": "QX-007"
     }
-  ]
+  ],
+  "latestUserSelections": [
+    {
+      "characterId": "char-026",
+      "quoteId": "CQ-021",
+      "selectionContext": "Iskra next selection",
+      "userSelected": true
+    },
+    {
+      "characterId": "char-027",
+      "quoteId": "CQ-022",
+      "selectionContext": "Iskra next selection",
+      "userSelected": true
+    },
+    {
+      "characterId": "char-035",
+      "quoteId": "CQ-023",
+      "selectionContext": "Iskra next selection",
+      "userSelected": true
+    },
+    {
+      "characterId": "char-034",
+      "quoteId": "CQ-024",
+      "selectionContext": "Iskra next selection",
+      "userSelected": true
+    },
+    {
+      "characterId": "char-043",
+      "quoteId": "CQ-025",
+      "selectionContext": "Iskra next selection",
+      "userSelected": true
+    },
+    {
+      "characterId": "char-030",
+      "quoteId": "CQ-026",
+      "selectionContext": "Iskra next selection",
+      "userSelected": true
+    }
+  ],
+  "lastUserCurationDate": "2026-10-25",
+  "verifiedFromOriginalCount": 0
 }
