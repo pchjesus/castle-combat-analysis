@@ -104,7 +104,10 @@ async function inspect(viewport){
   await page.locator('.era-note').waitFor();
   assert.match(await page.locator('.era-note').innerText(),/이원화 결정 보류/);
   await page.locator('#tab-overview').click();
-  assert.equal(await page.locator('.quote-note').count(),0,'pending/unreviewed quotes must remain hidden');
+  assert.equal(await page.locator('.quote-note-preview').count(),1,'user-selected quote should display with unverified-source label');
+  assert.match(await page.locator('.quote-note-preview blockquote').innerText(),/과거에 남겨진 얼룩들/,'Odo Hwa exact user transcription preserved');
+  assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/원작 대조 대기/,'not canon-certified');
+  assert.equal(await page.locator('.quote-note:not(.quote-note-preview)').count(),0,'unapproved canon-direct quotes must remain hidden');
   // Inspect the changed navigation palette from computed styles, rather than duplicating CSS values.
   if(viewport.width<=760)await page.locator('#mobile-menu').click();
   const contrasts=await page.evaluate(()=>{
