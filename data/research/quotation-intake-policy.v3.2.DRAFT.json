@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "v3.2-quotation-intake-policy-draft",
+  "state": "research-protocol-only-not-production",
+  "legacyRegistry": "data/quotation-review.v0.1.json",
+  "purpose": "separate story quotations from in-universe Statement claims and combat Evidence; no automatic scoring",
+  "processStages": [
+    {
+      "stage": "candidate-intake",
+      "meaning": "사실 후보로 접수; 원문을 아직 확인하지 않았을 수 있음",
+      "canShowPublicly": false
+    },
+    {
+      "stage": "verbatim-source-checked",
+      "meaning": "합법적으로 접근 가능한 원작에서 정확한 한국어 표현·화자·회차·시점 검토",
+      "canShowPublicly": false
+    },
+    {
+      "stage": "user-curation-approved",
+      "meaning": "대표성과 해석·인물 연결을 사용자가 승인",
+      "canShowPublicly": false
+    },
+    {
+      "stage": "rights-review-cleared",
+      "meaning": "문구 분량·사용 목적·권리자 조건 등 인용 적정성을 별도 검토",
+      "canShowPublicly": false
+    },
+    {
+      "stage": "public-display-approved",
+      "meaning": "위 조건을 모두 충족하고 별도 공개 승인",
+      "canShowPublicly": true
+    }
+  ],
+  "conceptualRecordTemplate": {
+    "candidateId": null,
+    "characterId": null,
+    "kind": "narrative-character-quote",
+    "candidateSource": {
+      "sourceType": null,
+      "url": null,
+      "independentSourceCluster": null,
+      "collectionDate": null
+    },
+    "attributedSpeakerId": null,
+    "original": {
+      "workPart": null,
+      "episode": null,
+      "sceneLocator": null,
+      "exactText": null,
+      "verbatimVerification": "not-checked",
+      "verifiedBy": null,
+      "verifiedAt": null
+    },
+    "context": {
+      "listenerIds": [],
+      "speakerObjective": null,
+      "narrativeSignificance": null,
+      "emotionalContext": null
+    },
+    "review": {
+      "candidateStatus": "unassessed",
+      "userApproved": false,
+      "selectionRank": null,
+      "verifierConflictNotes": []
+    },
+    "legal": {
+      "rightsReview": "not-started",
+      "republishingComicPanels": false,
+      "publicExcerptApproved": false,
+      "permissionOrQuotationBasis": null,
+      "limits": null
+    },
+    "display": {
+      "status": "blocked-pending-review",
+      "uiDestination": "character-profile",
+      "visibleText": null
+    },
+    "relations": {
+      "statementId": null,
+      "doesNotProveStatementTruth": true,
+      "doesNotModifyCombatScore": true
+    }
+  },
+  "initialCandidates": [],
+  "controls": {
+    "independentSourceRule": "wiki, social posts and recollection cannot establish exact dialogue without original work verification",
+    "duplicateRule": "same utterance repeated by fan pages counted once",
+    "absentRecordRule": "empty candidate array is valid and creates no placeholder quotes in UI",
+    "publishRule": "exact source, attribution, scene context, user's approval and lawful quotation decision must all be satisfied",
+    "statementRule": "a narrative quote may also be a Statement candidate but is never treated as proof of its factual truth",
+    "copyrightRule": "private review notes not a publication license; no unlicensed comic panels, screenshots or long excerpts",
+    "localization": "prefer checked Korean original rather than translated fan text",
+    "access": "do not bypass paid-content authentication or circumvent protected screenshots",
+    "textCap": "do not mechanically assume any fixed character count guarantees fair use or lawful quotation"
+  },
+  "plannedStages": {
+    "v3_2": "data contract and discovery questions only; old registry untouched",
+    "v3_3": "collect candidate leads and verify exact text/episodes with user",
+    "v3_4": "optional guarded quote display in character profile after approval and rights review"
+  },
+  "publication": {
+    "approvedQuoteCount": 0,
+    "quoteScoreEffects": 0,
+    "publicChangeMade": false
+  }
+}
