@@ -1,0 +1,35 @@
+name: Verify v3.4 quote preview branch (no deployment)
+on:
+  push:
+    branches:
+      - feature/v3.4-user-quotes-preview
+    paths:
+      - 'index.html'
+      - 'data/character-quotes.v3.4.DRAFT.json'
+      - 'data/research/additional-quotation-candidates.v3.4.DRAFT.json'
+      - 'docs/research/V3_4_QUOTE_GALLERY_PREVIEW_REPORT.md'
+      - 'scripts/check-quote-gallery-v3.4.mjs'
+      - '.github/workflows/verify-v3-4-quote-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-quotes-and-legacy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate existing stable MVP and earlier research
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-analysis-depth-coverage-v2.9.mjs
+          node scripts/check-l2-axis-fairness-v3.0.mjs
+          node scripts/check-axis-observation-v3.1.mjs
+          node scripts/check-source-quote-gates-v3.2.mjs
+          node scripts/check-quotation-shortlist-v3.3.mjs
+          node scripts/check-user-quotation-curation-v3.3.mjs
+      - name: Verify nine user passages, seven Namuwiki candidates and UI markup
+        run: node scripts/check-quote-gallery-v3.4.mjs
