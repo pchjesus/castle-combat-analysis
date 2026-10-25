@@ -214,7 +214,7 @@ async function loadDraftData(){
  try{
   const x=await get('data/character-quotes.v3.4.DRAFT.json');
   if(x.schemaVersion==='v3.4-character-quotes-preview'&&Array.isArray(x.quotes)&&x.quotes.length===22&&
-    new Set(x.quotes.map(q=>q.characterId)).size===9&&
+    new Set(x.quotes.map(q=>q.characterId)).size===22&&
     x.quotes.every(q=>rosterById.has(q.characterId)&&q.verificationStatus==='user-transcribed-secondary'&&q.publicationStatus==='branch-preview-requested'&&q.display?.enabledInPreview===true&&typeof q.exactText==='string'&&q.exactText.trim())){
     quotationPreviewData=x;
   }
