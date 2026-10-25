@@ -53,6 +53,7 @@ assert.equal(gallery.quotes.find(q=>q.representativePriority==='first').characte
 assert.equal(gallery.counts.originalDirectlyVerified,0);
 assert.equal(gallery.counts.approvedCanon,0);
 assert.ok(html.includes('x.quotes.length===22'));
+assert.ok(html.includes('new Set(x.quotes.map(q=>q.characterId)).size===22'),'loader must accept 22 distinct character IDs; caught by browser regression');
 assert.ok(html.includes('quotationPreviewData?.quotes?.find'));
 assert.ok(html.includes('h(preview.exactText)'),'quote HTML must escape text');
 assert.equal(iskra.schemaVersion,'v3.6-iskra-quote-selection-status-draft');
