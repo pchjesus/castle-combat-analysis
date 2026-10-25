@@ -7,6 +7,8 @@ on:
       - 'data/research/quotation-shortlist.v3.3.DRAFT.json'
       - 'docs/research/V3_3_QUOTATION_SHORTLIST_DRAFT.md'
       - 'scripts/check-quotation-shortlist-v3.3.mjs'
+      - 'scripts/check-user-quotation-curation-v3.3.mjs'
+      - 'data/research/user-quotation-curation.v3.3.DRAFT.json'
       - '.github/workflows/verify-v3-3-quotation-shortlist.yml'
   workflow_dispatch:
 permissions:
@@ -29,3 +31,5 @@ jobs:
           node scripts/check-source-quote-gates-v3.2.mjs
       - name: Check v3.3 candidate identity and safe publication gates
         run: node scripts/check-quotation-shortlist-v3.3.mjs
+      - name: Check user-nominated quotes and Aquila's first-choice status
+        run: node scripts/check-user-quotation-curation-v3.3.mjs
