@@ -1,0 +1,31 @@
+name: Verify v3.2 research evidence and quote gates (no deployment)
+on:
+  push:
+    branches:
+      - research/v3.2-source-triage-quote-gates
+    paths:
+      - 'data/research/targeted-source-triage.v3.2.DRAFT.json'
+      - 'data/research/quotation-intake-policy.v3.2.DRAFT.json'
+      - 'docs/research/V3_2_SOURCE_TRIAGE_AND_QUOTATION_GATES_DRAFT.md'
+      - 'scripts/check-source-quote-gates-v3.2.mjs'
+      - '.github/workflows/verify-v3-2-source-quote-gates.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-research-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Existing 109-character and evidence regressions
+        run: |
+          node scripts/check-mvp.mjs
+          node scripts/check-pilot-v2.1.mjs
+          node scripts/check-analysis-depth-coverage-v2.9.mjs
+          node scripts/check-l2-axis-fairness-v3.0.mjs
+          node scripts/check-axis-observation-v3.1.mjs
+      - name: New v3.2 source status and quotes safety checks
+        run: node scripts/check-source-quote-gates-v3.2.mjs
