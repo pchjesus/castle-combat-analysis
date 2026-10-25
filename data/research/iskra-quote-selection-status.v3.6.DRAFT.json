@@ -1,0 +1,311 @@
+{
+  "schemaVersion": "v3.6-iskra-quote-selection-status-draft",
+  "asOf": "2026-10-25",
+  "state": "user-curated-quote-gallery-feature-branch",
+  "dataDependencies": [
+    "data/roster.v0.1.json",
+    "data/character-quotes.v3.4.DRAFT.json",
+    "data/research/iskra-quotation-candidates.v3.5.DRAFT.json"
+  ],
+  "scope": {
+    "initialIskraRosterCount": 19,
+    "userSelectedInitialIskraQuoteCount": 10,
+    "remainingInitialIskra": 9,
+    "wholeRosterCount": 109,
+    "wholeGallerySelectedQuoteCount": 22,
+    "directCanonTextChecks": 0,
+    "scoredEvidencePromotions": 0
+  },
+  "correction": {
+    "characterId": "char-040",
+    "oldName": "코도모",
+    "correctedName": "코모도",
+    "verification": "user-explicit-correction",
+    "immutableIdentity": true,
+    "affectedLiveFiles": [
+      "data/roster.v0.1.json",
+      "index.html"
+    ],
+    "legacyResearchFileRetained": "data/research/iskra-quotation-candidates.v3.5.DRAFT.json",
+    "legacyMetadataContext": "v3.5 file documents an unresolved naming discrepancy before user supplied the correction; v3.6 supersedes it without rewriting history"
+  },
+  "members": [
+    {
+      "characterId": "char-025",
+      "name": "메드베디",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-017",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-026",
+      "name": "크리사",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-021",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-027",
+      "name": "크로트",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-022",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-028",
+      "name": "라텔",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-019",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-029",
+      "name": "샤이어",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-030",
+      "name": "그롤라",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-026",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-031",
+      "name": "판테라",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-032",
+      "name": "바이슨",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-033",
+      "name": "아킬라",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-012",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-034",
+      "name": "샤모",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-024",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-035",
+      "name": "프리깃",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-023",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-036",
+      "name": "콘",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-037",
+      "name": "헤론",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-038",
+      "name": "오울",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-039",
+      "name": "스내퍼",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-040",
+      "name": "코모도",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-041",
+      "name": "잭슨",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": null,
+      "quoteStatus": "not-yet-selected",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-042",
+      "name": "구스타프",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-020",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    },
+    {
+      "characterId": "char-043",
+      "name": "블랙맘바",
+      "initialOrganizationId": "iskra",
+      "selectedQuoteId": "CQ-025",
+      "quoteStatus": "user-selected-secondary-transcription",
+      "canonSceneVerified": false
+    }
+  ],
+  "selectedFromThisTurn": [
+    {
+      "characterId": "char-026",
+      "quoteId": "CQ-021",
+      "speaker": "크리사",
+      "selectionBasis": "user-provided-text",
+      "originalVerbatimChecked": false,
+      "quotePubliclyDisplayableInFeaturePreview": true,
+      "scoreEffect": "none"
+    },
+    {
+      "characterId": "char-027",
+      "quoteId": "CQ-022",
+      "speaker": "크로트",
+      "selectionBasis": "user-provided-text",
+      "originalVerbatimChecked": false,
+      "quotePubliclyDisplayableInFeaturePreview": true,
+      "scoreEffect": "none"
+    },
+    {
+      "characterId": "char-035",
+      "quoteId": "CQ-023",
+      "speaker": "프리깃",
+      "selectionBasis": "user-provided-text",
+      "originalVerbatimChecked": false,
+      "quotePubliclyDisplayableInFeaturePreview": true,
+      "scoreEffect": "none"
+    },
+    {
+      "characterId": "char-034",
+      "quoteId": "CQ-024",
+      "speaker": "샤모",
+      "selectionBasis": "user-provided-text",
+      "originalVerbatimChecked": false,
+      "quotePubliclyDisplayableInFeaturePreview": true,
+      "scoreEffect": "none"
+    },
+    {
+      "characterId": "char-043",
+      "quoteId": "CQ-025",
+      "speaker": "블랙맘바",
+      "selectionBasis": "user-provided-text",
+      "originalVerbatimChecked": false,
+      "quotePubliclyDisplayableInFeaturePreview": true,
+      "scoreEffect": "none"
+    },
+    {
+      "characterId": "char-030",
+      "quoteId": "CQ-026",
+      "speaker": "그롤라",
+      "selectionBasis": "user-provided-text",
+      "originalVerbatimChecked": false,
+      "quotePubliclyDisplayableInFeaturePreview": true,
+      "scoreEffect": "none"
+    }
+  ],
+  "nextIskraQuoteCandidates": [
+    {
+      "characterId": "char-029",
+      "name": "샤이어",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-031",
+      "name": "판테라",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-032",
+      "name": "바이슨",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-036",
+      "name": "콘",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-037",
+      "name": "헤론",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-038",
+      "name": "오울",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-039",
+      "name": "스내퍼",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-040",
+      "name": "코모도",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    },
+    {
+      "characterId": "char-041",
+      "name": "잭슨",
+      "editorialStatus": "awaiting-quote-nomination",
+      "originalSceneVerified": false
+    }
+  ],
+  "interpretationNotes": {
+    "iskraInitialMembershipNotAllHistoricalMemberships": true,
+    "doNotAutomaticallyCreateDifferentEraCharacter": true,
+    "doNotUseQuotesAsEvidenceOfAbility": true,
+    "firstChoiceQuoteCharacterId": "char-033",
+    "rightsReview": "pending"
+  },
+  "verificationGate": {
+    "needsUserSceneCrosscheck": true,
+    "noCanonVerifiedPromotion": true,
+    "mainNotModified": true,
+    "noImagesAdded": true
+  }
+}
