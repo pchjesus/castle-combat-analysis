@@ -1,14 +1,14 @@
 {
   "schemaVersion": "v3.7-iskra-remaining-nine-quote-candidates-draft",
   "asOf": "2026-10-25",
-  "reviewState": "secondary-research-not-user-selected",
+  "reviewState": "nine-user-submissions-recorded-original-chapter-unverified",
   "previousRelease": {
     "mainQuotesCount": 22,
     "initialIskraSelected": 10,
     "initialIskraTotal": 19
   },
   "principle": "Do not invent dialogue or infer direct canon verification from Namuwiki secondary summaries.",
-  "plannedDisplayCount": 0,
+  "plannedDisplayCount": 9,
   "candidates": [
     {
       "characterId": "char-029",
@@ -19,7 +19,12 @@
       "shortExcerpt": "반드시 끝까지 살아남아",
       "motif": "크로트와 마지막 순간을 함께하지 못한 죄책감과 끝까지 살아남겠다는 맹세",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-027",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "quote-section-text-seen"
     },
     {
       "characterId": "char-031",
@@ -30,7 +35,12 @@
       "shortExcerpt": null,
       "motif": "그롤라·바이슨과 함께한 신 뜨거운 피, 평정에서 광기로 넘어가는 순간의 대사 탐색",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-030",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "character-page-no-confirmed-quote-excerpt"
     },
     {
       "characterId": "char-032",
@@ -41,7 +51,12 @@
       "shortExcerpt": "See you later.",
       "motif": "류지학을 향한 재회를 예고하는 짧은 작별 인사; 2차 자료의 영어 대사 표기 확인 필요",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-028",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "quote-section-text-seen"
     },
     {
       "characterId": "char-036",
@@ -52,7 +67,12 @@
       "shortExcerpt": null,
       "motif": "아킬라 추적·팀 전술과 관련된 특유의 발언 여부 확인",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-031",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "quote-excerpt-not-found"
     },
     {
       "characterId": "char-037",
@@ -63,7 +83,12 @@
       "shortExcerpt": null,
       "motif": "아킬라 추격 중 드론·사선·팀 지휘에 관한 발언",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-032",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "character-page-no-confirmed-quote-excerpt"
     },
     {
       "characterId": "char-038",
@@ -74,7 +99,12 @@
       "shortExcerpt": null,
       "motif": "아킬라와의 교전에서 돌파·실패·압박을 드러내는 짧은 발언",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-033",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "character-page-no-confirmed-quote-excerpt"
     },
     {
       "characterId": "char-039",
@@ -85,7 +115,12 @@
       "shortExcerpt": null,
       "motif": "현 수입에 만족하던 킬러와 더 큰 보수를 탐하던 코모도의 대비",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-034",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "narrative-paraphrase-only"
     },
     {
       "characterId": "char-040",
@@ -96,7 +131,12 @@
       "shortExcerpt": null,
       "motif": "이스크라 보수에 만족하지 못해 더 큰 돈을 추구하는 욕망과 선택",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-035",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "narrative-paraphrase-only"
     },
     {
       "characterId": "char-041",
@@ -107,16 +147,21 @@
       "shortExcerpt": "그리고 극동의 패자가 돼라.",
       "motif": "아무르 티그로가 이스크라를 장악하고 극동의 패자가 되기를 바라는 제안",
       "originalEpisode": null,
-      "assistantOriginalPanelChecked": false
+      "assistantOriginalPanelChecked": false,
+      "userSelected": true,
+      "userSubmittedQuoteId": "CQ-029",
+      "userSubmittedVerbatimStoredIn": "data/character-quotes.v3.4.DRAFT.json",
+      "userQuoteOriginalPanelVerified": false,
+      "sourceStatusBeforeSelection": "quote-section-text-seen"
     }
   ],
   "reviewSummary": {
     "potentialQuotedShortlist": 3,
     "sceneOnlyPending": 6,
     "originalTextDirectChecks": 0,
-    "userSelectedFromThisBatch": 0,
+    "userSelectedFromThisBatch": 9,
     "scoreEffects": 0,
-    "publicDisplayChanges": 0
+    "publicDisplayChanges": 9
   },
-  "note": "Excerpt is only a short secondary-source quotation fragment. Full original text and speaker/time verification require user checking the original paid chapter. No new quote data is added to the live 22-item gallery."
+  "note": "The original nine secondary research leads remain as historical research. User has selected and supplied distinct verbatim lines for all nine; live character gallery holds all 31, 19/19 initial Iskra characters covered. Source verification and rights are separate."
 }

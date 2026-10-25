@@ -20,12 +20,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,22);
+assert.equal(quotes.counts.userProvided,31);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
+assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,22);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,22);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,22);
+assert.equal(quotes.quotes.length,31);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,31);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,31);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -35,15 +36,18 @@ for(const q of quotes.quotes){
  assert.equal(q.display.enabledInPreview,true);
  assert.equal(q.display.isCanonChecked,false);
  assert.ok(q.display.verificationLabel.includes('원작 대조 대기'));
- assert.ok(typeof q.exactText==='string'&&q.exactText.length>10);
+ assert.ok(typeof q.exactText==='string'&&q.exactText.trim().length>=5);
 }
 assert.equal(quotes.quotes.filter(q=>q.representativePriority==='first').length,1);
 assert.equal(quotes.quotes.find(q=>q.representativePriority==='first').characterId,'char-033');
-assert.deepEqual(quotes.latestUserSelections.map(q=>q.characterId),['char-026','char-027','char-035','char-034','char-043','char-030']);
-assert.ok(html.includes('x.quotes.length===22'));
-assert.ok(html.includes('new Set(x.quotes.map(q=>q.characterId)).size===22'));
+assert.deepEqual(quotes.previousIskraUserSelections.map(q=>q.characterId),['char-026','char-027','char-035','char-034','char-043','char-030']);
+assert.deepEqual(quotes.latestUserSelections.map(q=>q.characterId),["char-029","char-032","char-041","char-031","char-036","char-037","char-038","char-039","char-040"]);
+assert.deepEqual(quotes.latestUserSelections.map(q=>q.quoteId),["CQ-027","CQ-028","CQ-029","CQ-030","CQ-031","CQ-032","CQ-033","CQ-034","CQ-035"]);
+for(const record of [{"characterId":"char-029","text":"혹독한 훈련 속에서도 언제나 꿈꿔 왔습니다. '아무르' 티그로와 함께 싸우는 꿈을."},{"characterId":"char-032","text":"좀 이따 보자고."},{"characterId":"char-041","text":"아무르 티그로. 네가 이스크라를 먹어라. 그리고 극동의 패자가 돼라."},{"characterId":"char-031","text":"어이, 걱정 마. 그쪽까진 갈 일도 없어."},{"characterId":"char-036","text":"상대는 이 업계 '최고'다. 그에 맞는 예우가 필요하지. 틈도 주지 말고 질식시켜 죽여버린다."},{"characterId":"char-037","text":"이런... 바로 날개를 꺾긴 힘든가..."},{"characterId":"char-038","text":"아니 - 잡았다."},{"characterId":"char-039","text":"뭐긴 뭐야, '재앙' 이지"},{"characterId":"char-040","text":"오늘부터 이 분이... 내가 받들 '신'이다!"}]) assert.equal(quotes.quotes.find(x=>x.characterId===record.characterId)?.exactText,record.text);
+assert.ok(html.includes('x.quotes.length===31'));
+assert.ok(html.includes('new Set(x.quotes.map(q=>q.characterId)).size===31'));
 assert.ok(html.includes('h(preview.exactText)'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: main 22 user-curated quotes, Komodo, original 109/17 roster and 12+7 Evidence/Statement safety');
+console.log('PASS: main 31 user-curated quotes, all 19 initial Iskra characters, Komodo and 109/17 roster; scores untouched');

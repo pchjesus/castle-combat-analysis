@@ -39,12 +39,12 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 22 || publicQuotes.counts?.userProvided !== 22 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.characterId)).size !== 22 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first') throw Error('Missing/mismatched published 22-character quotes');
-    if (!html.includes('x.quotes.length===22') || !html.includes('new Set(x.quotes.map(q=>q.characterId)).size===22') ||
+    if (publicQuotes.quotes?.length !== 31 || publicQuotes.counts?.userProvided !== 31 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.characterId)).size !== 31 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 31-character quotes');
+    if (!html.includes('x.quotes.length===31') || !html.includes('new Set(x.quotes.map(q=>q.characterId)).size===31') ||
         !html.includes('quotationPreviewData?.quotes?.find') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
-    console.log('PASS: public HTTPS / + 6 dependent assets, 22 displayed user quotes, corrected Komodo, original v2.4 UI and unscored drafts');
+    console.log('PASS: public HTTPS / + 6 dependent assets, 31 displayed user quotes, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;
