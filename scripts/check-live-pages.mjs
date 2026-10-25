@@ -15,6 +15,7 @@ const requests = [
   ['data/temporal-evaluation-candidates.v0.1.json', 'json'],
   ['data/quotation-review.v0.1.json', 'json'],
   ['data/character-quotes.v3.4.DRAFT.json', 'json'],
+  ['data/character-appellations.v1.0.DRAFT.json', 'json'],
 ];
 let lastError;
 for (let attempt = 1; attempt <= 12; attempt++) {
@@ -50,7 +51,19 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     for(const [id,name] of [["char-008","이슬"],["char-010","박정배"],["char-011","정선오"],["char-012","정승영"],["char-013","서정치"]]){
       if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name))throw Error('Missing next five Baekui '+name);
     }
-    console.log('PASS: public HTTPS / + 6 dependent assets, 41 displayed user quotes, corrected Komodo, original v2.4 UI and unscored drafts');
+    const appellations=content['data/character-appellations.v1.0.DRAFT.json'];
+    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==27||
+       new Set(appellations.profiles.map(p=>p.characterId)).size!==27||
+       appellations.profiles.filter(p=>p.primary).length!==8||
+       appellations.profiles.filter(p=>p.codenameMeaning&&p.codenameMeaning.originalChecked===false).length!==22||
+       appellations.profiles.find(p=>p.characterId==='char-004')?.alternates?.[0]?.value!=='볼크'||
+       appellations.profiles.find(p=>p.characterId==='char-042')?.primary!==null||
+       appellations.scope.originalComicDirectChecks!==0)throw Error('Missing/mismatched public user-selected appellations');
+    if(!html.includes('data/character-appellations.v1.0.DRAFT.json')||
+       !html.includes('${characterAppellations(c)}')||
+       !html.includes('hero-appellation-animal')||
+       !html.includes('호칭·어원은 2차 자료 참고'))throw Error('Stale public hero appellation markup');
+    console.log('PASS: public HTTPS / + 6 dependent assets, 41 displayed user quotes, 8 user labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

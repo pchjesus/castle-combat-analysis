@@ -14,6 +14,9 @@ on:
       - 'data/temporal-evaluation-candidates.v0.1.json'
       - 'data/quotation-review.v0.1.json'
       - 'data/character-quotes.v3.4.DRAFT.json'
+      - 'data/character-appellations.v1.0.DRAFT.json'
+      - 'scripts/check-character-appellations-v4.1.mjs'
+      - 'scripts/check-character-appellations-browser-v4.1.mjs'
       - 'scripts/check-public-quotes-v3.6.mjs'
       - 'scripts/check-iskra-quotes-browser-v3.6.mjs'
       - 'scripts/check-live-pages.mjs'
@@ -40,6 +43,7 @@ jobs:
           node scripts/check-pilot-v2.1.mjs
           node scripts/check-character-images.mjs
           node scripts/check-public-quotes-v3.6.mjs
+          node scripts/check-character-appellations-v4.1.mjs
   browser-regression:
     runs-on: ubuntu-latest
     steps:
@@ -60,6 +64,7 @@ jobs:
         run: |
           node scripts/check-browser-v2.1.mjs
           node scripts/check-iskra-quotes-browser-v3.6.mjs
+          node scripts/check-character-appellations-browser-v4.1.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -86,6 +91,7 @@ jobs:
           cp data/temporal-evaluation-candidates.v0.1.json _site/data/
           cp data/quotation-review.v0.1.json _site/data/
           cp data/character-quotes.v3.4.DRAFT.json _site/data/
+          cp data/character-appellations.v1.0.DRAFT.json _site/data/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:

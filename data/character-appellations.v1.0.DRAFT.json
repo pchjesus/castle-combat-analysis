@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "v1.0-draft",
+  "asOf": "2026-10-25",
+  "state": "user-curated-appellations-secondary-verified",
+  "scope": {
+    "userSelectedAppellationPeople": 8,
+    "iskraCodenameAnimalMeanings": 19,
+    "uniqueCharacterCount": 27,
+    "originalComicDirectChecks": 0,
+    "shownOnlyWhenKnown": true,
+    "excludedUserChoice": [
+      {
+        "characterId": "char-042",
+        "text": "이스크라 무의 상징",
+        "reason": "user declined this epithet; show only codename animal meaning"
+      }
+    ]
+  },
+  "policy": {
+    "categories": [
+      "nickname",
+      "epithet",
+      "codename",
+      "codename-title"
+    ],
+    "meaningIsNotNewAlias": true,
+    "primaryAppellationOptional": true,
+    "sourceTypesDistinctFromOriginalCheck": true,
+    "doNotAssumeCurrentIskraMembership": true,
+    "ignoreForCombatScores": true
+  },
+  "sources": [
+    {
+      "type": "user-editorial-selection",
+      "description": "Eight explicit user-chosen primary labels with Piu-jin's two labels in current conversation; original scenes not independently verified",
+      "verification": "user-selected-not-canon-direct"
+    },
+    {
+      "type": "fan-wiki-secondary",
+      "url": "https://namu.moe/w/이스크라(캐슬)",
+      "description": "Iskra organization animal codename meanings and former membership grouping",
+      "verification": "secondary-read-not-original-checked"
+    }
+  ],
+  "profiles": [
+    {
+      "characterId": "char-001",
+      "displayName": "김신",
+      "primary": {
+        "value": "아무르 티그로",
+        "kind": "codename-title",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "티그로",
+        "animal": "흑룡강 호랑이",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-002",
+      "displayName": "서진태",
+      "primary": {
+        "value": "사로카",
+        "kind": "codename",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "사로카",
+        "animal": "까치",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-004",
+      "displayName": "피우진",
+      "primary": {
+        "value": "싸움귀신",
+        "kind": "epithet",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": [
+        {
+          "value": "볼크",
+          "kind": "codename"
+        }
+      ],
+      "codenameMeaning": {
+        "codename": "볼크",
+        "animal": "늑대",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-003",
+      "displayName": "표영",
+      "primary": {
+        "value": "부산 꼬마",
+        "kind": "nickname",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": []
+    },
+    {
+      "characterId": "char-008",
+      "displayName": "이슬",
+      "primary": {
+        "value": "릴라",
+        "kind": "nickname",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": []
+    },
+    {
+      "characterId": "char-009",
+      "displayName": "구일화",
+      "primary": {
+        "value": "충남 스타",
+        "kind": "epithet",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": []
+    },
+    {
+      "characterId": "char-010",
+      "displayName": "박정배",
+      "primary": {
+        "value": "똘배",
+        "kind": "nickname",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": []
+    },
+    {
+      "characterId": "char-022",
+      "displayName": "인수",
+      "primary": {
+        "value": "상계동 쓰나미",
+        "kind": "epithet",
+        "selectedBy": "user-2026-10-25"
+      },
+      "alternates": []
+    },
+    {
+      "characterId": "char-025",
+      "displayName": "메드베디",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "메드베디",
+        "animal": "곰",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-026",
+      "displayName": "크리사",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "크리사",
+        "animal": "쥐",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-027",
+      "displayName": "크로트",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "크로트",
+        "animal": "두더지",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-028",
+      "displayName": "라텔",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "라텔",
+        "animal": "벌꿀오소리",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-029",
+      "displayName": "샤이어",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "샤이어",
+        "animal": "거대한 말",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-030",
+      "displayName": "그롤라",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "그롤라",
+        "animal": "북극곰·그리즐리 교잡종",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-031",
+      "displayName": "판테라",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "판테라",
+        "animal": "설표",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-032",
+      "displayName": "바이슨",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "바이슨",
+        "animal": "들소",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-033",
+      "displayName": "아킬라",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "아킬라",
+        "animal": "독수리",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-034",
+      "displayName": "샤모",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "샤모",
+        "animal": "투계",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-035",
+      "displayName": "프리깃",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "프리깃",
+        "animal": "군함조",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-036",
+      "displayName": "콘",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "콘",
+        "animal": "콘도르",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-037",
+      "displayName": "헤론",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "헤론",
+        "animal": "왜가리",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-038",
+      "displayName": "오울",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "오울",
+        "animal": "수리부엉이",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-039",
+      "displayName": "스내퍼",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "스내퍼",
+        "animal": "늑대거북",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-040",
+      "displayName": "코모도",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "코모도",
+        "animal": "도마뱀",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-041",
+      "displayName": "잭슨",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "잭슨",
+        "animal": "카멜레온",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-042",
+      "displayName": "구스타프",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "구스타프",
+        "animal": "식인악어",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-043",
+      "displayName": "블랙맘바",
+      "primary": null,
+      "alternates": [],
+      "codenameMeaning": {
+        "codename": "블랙맘바",
+        "animal": "검은 뱀",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
+        "originalChecked": false
+      }
+    }
+  ]
+}
