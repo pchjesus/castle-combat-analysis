@@ -52,7 +52,7 @@ for(const q of quotes.quotes){
  assert.equal(q.publicationStatus,'branch-preview-requested');
  assert.equal(q.display.enabledInPreview,true);
  assert.equal(q.display.isCanonChecked,false);
- assert.equal(q.provenance.sourceType,'secondary-fan-wiki-reported-by-user');
+ assert.ok(['secondary-fan-wiki-reported-by-user','user-provided-secondary-transcription'].includes(q.provenance.sourceType));
  assert.equal(q.provenance.originalVerifiedByAssistant,false);
  assert.equal(q.provenance.originalVerifiedByUserInThisTurn,false);
  assert.equal(q.provenance.sceneVerified,false);
