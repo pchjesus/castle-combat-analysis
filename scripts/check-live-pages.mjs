@@ -14,6 +14,7 @@ const requests = [
   ['data/pilot-review-queue.v2.2.json', 'json'],
   ['data/temporal-evaluation-candidates.v0.1.json', 'json'],
   ['data/quotation-review.v0.1.json', 'json'],
+  ['data/character-quotes.v3.4.DRAFT.json', 'json'],
 ];
 let lastError;
 for (let attempt = 1; attempt <= 12; attempt++) {
@@ -37,7 +38,13 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     if (era.candidates.length !== 5 || era.candidates.some(x => x.evaluationStates.length !== 0)) throw Error('Published era state mismatch');
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
-    console.log('PASS: public HTTPS / + 5 dependent assets, v2.4 UI markers and read-only draft safety');
+    const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
+    if (publicQuotes.quotes?.length !== 22 || publicQuotes.counts?.userProvided !== 22 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.characterId)).size !== 22 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first') throw Error('Missing/mismatched published 22-character quotes');
+    if (!html.includes('x.quotes.length===22') || !html.includes('new Set(x.quotes.map(q=>q.characterId)).size===22') ||
+        !html.includes('quotationPreviewData?.quotes?.find') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
+    console.log('PASS: public HTTPS / + 6 dependent assets, 22 displayed user quotes, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;
