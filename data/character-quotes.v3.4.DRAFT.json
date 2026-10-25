@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 31,
+    "userProvided": 36,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -977,6 +977,161 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-036",
+      "characterId": "char-006",
+      "characterName": "김대건",
+      "exactText": "하지만... 쓰러질 수 없다. 이런 신뢰를 받은 적은 태어나 처음이니까.",
+      "theme": "신뢰·불굴",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 부/회차 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-037",
+      "characterId": "char-003",
+      "characterName": "표영",
+      "exactText": "다시. 어깨는 무겁게, 팔은 가볍게.",
+      "theme": "결의·자세",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 부/회차 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-038",
+      "characterId": "char-005",
+      "characterName": "한태철",
+      "exactText": "쉬어라, 이제 피는 우리가 보마.",
+      "theme": "책임·계승",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 부/회차 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-039",
+      "characterId": "char-007",
+      "characterName": "여민수",
+      "exactText": "괜찮아. 사는 데 지장없다, 이 녀석아.",
+      "theme": "동료애·배려",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 부/회차 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-040",
+      "characterId": "char-009",
+      "characterName": "구일화",
+      "exactText": "우리 형님 가시는 길에 겐세이 따윈 용납할 수 없다.",
+      "theme": "의리·충성",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 부/회차 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -1120,5 +1275,44 @@
     "userSelected": 19,
     "pending": 0,
     "canonDirectVerification": 0
+  },
+  "latestBaekuiSelections": [
+    {
+      "characterId": "char-006",
+      "quoteId": "CQ-036",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-003",
+      "quoteId": "CQ-037",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-005",
+      "quoteId": "CQ-038",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-007",
+      "quoteId": "CQ-039",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-009",
+      "quoteId": "CQ-040",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    }
+  ],
+  "characterQuoteDisplayContract": {
+    "primarySelection": "representativePriority first/primary if available; otherwise first accepted item by data order",
+    "additionalSelection": "other entries with same characterId collapsed in native details",
+    "futureExtraQuotesAllowed": true,
+    "quoteIdentity": "unique quote id; characterId may repeat",
+    "schemaVersionPreserved": true
   }
 }

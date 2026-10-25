@@ -39,12 +39,15 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 31 || publicQuotes.counts?.userProvided !== 31 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.characterId)).size !== 31 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 31-character quotes');
-    if (!html.includes('x.quotes.length===31') || !html.includes('new Set(x.quotes.map(q=>q.characterId)).size===31') ||
-        !html.includes('quotationPreviewData?.quotes?.find') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
-    console.log('PASS: public HTTPS / + 6 dependent assets, 31 displayed user quotes, corrected Komodo, original v2.4 UI and unscored drafts');
+    if (publicQuotes.quotes?.length !== 36 || publicQuotes.counts?.userProvided !== 36 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 36 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 36-character quotes');
+    if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
+        !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
+    for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
+      if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name))throw Error('Missing public Baekui quote for '+name);
+    }
+    console.log('PASS: public HTTPS / + 6 dependent assets, 36 displayed user quotes, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

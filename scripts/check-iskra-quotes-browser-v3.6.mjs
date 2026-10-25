@@ -24,7 +24,12 @@ const six=[
  ['char-037','헤론',"이런... 바로 날개를 꺾긴 힘든가..."],
  ['char-038','오울',"아니 - 잡았다."],
  ['char-039','스내퍼',"뭐긴 뭐야, '재앙' 이지"],
- ['char-040','코모도',"오늘부터 이 분이... 내가 받들 '신'이다!"]
+ ['char-040','코모도',"오늘부터 이 분이... 내가 받들 '신'이다!"],
+ ["char-006","김대건","하지만... 쓰러질 수 없다. 이런 신뢰를 받은 적은 태어나 처음이니까."],
+ ["char-003","표영","다시. 어깨는 무겁게, 팔은 가볍게."],
+ ["char-005","한태철","쉬어라, 이제 피는 우리가 보마."],
+ ["char-007","여민수","괜찮아. 사는 데 지장없다, 이 녀석아."],
+ ["char-009","구일화","우리 형님 가시는 길에 겐세이 따윈 용납할 수 없다."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -51,8 +56,11 @@ try{
    await page.goto(host+'/#character='+id+'&view=overview',{waitUntil:'networkidle'});
    await page.locator('.quote-note-preview blockquote').waitFor();
    assert.equal((await page.locator('.hero-title').innerText()).trim(),name);
+   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'quote must render inside shared profile card');
+   assert.equal(await page.locator('#current-panel > .quote-note').count(),0,'no duplicate quote below profile');
+   assert.equal(await page.locator('.hero-quote-more').count(),0,'one quote only: no premature expansion toggle');
    assert.ok((await page.locator('.quote-note-preview blockquote').innerText()).includes(word),'quote text missing '+name);
-   assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/사용자 제공/);
+   assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/사용자 (제공|선정)/);
    assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/원작 대조 대기/);
   }
   await page.goto(host+'/#character=char-033&view=overview',{waitUntil:'networkidle'});
@@ -66,6 +74,27 @@ try{
   assert.match(await page.locator('.quote-note-preview blockquote').innerText(),/아직 밤이 아니다/);
   assert.deepEqual(errors,[],'No local 404 or page errors at width '+viewport.width);
   await page.close();
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra quotes, Aquila, Ryu, corrected Komodo');
+  if(viewport.width===1365){
+   const injected=await browser.newPage({viewport});
+   const json=JSON.parse(await readFile(resolve(root,'data/character-quotes.v3.4.DRAFT.json'),'utf8'));
+   const original=json.quotes.find(q=>q.characterId==='char-033');
+   const testOnly='TEST ONLY: expansion control, not an original comic quotation';
+   json.quotes.push({...original,id:'TEST-ONLY-EXTRA',exactText:testOnly,representativePriority:null});
+   json.counts.userProvided=json.quotes.length;
+   await injected.route('**/data/character-quotes.v3.4.DRAFT.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(json)}));
+   await injected.goto(host+'/#character=char-033&view=overview',{waitUntil:'networkidle'});
+   await injected.locator('.hero-quote-more summary').waitFor();
+   assert.match(await injected.locator('.hero-quote .hero-quote-text').innerText(),/부동.*마음/);
+   assert.match(await injected.locator('.hero-quote-more summary').innerText(),/다른 명대사 1개 보기/);
+   assert.equal(await injected.locator('.hero-quote-more').getAttribute('open'),null);
+   await injected.locator('.hero-quote-more summary').click();
+   assert.equal(await injected.locator('.hero-quote-more').getAttribute('open'),'');
+   assert.equal((await injected.locator('.hero-quote-extra blockquote').innerText()).trim(),testOnly);
+   await injected.locator('.hero-quote-more summary').click();
+   assert.equal(await injected.locator('.hero-quote-more').getAttribute('open'),null);
+   await injected.close();
+   console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
+  }
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra and 5 Baekui quote cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}
