@@ -20,13 +20,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,36);
+assert.equal(quotes.counts.userProvided,41);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,36);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,36);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,36);
+assert.equal(quotes.quotes.length,41);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,41);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,41);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -56,7 +56,20 @@ for(const [id,name,verbatim] of baekui){
  assert.equal(q.provenance.originalVerifiedByAssistant,false);
  assert.equal(q.display.isCanonChecked,false);
 }
-assert.deepEqual(quotes.latestBaekuiSelections.map(q=>q.characterId),baekui.map(q=>q[0]));
+assert.deepEqual(quotes.priorBaekuiSelections.map(q=>q.characterId),baekui.map(q=>q[0]));
+
+const newBaekui=[["char-008","이슬","근데 어쩌냐 니들 따윈 모르는 게 있다. 김신, 그놈은 쓰러지지 않을 거거든 그놈은 끝까지 해낼거야. 왜냐하면.. 내가 배 터지게 한 상 차려 먹였거든. 그게 뜨끈해서 웬만한 건 다 버텨낼거다."],["char-010","박정배","형님들이 그러셨지, 내 성급함만 줄인다면... 나도 위를 꿈꿀 수 있다고!"],["char-011","정선오","너 태어나서 누구한테 고맙다는 말 해본 적 없지? 그냥, 친구잖아."],["char-012","정승영","근데.. 바로 옆방에 영이가 한참 목 걸고 싸우고 있거든요? 거기도 한 발만 쏴주십쇼."],["char-013","서정치","너희가 가는 그 길에 힘을 보태도록 하지."]];
+for(const [id,name,verbatim] of newBaekui){
+ const quote=quotes.quotes.find(x=>x.characterId===id);
+ assert.ok(quote,'new Baekui quote missing '+name);
+ assert.equal(quote.characterName,name);
+ assert.equal(quote.exactText,verbatim);
+ assert.equal(quote.provenance.originalVerifiedByAssistant,false);
+ assert.equal(quote.display.isCanonChecked,false);
+ assert.equal(quote.provenance.scoringImpact,'none');
+}
+assert.deepEqual(quotes.latestBaekuiSelections.map(q=>q.characterId),newBaekui.map(x=>x[0]));
+assert.deepEqual(quotes.latestBaekuiSelections.map(q=>q.quoteId),['CQ-041','CQ-042','CQ-043','CQ-044','CQ-045']);
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -65,4 +78,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: main 36 selected quotes with 5 Baekui; 19 Iskra, hero layout and future multi-quote gates preserved');
+console.log('PASS: main 41 selected quotes, 10 Baekui, 19 Iskra, hero/accordion and Evidence preserved');

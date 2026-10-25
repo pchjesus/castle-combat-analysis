@@ -29,7 +29,12 @@ const six=[
  ["char-003","표영","다시. 어깨는 무겁게, 팔은 가볍게."],
  ["char-005","한태철","쉬어라, 이제 피는 우리가 보마."],
  ["char-007","여민수","괜찮아. 사는 데 지장없다, 이 녀석아."],
- ["char-009","구일화","우리 형님 가시는 길에 겐세이 따윈 용납할 수 없다."]
+ ["char-009","구일화","우리 형님 가시는 길에 겐세이 따윈 용납할 수 없다."],
+ ["char-008","이슬","근데 어쩌냐 니들 따윈 모르는 게 있다."],
+ ["char-010","박정배","형님들이 그러셨지, 내 성급함만 줄인다면..."],
+ ["char-011","정선오","너 태어나서 누구한테 고맙다는 말 해본 적 없지?"],
+ ["char-012","정승영","근데.. 바로 옆방에 영이가 한참 목 걸고 싸우고 있거든요?"],
+ ["char-013","서정치","너희가 가는 그 길에 힘을 보태도록 하지."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -95,6 +100,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra and 5 Baekui quote cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra and 10 Baekui quote cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

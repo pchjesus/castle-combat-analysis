@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 36,
+    "userProvided": 41,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -1132,6 +1132,161 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-041",
+      "characterId": "char-008",
+      "characterName": "이슬",
+      "exactText": "근데 어쩌냐 니들 따윈 모르는 게 있다. 김신, 그놈은 쓰러지지 않을 거거든 그놈은 끝까지 해낼거야. 왜냐하면.. 내가 배 터지게 한 상 차려 먹였거든. 그게 뜨끈해서 웬만한 건 다 버텨낼거다.",
+      "theme": "신뢰·돌봄",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-042",
+      "characterId": "char-010",
+      "characterName": "박정배",
+      "exactText": "형님들이 그러셨지, 내 성급함만 줄인다면... 나도 위를 꿈꿀 수 있다고!",
+      "theme": "성장·포부",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-043",
+      "characterId": "char-011",
+      "characterName": "정선오",
+      "exactText": "너 태어나서 누구한테 고맙다는 말 해본 적 없지? 그냥, 친구잖아.",
+      "theme": "우정",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-044",
+      "characterId": "char-012",
+      "characterName": "정승영",
+      "exactText": "근데.. 바로 옆방에 영이가 한참 목 걸고 싸우고 있거든요? 거기도 한 발만 쏴주십쇼.",
+      "theme": "동료애",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-045",
+      "characterId": "char-013",
+      "characterName": "서정치",
+      "exactText": "너희가 가는 그 길에 힘을 보태도록 하지.",
+      "theme": "연대",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -1278,6 +1433,45 @@
   },
   "latestBaekuiSelections": [
     {
+      "characterId": "char-008",
+      "quoteId": "CQ-041",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-010",
+      "quoteId": "CQ-042",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-011",
+      "quoteId": "CQ-043",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-012",
+      "quoteId": "CQ-044",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    },
+    {
+      "characterId": "char-013",
+      "quoteId": "CQ-045",
+      "userSelected": true,
+      "sourceStatus": "user-provided-original-unchecked"
+    }
+  ],
+  "characterQuoteDisplayContract": {
+    "primarySelection": "representativePriority first/primary if available; otherwise first accepted item by data order",
+    "additionalSelection": "other entries with same characterId collapsed in native details",
+    "futureExtraQuotesAllowed": true,
+    "quoteIdentity": "unique quote id; characterId may repeat",
+    "schemaVersionPreserved": true
+  },
+  "priorBaekuiSelections": [
+    {
       "characterId": "char-006",
       "quoteId": "CQ-036",
       "userSelected": true,
@@ -1307,12 +1501,5 @@
       "userSelected": true,
       "sourceStatus": "user-provided-original-unchecked"
     }
-  ],
-  "characterQuoteDisplayContract": {
-    "primarySelection": "representativePriority first/primary if available; otherwise first accepted item by data order",
-    "additionalSelection": "other entries with same characterId collapsed in native details",
-    "futureExtraQuotesAllowed": true,
-    "quoteIdentity": "unique quote id; characterId may repeat",
-    "schemaVersionPreserved": true
-  }
+  ]
 }
