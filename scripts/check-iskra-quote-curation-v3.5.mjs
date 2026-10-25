@@ -18,10 +18,10 @@ const expected=new Map([
 ]);
 assert.equal(roster.characters.length,109);
 assert.equal(roster.organizations.length,17);
-assert.equal(gallery.quotes.length,16);
-assert.equal(gallery.counts.userProvided,16);
-assert.equal(new Set(gallery.quotes.map(x=>x.id)).size,16);
-assert.equal(new Set(gallery.quotes.map(x=>x.characterId)).size,16);
+assert.equal(gallery.quotes.length,22);
+assert.equal(gallery.counts.userProvided,22);
+assert.equal(new Set(gallery.quotes.map(x=>x.id)).size,22);
+assert.equal(new Set(gallery.quotes.map(x=>x.characterId)).size,22);
 const newly=gallery.newlyAddedUserSelections;
 assert.equal(newly.length,7);
 assert.deepEqual(newly.map(x=>x.quoteId),Array.from({length:7},(_,i)=>'CQ-'+String(i+14).padStart(3,'0')));
@@ -46,7 +46,7 @@ assert.equal(gallery.quotes.find(x=>x.representativePriority==='first')?.charact
 assert.deepEqual(oldRegistry.quotationCandidates,[]);
 assert.equal(oldCandidates.candidateCount,7,'retain previous suggestions for change history');
 assert.ok(oldCandidates.candidates.every(x=>x.publicSiteDisplay===false));
-assert.ok(html.includes('x.quotes.length===16'));
+assert.ok(html.includes('x.quotes.length===22'));
 assert.ok(html.includes('h(preview.exactText)'));
 assert.equal(iskra.schemaVersion,'v3.5-iskra-quotation-research-draft');
 const members=roster.characters.filter(x=>x.initialOrganizationId==='iskra');
