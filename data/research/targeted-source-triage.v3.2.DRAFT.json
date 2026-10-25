@@ -1,0 +1,311 @@
+{
+  "schemaVersion": "v3.2-secondary-source-triage-draft",
+  "status": "research-only-unapproved",
+  "asOf": "2026-10-25",
+  "basedOn": {
+    "branch": "research/v3.1-axis-observation-validation",
+    "sha": "83696a3d7daff6aa190affef63643c83d083b267",
+    "pilot": "data/pilot-evidence.v2.1.json",
+    "review": "data/pilot-review-queue.v2.2.json",
+    "scenePackets": "data/research/pilot-scene-review.v3.1.DRAFT.json"
+  },
+  "acquisitionScope": {
+    "countryLanguagePriority": "Korean-original-language discussion first",
+    "verifiedOriginalComicScenes": 0,
+    "sourceReviewNotCanonReview": true,
+    "independentCoders": 0,
+    "characterIds": [
+      "char-033",
+      "char-087",
+      "char-071"
+    ],
+    "examinedCandidateIds": [
+      "A03",
+      "L03",
+      "R02",
+      "R03",
+      "R04"
+    ]
+  },
+  "sources": [
+    {
+      "id": "V32:OFFICIAL-P1",
+      "title": "캐슬 (1부) — 작품·회차 목록",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=736744",
+      "sourceType": "official-episode-index",
+      "accessResult": "index-text-opened",
+      "reviewedThisTurn": true,
+      "verifiedMetadata": [
+        "completed-series-index",
+        "121-items-displayed-as-total",
+        "episodes-from-7th-are-marked-paid-in-visible-page"
+      ],
+      "verifiedSceneText": false,
+      "sceneAccess": "target 1부 99~100화 not read",
+      "originalIndependence": "not-applicable-metadata-only",
+      "cluster": "official-castle-p1"
+    },
+    {
+      "id": "V32:OFFICIAL-P2",
+      "title": "캐슬2: 만인지상 — 작품·회차 목록",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=807178",
+      "sourceType": "official-episode-index",
+      "accessResult": "index-text-opened",
+      "reviewedThisTurn": true,
+      "verifiedMetadata": [
+        "completed-series-index",
+        "136-items-displayed-as-total",
+        "episodes-28-and-29-listed",
+        "28-and-29-marked-paid"
+      ],
+      "verifiedSceneText": false,
+      "sceneAccess": "28~29 comic panels not read",
+      "originalIndependence": "not-applicable-metadata-only",
+      "cluster": "official-castle-p2"
+    },
+    {
+      "id": "V32:WIKI-A",
+      "title": "아킬라(캐슬)/전투력",
+      "url": "https://d.namu.moe/w/%EC%95%84%ED%82%AC%EB%9D%BC%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "sourceType": "domestic-fan-edited-secondary",
+      "accessResult": "search-result-text-reviewed-original-page-recheck-limited",
+      "reviewedThisTurn": true,
+      "verifiedMetadata": [],
+      "verifiedSceneText": false,
+      "sceneAccess": "summary only, no original chapter panel",
+      "originalIndependence": "not-established",
+      "cluster": "secondary-fanwiki-akila"
+    },
+    {
+      "id": "V32:WIKI-L",
+      "title": "리천(캐슬)/전투력",
+      "url": "https://m.namu.moe/w/%EB%A6%AC%EC%B2%9C%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "sourceType": "domestic-fan-edited-secondary",
+      "accessResult": "search-result-text-reviewed-original-page-recheck-limited",
+      "reviewedThisTurn": true,
+      "verifiedMetadata": [],
+      "verifiedSceneText": false,
+      "sceneAccess": "summary only, no original chapter panel",
+      "originalIndependence": "not-established",
+      "cluster": "secondary-fanwiki-lichen"
+    },
+    {
+      "id": "V32:WIKI-R",
+      "title": "류지학/전투력",
+      "url": "https://www.namu.moe/w/%EB%A5%98%EC%A7%80%ED%95%99/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "sourceType": "domestic-fan-edited-secondary",
+      "accessResult": "search-result-text-reviewed-original-page-recheck-limited",
+      "reviewedThisTurn": true,
+      "verifiedMetadata": [],
+      "verifiedSceneText": false,
+      "sceneAccess": "summary only, no original chapter panel",
+      "originalIndependence": "not-established",
+      "cluster": "secondary-fanwiki-ryu"
+    },
+    {
+      "id": "V32:DC-R",
+      "title": "캐슬 스토리 진행과 직결되는 라이벌구도 및 부상관리",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=107902",
+      "publishedOn": "2023-06-11",
+      "sourceType": "domestic-original-language-reader-interpretation",
+      "accessResult": "search-result-text-reviewed-original-page-recheck-limited",
+      "reviewedThisTurn": true,
+      "verifiedMetadata": [],
+      "verifiedSceneText": false,
+      "sceneAccess": "reader interpretation only; image not copied, original chapter not checked",
+      "originalIndependence": "independent-post-but-not-independent-canon-verification",
+      "cluster": "dc-2023-injury-analysis"
+    }
+  ],
+  "caseAudit": [
+    {
+      "evidenceId": "A03",
+      "characterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "linkedSourceIds": [
+        "V32:WIKI-A"
+      ],
+      "secondaryLead": "편집형 정리는 재장전·차문 쪽 접근·발차기·재이격·샷건 조작이 연결되었다고 서술한다.",
+      "sourceClaimStatus": "secondary-paraphrase-only",
+      "hypotheses": [
+        {
+          "id": "A03-H1",
+          "claim": "사전 계획된 무장·거리 운용",
+          "test": "준비/탄약 소진/진입 순서"
+        },
+        {
+          "id": "A03-H2",
+          "claim": "예상 밖 변수에 대한 적응",
+          "test": "예상 밖 위협 출현과 그 뒤 행동 변경을 분리"
+        }
+      ],
+      "decisiveUnknowns": [
+        "당시 총기·탄약의 상태",
+        "구스타프/차문/제3자 행동의 선후",
+        "접근이 사전 계획이었는지"
+      ],
+      "primaryAxisDecision": "not-validated",
+      "originalPart": null,
+      "originalEpisode": null,
+      "originalSceneVerified": false
+    },
+    {
+      "evidenceId": "L03",
+      "characterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "linkedSourceIds": [
+        "V32:WIKI-L",
+        "V32:OFFICIAL-P2"
+      ],
+      "secondaryLead": "기존 L03 검수 기록은 탄창 없는 총기로 상대를 유도했다는 2차 서술을 보존하며, 공식 목록은 2부 28~29화의 존재만 확인한다.",
+      "sourceClaimStatus": "prior-secondary-paraphrase-only",
+      "hypotheses": [
+        {
+          "id": "L03-H1",
+          "claim": "상대에게 실제 오인을 유발한 의도적 기만",
+          "test": "총기 상태→상대 인지→상대 행동→후속 공격의 순서"
+        },
+        {
+          "id": "L03-H2",
+          "claim": "연속 동작 또는 상황적 위협 제시",
+          "test": "의도·상대의 오인 없이도 후속 공격이 설명되는지"
+        }
+      ],
+      "decisiveUnknowns": [
+        "총기의 실제 탄창 상태",
+        "상대 인지·판단 변화",
+        "원작 해당 회차와 공격 순서"
+      ],
+      "primaryAxisDecision": "not-validated",
+      "originalPart": null,
+      "originalEpisode": null,
+      "episodeCandidateFromSecondary": "캐슬2 28~29화",
+      "originalSceneVerified": false
+    },
+    {
+      "evidenceId": "R02",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "linkedSourceIds": [
+        "V32:WIKI-R",
+        "V32:OFFICIAL-P1"
+      ],
+      "secondaryLead": "편집형 정리는 최달천의 무리한 공격과 그 틈을 이용한 결과를 함께 서술하나 유도 여부를 독립적으로 보이지 않는다.",
+      "sourceClaimStatus": "secondary-paraphrase-only",
+      "hypotheses": [
+        {
+          "id": "R02-H1",
+          "claim": "사전 유도 뒤 계획된 반격",
+          "test": "공격을 유도한 선행 행동/정보 확인"
+        },
+        {
+          "id": "R02-H2",
+          "claim": "우연히 생긴 빈틈에 대한 대응",
+          "test": "상대 행동의 선후와 예상 가능성 확인"
+        }
+      ],
+      "decisiveUnknowns": [
+        "상대 공격 개시 전 유도 행동",
+        "반격 전에 류지학이 알 수 있던 정보",
+        "돌발성과 반응 시간의 확인 가능성"
+      ],
+      "primaryAxisDecision": "not-validated",
+      "originalPart": null,
+      "originalEpisode": null,
+      "episodeCandidateFromSecondary": "캐슬 1부 99~100화",
+      "originalSceneVerified": false
+    },
+    {
+      "evidenceId": "R03",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "linkedSourceIds": [
+        "V32:WIKI-R",
+        "V32:OFFICIAL-P1"
+      ],
+      "secondaryLead": "편집형 정리는 결정적인 도검 공격을 기술하지만, 기술 정확성·타격 결과의 독립 관찰은 재구성할 수 없다.",
+      "sourceClaimStatus": "secondary-paraphrase-only",
+      "hypotheses": [
+        {
+          "id": "R03-H1",
+          "claim": "분리 가능한 도검 기술 수행",
+          "test": "동작의 정확성·연속성과 실제 결과 각각 대조"
+        },
+        {
+          "id": "R03-H2",
+          "claim": "결과 위주 서술로 전문 수행은 아직 미확인",
+          "test": "실제 도검 조작 장면 근거 확보"
+        }
+      ],
+      "decisiveUnknowns": [
+        "실제 표적 부위",
+        "일련의 도검 동작",
+        "상대 부상 전후 기능 변화"
+      ],
+      "primaryAxisDecision": "not-validated",
+      "originalPart": null,
+      "originalEpisode": null,
+      "episodeCandidateFromSecondary": "캐슬 1부 99~100화",
+      "originalSceneVerified": false
+    },
+    {
+      "evidenceId": "R04",
+      "characterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "linkedSourceIds": [
+        "V32:WIKI-R",
+        "V32:DC-R",
+        "V32:OFFICIAL-P1"
+      ],
+      "secondaryLead": "국내 독자 글(2023)은 최달천의 펀치로 왼팔·어깨를 다쳤다는 해석과 빠른 결착을 위한 위험 감수 해석을 제시한다. 위키도 부상 맥락을 논하지만 원작 직접 관찰은 아니다.",
+      "sourceClaimStatus": "reader-interpretation-plus-fanwiki-unverified",
+      "hypotheses": [
+        {
+          "id": "R04-H1",
+          "claim": "최달천과의 교전에서 부상 발생",
+          "test": "첫 손상 컷과 후속 현석 교전의 손상을 별도 기록"
+        },
+        {
+          "id": "R04-H2",
+          "claim": "시간 압박 때문에 의도적으로 위험 감수",
+          "test": "명시적 시간 제약과 본인이 인식한 선택지 확인"
+        },
+        {
+          "id": "R04-H3",
+          "claim": "피로·기존 부상·후속 손상에 대한 대안",
+          "test": "최초 부상·후속 추가 부상·피로를 시간순 분리"
+        }
+      ],
+      "decisiveUnknowns": [
+        "상지 손상의 최초 발생",
+        "단기 수행 저하의 실제 징후",
+        "시간 압박에 대한 원작 직접 근거"
+      ],
+      "primaryAxisDecision": "context-only-unvalidated",
+      "originalPart": null,
+      "originalEpisode": null,
+      "episodeCandidateFromSecondary": "캐슬 1부 99~100화",
+      "originalSceneVerified": false
+    }
+  ],
+  "protocol": {
+    "originalVerificationRule": "official episode indexing and domestic secondary discussion never verify a paid comic panel or an exact quote",
+    "axesNotFinalized": true,
+    "score": null,
+    "meanReviewerAgreement": null,
+    "sufficiency": "unassessed",
+    "nextAction": "user-accessible original chapter notes and independently checked scene order required before any axis classification",
+    "rights": "do not copy fan images or comic panels"
+  },
+  "quoteBridge": {
+    "registryPath": "data/quotation-review.v0.1.json",
+    "currentCandidates": 0,
+    "sourceStatementsAreNotQuotes": true,
+    "intakeFrom": "only verified or provenance-labeled candidates, no invented exact Korean lines",
+    "recommendedMilestones": {
+      "v3_2": "intake rules only",
+      "v3_3": "candidate gathering and original validation",
+      "v3_4": "UI only after user approval and rights review"
+    }
+  }
+}
