@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "v3.1-axis-observation-rubric-draft",
+  "status": "research-only-not-approved",
+  "inheritedVersion": "v3.0-l2-axis-fairness-experiment-draft",
+  "asOf": "2026-10-25",
+  "scope": {
+    "characters": [
+      "char-033",
+      "char-087",
+      "char-071"
+    ],
+    "role": "operational definitions and scene-review protocol; not scoring, canon verification or a live calculation model",
+    "canInferCombatSkillFromMissingObservation": false
+  },
+  "axes": [
+    {
+      "id": "physical",
+      "name": "신체 역량",
+      "construct": "물리적 힘·폭발력·신체 산출",
+      "observable": [
+        "힘 발휘 방식과 저항·물체/상대 움직임의 분리 관찰",
+        "상대 조건이 비교 가능하거나 명확한 상황에서의 힘·폭발력 수행"
+      ],
+      "doNotUse": [
+        "공격 명중 또는 제압 결과만으로 완력 추정",
+        "지구력 또는 맷집으로 대체"
+      ],
+      "contrast": "근접 전문기술은 움직임의 숙련도, 지속전은 시간 경과에 따른 기능 유지",
+      "minimumIndependentObservation": "기술·무기·상대 취약성과 분리해 물리적 산출을 관찰할 근거",
+      "holdWhen": "결과만 보이거나 상대 체격·부상·무장 영향이 미확정"
+    },
+    {
+      "id": "mobility",
+      "name": "기동",
+      "construct": "위치·거리·이격·접근을 확보하고 변화시키는 수행",
+      "observable": [
+        "시작과 종료 위치·거리 변화",
+        "상대의 거리 통제에 대응한 실제 이동·이격 경로"
+      ],
+      "doNotUse": [
+        "공격 성공만으로 높은 기동 판단",
+        "인지·발사까지의 시간 수치 임의 산출"
+      ],
+      "contrast": "반응은 예상 밖 자극 인지 이후 대응, 전문기술은 기술적 수행",
+      "minimumIndependentObservation": "실제 위치/거리 이동이 원작에서 식별 가능",
+      "holdWhen": "컷간 시간·초기 위치가 불명확해 이동의 양과 인과를 재구성할 수 없음"
+    },
+    {
+      "id": "reaction",
+      "name": "반응",
+      "construct": "돌발 자극 인지 이후 유효한 동작으로 응답하는 능력",
+      "observable": [
+        "새 위협의 출현→인지→동작의 시계열",
+        "상대 공격 개시 후 구체적 방어·표적 전환"
+      ],
+      "doNotUse": [
+        "사전 예측을 순간 반응으로 오인",
+        "패널 간격을 실제 밀리초/초로 환산"
+      ],
+      "contrast": "전술·판단은 이용 가능 정보를 바탕으로 한 선택, 기동은 위치·거리 변화",
+      "minimumIndependentObservation": "예기치 않은 자극과 대응 사이의 순서를 구분",
+      "holdWhen": "사전 정보·준비 여부 또는 시간순서가 미확인"
+    },
+    {
+      "id": "defense",
+      "name": "방어",
+      "construct": "상대 공격에 대한 피격 회피·막기·흘리기 등 방어 수행",
+      "observable": [
+        "위협의 방향과 방어 시도·성립 여부",
+        "방어 과정에서 실제 피격 회피나 피해 경감"
+      ],
+      "doNotUse": [
+        "부상이 존재한다는 사실만으로 방어 능력 감점",
+        "피격 이후 전투 지속을 방어 성과로 혼합"
+      ],
+      "contrast": "지속전은 손상·피로 이후의 시간 경과별 자기 수행 유지",
+      "minimumIndependentObservation": "상대 공격 및 방어 행동을 구분 가능한 관찰",
+      "holdWhen": "부상 원인·피격 이전 조건·방어 행동 자체가 불명확"
+    },
+    {
+      "id": "endurance",
+      "name": "지속전",
+      "construct": "시간·피로·손상에 따른 본인 수행의 유지",
+      "observable": [
+        "시간 경과에 따른 자기 수행·움직임의 변화",
+        "부상·피로 전후의 자기 기능 유지/저하의 비교"
+      ],
+      "doNotUse": [
+        "상대 호흡 악화만으로 본인 지속전 가산",
+        "일회성 피격 견딤을 장기 지속 능력으로 확장"
+      ],
+      "contrast": "방어는 공격을 피하거나 막는 기술, 신체 역량은 순간적 산출",
+      "minimumIndependentObservation": "자기 수행의 복수 시점과 상태 차이를 직접 구분",
+      "holdWhen": "기준 시점 부재 또는 전투 지속 시간/다른 부상 원인이 미확정"
+    },
+    {
+      "id": "tactics",
+      "name": "전술·판단",
+      "construct": "당시 이용 가능한 정보를 바탕으로 목적·위험·수단을 선택",
+      "observable": [
+        "정보·무장·제약을 고려한 선택의 근거",
+        "목표 설정·사전 계획 또는 상대 선택지에 대한 예측"
+      ],
+      "doNotUse": [
+        "결과가 좋다는 이유만으로 우수한 판단으로 확정",
+        "상대 심리 변화나 기만 성공을 선행 계산으로 자동 전환"
+      ],
+      "contrast": "상황 대응은 예상 밖 변화 이후 전략 수정, 심리전 렌즈는 상대 의사결정에 대한 개입",
+      "minimumIndependentObservation": "선택 당시 정보와 적어도 하나의 선택·의도 근거",
+      "holdWhen": "계획 여부·선행 정보·실제 목표가 미확정"
+    },
+    {
+      "id": "composure",
+      "name": "부동심",
+      "construct": "공포·분노·압박 아래 자기 판단과 수행의 안정",
+      "observable": [
+        "확인 가능한 압박과 그 전후의 자기 선택 일관성",
+        "감정 변화 뒤에도 유지·회복된 판단 수행"
+      ],
+      "doNotUse": [
+        "표정이 차분하다는 이유만으로 고평가",
+        "상대가 흔들렸다는 사실을 자기 부동심 증거로 사용"
+      ],
+      "contrast": "심리전 렌즈는 상대에게 영향을 주는 의도·행동, 상태 감정은 순간 감정 자체",
+      "minimumIndependentObservation": "실제 심리적 압박과 자기 판단·수행의 변화를 함께 관찰",
+      "holdWhen": "압박·감정·판단 변화 중 관찰 가능한 연결이 부족"
+    },
+    {
+      "id": "adaptation",
+      "name": "상황 대응",
+      "construct": "사전 계획으로 충분히 설명되지 않는 상황 변화 뒤 실제 행동·전법 수정",
+      "observable": [
+        "예상하지 못한 변수 발생→인지→행동 변경",
+        "초기 목적·계획과 변경된 선택의 차이"
+      ],
+      "doNotUse": [
+        "복잡한 무기 루틴을 자동으로 적응으로 간주",
+        "원래 계획된 선택을 사후 결과가 좋다는 이유로 적응으로 판정"
+      ],
+      "contrast": "전술·판단은 주어진 정보하의 계획·선택, 반응은 돌발 자극에 대한 즉시 응답",
+      "minimumIndependentObservation": "예상 밖 변수와 그에 따른 계획 변경의 증거",
+      "holdWhen": "예상 가능했던 변수인지 또는 기존 작전 여부가 미확정"
+    }
+  ],
+  "specialist": {
+    "structure": "multi-domain observations retained; representative +1 not fixed",
+    "domains": [
+      "사격",
+      "도검",
+      "단검",
+      "맨손",
+      "근접"
+    ],
+    "observable": [
+      "해당 전문 분야의 실제 조작·기술적 수행",
+      "정확성·연속성·거리 조건 등 행위 자체"
+    ],
+    "neverInfer": [
+      "비사용 분야 0점",
+      "다른 분야의 숙련 자동 일반화",
+      "명중·전투 종료를 곧바로 숙련과 추가 공격실효성으로 중복 가산"
+    ],
+    "useStatuses": [
+      "used-with-observation",
+      "not-used",
+      "ability-unknown",
+      "not-applicable",
+      "unassessed"
+    ],
+    "selectionStatus": "not-selected",
+    "score": null
+  },
+  "nonScoredLenses": {
+    "psychologicalWarfare": "자극/기만 의도·전달·상대 인지·선택 변경·결과를 별개 증명; 의도만으로 성공 인정 불가",
+    "offensiveOutcome": "명중·피해·기능 저하·제압/사살은 기술 숙련과 구분해 전투 결과로 보관",
+    "opponentFatigue": "상대 피로·호흡 변화는 본인 지속전과 동치 아님",
+    "injuries": "부상 원인·시점·독립 수행 변화를 우선 조건으로 기록; 감점 보너스 계산 없음"
+  },
+  "conflictGates": [
+    {
+      "recordId": "A03",
+      "competition": [
+        "전술·판단",
+        "상황 대응",
+        "사격",
+        "기동"
+      ],
+      "decisionEvidence": [
+        "사전에 정해진 무장·재장전 순서와 실제 이탈 여부",
+        "돌발 변수 발생 전후 거리·동작 변화"
+      ],
+      "ifUnresolved": "keep situation-adaptation conditional; do not count tactical choice and adaptation together"
+    },
+    {
+      "recordId": "L03",
+      "competition": [
+        "전술·판단",
+        "상황 대응",
+        "심리전",
+        "맨손"
+      ],
+      "decisionEvidence": [
+        "탄창 상태와 의도된 허세·기만 여부",
+        "상대 인지→선택 변화→관절 공격의 선후",
+        "그와 독립적인 맨손 기술 동작"
+      ],
+      "ifUnresolved": "psychological effect not established, no additional axis allocation"
+    },
+    {
+      "recordId": "R02",
+      "competition": [
+        "전술·판단",
+        "반응",
+        "상황 대응"
+      ],
+      "decisionEvidence": [
+        "유도행동·정보 선행 여부",
+        "예기치 않은 공격 개시와 대응 시간순"
+      ],
+      "ifUnresolved": "do not resolve prediction vs reaction"
+    },
+    {
+      "recordId": "R03",
+      "competition": [
+        "도검",
+        "반응",
+        "공격 실효성"
+      ],
+      "decisionEvidence": [
+        "도검 기술 수행 동작 자체",
+        "결과 발생과 선택·반응의 시간순 분리"
+      ],
+      "ifUnresolved": "keep outcome outside scored axes"
+    },
+    {
+      "recordId": "R04",
+      "competition": [
+        "방어",
+        "지속전",
+        "부상·일시 상태"
+      ],
+      "decisionEvidence": [
+        "최초 부상 발생 시점과 방어 행동",
+        "부상 전후 류지학 자신의 수행 변화"
+      ],
+      "ifUnresolved": "retain as context only; do not subtract defense or increase endurance"
+    }
+  ],
+  "observationProtocol": {
+    "unit": "한 장면 내에도 행위·상대 반응·결과 등 구분 가능한 최소 관찰 단위로 기록",
+    "singleOutcomeRule": "같은 인과적 결과는 여러 축에 반복 가산하지 않음; 복수 축 귀속은 각 축의 독립 행동/관찰이 확인된 경우에만",
+    "actorTimeline": "주체·대상·제3자·사전 정보·행위·상대 반응·결과를 각각 보존",
+    "actorStatus": "사용자 원작 열람 진술·AI 원작 직접 대조·2차 의역·커뮤니티 추측 구분",
+    "sourceIndependence": "동일 게시물 재인용/동일 사건의 2차 출처는 독립 원작 근거 수 증가로 해석하지 않음",
+    "evaluationState": "pending until original scene check and user review",
+    "calculationEnabled": false,
+    "style": "primary / secondary / context are evidence roles, not multiplicative weights"
+  },
+  "coderProtocol": {
+    "stages": [
+      "원작 대조 후 사실 후보와 전투 조건 분리",
+      "검토자가 각 관찰 단위에 primary/conditional/context 판별",
+      "다른 검토자가 같은 원작 메모를 독립 분류",
+      "충돌 항목 비교·반증 검수·사용자 승인"
+    ],
+    "independentCodedRecords": 0,
+    "interRaterAgreement": null,
+    "kappa": null,
+    "whenDisagree": "do not average ratings; retain both reasoned classifications and unresolved status",
+    "criteriaForFuturePilot": "실제 원작 대조가 확인된 복수 장면에서 별도 분류, 일치·불일치의 이유를 기록하고 축 정의를 개정할 것"
+  },
+  "scoring": {
+    "commonAxesAssigned": 0,
+    "representativeSpecialistChosen": false,
+    "sufficiencyAssigned": 0,
+    "weights": null,
+    "modelEnabled": false,
+    "rankings": null,
+    "winRates": null
+  },
+  "canonVerification": {
+    "assistantOriginalSceneChecks": 0,
+    "officialQuotesVerified": 0,
+    "allOriginalClaimsPending": true
+  }
+}
