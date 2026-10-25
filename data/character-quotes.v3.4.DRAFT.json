@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "v3.4-character-quotes-preview",
+  "state": "feature-branch-preview-not-canon-verified",
+  "asOf": "2026-10-25",
+  "source": "Nine passages submitted directly by the user and stated to be copied from Namuwiki; user believes wording is identical to the comic",
+  "publicBranchPublishingInstruction": true,
+  "counts": {
+    "userProvided": 9,
+    "originalDirectlyVerified": 0,
+    "approvedCanon": 0
+  },
+  "quotes": [
+    {
+      "id": "CQ-003",
+      "characterId": "char-071",
+      "characterName": "류지학",
+      "exactText": "일어나라. 주변이 어두워 앞이 안 보이는 것 같아도, 아직 밤이 아니다.",
+      "theme": "희망·인내·책임",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-011",
+      "characterId": "char-056",
+      "characterName": "최민욱",
+      "exactText": "난 오직 나의 기준으로 진짜와 가짜를 가려낸다. 너 같은 남자에게 진짜 명예가 있는거야.",
+      "theme": "진짜 명예의 기준",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-001",
+      "characterId": "char-001",
+      "characterName": "김신",
+      "exactText": "각오들 해라. 지금부터, 최민욱을 잡고, 캐슬을 완전히 무너뜨리기까지.. 단 한 번의 호흡으로 간다.",
+      "theme": "복수·결의",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-004",
+      "characterId": "char-087",
+      "characterName": "리천",
+      "exactText": "네가 나무라면, 난 태산(泰山)이다.",
+      "theme": "강자 자부심",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-006",
+      "characterId": "char-044",
+      "characterName": "백도찬",
+      "exactText": "하나같이 전부.. 내게 '패배'한 놈들의 기술이 아닌가?",
+      "theme": "압도적 자신감",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-012",
+      "characterId": "char-033",
+      "characterName": "아킬라",
+      "exactText": "부동(不動)의 마음이라는 함은.. 그저 감정의 통제를 이르는 것이 아니라, 세상 어디서라도. 그 어떤 상황에서도. 결코 굴하지 않고. 자신의 자유 의지를, 잃지 않음을.. 뜻한다.",
+      "theme": "부동심·자유의지",
+      "selectionStatus": "user-nominated",
+      "representativePriority": "first",
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-008",
+      "characterId": "char-070",
+      "characterName": "신태진",
+      "exactText": "오늘 두 악인이 죽어 세상에 득이 되게 하소서.",
+      "theme": "기도·비장함",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-009",
+      "characterId": "char-088",
+      "characterName": "사사키신겐",
+      "exactText": "맹수의 기분이 곧.. 약자의 '질서'다, 김신.",
+      "theme": "권력·질서",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-013",
+      "characterId": "char-052",
+      "characterName": "오도화",
+      "exactText": "기왕에 멍석 깔린거.. 이번 기회에 싸그리 정리하지. 과거에 남겨진 얼룩들... 자.. 어느것부터 지워볼까?",
+      "theme": "과거 청산",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-fan-wiki-reported-by-user",
+        "sourceName": "나무위키",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": true,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    }
+  ],
+  "priorityCharacterId": "char-033",
+  "legacyRegistryUnmodified": true,
+  "storyQuotesIndependentOfEvaluation": true
+}
