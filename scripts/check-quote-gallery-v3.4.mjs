@@ -21,8 +21,8 @@ assert.equal(quotes.counts.userProvided,16);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.equal(quotes.counts.approvedCanon,0);
 assert.equal(quotes.quotes.length,16);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,9);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,9);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,16);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,16);
 const expected=new Map([
  ['char-071',{name:'류지학',start:'일어나라.'}],
  ['char-056',{name:'최민욱',start:'난 오직 나의 기준으로'}],
@@ -43,7 +43,7 @@ const expected=new Map([
 ]);
 for(const q of quotes.quotes){
  const match=expected.get(q.characterId);
- assert.ok(match,'only nine user-provided characters');
+ assert.ok(match,'only sixteen user-provided characters');
  assert.equal(q.characterName,match.name);
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.ok(q.exactText.startsWith(match.start));
@@ -96,4 +96,4 @@ const scriptBegin=html.indexOf('/* CASTLE — read-only');
 const scriptEnd=html.indexOf('</script>',scriptBegin);
 assert.ok(scriptBegin>=0&&scriptEnd>scriptBegin);
 new vm.Script(html.slice(scriptBegin,scriptEnd),{filename:'index.html:main'});
-console.log('PASS: 9 user-supplied quotes, 7 unapproved Namuwiki candidates, roster IDs, source labeling, HTML syntax and legacy quote fallback');
+console.log('PASS: 16 user-supplied quotes, 7 historical Namuwiki leads, roster IDs, provenance labels, syntax and legacy fallback');
