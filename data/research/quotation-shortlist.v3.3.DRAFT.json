@@ -1,0 +1,505 @@
+{
+  "schemaVersion": "v3.3-quotation-shortlist-draft",
+  "createdOn": "2026-10-25",
+  "state": "discussion-shortlist-unverified",
+  "parentPolicy": "data/research/quotation-intake-policy.v3.2.DRAFT.json",
+  "legacyRegistry": "data/quotation-review.v0.1.json",
+  "editorialPrinciple": "shortlist story-impact moments and verify the original with the user; never fabricate a verbatim line or assert a reader transcription as canon",
+  "separation": "quotes are narrative media; linked Statement claims or combat evaluations require separate evidence and cannot inherit quote status",
+  "sourceAccess": "fan discussion texts read; original Naver paid scenes were not opened; episode hints are only secondhand",
+  "nextUserReview": [
+    "대표로 남길 인물·장면 선택",
+    "원작 한국어 정확한 표현, 화자 및 컷/회차 확인",
+    "인용 길이와 공개 적법성 검토 후 개별 승인"
+  ],
+  "candidates": [
+    {
+      "candidateId": "CQ-001",
+      "characterId": "char-001",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-001",
+      "retrievalNameOnly": "김신",
+      "storyMotif": "캐슬 붕괴 작전을 단숨에 끝내겠다는 선언",
+      "editorialAppeal": "결의·지휘",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=200195",
+        "sourceNote": "팬 분석의 회차·대사 인용; 원작 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": "2부 22화",
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-002",
+      "characterId": "char-001",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-001",
+      "retrievalNameOnly": "김신",
+      "storyMotif": "그롤라를 향한 킬러 정점의 짧은 응답",
+      "editorialAppeal": "압도적 자신감·결말",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=439579",
+        "sourceNote": "팬 회차·발언 인용; 원작 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": "2부 92화",
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-003",
+      "characterId": "char-071",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-071",
+      "retrievalNameOnly": "류지학",
+      "storyMotif": "어둠 속에서도 아직 밤은 아니라며 일어설 것을 독려",
+      "editorialAppeal": "희망·책임·비극적 반향",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=289653",
+        "sourceNote": "독자의 등장 대사/후반 연출 해석; 회차 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-004",
+      "characterId": "char-087",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-087",
+      "retrievalNameOnly": "리천",
+      "storyMotif": "나무와 태산의 비유로 상대를 압도하는 선언",
+      "editorialAppeal": "오만·강자 자부심",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=311150",
+        "sourceNote": "팬 명대사 목록; 원문과 화수 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-005",
+      "characterId": "char-056",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-056",
+      "retrievalNameOnly": "최민욱",
+      "storyMotif": "자신의 성에도 겨울이 찾아올지 묻는 군주의 질문",
+      "editorialAppeal": "왕좌·몰락의 예감",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323",
+        "sourceNote": "팬 목록의 부/회차 후보; 원작 컷 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": "1부 107화",
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-006",
+      "characterId": "char-044",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-044",
+      "retrievalNameOnly": "백도찬",
+      "storyMotif": "상대가 선보인 기술이 이미 자신에게 패한 자들의 것이라는 지적",
+      "editorialAppeal": "절대적 강자·냉소",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=311150",
+        "sourceNote": "팬 명대사 목록; 원문과 장면 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-007",
+      "characterId": "char-033",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-033",
+      "retrievalNameOnly": "아킬라",
+      "storyMotif": "끈질기게 달라붙는 상대들을 가볍게 빈정대는 말",
+      "editorialAppeal": "여유·도발",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=311150",
+        "sourceNote": "팬 명대사 목록; 원문·발언 대상 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-008",
+      "characterId": "char-070",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-070",
+      "retrievalNameOnly": "신태진",
+      "storyMotif": "두 악인의 죽음이 세상에 도움이 되길 바라는 기도",
+      "editorialAppeal": "비장함·속죄",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=412115",
+        "sourceNote": "팬 명대사 선정 글; 회차·화자 맥락 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-009",
+      "characterId": "char-088",
+      "kind": "narrative-character-quote-candidate",
+      "speakerId": "char-088",
+      "retrievalNameOnly": "사사키신겐",
+      "storyMotif": "약자에게 질서는 강자의 기분으로 결정된다는 취지의 선언",
+      "editorialAppeal": "압제·세계관",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=422741",
+        "sourceNote": "다른 팬 명대사 목록과 '짐승/맹수' 표현 충돌; 정확한 원문 미대조",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [
+        {
+          "issue": "alternative transcriptions",
+          "variants": [
+            "짐승",
+            "맹수"
+          ],
+          "resolution": "user must check official original panel"
+        }
+      ],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    },
+    {
+      "candidateId": "CQ-010",
+      "characterId": "char-052",
+      "kind": "narrative-caption-candidate",
+      "speakerId": null,
+      "retrievalNameOnly": "오도화",
+      "storyMotif": "칼끝에 피는 꽃과 퇴장을 결합한 서사적 문구",
+      "editorialAppeal": "퇴장 연출·비극",
+      "source": {
+        "sourceType": "domestic-original-language-fan-secondary",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=311150",
+        "sourceNote": "팬은 '연출'이라고 표기; 등장인물 대사가 아니라 나레이션/연출 문구 후보",
+        "independentOriginalSceneVerified": false
+      },
+      "original": {
+        "part": null,
+        "episode": null,
+        "episodeHintFromSecondary": null,
+        "sceneLocator": null,
+        "exactText": null,
+        "verbatimVerification": "not-checked-by-assistant",
+        "verifiedBy": null,
+        "verifiedAt": null
+      },
+      "conflicts": [],
+      "review": {
+        "assistantSuggested": true,
+        "userSelected": false,
+        "userExactTextConfirmed": false,
+        "speakerVerified": false,
+        "contextVerified": false,
+        "status": "candidate-only"
+      },
+      "rights": {
+        "permissionOrLawfulQuotationReview": "not-started",
+        "publishCleared": false,
+        "comicPanelRepublish": false
+      },
+      "display": {
+        "status": "blocked",
+        "text": null
+      },
+      "combat": {
+        "isStatement": false,
+        "affectsScore": false
+      }
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "originalVerbatimChecks": 0,
+    "exactTextStored": 0,
+    "userApproved": 0,
+    "approvedForPublicDisplay": 0,
+    "legacyRegistryChanged": false,
+    "releaseImpact": "none"
+  }
+}
