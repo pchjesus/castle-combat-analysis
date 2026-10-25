@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "v3.4-additional-quote-candidates-draft",
+  "asOf": "2026-10-25",
+  "nature": "researched new character candidates; not approved quotes or canon",
+  "sourceFamily": "Namuwiki mirrors",
+  "publicDisplayCount": 0,
+  "candidateCount": 7,
+  "existingUserQuotesNotModified": true,
+  "candidates": [
+    {
+      "id": "QX-001",
+      "characterId": "char-057",
+      "characterName": "마학영",
+      "secondaryTextExcerpt": "명예란 건 지켜줘야 하는 것이고.",
+      "characterTheme": "명예를 가치로 삼는 수문장",
+      "editorialOrder": 1,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://www.namu.moe/w/%EB%A7%88%ED%95%99%EC%98%81",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    },
+    {
+      "id": "QX-002",
+      "characterId": "char-004",
+      "characterName": "피우진",
+      "secondaryTextExcerpt": "남궁혁.. 그자도 강했지만 부족하다. 지금부터 나는.. 김신, 너를 목표로 한다.. 너를... 반드시 뛰어넘겠다.",
+      "characterTheme": "목표를 향한 집념",
+      "editorialOrder": 2,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://d.namu.moe/w/%ED%94%BC%EC%9A%B0%EC%A7%84%28%EC%BA%90%EC%8A%AC%29",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    },
+    {
+      "id": "QX-003",
+      "characterId": "char-002",
+      "characterName": "서진태",
+      "secondaryTextExcerpt": "나 사로카야 대장. 피하고 그딴 거, 내 사전엔 없어.",
+      "characterTheme": "결코 피하지 않는 충성",
+      "editorialOrder": 3,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://www.namu.moe/w/%EC%84%9C%EC%A7%84%ED%83%9C",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    },
+    {
+      "id": "QX-004",
+      "characterId": "char-025",
+      "characterName": "메드베디",
+      "secondaryTextExcerpt": "자기 묘지를 고를 권리 정도는 존중해 주지. 와라.",
+      "characterTheme": "죽음을 앞둔 강자의 의연함",
+      "editorialOrder": 4,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://namu.moe/w/%EB%A9%94%EB%93%9C%EB%B2%A0%EB%94%94",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    },
+    {
+      "id": "QX-005",
+      "characterId": "char-065",
+      "characterName": "주로",
+      "secondaryTextExcerpt": "우리는 그늘이 없다면 털끝조차 드러나선 안 되는 존재들이다.",
+      "characterTheme": "그늘 속 존재의 생존 철학",
+      "editorialOrder": 5,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://namu.moe/w/%EC%A3%BC%EB%A1%9C%28%EC%BA%90%EC%8A%AC%29",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    },
+    {
+      "id": "QX-006",
+      "characterId": "char-028",
+      "characterName": "라텔",
+      "secondaryTextExcerpt": "메드베디가 찍은 후임은 납니다. 당신 손으로 넘겨줘요. 리더 자리.",
+      "characterTheme": "계승·자긍심·도전",
+      "editorialOrder": 6,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://www.namu.moe/w/%EB%9D%BC%ED%85%94%28%EC%BA%90%EC%8A%AC%29",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    },
+    {
+      "id": "QX-007",
+      "characterId": "char-042",
+      "characterName": "구스타프",
+      "secondaryTextExcerpt": "차라리 사신의 낫에 모가지를 갖다 대라.",
+      "characterTheme": "사격 영역에 대한 위험 경고",
+      "editorialOrder": 7,
+      "source": {
+        "type": "namuwiki-fan-edited-secondary-mirror",
+        "url": "https://namu.moe/w/%EA%B5%AC%EC%8A%A4%ED%83%80%ED%94%84%28%EC%BA%90%EC%8A%AC%29",
+        "access": "retrieved public search/page text",
+        "comicOriginalChecked": false
+      },
+      "verification": {
+        "status": "secondary-source-only",
+        "quoteExactToOriginal": false,
+        "workPart": null,
+        "episode": null,
+        "speakerFromSourcePageNotComic": true
+      },
+      "userSelection": false,
+      "publicSiteDisplay": false,
+      "scoreEffect": "none",
+      "needsUserReview": true
+    }
+  ],
+  "notes": [
+    "Original paid webtoon panels not directly checked. Mirror/edited wiki is a secondary source.",
+    "Excerpt limited to a short individual line; long speeches and comic images are not copied.",
+    "Individual candidate has not been nominated by the user; it is not automatically added to the public gallery.",
+    "Wiki page extracts have differing edit dates; transcribed wording and episode are unverified against original work."
+  ]
+}
