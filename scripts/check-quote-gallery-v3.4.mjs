@@ -17,12 +17,12 @@ assert.equal(curation.crosswalk.length,9);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
 assert.equal(quotes.state,'feature-branch-preview-not-canon-verified');
 assert.equal(quotes.priorityCharacterId,'char-033');
-assert.equal(quotes.counts.userProvided,16);
+assert.equal(quotes.counts.userProvided,22);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,16);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,16);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,16);
+assert.equal(quotes.quotes.length,22);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,22);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,22);
 const expected=new Map([
  ['char-071',{name:'류지학',start:'일어나라.'}],
  ['char-056',{name:'최민욱',start:'난 오직 나의 기준으로'}],
@@ -40,6 +40,12 @@ const expected=new Map([
  ['char-065',{name:'주로',start:'그런 식으론...'}],
  ['char-028',{name:'라텔',start:'메드베디가 찍은 후임은'}],
  ['char-042',{name:'구스타프',start:'끝내주는군.'}],
+ ['char-026',{name:'크리사',start:'어떻게 그럴 수 있나, 티그로.'}],
+ ['char-027',{name:'크로트',start:'너같이 강한 놈들…'}],
+ ['char-035',{name:'프리깃',start:'됐다, 선택했으니'}],
+ ['char-034',{name:'샤모',start:'아킬라가 어떻게 지켜볼라고'}],
+ ['char-043',{name:'블랙맘바',start:'너, 영 소질없다.'}],
+ ['char-030',{name:'그롤라',start:'이딴식으로...'}],
 ]);
 for(const q of quotes.quotes){
  const match=expected.get(q.characterId);
@@ -59,12 +65,12 @@ for(const q of quotes.quotes){
  assert.equal(q.provenance.episode,null);
  assert.equal(q.provenance.rightsReview,'not-established');
  assert.equal(q.provenance.scoringImpact,'none');
- assert.ok(curation.crosswalk.some(c=>c.characterId===q.characterId&&c.candidateId===q.id) || quotes.newlyAddedUserSelections?.some(c=>c.characterId===q.characterId&&c.quoteId===q.id));
+ assert.ok(curation.crosswalk.some(c=>c.characterId===q.characterId&&c.candidateId===q.id) || quotes.newlyAddedUserSelections?.some(c=>c.characterId===q.characterId&&c.quoteId===q.id) || quotes.latestUserSelections?.some(c=>c.characterId===q.characterId&&c.quoteId===q.id));
 }
 const ak=quotes.quotes.find(q=>q.characterId==='char-033');
 assert.equal(ak.representativePriority,'first');
 assert.equal(quotes.quotes.filter(x=>x.representativePriority==='first').length,1);
-assert.equal(expected.size,16);
+assert.equal(expected.size,22);
 assert.ok(ak.exactText.includes('자신의 자유 의지를'));
 assert.equal(candidate.candidateCount,7);
 assert.equal(candidate.publicDisplayCount,0);
@@ -82,7 +88,7 @@ for(const x of candidate.candidates){
  assert.equal(x.scoreEffect,'none');
 }
 assert.ok(html.includes('data/character-quotes.v3.4.DRAFT.json'));
-assert.ok(html.includes("x.quotes.length===16"));
+assert.ok(html.includes("x.quotes.length===22"));
 assert.ok(html.includes('quotationPreviewData?.quotes?.find'));
 assert.ok(html.includes("q.verificationStatus==='user-transcribed-secondary'"));
 assert.ok(html.includes("q.display?.enabledInPreview===true"));
@@ -96,4 +102,4 @@ const scriptBegin=html.indexOf('/* CASTLE — read-only');
 const scriptEnd=html.indexOf('</script>',scriptBegin);
 assert.ok(scriptBegin>=0&&scriptEnd>scriptBegin);
 new vm.Script(html.slice(scriptBegin,scriptEnd),{filename:'index.html:main'});
-console.log('PASS: 16 user-supplied quotes, 7 historical Namuwiki leads, roster IDs, provenance labels, syntax and legacy fallback');
+console.log('PASS: 22 user-supplied quotes, old Namuwiki leads, roster IDs, provenance labels, syntax and legacy fallback');
