@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "v3.5-iskra-quotation-research-draft",
+  "state": "roster-matched-selection-pending",
+  "scope": {
+    "initialIskraRoster": 19,
+    "initialIskraQuoteDisplayed": 4,
+    "notYetDisplayed": 15,
+    "pastOrOtherFactionAssociationsOutsideInitialRoster": [
+      {
+        "characterId": "char-001",
+        "name": "김신",
+        "reason": "former Iskra Tigro, presently 'baekui' in frozen roster"
+      },
+      {
+        "characterId": "char-002",
+        "name": "서진태",
+        "reason": "former Saroka, initial roster 'baekui'"
+      }
+    ],
+    "notInRosterLeadership": [
+      {
+        "name": "리사",
+        "reason": "appears in Namuwiki Iskra leadership but not in current 109-character roster; no ID invented"
+      }
+    ],
+    "knownNamingConflict": {
+      "rosterId": "char-040",
+      "rosterName": "코도모",
+      "communityReferenceName": "코모도",
+      "resolution": "retain Character ID and roster name; seek user spelling verification, no silent rename"
+    }
+  },
+  "rosterEvidence": {
+    "source": "data/roster.v0.1.json",
+    "sourceFields": "characters[].initialOrganizationId"
+  },
+  "sourceScope": "Namuwiki current organization and named character pages; old/new factions are narrative-era labels, not frozen roster membership data",
+  "characters": [
+    {
+      "characterId": "char-025",
+      "rosterName": "메드베디",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": "CQ-017",
+      "selectionStatus": "user-chosen-quote-already-in-v3.5-gallery",
+      "proposal": null
+    },
+    {
+      "characterId": "char-026",
+      "rosterName": "크리사",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "proposed-to-user",
+      "proposal": {
+        "characterId": "char-026",
+        "rosterName": "크리사",
+        "faction": "뜨거운 피 (구)",
+        "editorialReviewPriority": 1,
+        "storyMotif": "김신을 형제처럼 여겨 복수에 함께하라고 요청하는 발언",
+        "secondaryEvidence": "나무위키의 크리사 명대사 2부 항목",
+        "source": {
+          "sourceType": "namuwiki-secondary",
+          "url": "https://www.namu.moe/w/%ED%81%AC%EB%A6%AC%EC%82%AC",
+          "originalComicChecked": false,
+          "sourceInspection": "public web text surfaced"
+        },
+        "selectionStatus": "awaiting-user-choice",
+        "userOriginalReviewStatus": "not-confirmed",
+        "exactTextForPublishing": null,
+        "approvedForQuoteGallery": false,
+        "scoringImpact": "none",
+        "rationale": "주제상 뜨거운 피의 연대감이 선명함"
+      }
+    },
+    {
+      "characterId": "char-027",
+      "rosterName": "크로트",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "proposed-to-user",
+      "proposal": {
+        "characterId": "char-027",
+        "rosterName": "크로트",
+        "faction": "뜨거운 피 (구)",
+        "editorialReviewPriority": 2,
+        "storyMotif": "메드베디 사망을 김신에게 전하는 비보 또는 자신이 생존한 관록을 강조하는 발언",
+        "secondaryEvidence": "나무위키 크로트 명대사 항목",
+        "source": {
+          "sourceType": "namuwiki-secondary",
+          "url": "https://namu.moe/w/%ED%81%AC%EB%A1%9C%ED%8A%B8",
+          "originalComicChecked": false,
+          "sourceInspection": "public web text surfaced"
+        },
+        "selectionStatus": "awaiting-user-choice",
+        "userOriginalReviewStatus": "not-confirmed",
+        "exactTextForPublishing": null,
+        "approvedForQuoteGallery": false,
+        "scoringImpact": "none",
+        "rationale": "정보원과 전장 베테랑 중 어느 정체성을 앞세울지 선택"
+      }
+    },
+    {
+      "characterId": "char-028",
+      "rosterName": "라텔",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": "CQ-019",
+      "selectionStatus": "user-chosen-quote-already-in-v3.5-gallery",
+      "proposal": null
+    },
+    {
+      "characterId": "char-029",
+      "rosterName": "샤이어",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-030",
+      "rosterName": "그롤라",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "proposed-to-user",
+      "proposal": {
+        "characterId": "char-030",
+        "rosterName": "그롤라",
+        "faction": "뜨거운 피 (신)",
+        "editorialReviewPriority": 6,
+        "storyMotif": "좁은 세상에서 행세하는 상대를 업신여기는 첫 선언",
+        "secondaryEvidence": "나무위키 그롤라 개요 문구",
+        "source": {
+          "sourceType": "namuwiki-secondary",
+          "url": "https://www.namu.moe/w/%EA%B7%B8%EB%A1%A4%EB%9D%BC",
+          "originalComicChecked": false,
+          "sourceInspection": "public web text surfaced"
+        },
+        "selectionStatus": "awaiting-user-choice",
+        "userOriginalReviewStatus": "not-confirmed",
+        "exactTextForPublishing": null,
+        "approvedForQuoteGallery": false,
+        "scoringImpact": "none",
+        "rationale": "어휘가 과격해 정확한 장면 맥락 검수 후 인물 대표성 판단"
+      }
+    },
+    {
+      "characterId": "char-031",
+      "rosterName": "판테라",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-032",
+      "rosterName": "바이슨",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-033",
+      "rosterName": "아킬라",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": "CQ-012",
+      "selectionStatus": "user-chosen-quote-already-in-v3.5-gallery",
+      "proposal": null
+    },
+    {
+      "characterId": "char-034",
+      "rosterName": "샤모",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "proposed-to-user",
+      "proposal": {
+        "characterId": "char-034",
+        "rosterName": "샤모",
+        "faction": "자유로운 영혼 (구)",
+        "editorialReviewPriority": 4,
+        "storyMotif": "아킬라가 지키려던 팀이 모욕당한 일에 대한 분노와 애도의 발언",
+        "secondaryEvidence": "나무위키 샤모 명대사 항목",
+        "source": {
+          "sourceType": "namuwiki-secondary",
+          "url": "https://namu.moe/w/%EC%83%A4%EB%AA%A8%28%EC%BA%90%EC%8A%AC%29",
+          "originalComicChecked": false,
+          "sourceInspection": "public web text surfaced"
+        },
+        "selectionStatus": "awaiting-user-choice",
+        "userOriginalReviewStatus": "not-confirmed",
+        "exactTextForPublishing": null,
+        "approvedForQuoteGallery": false,
+        "scoringImpact": "none",
+        "rationale": "거친 언어보다 동료애를 드러내는 맥락 우선"
+      }
+    },
+    {
+      "characterId": "char-035",
+      "rosterName": "프리깃",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "proposed-to-user",
+      "proposal": {
+        "characterId": "char-035",
+        "rosterName": "프리깃",
+        "faction": "자유로운 영혼 (구)",
+        "editorialReviewPriority": 3,
+        "storyMotif": "스스로 선택했기 때문에 자유롭다는 선언 또는 아킬라에 대한 빚을 떠안는 발언",
+        "secondaryEvidence": "나무위키 프리깃 명대사 항목",
+        "source": {
+          "sourceType": "namuwiki-secondary",
+          "url": "https://m.namu.moe/w/%ED%94%84%EB%A6%AC%EA%B9%83%28%EC%BA%90%EC%8A%AC%29",
+          "originalComicChecked": false,
+          "sourceInspection": "public web text surfaced"
+        },
+        "selectionStatus": "awaiting-user-choice",
+        "userOriginalReviewStatus": "not-confirmed",
+        "exactTextForPublishing": null,
+        "approvedForQuoteGallery": false,
+        "scoringImpact": "none",
+        "rationale": "아킬라의 자유의지 철학과 직접 대비 가능"
+      }
+    },
+    {
+      "characterId": "char-036",
+      "rosterName": "콘",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-037",
+      "rosterName": "헤론",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-038",
+      "rosterName": "오울",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-039",
+      "rosterName": "스내퍼",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-040",
+      "rosterName": "코도모",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-041",
+      "rosterName": "잭슨",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "not-researched-to-quote-level",
+      "proposal": null
+    },
+    {
+      "characterId": "char-042",
+      "rosterName": "구스타프",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": "CQ-020",
+      "selectionStatus": "user-chosen-quote-already-in-v3.5-gallery",
+      "proposal": null
+    },
+    {
+      "characterId": "char-043",
+      "rosterName": "블랙맘바",
+      "initialOrganizationId": "iskra",
+      "userSelectedQuoteId": null,
+      "selectionStatus": "proposed-to-user",
+      "proposal": {
+        "characterId": "char-043",
+        "rosterName": "블랙맘바",
+        "faction": "차가운 눈",
+        "editorialReviewPriority": 5,
+        "storyMotif": "아킬라의 신념을 공격하는 냉소 또는 단 한 번뿐인 인생에 대한 자조적 반문",
+        "secondaryEvidence": "나무위키 블랙맘바 명대사 2부 항목",
+        "source": {
+          "sourceType": "namuwiki-secondary",
+          "url": "https://www.namu.moe/w/%EB%B8%94%EB%9E%99%EB%A7%98%EB%B0%94%28%EC%BA%90%EC%8A%AC%29",
+          "originalComicChecked": false,
+          "sourceInspection": "public web text surfaced"
+        },
+        "selectionStatus": "awaiting-user-choice",
+        "userOriginalReviewStatus": "not-confirmed",
+        "exactTextForPublishing": null,
+        "approvedForQuoteGallery": false,
+        "scoringImpact": "none",
+        "rationale": "부동심·자유의지와 이념적으로 반대되는 서사"
+      }
+    }
+  ],
+  "nextSelectionProposals": [
+    {
+      "characterId": "char-026",
+      "rosterName": "크리사",
+      "faction": "뜨거운 피 (구)",
+      "editorialReviewPriority": 1,
+      "storyMotif": "김신을 형제처럼 여겨 복수에 함께하라고 요청하는 발언",
+      "secondaryEvidence": "나무위키의 크리사 명대사 2부 항목",
+      "source": {
+        "sourceType": "namuwiki-secondary",
+        "url": "https://www.namu.moe/w/%ED%81%AC%EB%A6%AC%EC%82%AC",
+        "originalComicChecked": false,
+        "sourceInspection": "public web text surfaced"
+      },
+      "selectionStatus": "awaiting-user-choice",
+      "userOriginalReviewStatus": "not-confirmed",
+      "exactTextForPublishing": null,
+      "approvedForQuoteGallery": false,
+      "scoringImpact": "none",
+      "rationale": "주제상 뜨거운 피의 연대감이 선명함"
+    },
+    {
+      "characterId": "char-027",
+      "rosterName": "크로트",
+      "faction": "뜨거운 피 (구)",
+      "editorialReviewPriority": 2,
+      "storyMotif": "메드베디 사망을 김신에게 전하는 비보 또는 자신이 생존한 관록을 강조하는 발언",
+      "secondaryEvidence": "나무위키 크로트 명대사 항목",
+      "source": {
+        "sourceType": "namuwiki-secondary",
+        "url": "https://namu.moe/w/%ED%81%AC%EB%A1%9C%ED%8A%B8",
+        "originalComicChecked": false,
+        "sourceInspection": "public web text surfaced"
+      },
+      "selectionStatus": "awaiting-user-choice",
+      "userOriginalReviewStatus": "not-confirmed",
+      "exactTextForPublishing": null,
+      "approvedForQuoteGallery": false,
+      "scoringImpact": "none",
+      "rationale": "정보원과 전장 베테랑 중 어느 정체성을 앞세울지 선택"
+    },
+    {
+      "characterId": "char-035",
+      "rosterName": "프리깃",
+      "faction": "자유로운 영혼 (구)",
+      "editorialReviewPriority": 3,
+      "storyMotif": "스스로 선택했기 때문에 자유롭다는 선언 또는 아킬라에 대한 빚을 떠안는 발언",
+      "secondaryEvidence": "나무위키 프리깃 명대사 항목",
+      "source": {
+        "sourceType": "namuwiki-secondary",
+        "url": "https://m.namu.moe/w/%ED%94%84%EB%A6%AC%EA%B9%83%28%EC%BA%90%EC%8A%AC%29",
+        "originalComicChecked": false,
+        "sourceInspection": "public web text surfaced"
+      },
+      "selectionStatus": "awaiting-user-choice",
+      "userOriginalReviewStatus": "not-confirmed",
+      "exactTextForPublishing": null,
+      "approvedForQuoteGallery": false,
+      "scoringImpact": "none",
+      "rationale": "아킬라의 자유의지 철학과 직접 대비 가능"
+    },
+    {
+      "characterId": "char-034",
+      "rosterName": "샤모",
+      "faction": "자유로운 영혼 (구)",
+      "editorialReviewPriority": 4,
+      "storyMotif": "아킬라가 지키려던 팀이 모욕당한 일에 대한 분노와 애도의 발언",
+      "secondaryEvidence": "나무위키 샤모 명대사 항목",
+      "source": {
+        "sourceType": "namuwiki-secondary",
+        "url": "https://namu.moe/w/%EC%83%A4%EB%AA%A8%28%EC%BA%90%EC%8A%AC%29",
+        "originalComicChecked": false,
+        "sourceInspection": "public web text surfaced"
+      },
+      "selectionStatus": "awaiting-user-choice",
+      "userOriginalReviewStatus": "not-confirmed",
+      "exactTextForPublishing": null,
+      "approvedForQuoteGallery": false,
+      "scoringImpact": "none",
+      "rationale": "거친 언어보다 동료애를 드러내는 맥락 우선"
+    },
+    {
+      "characterId": "char-043",
+      "rosterName": "블랙맘바",
+      "faction": "차가운 눈",
+      "editorialReviewPriority": 5,
+      "storyMotif": "아킬라의 신념을 공격하는 냉소 또는 단 한 번뿐인 인생에 대한 자조적 반문",
+      "secondaryEvidence": "나무위키 블랙맘바 명대사 2부 항목",
+      "source": {
+        "sourceType": "namuwiki-secondary",
+        "url": "https://www.namu.moe/w/%EB%B8%94%EB%9E%99%EB%A7%98%EB%B0%94%28%EC%BA%90%EC%8A%AC%29",
+        "originalComicChecked": false,
+        "sourceInspection": "public web text surfaced"
+      },
+      "selectionStatus": "awaiting-user-choice",
+      "userOriginalReviewStatus": "not-confirmed",
+      "exactTextForPublishing": null,
+      "approvedForQuoteGallery": false,
+      "scoringImpact": "none",
+      "rationale": "부동심·자유의지와 이념적으로 반대되는 서사"
+    },
+    {
+      "characterId": "char-030",
+      "rosterName": "그롤라",
+      "faction": "뜨거운 피 (신)",
+      "editorialReviewPriority": 6,
+      "storyMotif": "좁은 세상에서 행세하는 상대를 업신여기는 첫 선언",
+      "secondaryEvidence": "나무위키 그롤라 개요 문구",
+      "source": {
+        "sourceType": "namuwiki-secondary",
+        "url": "https://www.namu.moe/w/%EA%B7%B8%EB%A1%A4%EB%9D%BC",
+        "originalComicChecked": false,
+        "sourceInspection": "public web text surfaced"
+      },
+      "selectionStatus": "awaiting-user-choice",
+      "userOriginalReviewStatus": "not-confirmed",
+      "exactTextForPublishing": null,
+      "approvedForQuoteGallery": false,
+      "scoringImpact": "none",
+      "rationale": "어휘가 과격해 정확한 장면 맥락 검수 후 인물 대표성 판단"
+    }
+  ],
+  "totals": {
+    "roster": 19,
+    "displayed": 4,
+    "proposed": 6,
+    "unresearchedRemainder": 9,
+    "newApprovedQuotes": 0
+  },
+  "instructions": {
+    "noCanonAssumptions": true,
+    "noInventedQuotesOrEpisodes": true,
+    "quotesAreNotBattleEvidence": true,
+    "noTeamAffiliationHistoryRewrites": true
+  }
+}
