@@ -26,7 +26,8 @@ const iskra={
 };
 assert.equal(roster.characters.length,109);
 assert.equal(roster.organizations.length,17);
-assert.equal(q.quotes.length,41);
+assert.ok(q.quotes.length>=41,'existing gallery must not shrink');
+assert.equal(q.quotes.length,q.counts.userProvided,'appellations regression must not hardcode the quote gallery size');
 assert.equal(q.iskraInitialRosterStatus.userSelected,19);
 assert.equal(a.schemaVersion,'v1.0-draft');
 assert.equal(a.profiles.length,27);
@@ -84,4 +85,4 @@ assert.ok(index.includes('hero-quote-more'),'existing quote expandable intact');
 const start=index.indexOf('/* CASTLE — read-only'),end=index.indexOf('</script>',start);
 assert.ok(start>=0&&end>start);
 new vm.Script(index.slice(start,end),{filename:'index.html'});
-console.log('PASS: user-curated 8 appellations + 1 alternate, 19 Iskra animals, 27 profiles, hero and 41 quotes untouched');
+console.log('PASS: 8 appellations + 1 alternate, 19 Iskra animals, 27 profiles; independent quote gallery retained ('+q.quotes.length+' quotes)');
