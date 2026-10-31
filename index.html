@@ -107,6 +107,9 @@
 .hero-appellation-alt,.hero-appellation-animal{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;padding:3px 9px;border:1px solid #e0d9d0;border-radius:7px;background:rgba(255,253,248,.72)}
 .hero-appellation-alt strong,.hero-appellation-animal strong{font-size:12px;color:#38443e}
 .hero-appellation-animal{border-color:#d4ddd4;background:#f3f7f1}
+.hero-appellation-japanese{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;padding:3px 9px;
+ border:1px solid #d6d7e1;border-radius:7px;background:#f6f6fa}
+.hero-appellation-japanese strong{font-size:12px;color:#38443e}
 .appellation-type{font-size:10px;font-weight:750;color:#7a7a70;letter-spacing:.01em}
 .hero-appellation-note{display:block;margin-top:6px;color:#7a8078;font-size:10px;line-height:1.5}
 @media(max-width:760px){
@@ -192,9 +195,10 @@ function characterAppellations(c){
    h(category[a.kind]||'다른 호칭')+'</span><strong>'+h(a.value)+'</strong></span>').join('');
  const animal=p.codenameMeaning?'<span class="hero-appellation-animal"><span class="appellation-type">코드네임 뜻</span><strong>'+
    h(p.codenameMeaning.animal)+'</strong></span>':'';
- if(!primary&&!alternate&&!animal)return '';
- return '<div class="hero-appellations" aria-label="선정한 별명·이명·코드네임">'+
-  '<div class="hero-appellations-line">'+primary+alternate+animal+'</div>'+
+ const japanese=p.japaneseName?'<span class="hero-appellation-japanese"><span class="appellation-type">일본명</span><strong>'+h(p.japaneseName.value)+'</strong></span>':'';
+ if(!primary&&!alternate&&!animal&&!japanese)return '';
+ return '<div class="hero-appellations" aria-label="선정한 이명·별명·코드네임·일본명">'+
+  '<div class="hero-appellations-line">'+primary+alternate+animal+japanese+'</div>'+
   '<span class="hero-appellation-note">호칭·어원은 2차 자료 참고 · 원작 직접 대조 전</span></div>';
 }
 function hero(){let c=getCharacter();return `<section class="identity-hero" aria-label="선택한 인물">
@@ -299,7 +303,9 @@ async function loadDraftData(){
     x.profiles.every(p=>rosterById.has(p.characterId)&&p.displayName===rosterById.get(p.characterId).name&&
       (p.primary===null||(['nickname','epithet','codename','codename-title'].includes(p.primary?.kind)&&typeof p.primary.value==='string'&&p.primary.value.trim()))&&
       Array.isArray(p.alternates)&&p.alternates.every(a=>typeof a.value==='string'&&a.value.trim()&&['nickname','epithet','codename','codename-title'].includes(a.kind))&&
-      (!p.codenameMeaning||(p.codenameMeaning.originalChecked===false&&typeof p.codenameMeaning.animal==='string'&&p.codenameMeaning.animal.trim())))){
+      (!p.codenameMeaning||(p.codenameMeaning.originalChecked===false&&typeof p.codenameMeaning.animal==='string'&&p.codenameMeaning.animal.trim()))&&
+      (!p.japaneseName||(p.japaneseName.originalChecked===false&&typeof p.japaneseName.value==='string'&&p.japaneseName.value.trim()&&
+       typeof p.japaneseName.kanji==='string'&&p.japaneseName.kanji.trim())))){
     appellationData=x;
   }else console.warn('Appellation draft failed validation; existing character cards remain available');
  }catch(e){console.warn('Optional character appellations unavailable',e);}

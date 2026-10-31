@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 58,
+    "userProvided": 61,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -1814,6 +1814,99 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-063",
+      "characterId": "char-051",
+      "characterName": "임무열",
+      "exactText": "아무리 내가 이빨 다 빠져서 틀니를 박을지언정.. 잊었나? 나 임무열이야.",
+      "theme": "자존심·노장",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-approved-secondary-shortlist",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-064",
+      "characterId": "char-053",
+      "characterName": "마사",
+      "exactText": "잇테키마스.(行って来ます。)",
+      "theme": "충성·인사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-approved-secondary-shortlist",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-065",
+      "characterId": "char-054",
+      "characterName": "모승규",
+      "exactText": "기어이 벌주를 마시겠다라.. 우리 꼬마 독기 좀 빼줘야겠군. 문 잠가.",
+      "theme": "협박·위압",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -2192,6 +2285,37 @@
     {
       "characterId": "char-050",
       "quoteId": "CQ-062",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    }
+  ],
+  "moriInvestmentTrustRosterStatus": {
+    "total": 4,
+    "previouslySelected": 1,
+    "newlySelected": 3,
+    "nowSelected": 4,
+    "representativeReplacements": 0,
+    "canonDirectVerification": 0
+  },
+  "latestMoriSelections": [
+    {
+      "characterId": "char-051",
+      "quoteId": "CQ-063",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-053",
+      "quoteId": "CQ-064",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-054",
+      "quoteId": "CQ-065",
       "action": "add",
       "userSelected": true,
       "originalChecked": false

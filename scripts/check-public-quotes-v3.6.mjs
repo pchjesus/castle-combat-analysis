@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,58);
+assert.equal(quotes.counts.userProvided,61);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,58);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,58);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,58);
+assert.equal(quotes.quotes.length,61);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,61);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,61);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -137,6 +137,22 @@ for(const [id,name,text] of seonjin){
  assert.equal(q.display.isCanonChecked,false);
 }
 assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='seonjin-trading')).length,6);
+
+const mori=[["char-051","임무열","아무리 내가 이빨 다 빠져서 틀니를 박을지언정.. 잊었나? 나 임무열이야."],["char-053","마사","잇테키마스.(行って来ます。)"],["char-054","모승규","기어이 벌주를 마시겠다라.. 우리 꼬마 독기 좀 빼줘야겠군. 문 잠가."]];
+assert.deepEqual(quotes.moriInvestmentTrustRosterStatus,{total:4,previouslySelected:1,newlySelected:3,nowSelected:4,representativeReplacements:0,canonDirectVerification:0});
+assert.deepEqual(quotes.latestMoriSelections.map(q=>q.characterId),mori.map(q=>q[0]));
+assert.deepEqual(quotes.latestMoriSelections.map(q=>q.quoteId),['CQ-063','CQ-064','CQ-065']);
+assert.equal(quotes.quotes.filter(q=>q.characterId==='char-052').length,1);
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-052').exactText,"기왕에 멍석 깔린거.. 이번 기회에 싸그리 정리하지. 과거에 남겨진 얼룩들... 자.. 어느것부터 지워볼까?");
+for(const [id,name,verbatim] of mori){
+ const q=quotes.quotes.find(q=>q.characterId===id);
+ assert.ok(q,'mori quote missing '+name);
+ assert.equal(q.characterName,name);
+ assert.equal(q.exactText,verbatim);
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -145,4 +161,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: 58 quotes, Seonjin 6/7 (Monkey withheld), Castle Holdings 7/7, Hwajin 8/8, Iskra 19/19 and Evidence preserved');
+console.log('PASS: 61 quotes, Mori 4/4, Seonjin 6/7 (Monkey withheld), Castle Holdings 7/7, Hwajin 8/8 and Iskra 19/19 preserved');

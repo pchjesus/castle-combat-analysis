@@ -81,13 +81,21 @@ try{
    assert.equal(await page.locator('.hero-appellations').count(),0,'no unverified appellation for '+id);
    assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'quotes unaffected by blank epithet');
   }
+  for(const [id,name,expected] of [['char-051','임무열','타케바야시 이사오'],['char-052','오도화','우노 토우시로우']]){
+   await page.goto(host+'/#character='+id+'&view=overview',{waitUntil:'networkidle'});
+   await page.locator('.hero-appellation-japanese strong').waitFor();
+   assert.equal((await page.locator('.hero-title').innerText()).trim(),name);
+   assert.equal((await page.locator('.hero-appellation-japanese strong').innerText()).trim(),expected);
+   assert.equal(await page.locator('.hero-appellation-main').count(),0,'Japanese name not a primary epithet');
+   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'keep Mori representative quote');
+  }
   await page.goto(host+'/#character=char-004&view=evidence',{waitUntil:'networkidle'});
   await page.locator('.hero-appellation-main strong').waitFor();
   assert.equal((await page.locator('.hero-appellation-main strong').innerText()).trim(),'싸움귀신');
   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'appellation shown on other tabs without breaking quotes');
   assert.deepEqual(errors,[],'no JS or asset error '+viewport.width);
   await page.close();
-  console.log('PASS viewport '+viewport.width+'x'+viewport.height+': 8 curated + 7 sourced labels, 19 Iskra animals, absent-title safety, existing quote and tab regression');
+  console.log('PASS viewport '+viewport.width+'x'+viewport.height+': 8 curated + 7 sourced labels, 2 Japanese names, 19 Iskra animals, quote and tab regression');
  }
 }finally{
  await browser?.close();

@@ -40,9 +40,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 58 || publicQuotes.counts?.userProvided !== 58 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 58 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 58-character quotes');
+    if (publicQuotes.quotes?.length !== 61 || publicQuotes.counts?.userProvided !== 61 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 61 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 61-character quotes');
     if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
         !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
     for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
@@ -52,8 +52,8 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name))throw Error('Missing next five Baekui '+name);
     }
     const appellations=content['data/character-appellations.v1.0.DRAFT.json'];
-    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==34||
-       new Set(appellations.profiles.map(p=>p.characterId)).size!==34||
+    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==36||
+       new Set(appellations.profiles.map(p=>p.characterId)).size!==36||
        appellations.profiles.filter(p=>p.primary).length!==15||
        appellations.profiles.filter(p=>p.codenameMeaning&&p.codenameMeaning.originalChecked===false).length!==22||
        appellations.profiles.find(p=>p.characterId==='char-004')?.alternates?.[0]?.value!=='볼크'||
@@ -100,7 +100,24 @@ for (let attempt = 1; attempt <= 12; attempt++) {
          q.provenance?.scoringImpact!=='none'||q.display?.isCanonChecked!==false)
         throw Error('Published Seonjin quote mismatch '+name);
     }
-    console.log('PASS: public HTTPS / + 6 dependent assets, 58 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+
+    if(publicQuotes.moriInvestmentTrustRosterStatus?.nowSelected!==4||publicQuotes.moriInvestmentTrustRosterStatus?.canonDirectVerification!==0)
+      throw Error('Mori 4/4 not verified');
+    for(const [id,name,verbatim] of [["char-051","임무열","아무리 내가 이빨 다 빠져서 틀니를 박을지언정.. 잊었나? 나 임무열이야."],["char-053","마사","잇테키마스.(行って来ます。)"],["char-054","모승규","기어이 벌주를 마시겠다라.. 우리 꼬마 독기 좀 빼줘야겠군. 문 잠가."]]){
+      const q=publicQuotes.quotes.find(q=>q.characterId===id);
+      if(!q||q.characterName!==name||q.exactText!==verbatim||q.provenance.scoringImpact!=='none'||q.display.isCanonChecked!==false)
+        throw Error('Mori quote mismatch '+name);
+    }
+    if(publicQuotes.quotes.find(q=>q.characterId==='char-052')?.exactText!=="기왕에 멍석 깔린거.. 이번 기회에 싸그리 정리하지. 과거에 남겨진 얼룩들... 자.. 어느것부터 지워볼까?")
+      throw Error('Previously selected O Dohwa quotation changed');
+    for(const [id,value] of [['char-051','타케바야시 이사오'],['char-052','우노 토우시로우']]){
+       const p=appellations.profiles.find(p=>p.characterId===id);
+       if(p?.japaneseName?.value!==value||p.japaneseName.originalChecked!==false||p.primary!==null)
+         throw Error('Japanese name incorrectly displayed '+id);
+    }
+    if(!html.includes('hero-appellation-japanese')||!html.includes('h(p.japaneseName.value)'))
+      throw Error('Public Japanese-name panel missing');
+    console.log('PASS: public HTTPS / + 6 dependent assets, 61 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

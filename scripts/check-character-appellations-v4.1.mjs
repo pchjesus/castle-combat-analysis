@@ -30,12 +30,12 @@ assert.ok(q.quotes.length>=41,'existing gallery must not shrink');
 assert.equal(q.quotes.length,q.counts.userProvided,'appellations regression must not hardcode the quote gallery size');
 assert.equal(q.iskraInitialRosterStatus.userSelected,19);
 assert.equal(a.schemaVersion,'v1.0-draft');
-assert.equal(a.profiles.length,34);
+assert.equal(a.profiles.length,36);
 assert.equal(a.scope.userSelectedAppellationPeople,8);
 assert.equal(a.scope.iskraCodenameAnimalMeanings,19);
-assert.equal(a.scope.uniqueCharacterCount,34);
+assert.equal(a.scope.uniqueCharacterCount,36);
 assert.equal(a.scope.originalComicDirectChecks,0);
-assert.equal(new Set(a.profiles.map(x=>x.characterId)).size,34);
+assert.equal(new Set(a.profiles.map(x=>x.characterId)).size,36);
 assert.equal(a.profiles.filter(x=>x.primary).length,15);
 assert.equal(a.profiles.filter(x=>x.codenameMeaning).length,22);
 assert.equal(a.profiles.filter(x=>x.alternates.length).length,5);
@@ -98,6 +98,26 @@ for(const id of ['char-081','char-083','char-084','char-085','char-086','char-05
  assert.ok(!a.profiles.some(p=>p.characterId===id),'unverified/shared title should not create an epithet '+id);
 }
 assert.equal(a.scope.originalComicDirectChecks,0);
+
+const moriNames=[
+ ['char-051','임무열','타케바야시 이사오','武林 烈'],
+ ['char-052','오도화','우노 토우시로우','烏野 刀士郎']
+];
+assert.equal(a.scope.moriJapaneseNamesAdded,2);
+for(const [id,name,value,kanji] of moriNames){
+ const p=a.profiles.find(x=>x.characterId===id);
+ assert.equal(p?.displayName,name);
+ assert.equal(p.primary,null,'Japanese names are not epithets');
+ assert.deepEqual(p.alternates,[]);
+ assert.equal(p.japaneseName?.value,value);
+ assert.equal(p.japaneseName?.kanji,kanji);
+ assert.equal(p.japaneseName?.sourceType,'fan-wiki-secondary');
+ assert.equal(p.japaneseName?.originalChecked,false);
+ assert.equal(p.review?.originalChecked,false);
+}
+assert.equal(a.profiles.filter(x=>x.japaneseName).length,2);
+assert.ok(index.includes('h(p.japaneseName.value)'));
+assert.ok(index.includes('hero-appellation-japanese'));
 assert.ok(!a.profiles.some(p=>p.primary?.value==='이스크라 무의 상징'));
 assert.equal(a.profiles.find(x=>x.displayName==='구스타프').primary,null);
 assert.ok(!a.profiles.some(x=>['킹신','홍콩 최악의 악마','최달천의 대항마'].includes(x.primary?.value)));
@@ -113,4 +133,4 @@ assert.ok(index.includes('hero-quote-more'),'existing quote expandable intact');
 const start=index.indexOf('/* CASTLE — read-only'),end=index.indexOf('</script>',start);
 assert.ok(start>=0&&end>start);
 new vm.Script(index.slice(start,end),{filename:'index.html'});
-console.log('PASS: 8 user-selected + 7 sourced appellations, 19 Iskra animals, 34 profiles, independent quote gallery retained ('+q.quotes.length+' quotes)');
+console.log('PASS: 8 user-selected + 7 sourced appellations, 2 Japanese names, 19 Iskra animals, 36 profiles ('+q.quotes.length+' quotes)');
