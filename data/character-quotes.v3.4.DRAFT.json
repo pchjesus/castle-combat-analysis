@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 41,
+    "userProvided": 48,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -1287,6 +1287,223 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-046",
+      "characterId": "char-080",
+      "characterName": "유우성",
+      "exactText": "감당할 수 없을 만큼 큰 파도에 자신을 던진다. 그리고 어떤 수를 써서라도 살아남는다. 타성에 젖기 전에 또다시 자신을 던진다. 이게 유우성의 방식이다, 김신.",
+      "theme": "생존·자기 투신",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "namuwiki-secondary-quote-section",
+        "sourceName": "나무위키 명대사 항목 · 사용자 선정",
+        "sourceUrl": "https://namu.moe/w/유우성(캐슬)",
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 선정",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-047",
+      "characterId": "char-081",
+      "characterName": "링링",
+      "exactText": "저주한다, 김신.",
+      "theme": "최후·원망",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "namuwiki-secondary-quote-section",
+        "sourceName": "나무위키 명대사 항목 · 사용자 선정",
+        "sourceUrl": "https://namu.moe/w/링링(캐슬)",
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 선정",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-048",
+      "characterId": "char-082",
+      "characterName": "도우첸",
+      "exactText": "나 같은 거지 하나 없이도.. 너라면 충분히 해낼 거다. 멈추지 마라.",
+      "theme": "충성·신뢰",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-049",
+      "characterId": "char-083",
+      "characterName": "앤디청",
+      "exactText": "오늘 너의 쇼는 우리의 호기심을 자극하기에 충분했다.",
+      "theme": "관찰·오만",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-accepted-prior-secondary-shortlist",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-050",
+      "characterId": "char-084",
+      "characterName": "주천명",
+      "exactText": "따라와라, 백의. 대륙의 수준이 얼마나 높은지 알려주마.",
+      "theme": "자부심·도발",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-051",
+      "characterId": "char-085",
+      "characterName": "은보",
+      "exactText": "얍실한 놈.. 그 와중에도 피를 빠는구나.",
+      "theme": "냉소·상대 평가",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-052",
+      "characterId": "char-086",
+      "characterName": "양사",
+      "exactText": "잘 지냈냐, 말총 대가리.",
+      "theme": "도발·빈정거림",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-accepted-prior-secondary-shortlist",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -1501,5 +1718,63 @@
       "userSelected": true,
       "sourceStatus": "user-provided-original-unchecked"
     }
-  ]
+  ],
+  "latestHwajinSelections": [
+    {
+      "characterId": "char-080",
+      "quoteId": "CQ-046",
+      "userSelected": true,
+      "sourceStatus": "namuwiki-secondary-quote-section",
+      "originalPanelVerified": false
+    },
+    {
+      "characterId": "char-081",
+      "quoteId": "CQ-047",
+      "userSelected": true,
+      "sourceStatus": "namuwiki-secondary-quote-section",
+      "originalPanelVerified": false
+    },
+    {
+      "characterId": "char-082",
+      "quoteId": "CQ-048",
+      "userSelected": true,
+      "sourceStatus": "user-selected-transcription",
+      "originalPanelVerified": false
+    },
+    {
+      "characterId": "char-083",
+      "quoteId": "CQ-049",
+      "userSelected": true,
+      "sourceStatus": "user-accepted-prior-secondary-shortlist",
+      "originalPanelVerified": false
+    },
+    {
+      "characterId": "char-084",
+      "quoteId": "CQ-050",
+      "userSelected": true,
+      "sourceStatus": "user-selected-transcription",
+      "originalPanelVerified": false
+    },
+    {
+      "characterId": "char-085",
+      "quoteId": "CQ-051",
+      "userSelected": true,
+      "sourceStatus": "user-selected-transcription",
+      "originalPanelVerified": false
+    },
+    {
+      "characterId": "char-086",
+      "quoteId": "CQ-052",
+      "userSelected": true,
+      "sourceStatus": "user-accepted-prior-secondary-shortlist",
+      "originalPanelVerified": false
+    }
+  ],
+  "hwajinInitialRosterStatus": {
+    "total": 8,
+    "previouslySelected": 1,
+    "newlySelected": 7,
+    "nowSelected": 8,
+    "canonDirectVerification": 0
+  }
 }

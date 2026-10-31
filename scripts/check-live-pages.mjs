@@ -40,9 +40,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 41 || publicQuotes.counts?.userProvided !== 41 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 41 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 41-character quotes');
+    if (publicQuotes.quotes?.length !== 48 || publicQuotes.counts?.userProvided !== 48 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 48 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 48-character quotes');
     if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
         !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
     for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
@@ -63,7 +63,14 @@ for (let attempt = 1; attempt <= 12; attempt++) {
        !html.includes('${characterAppellations(c)}')||
        !html.includes('hero-appellation-animal')||
        !html.includes('호칭·어원은 2차 자료 참고'))throw Error('Stale public hero appellation markup');
-    console.log('PASS: public HTTPS / + 6 dependent assets, 41 displayed user quotes, 8 user labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+    if(publicQuotes.hwajinInitialRosterStatus?.nowSelected!==8||
+       publicQuotes.hwajinInitialRosterStatus?.canonDirectVerification!==0||
+       publicQuotes.quotes.find(q=>q.characterId==='char-087')?.exactText!=='네가 나무라면, 난 태산(泰山)이다.')throw Error('Hwajin 8/8 not preserved');
+    for(const [id,name] of [["char-080","유우성"],["char-081","링링"],["char-082","도우첸"],["char-083","앤디청"],["char-084","주천명"],["char-085","은보"],["char-086","양사"]]){
+      if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name&&q.display?.isCanonChecked===false))
+         throw Error('Missing Hwajin selected quote '+name);
+    }
+    console.log('PASS: public HTTPS / + 6 dependent assets, 48 displayed user quotes, 8 user labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

@@ -35,7 +35,14 @@ const six=[
  ["char-010","박정배","형님들이 그러셨지, 내 성급함만 줄인다면..."],
  ["char-011","정선오","너 태어나서 누구한테 고맙다는 말 해본 적 없지?"],
  ["char-012","정승영","근데.. 바로 옆방에 영이가 한참 목 걸고 싸우고 있거든요?"],
- ["char-013","서정치","너희가 가는 그 길에 힘을 보태도록 하지."]
+ ["char-013","서정치","너희가 가는 그 길에 힘을 보태도록 하지."],
+ ["char-080","유우성","감당할 수 없을 만큼 큰 파도에 자신을 던진다."],
+ ["char-081","링링","저주한다, 김신."],
+ ["char-082","도우첸","나 같은 거지 하나 없이도.. 너라면 충분히 해낼 거다. 멈추지 마라."],
+ ["char-083","앤디청","오늘 너의 쇼는 우리의 호기심을 자극하기에 충분했다."],
+ ["char-084","주천명","따라와라, 백의. 대륙의 수준이 얼마나 높은지 알려주마."],
+ ["char-085","은보","얍실한 놈.. 그 와중에도 피를 빠는구나."],
+ ["char-086","양사","잘 지냈냐, 말총 대가리."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -101,6 +108,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra and 10 Baekui quote cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 7 newly selected Hwajin and previously selected Ri Cheon quote cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,41);
+assert.equal(quotes.counts.userProvided,48);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,41);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,41);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,41);
+assert.equal(quotes.quotes.length,48);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,48);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,48);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -73,6 +73,25 @@ for(const [id,name,verbatim] of newBaekui){
 }
 assert.deepEqual(quotes.latestBaekuiSelections.map(q=>q.characterId),newBaekui.map(x=>x[0]));
 assert.deepEqual(quotes.latestBaekuiSelections.map(q=>q.quoteId),['CQ-041','CQ-042','CQ-043','CQ-044','CQ-045']);
+
+const hwajin=[["char-080","유우성","감당할 수 없을 만큼 큰 파도에 자신을 던진다. 그리고 어떤 수를 써서라도 살아남는다. 타성에 젖기 전에 또다시 자신을 던진다. 이게 유우성의 방식이다, 김신."],["char-081","링링","저주한다, 김신."],["char-082","도우첸","나 같은 거지 하나 없이도.. 너라면 충분히 해낼 거다. 멈추지 마라."],["char-083","앤디청","오늘 너의 쇼는 우리의 호기심을 자극하기에 충분했다."],["char-084","주천명","따라와라, 백의. 대륙의 수준이 얼마나 높은지 알려주마."],["char-085","은보","얍실한 놈.. 그 와중에도 피를 빠는구나."],["char-086","양사","잘 지냈냐, 말총 대가리."]];
+assert.deepEqual(quotes.hwajinInitialRosterStatus,{total:8,previouslySelected:1,newlySelected:7,nowSelected:8,canonDirectVerification:0});
+assert.deepEqual(quotes.latestHwajinSelections.map(q=>q.characterId),hwajin.map(q=>q[0]));
+assert.deepEqual(quotes.latestHwajinSelections.map(q=>q.quoteId),['CQ-046','CQ-047','CQ-048','CQ-049','CQ-050','CQ-051','CQ-052']);
+assert.equal(quotes.quotes.filter(q=>q.characterId==='char-087').length,1,'existing Ri Cheon quote preserved');
+for(const [id,name,verbatim] of hwajin){
+ const q=quotes.quotes.find(x=>x.characterId===id);
+ assert.ok(q,'Hwajin quote missing '+name);
+ assert.equal(q.characterName,name);
+ assert.equal(q.exactText,verbatim);
+ assert.equal(q.verificationStatus,'user-transcribed-secondary');
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.sceneVerified,false);
+ assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-080').provenance.sourceUrl,'https://namu.moe/w/유우성(캐슬)');
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-081').provenance.sourceUrl,'https://namu.moe/w/링링(캐슬)');
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -81,4 +100,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: main 41 selected quotes, 10 Baekui, 19 Iskra, hero/accordion and Evidence preserved');
+console.log('PASS: main 48 selected quotes, Hwajin 8/8, 10 Baekui and Iskra 19/19 preserved; hero and Evidence safe');
