@@ -52,13 +52,24 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name))throw Error('Missing next five Baekui '+name);
     }
     const appellations=content['data/character-appellations.v1.0.DRAFT.json'];
-    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==27||
-       new Set(appellations.profiles.map(p=>p.characterId)).size!==27||
-       appellations.profiles.filter(p=>p.primary).length!==8||
+    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==34||
+       new Set(appellations.profiles.map(p=>p.characterId)).size!==34||
+       appellations.profiles.filter(p=>p.primary).length!==15||
        appellations.profiles.filter(p=>p.codenameMeaning&&p.codenameMeaning.originalChecked===false).length!==22||
        appellations.profiles.find(p=>p.characterId==='char-004')?.alternates?.[0]?.value!=='볼크'||
        appellations.profiles.find(p=>p.characterId==='char-042')?.primary!==null||
        appellations.scope.originalComicDirectChecks!==0)throw Error('Missing/mismatched public user-selected appellations');
+    for(const [id,value] of [["char-080","롱터우"],["char-082","투견"],["char-087","대륙 제일의 살수"],["char-057","마운틴"],["char-058","봄버"],["char-060","콜트"],["char-061","마귀"]]){
+      const p=appellations.profiles.find(p=>p.characterId===id);
+      if(p?.primary?.value!==value||p.primary.originalChecked!==false||p.review?.originalChecked!==false)
+        throw Error('Missing sourced alias '+id);
+    }
+    for(const id of ['char-081','char-083','char-084','char-085','char-086','char-056','char-059','char-062']){
+      if(appellations.profiles.some(p=>p.characterId===id))throw Error('Invented epithet for '+id);
+    }
+    if(appellations.scope.secondaryResearchedAppellationPeople!==7||
+       appellations.scope.hwajinAliasesAdded!==3||appellations.scope.castleHoldingsAliasesAdded!==4||
+       appellations.scope.originalComicDirectChecks!==0)throw Error('Sourced alias scope mismatch');
     if(!html.includes('data/character-appellations.v1.0.DRAFT.json')||
        !html.includes('${characterAppellations(c)}')||
        !html.includes('hero-appellation-animal')||
@@ -79,7 +90,7 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       if(!q||q.characterName!==name||q.exactText!==verbatim||q.provenance?.scoringImpact!=='none'||q.display?.isCanonChecked!==false)
         throw Error('Published Castle Holdings quote mismatch: '+name);
     }
-    console.log('PASS: public HTTPS / + 6 dependent assets, 53 displayed user quotes, 8 user labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+    console.log('PASS: public HTTPS / + 6 dependent assets, 53 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

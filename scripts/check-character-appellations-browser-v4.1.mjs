@@ -15,6 +15,7 @@ const selected=[
  ['char-010','박정배','똘배',null,null],
  ['char-022','인수','상계동 쓰나미',null,null]
 ];
+const newlySourced=[["char-080","유우성","롱터우",["페이룽","토룡"]],["char-082","도우첸","투견",["거지"]],["char-087","리천","대륙 제일의 살수",["김신의 대항마"]],["char-057","마학영","마운틴",["인간 마지노선","캐슬의 수문장"]],["char-058","마준영","봄버",[]],["char-060","정단","콜트",[]],["char-061","사인진","마귀",[]]];
 const animals=[
  ['char-025','메드베디','곰'],['char-026','크리사','쥐'],['char-027','크로트','두더지'],
  ['char-028','라텔','벌꿀오소리'],['char-029','샤이어','거대한 말'],
@@ -65,15 +66,28 @@ try{
    assert.equal((await page.locator('.hero-appellation-animal strong').innerText()).trim(),animal);
    assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'existing Iskra quote remains in hero');
   }
-  await page.goto(host+'/#character=char-080&view=overview',{waitUntil:'networkidle'});
-  assert.equal(await page.locator('.hero-appellations').count(),0,'no fabricated nickname on Hwajin character');
+  for(const [id,name,primary,alternates] of newlySourced){
+   await page.goto(host+'/#character='+id+'&view=overview',{waitUntil:'networkidle'});
+   await page.locator('.hero-appellation-main strong').waitFor();
+   assert.equal((await page.locator('.hero-title').innerText()).trim(),name);
+   assert.equal((await page.locator('.hero-appellation-main strong').innerText()).trim(),primary);
+   assert.deepEqual(await page.locator('.hero-appellation-alt strong').allInnerTexts(),alternates,'alternate sourced appellations: '+name);
+   assert.equal(await page.locator('.hero-appellation-animal').count(),0,'no fabricated codename animal');
+   assert.match(await page.locator('.hero-appellation-note').innerText(),/원작 직접 대조 전/);
+   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'all sourced characters keep existing quotes');
+  }
+  for(const id of ['char-081','char-083','char-084','char-085','char-086','char-056','char-059','char-062']){
+   await page.goto(host+'/#character='+id+'&view=overview',{waitUntil:'networkidle'});
+   assert.equal(await page.locator('.hero-appellations').count(),0,'no unverified appellation for '+id);
+   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'quotes unaffected by blank epithet');
+  }
   await page.goto(host+'/#character=char-004&view=evidence',{waitUntil:'networkidle'});
   await page.locator('.hero-appellation-main strong').waitFor();
   assert.equal((await page.locator('.hero-appellation-main strong').innerText()).trim(),'싸움귀신');
   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'appellation shown on other tabs without breaking quotes');
   assert.deepEqual(errors,[],'no JS or asset error '+viewport.width);
   await page.close();
-  console.log('PASS viewport '+viewport.width+'x'+viewport.height+': 8 curated labels, 19 Iskra animals, no empty placeholder, quote and tab regression');
+  console.log('PASS viewport '+viewport.width+'x'+viewport.height+': 8 curated + 7 sourced labels, 19 Iskra animals, absent-title safety, existing quote and tab regression');
  }
 }finally{
  await browser?.close();

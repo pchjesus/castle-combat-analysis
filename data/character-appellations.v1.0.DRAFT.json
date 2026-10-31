@@ -1,11 +1,11 @@
 {
   "schemaVersion": "v1.0-draft",
-  "asOf": "2026-10-25",
-  "state": "user-curated-appellations-secondary-verified",
+  "asOf": "2026-11-01",
+  "state": "user-curated-and-secondary-researched-appellations-original-verification-pending",
   "scope": {
     "userSelectedAppellationPeople": 8,
     "iskraCodenameAnimalMeanings": 19,
-    "uniqueCharacterCount": 27,
+    "uniqueCharacterCount": 34,
     "originalComicDirectChecks": 0,
     "shownOnlyWhenKnown": true,
     "excludedUserChoice": [
@@ -14,7 +14,11 @@
         "text": "이스크라 무의 상징",
         "reason": "user declined this epithet; show only codename animal meaning"
       }
-    ]
+    ],
+    "secondaryResearchedAppellationPeople": 7,
+    "totalAppellationPeople": 15,
+    "hwajinAliasesAdded": 3,
+    "castleHoldingsAliasesAdded": 4
   },
   "policy": {
     "categories": [
@@ -27,7 +31,8 @@
     "primaryAppellationOptional": true,
     "sourceTypesDistinctFromOriginalCheck": true,
     "doNotAssumeCurrentIskraMembership": true,
-    "ignoreForCombatScores": true
+    "ignoreForCombatScores": true,
+    "secondaryResearchedAliasesRemainUnverified": true
   },
   "sources": [
     {
@@ -40,6 +45,20 @@
       "url": "https://namu.moe/w/이스크라(캐슬)",
       "description": "Iskra organization animal codename meanings and former membership grouping",
       "verification": "secondary-read-not-original-checked"
+    },
+    {
+      "type": "fan-wiki-secondary",
+      "description": "Seven sourced character epithets/codenames and their alternates from individual character headings. No fan-only honorifics or shared ranks",
+      "verification": "secondary-reviewed-not-original-panel-verified",
+      "urls": [
+        "https://namu.moe/w/유우성(캐슬)",
+        "https://d.namu.moe/w/도우첸",
+        "https://m.namu.moe/w/리천(캐슬)",
+        "https://d.namu.moe/w/마학영",
+        "https://m.namu.moe/w/마준영",
+        "https://namu.moe/w/정단(캐슬)",
+        "https://namu.moe/w/사인진"
+      ]
     }
   ],
   "profiles": [
@@ -394,6 +413,178 @@
         "sourceType": "fan-wiki-secondary",
         "sourceUrl": "https://namu.moe/w/이스크라(캐슬)",
         "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-080",
+      "displayName": "유우성",
+      "primary": {
+        "value": "롱터우",
+        "kind": "epithet",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/유우성(캐슬)",
+        "originalChecked": false
+      },
+      "alternates": [
+        {
+          "value": "페이룽",
+          "kind": "epithet",
+          "sourceType": "fan-wiki-secondary",
+          "sourceUrl": "https://namu.moe/w/유우성(캐슬)",
+          "originalChecked": false
+        },
+        {
+          "value": "토룡",
+          "kind": "epithet",
+          "sourceType": "fan-wiki-secondary",
+          "sourceUrl": "https://namu.moe/w/유우성(캐슬)",
+          "originalChecked": false
+        }
+      ],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
+      }
+    },
+    {
+      "characterId": "char-082",
+      "displayName": "도우첸",
+      "primary": {
+        "value": "투견",
+        "kind": "epithet",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://d.namu.moe/w/도우첸",
+        "originalChecked": false
+      },
+      "alternates": [
+        {
+          "value": "거지",
+          "kind": "nickname",
+          "sourceType": "fan-wiki-secondary",
+          "sourceUrl": "https://d.namu.moe/w/도우첸",
+          "originalChecked": false
+        }
+      ],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
+      }
+    },
+    {
+      "characterId": "char-087",
+      "displayName": "리천",
+      "primary": {
+        "value": "대륙 제일의 살수",
+        "kind": "epithet",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://m.namu.moe/w/리천(캐슬)",
+        "originalChecked": false
+      },
+      "alternates": [
+        {
+          "value": "김신의 대항마",
+          "kind": "epithet",
+          "sourceType": "fan-wiki-secondary",
+          "sourceUrl": "https://m.namu.moe/w/리천(캐슬)",
+          "originalChecked": false
+        }
+      ],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
+      }
+    },
+    {
+      "characterId": "char-057",
+      "displayName": "마학영",
+      "primary": {
+        "value": "마운틴",
+        "kind": "codename",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://d.namu.moe/w/마학영",
+        "originalChecked": false
+      },
+      "alternates": [
+        {
+          "value": "인간 마지노선",
+          "kind": "epithet",
+          "sourceType": "fan-wiki-secondary",
+          "sourceUrl": "https://d.namu.moe/w/마학영",
+          "originalChecked": false
+        },
+        {
+          "value": "캐슬의 수문장",
+          "kind": "epithet",
+          "sourceType": "fan-wiki-secondary",
+          "sourceUrl": "https://d.namu.moe/w/마학영",
+          "originalChecked": false
+        }
+      ],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
+      }
+    },
+    {
+      "characterId": "char-058",
+      "displayName": "마준영",
+      "primary": {
+        "value": "봄버",
+        "kind": "codename",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://m.namu.moe/w/마준영",
+        "originalChecked": false
+      },
+      "alternates": [],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
+      }
+    },
+    {
+      "characterId": "char-060",
+      "displayName": "정단",
+      "primary": {
+        "value": "콜트",
+        "kind": "codename",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/정단(캐슬)",
+        "originalChecked": false
+      },
+      "alternates": [],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
+      }
+    },
+    {
+      "characterId": "char-061",
+      "displayName": "사인진",
+      "primary": {
+        "value": "마귀",
+        "kind": "epithet",
+        "selectedBy": "assistant-secondary-curation-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/사인진",
+        "originalChecked": false
+      },
+      "alternates": [],
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false,
+        "displayApprovedUnderUserResearchAndAddRequest": true
       }
     }
   ]

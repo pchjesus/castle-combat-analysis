@@ -294,7 +294,7 @@ async function loadDraftData(){
  }catch(e){console.warn('Optional user-curated quote preview unavailable',e);}
  try{
   const x=await get('data/character-appellations.v1.0.DRAFT.json');
-  if(x.schemaVersion==='v1.0-draft'&&Array.isArray(x.profiles)&&x.profiles.length===27&&
+  if(x.schemaVersion==='v1.0-draft'&&Array.isArray(x.profiles)&&x.profiles.length>=27&&
     new Set(x.profiles.map(p=>p.characterId)).size===x.profiles.length&&
     x.profiles.every(p=>rosterById.has(p.characterId)&&p.displayName===rosterById.get(p.characterId).name&&
       (p.primary===null||(['nickname','epithet','codename','codename-title'].includes(p.primary?.kind)&&typeof p.primary.value==='string'&&p.primary.value.trim()))&&

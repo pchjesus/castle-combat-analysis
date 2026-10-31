@@ -30,16 +30,16 @@ assert.ok(q.quotes.length>=41,'existing gallery must not shrink');
 assert.equal(q.quotes.length,q.counts.userProvided,'appellations regression must not hardcode the quote gallery size');
 assert.equal(q.iskraInitialRosterStatus.userSelected,19);
 assert.equal(a.schemaVersion,'v1.0-draft');
-assert.equal(a.profiles.length,27);
+assert.equal(a.profiles.length,34);
 assert.equal(a.scope.userSelectedAppellationPeople,8);
 assert.equal(a.scope.iskraCodenameAnimalMeanings,19);
-assert.equal(a.scope.uniqueCharacterCount,27);
+assert.equal(a.scope.uniqueCharacterCount,34);
 assert.equal(a.scope.originalComicDirectChecks,0);
-assert.equal(new Set(a.profiles.map(x=>x.characterId)).size,27);
-assert.equal(a.profiles.filter(x=>x.primary).length,8);
+assert.equal(new Set(a.profiles.map(x=>x.characterId)).size,34);
+assert.equal(a.profiles.filter(x=>x.primary).length,15);
 assert.equal(a.profiles.filter(x=>x.codenameMeaning).length,22);
-assert.equal(a.profiles.filter(x=>x.alternates.length).length,1);
-assert.equal(a.profiles.reduce((n,x)=>n+x.alternates.length,0),1);
+assert.equal(a.profiles.filter(x=>x.alternates.length).length,5);
+assert.equal(a.profiles.reduce((n,x)=>n+x.alternates.length,0),7);
 for(const [id,name,value,kind,alternates,animal] of selected){
  const c=roster.characters.find(x=>x.id===id);
  const p=a.profiles.find(x=>x.characterId===id);
@@ -70,11 +70,39 @@ for(const p of a.profiles){
   assert.equal(p.codenameMeaning.originalChecked,false);
  }
 }
+
+const sourced=[
+ ['char-080','유우성','롱터우','epithet',['페이룽','토룡']],
+ ['char-082','도우첸','투견','epithet',['거지']],
+ ['char-087','리천','대륙 제일의 살수','epithet',['김신의 대항마']],
+ ['char-057','마학영','마운틴','codename',['인간 마지노선','캐슬의 수문장']],
+ ['char-058','마준영','봄버','codename',[]],
+ ['char-060','정단','콜트','codename',[]],
+ ['char-061','사인진','마귀','epithet',[]]
+];
+assert.equal(a.scope.secondaryResearchedAppellationPeople,7);
+assert.equal(a.scope.hwajinAliasesAdded,3);
+assert.equal(a.scope.castleHoldingsAliasesAdded,4);
+assert.equal(a.scope.totalAppellationPeople,15);
+for(const [id,name,value,kind,alts] of sourced){
+ const p=a.profiles.find(x=>x.characterId===id);
+ assert.equal(p?.displayName,name);
+ assert.equal(p?.primary.value,value);
+ assert.equal(p?.primary.kind,kind);
+ assert.deepEqual(p?.alternates.map(x=>x.value),alts);
+ assert.equal(p?.primary.sourceType,'fan-wiki-secondary');
+ assert.equal(p?.primary.originalChecked,false);
+ assert.equal(p?.review.originalChecked,false);
+}
+for(const id of ['char-081','char-083','char-084','char-085','char-086','char-056','char-059','char-062']){
+ assert.ok(!a.profiles.some(p=>p.characterId===id),'unverified/shared title should not create an epithet '+id);
+}
+assert.equal(a.scope.originalComicDirectChecks,0);
 assert.ok(!a.profiles.some(p=>p.primary?.value==='이스크라 무의 상징'));
 assert.equal(a.profiles.find(x=>x.displayName==='구스타프').primary,null);
 assert.ok(!a.profiles.some(x=>['킹신','홍콩 최악의 악마','최달천의 대항마'].includes(x.primary?.value)));
 assert.ok(index.includes('data/character-appellations.v1.0.DRAFT.json'));
-assert.ok(index.includes("x.profiles.length===27"));
+assert.ok(index.includes("x.profiles.length>=27"));
 assert.ok(index.includes('appellationData=x'));
 assert.ok(index.includes('${characterAppellations(c)}'));
 assert.ok(index.includes('function characterAppellations(c)'));
@@ -85,4 +113,4 @@ assert.ok(index.includes('hero-quote-more'),'existing quote expandable intact');
 const start=index.indexOf('/* CASTLE — read-only'),end=index.indexOf('</script>',start);
 assert.ok(start>=0&&end>start);
 new vm.Script(index.slice(start,end),{filename:'index.html'});
-console.log('PASS: 8 appellations + 1 alternate, 19 Iskra animals, 27 profiles; independent quote gallery retained ('+q.quotes.length+' quotes)');
+console.log('PASS: 8 user-selected + 7 sourced appellations, 19 Iskra animals, 34 profiles, independent quote gallery retained ('+q.quotes.length+' quotes)');
