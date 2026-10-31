@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 53,
+    "userProvided": 58,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -1659,6 +1659,161 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-058",
+      "characterId": "char-045",
+      "characterName": "남궁혁",
+      "exactText": "다시 돌아간 기분이야. 오직 살기위해 인간을 물고 뜯었던.. 그 시절로.",
+      "theme": "야성·생존",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-059",
+      "characterId": "char-046",
+      "characterName": "바리스타",
+      "exactText": "실은 내가 '벌레 새×'였다.",
+      "theme": "자기 성찰",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-060",
+      "characterId": "char-048",
+      "characterName": "스케일 단장",
+      "exactText": "네가 뿌렸을 수 많은 복수의 씨앗들이... 반드시 네 숨을 끊으러 쫓아올 테니까.",
+      "theme": "복수·인과",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-061",
+      "characterId": "char-049",
+      "characterName": "기명균",
+      "exactText": "야, 오부장 이 X신X새끼야. 일처리 똑바로 안 할래?",
+      "theme": "거친 질책",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-062",
+      "characterId": "char-050",
+      "characterName": "오규동",
+      "exactText": "하.. 새끼, 고것 참. 완전히 쇠심줄 같이 질긴 놈일세.",
+      "theme": "상대의 집념 평가",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -1990,6 +2145,53 @@
     {
       "characterId": "char-062",
       "quoteId": "CQ-057",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    }
+  ],
+  "seonjinTradingInitialRosterStatus": {
+    "total": 7,
+    "previouslySelected": 1,
+    "newlySelected": 5,
+    "nowSelected": 6,
+    "withheldByUser": [
+      "char-047"
+    ],
+    "canonDirectVerification": 0
+  },
+  "latestSeonjinSelections": [
+    {
+      "characterId": "char-045",
+      "quoteId": "CQ-058",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-046",
+      "quoteId": "CQ-059",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-048",
+      "quoteId": "CQ-060",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-049",
+      "quoteId": "CQ-061",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-050",
+      "quoteId": "CQ-062",
       "action": "add",
       "userSelected": true,
       "originalChecked": false

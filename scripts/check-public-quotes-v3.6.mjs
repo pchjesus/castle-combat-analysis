@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,53);
+assert.equal(quotes.counts.userProvided,58);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,53);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,53);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,53);
+assert.equal(quotes.quotes.length,58);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,58);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,58);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -118,6 +118,25 @@ for(const [id,name,verbatim] of [["char-058","마준영","형의 방식으로.\n
  assert.equal(q.display.isCanonChecked,false);
 }
 assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='castle-holdings')).length,7);
+
+const seonjin=[["char-045","남궁혁","다시 돌아간 기분이야. 오직 살기위해 인간을 물고 뜯었던.. 그 시절로."],["char-046","바리스타","실은 내가 '벌레 새×'였다."],["char-048","스케일 단장","네가 뿌렸을 수 많은 복수의 씨앗들이... 반드시 네 숨을 끊으러 쫓아올 테니까."],["char-049","기명균","야, 오부장 이 X신X새끼야. 일처리 똑바로 안 할래?"],["char-050","오규동","하.. 새끼, 고것 참. 완전히 쇠심줄 같이 질긴 놈일세."]];
+assert.deepEqual(quotes.seonjinTradingInitialRosterStatus,{total:7,previouslySelected:1,newlySelected:5,nowSelected:6,withheldByUser:['char-047'],canonDirectVerification:0});
+assert.deepEqual(quotes.latestSeonjinSelections.map(q=>q.characterId),seonjin.map(q=>q[0]));
+assert.deepEqual(quotes.latestSeonjinSelections.map(q=>q.quoteId),['CQ-058','CQ-059','CQ-060','CQ-061','CQ-062']);
+assert.equal(quotes.quotes.filter(q=>q.characterId==='char-044').length,1,'previous Baek Dochan quote preserved');
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-044').exactText,"하나같이 전부.. 내게 '패배'한 놈들의 기술이 아닌가?");
+assert.equal(quotes.quotes.some(q=>q.characterId==='char-047'),false,'Monkey must remain unselected');
+for(const [id,name,text] of seonjin){
+ const q=quotes.quotes.find(q=>q.characterId===id);
+ assert.ok(q,'missing Seonjin quote: '+name);
+ assert.equal(q.characterName,name);
+ assert.equal(q.exactText,text,'keep user exact transcription incl. redaction and ellipsis');
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.sceneVerified,false);
+ assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
+assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='seonjin-trading')).length,6);
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -126,4 +145,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: main 53 selected quotes, Castle Holdings 7/7, Hwajin 8/8, Baekui and Iskra preserved; Evidence unmodified');
+console.log('PASS: 58 quotes, Seonjin 6/7 (Monkey withheld), Castle Holdings 7/7, Hwajin 8/8, Iskra 19/19 and Evidence preserved');

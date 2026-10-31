@@ -40,9 +40,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 53 || publicQuotes.counts?.userProvided !== 53 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 53 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 53-character quotes');
+    if (publicQuotes.quotes?.length !== 58 || publicQuotes.counts?.userProvided !== 58 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 58 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 58-character quotes');
     if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
         !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
     for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
@@ -90,7 +90,17 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       if(!q||q.characterName!==name||q.exactText!==verbatim||q.provenance?.scoringImpact!=='none'||q.display?.isCanonChecked!==false)
         throw Error('Published Castle Holdings quote mismatch: '+name);
     }
-    console.log('PASS: public HTTPS / + 6 dependent assets, 53 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+    if(publicQuotes.seonjinTradingInitialRosterStatus?.nowSelected!==6||
+       publicQuotes.seonjinTradingInitialRosterStatus?.canonDirectVerification!==0||
+       !publicQuotes.seonjinTradingInitialRosterStatus?.withheldByUser.includes('char-047')||
+       publicQuotes.quotes.some(q=>q.characterId==='char-047'))throw Error('Seonjin 6/7 and Monkey hold mismatch');
+    for(const [id,name,verbatim] of [["char-045","남궁혁","다시 돌아간 기분이야. 오직 살기위해 인간을 물고 뜯었던.. 그 시절로."],["char-046","바리스타","실은 내가 '벌레 새×'였다."],["char-048","스케일 단장","네가 뿌렸을 수 많은 복수의 씨앗들이... 반드시 네 숨을 끊으러 쫓아올 테니까."],["char-049","기명균","야, 오부장 이 X신X새끼야. 일처리 똑바로 안 할래?"],["char-050","오규동","하.. 새끼, 고것 참. 완전히 쇠심줄 같이 질긴 놈일세."]]){
+      const q=publicQuotes.quotes.find(q=>q.characterId===id);
+      if(!q||q.characterName!==name||q.exactText!==verbatim||
+         q.provenance?.scoringImpact!=='none'||q.display?.isCanonChecked!==false)
+        throw Error('Published Seonjin quote mismatch '+name);
+    }
+    console.log('PASS: public HTTPS / + 6 dependent assets, 58 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

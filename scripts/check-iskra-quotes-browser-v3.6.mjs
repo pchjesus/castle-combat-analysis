@@ -49,7 +49,12 @@ const six=[
  ["char-059","이정화","공무원 새끼들이 X발 고함은.."],
  ["char-060","정단","현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다."],
  ["char-061","사인진","태훈아, 이 동생은 참 실망했다."],
- ["char-062","마크","밥값 못하면 폐기처분이 순리라서."]
+ ["char-062","마크","밥값 못하면 폐기처분이 순리라서."],
+ ["char-045","남궁혁","다시 돌아간 기분이야. 오직 살기위해 인간을 물고 뜯었던.. 그 시절로."],
+ ["char-046","바리스타","실은 내가 '벌레 새×'였다."],
+ ["char-048","스케일 단장","네가 뿌렸을 수 많은 복수의 씨앗들이... 반드시 네 숨을 끊으러 쫓아올 테니까."],
+ ["char-049","기명균","야, 오부장 이 X신X새끼야. 일처리 똑바로 안 할래?"],
+ ["char-050","오규동","하.. 새끼, 고것 참. 완전히 쇠심줄 같이 질긴 놈일세."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -83,6 +88,9 @@ try{
    assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/사용자.*(제공|선정)/);
    assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/원작 대조 대기/);
   }
+  await page.goto(host+'/#character=char-047&view=overview',{waitUntil:'networkidle'});
+  assert.equal((await page.locator('.hero-title').innerText()).trim(),'몽키');
+  assert.equal(await page.locator('.identity-hero .hero-quote').count(),0,'Monkey intentionally has no selected quote');
   await page.goto(host+'/#character=char-033&view=overview',{waitUntil:'networkidle'});
   await page.locator('.quote-note-preview blockquote').waitFor();
   assert.match(await page.locator('.quote-note-preview blockquote').innerText(),/자신의 자유 의지를/);
@@ -115,6 +123,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings and existing other representative cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 newly selected Seonjin quotes and existing other cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}
