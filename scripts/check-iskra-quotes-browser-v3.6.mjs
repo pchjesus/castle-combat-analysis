@@ -57,7 +57,12 @@ const six=[
  ["char-050","오규동","하.. 새끼, 고것 참. 완전히 쇠심줄 같이 질긴 놈일세."],
  ["char-051","임무열","아무리 내가 이빨 다 빠져서 틀니를 박을지언정.. 잊었나? 나 임무열이야."],
  ["char-053","마사","잇테키마스.(行って来ます。)"],
- ["char-054","모승규","기어이 벌주를 마시겠다라.. 우리 꼬마 독기 좀 빼줘야겠군. 문 잠가."]
+ ["char-054","모승규","기어이 벌주를 마시겠다라.. 우리 꼬마 독기 좀 빼줘야겠군. 문 잠가."],
+ ["char-055","최달천","나그의 팔뚝을 뚫을라믄... 기관포라도 들고 와야 쇼당이 붙제!!!"],
+ ["char-063","주원","서 있어, 이 싸가지없는 새끼야."],
+ ["char-064","이필도","휴- 살았나. 명절 떡값은 따따불이여, 영감님."],
+ ["char-066","엄지","자유...? 그 놈의 죽음에서... 도망이라도 치고 싶은 거냐, 주로."],
+ ["char-067","검지","어차피 시체 아냐? 왜 이렇게 예민하게 굴어? 시작부터 분위기 좆같아지게."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -126,6 +131,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori and existing other cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori, 5 Gold/Hotel and existing other cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

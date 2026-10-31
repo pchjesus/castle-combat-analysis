@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,61);
+assert.equal(quotes.counts.userProvided,66);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,61);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,61);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,61);
+assert.equal(quotes.quotes.length,66);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,66);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,66);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -153,6 +153,22 @@ for(const [id,name,verbatim] of mori){
  assert.equal(q.provenance.scoringImpact,'none');
  assert.equal(q.display.isCanonChecked,false);
 }
+
+const goldHotel=[["char-055","최달천","나그의 팔뚝을 뚫을라믄... 기관포라도 들고 와야 쇼당이 붙제!!!"],["char-063","주원","서 있어, 이 싸가지없는 새끼야."],["char-064","이필도","휴- 살았나. 명절 떡값은 따따불이여, 영감님."],["char-066","엄지","자유...? 그 놈의 죽음에서... 도망이라도 치고 싶은 거냐, 주로."],["char-067","검지","어차피 시체 아냐? 왜 이렇게 예민하게 굴어? 시작부터 분위기 좆같아지게."]];
+assert.deepEqual(quotes.goldCapitalRosterStatus,{total:1,newlySelected:1,nowSelected:1,canonDirectVerification:0});
+assert.deepEqual(quotes.hotelCastleRosterStatus,{total:5,previouslySelected:1,newlySelected:4,nowSelected:5,canonDirectVerification:0});
+assert.deepEqual(quotes.latestGoldHotelSelections.map(q=>q.characterId),goldHotel.map(q=>q[0]));
+assert.deepEqual(quotes.latestGoldHotelSelections.map(q=>q.quoteId),['CQ-066','CQ-067','CQ-068','CQ-069','CQ-070']);
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-065').exactText,'그런 식으론... 그런 식으론 회장님은 평생 최민욱의 그늘에서 벗어날 수 없습니다.');
+for(const [id,name,verbatim] of goldHotel){
+ const q=quotes.quotes.find(x=>x.characterId===id);
+ assert.ok(q,'missing Hotel/Gold '+name);assert.equal(q.characterName,name);assert.equal(q.exactText,verbatim);
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.sceneVerified,false);assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
+assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='hotel-castle')).length,5);
+assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='gold-capital')).length,1);
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -161,4 +177,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: 61 quotes, Mori 4/4, Seonjin 6/7 (Monkey withheld), Castle Holdings 7/7, Hwajin 8/8 and Iskra 19/19 preserved');
+console.log('PASS: 66 quotes, Gold Capital 1/1 and Hotel Castle 5/5, existing 61 and Iskra/Seonjin preserved');

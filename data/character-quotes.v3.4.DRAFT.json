@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 61,
+    "userProvided": 66,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -1907,6 +1907,161 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-066",
+      "characterId": "char-055",
+      "characterName": "최달천",
+      "exactText": "나그의 팔뚝을 뚫을라믄... 기관포라도 들고 와야 쇼당이 붙제!!!",
+      "theme": "도발·완력",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "namuwiki-secondary-quote-section",
+        "sourceName": "나무위키 명대사 항목 · 사용자 선정",
+        "sourceUrl": "https://m.namu.moe/w/최달천",
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 선정",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-067",
+      "characterId": "char-063",
+      "characterName": "주원",
+      "exactText": "서 있어, 이 싸가지없는 새끼야.",
+      "theme": "규율·질책",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-068",
+      "characterId": "char-064",
+      "characterName": "이필도",
+      "exactText": "휴- 살았나. 명절 떡값은 따따불이여, 영감님.",
+      "theme": "능청·생존",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "namuwiki-secondary-quote-section",
+        "sourceName": "나무위키 명대사 항목 · 사용자 선정",
+        "sourceUrl": "https://m.namu.moe/w/이필도",
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 선정",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-069",
+      "characterId": "char-066",
+      "characterName": "엄지",
+      "exactText": "자유...? 그 놈의 죽음에서... 도망이라도 치고 싶은 거냐, 주로.",
+      "theme": "도발·질서",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-approved-prior-secondary-shortlist",
+        "sourceName": "사용자 제공·선정 (원작 직접 대조 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-070",
+      "characterId": "char-067",
+      "characterName": "검지",
+      "exactText": "어차피 시체 아냐? 왜 이렇게 예민하게 굴어? 시작부터 분위기 좆같아지게.",
+      "theme": "독설·도발",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "namuwiki-secondary-quote-section",
+        "sourceName": "나무위키 명대사 항목 · 사용자 선정",
+        "sourceUrl": "https://www.namu.moe/w/검지(캐슬)",
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 선정",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -2316,6 +2471,56 @@
     {
       "characterId": "char-054",
       "quoteId": "CQ-065",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    }
+  ],
+  "goldCapitalRosterStatus": {
+    "total": 1,
+    "newlySelected": 1,
+    "nowSelected": 1,
+    "canonDirectVerification": 0
+  },
+  "hotelCastleRosterStatus": {
+    "total": 5,
+    "previouslySelected": 1,
+    "newlySelected": 4,
+    "nowSelected": 5,
+    "canonDirectVerification": 0
+  },
+  "latestGoldHotelSelections": [
+    {
+      "characterId": "char-055",
+      "quoteId": "CQ-066",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-063",
+      "quoteId": "CQ-067",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-064",
+      "quoteId": "CQ-068",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-066",
+      "quoteId": "CQ-069",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-067",
+      "quoteId": "CQ-070",
       "action": "add",
       "userSelected": true,
       "originalChecked": false
