@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 48,
+    "userProvided": 53,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -45,29 +45,29 @@
       "id": "CQ-011",
       "characterId": "char-056",
       "characterName": "최민욱",
-      "exactText": "난 오직 나의 기준으로 진짜와 가짜를 가려낸다. 너 같은 남자에게 진짜 명예가 있는거야.",
-      "theme": "진짜 명예의 기준",
+      "exactText": "나의 성에도 겨울이 오겠습니까",
+      "theme": "권력과 몰락·자신의 성에 찾아올 겨울",
       "selectionStatus": "user-nominated",
       "representativePriority": null,
       "verificationStatus": "user-transcribed-secondary",
       "publicationStatus": "branch-preview-requested",
       "provenance": {
-        "sourceType": "secondary-fan-wiki-reported-by-user",
-        "sourceName": "나무위키",
-        "sourceUrl": null,
+        "sourceType": "fan-community-post-secondary",
+        "sourceName": "캐슬 웹툰 마이너 갤러리 명대사 모음 (2024-08-26)",
+        "sourceUrl": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323",
         "originalVerifiedByAssistant": false,
         "originalVerifiedByUserInThisTurn": false,
-        "userStatesExactMatchWithOriginal": true,
+        "userStatesExactMatchWithOriginal": null,
         "sceneVerified": false,
-        "workPart": null,
-        "episode": null,
+        "workPart": 1,
+        "episode": "107 (2차 자료 표기, 원작 대조 대기)",
         "sceneLocator": null,
         "rightsReview": "not-established",
         "scoringImpact": "none"
       },
       "display": {
         "enabledInPreview": true,
-        "sourceLabel": "나무위키 참고 · 사용자 제공",
+        "sourceLabel": "팬 게시물 참고 · 사용자 대표 대사 선정",
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
@@ -1504,6 +1504,161 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-053",
+      "characterId": "char-058",
+      "characterName": "마준영",
+      "exactText": "형의 방식으로.\n우리 형제의 가치를 보여드리겠습니다, 회장님.",
+      "theme": "형제·충성",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (개별 원작 컷 검수 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-054",
+      "characterId": "char-059",
+      "characterName": "이정화",
+      "exactText": "공무원 새끼들이 X발 고함은.. 대장님 일 보시는데 방해되게.",
+      "theme": "경호·분노",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (개별 원작 컷 검수 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-055",
+      "characterId": "char-060",
+      "characterName": "정단",
+      "exactText": "현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다.",
+      "theme": "원칙·경호대 규율",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (개별 원작 컷 검수 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-056",
+      "characterId": "char-061",
+      "characterName": "사인진",
+      "exactText": "태훈아, 이 동생은 참 실망했다. 짜치는 줄은 알았지만 자기 여자 시체를 놔두고 그길로 줄행랑을 칠 줄이야. 니가 그러고도 사람 새끼냐?",
+      "theme": "조롱·도덕적 비난",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공·선정 (개별 원작 컷 검수 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-057",
+      "characterId": "char-062",
+      "characterName": "마크",
+      "exactText": "밥값 못하면 폐기처분이 순리라서.",
+      "theme": "냉혹한 실리",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-accepted-prior-shortlist",
+        "sourceName": "사용자 제공·선정 (개별 원작 컷 검수 대기)",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -1602,7 +1757,7 @@
       "userSelected": true
     }
   ],
-  "lastUserCurationDate": "2026-10-25",
+  "lastUserCurationDate": "2026-11-01",
   "verifiedFromOriginalCount": 0,
   "previousIskraUserSelections": [
     {
@@ -1776,5 +1931,68 @@
     "newlySelected": 7,
     "nowSelected": 8,
     "canonDirectVerification": 0
-  }
+  },
+  "choiMinukQuoteRevision": {
+    "characterId": "char-056",
+    "quoteId": "CQ-011",
+    "previousExactText": "난 오직 나의 기준으로 진짜와 가짜를 가려낸다. 너 같은 남자에게 진짜 명예가 있는거야.",
+    "replacementExactText": "나의 성에도 겨울이 오겠습니까",
+    "userApproved": true,
+    "reason": "user explicitly requested replacement rather than additional quote",
+    "secondarySource": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323",
+    "secondarySourceEpisode": "1부 107화 (fan-post attribution, not original-checked)",
+    "originalDirectChecked": false
+  },
+  "castleHoldingsInitialRosterStatus": {
+    "total": 7,
+    "previouslySelected": 2,
+    "newlySelected": 5,
+    "representativeReplacements": 1,
+    "nowSelected": 7,
+    "canonDirectVerification": 0
+  },
+  "latestCastleHoldingsSelections": [
+    {
+      "characterId": "char-056",
+      "quoteId": "CQ-011",
+      "action": "replace",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-058",
+      "quoteId": "CQ-053",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-059",
+      "quoteId": "CQ-054",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-060",
+      "quoteId": "CQ-055",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-061",
+      "quoteId": "CQ-056",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-062",
+      "quoteId": "CQ-057",
+      "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    }
+  ]
 }

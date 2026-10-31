@@ -42,7 +42,14 @@ const six=[
  ["char-083","앤디청","오늘 너의 쇼는 우리의 호기심을 자극하기에 충분했다."],
  ["char-084","주천명","따라와라, 백의. 대륙의 수준이 얼마나 높은지 알려주마."],
  ["char-085","은보","얍실한 놈.. 그 와중에도 피를 빠는구나."],
- ["char-086","양사","잘 지냈냐, 말총 대가리."]
+ ["char-086","양사","잘 지냈냐, 말총 대가리."],
+ ["char-056","최민욱","나의 성에도 겨울이 오겠습니까"],
+ ["char-057","마학영","저는 끝까지 남아"],
+ ["char-058","마준영","형의 방식으로."],
+ ["char-059","이정화","공무원 새끼들이 X발 고함은.."],
+ ["char-060","정단","현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다."],
+ ["char-061","사인진","태훈아, 이 동생은 참 실망했다."],
+ ["char-062","마크","밥값 못하면 폐기처분이 순리라서."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -73,7 +80,7 @@ try{
    assert.equal(await page.locator('#current-panel > .quote-note').count(),0,'no duplicate quote below profile');
    assert.equal(await page.locator('.hero-quote-more').count(),0,'one quote only: no premature expansion toggle');
    assert.ok((await page.locator('.quote-note-preview blockquote').innerText()).includes(word),'quote text missing '+name);
-   assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/사용자 (제공|선정)/);
+   assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/사용자.*(제공|선정)/);
    assert.match(await page.locator('.quote-note-preview figcaption').innerText(),/원작 대조 대기/);
   }
   await page.goto(host+'/#character=char-033&view=overview',{waitUntil:'networkidle'});
@@ -108,6 +115,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 7 newly selected Hwajin and previously selected Ri Cheon quote cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings and existing other representative cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

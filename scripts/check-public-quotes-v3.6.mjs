@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,48);
+assert.equal(quotes.counts.userProvided,53);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,48);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,48);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,48);
+assert.equal(quotes.quotes.length,53);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,53);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,53);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -92,6 +92,32 @@ for(const [id,name,verbatim] of hwajin){
 }
 assert.equal(quotes.quotes.find(q=>q.characterId==='char-080').provenance.sourceUrl,'https://namu.moe/w/유우성(캐슬)');
 assert.equal(quotes.quotes.find(q=>q.characterId==='char-081').provenance.sourceUrl,'https://namu.moe/w/링링(캐슬)');
+
+assert.deepEqual(quotes.castleHoldingsInitialRosterStatus,{total:7,previouslySelected:2,newlySelected:5,representativeReplacements:1,nowSelected:7,canonDirectVerification:0});
+assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.characterId),['char-056',...["char-058","char-059","char-060","char-061","char-062"]]);
+assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.quoteId),['CQ-011','CQ-053','CQ-054','CQ-055','CQ-056','CQ-057']);
+assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.action),['replace','add','add','add','add','add']);
+const choi=quotes.quotes.find(q=>q.characterId==='char-056');
+assert.equal(choi.id,'CQ-011','preserve old quote ID when replacing representative text');
+assert.equal(choi.exactText,'나의 성에도 겨울이 오겠습니까');
+assert.equal(choi.provenance.sourceUrl,'https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323');
+assert.equal(choi.provenance.originalVerifiedByAssistant,false);
+assert.equal(choi.provenance.sceneVerified,false);
+assert.equal(quotes.choiMinukQuoteRevision.previousExactText,'난 오직 나의 기준으로 진짜와 가짜를 가려낸다. 너 같은 남자에게 진짜 명예가 있는거야.');
+assert.equal(quotes.choiMinukQuoteRevision.replacementExactText,choi.exactText);
+assert.equal(quotes.quotes.filter(x=>x.characterId==='char-057').length,1);
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-057').exactText,'저는 끝까지 남아 내가 존경하던 그때의 최민욱의 명예를 지키겠습니다.');
+for(const [id,name,verbatim] of [["char-058","마준영","형의 방식으로.\n우리 형제의 가치를 보여드리겠습니다, 회장님."],["char-059","이정화","공무원 새끼들이 X발 고함은.. 대장님 일 보시는데 방해되게."],["char-060","정단","현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다."],["char-061","사인진","태훈아, 이 동생은 참 실망했다. 짜치는 줄은 알았지만 자기 여자 시체를 놔두고 그길로 줄행랑을 칠 줄이야. 니가 그러고도 사람 새끼냐?"],["char-062","마크","밥값 못하면 폐기처분이 순리라서."]]){
+ const q=quotes.quotes.find(x=>x.characterId===id);
+ assert.ok(q,'Missing Castle Holdings quote for '+name);
+ assert.equal(q.characterName,name);
+ assert.equal(q.exactText,verbatim,'exact user-supplied text, including line breaks and redaction');
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.sceneVerified,false);
+ assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
+assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='castle-holdings')).length,7);
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -100,4 +126,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: main 48 selected quotes, Hwajin 8/8, 10 Baekui and Iskra 19/19 preserved; hero and Evidence safe');
+console.log('PASS: main 53 selected quotes, Castle Holdings 7/7, Hwajin 8/8, Baekui and Iskra preserved; Evidence unmodified');

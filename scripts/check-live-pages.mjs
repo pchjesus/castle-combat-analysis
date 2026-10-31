@@ -40,9 +40,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 48 || publicQuotes.counts?.userProvided !== 48 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 48 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 48-character quotes');
+    if (publicQuotes.quotes?.length !== 53 || publicQuotes.counts?.userProvided !== 53 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 53 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 53-character quotes');
     if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
         !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
     for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
@@ -70,7 +70,16 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name&&q.display?.isCanonChecked===false))
          throw Error('Missing Hwajin selected quote '+name);
     }
-    console.log('PASS: public HTTPS / + 6 dependent assets, 48 displayed user quotes, 8 user labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+    if(publicQuotes.castleHoldingsInitialRosterStatus?.nowSelected!==7||
+       publicQuotes.castleHoldingsInitialRosterStatus?.canonDirectVerification!==0||
+       publicQuotes.castleHoldingsInitialRosterStatus?.representativeReplacements!==1)
+       throw Error('Castle Holdings 7/7 selection and unverified provenance mismatch');
+    for(const [id,name,verbatim] of [["char-056","최민욱","나의 성에도 겨울이 오겠습니까"],["char-057","마학영","저는 끝까지 남아 내가 존경하던 그때의 최민욱의 명예를 지키겠습니다."],["char-058","마준영","형의 방식으로.\n우리 형제의 가치를 보여드리겠습니다, 회장님."],["char-059","이정화","공무원 새끼들이 X발 고함은.. 대장님 일 보시는데 방해되게."],["char-060","정단","현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다."],["char-061","사인진","태훈아, 이 동생은 참 실망했다. 짜치는 줄은 알았지만 자기 여자 시체를 놔두고 그길로 줄행랑을 칠 줄이야. 니가 그러고도 사람 새끼냐?"],["char-062","마크","밥값 못하면 폐기처분이 순리라서."]]){
+      const q=publicQuotes.quotes.find(q=>q.characterId===id);
+      if(!q||q.characterName!==name||q.exactText!==verbatim||q.provenance?.scoringImpact!=='none'||q.display?.isCanonChecked!==false)
+        throw Error('Published Castle Holdings quote mismatch: '+name);
+    }
+    console.log('PASS: public HTTPS / + 6 dependent assets, 53 displayed user quotes, 8 user labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;
