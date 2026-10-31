@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 66,
+    "userProvided": 72,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -2062,6 +2062,192 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-071",
+      "characterId": "char-068",
+      "characterName": "현석",
+      "exactText": "짱구 더 굴릴 필요도 없다. 본능이 말한다. 하성의 자랑, 류지학이 피 냄새가 네놈한테서 난다.",
+      "theme": "직감·충의",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-072",
+      "characterId": "char-069",
+      "characterName": "오지인",
+      "exactText": "맹세코 당신의 승리를 의심하지 않습니다. 김태훈 회장님. 그 자리는 오직 당신의 것. 그리고 내가 그렇게 만들 거니까.",
+      "theme": "충성·승리에 대한 신념",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-073",
+      "characterId": "char-072",
+      "characterName": "조석중",
+      "exactText": "뼈야 까짓 다시 붙는 거. 팔이 다 으스러져도... 니 놈을 꼭 눕혀주마!",
+      "theme": "집념·결사항전",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-074",
+      "characterId": "char-073",
+      "characterName": "조명식",
+      "exactText": "살다 보니 이사님께서 격려를 하시는 날도 오네요. 귀한 거 받았는데 몇 초만 더 버티겠습니다.",
+      "theme": "희생·의리",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-075",
+      "characterId": "char-074",
+      "characterName": "이경욱",
+      "exactText": "꼭... 사십시오..",
+      "theme": "희생·유언",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-076",
+      "characterId": "char-075",
+      "characterName": "황보민철",
+      "exactText": "그대로 시마이!",
+      "theme": "결단·거친 입담",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-selected-transcription",
+        "sourceName": "사용자 선정 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -2522,6 +2708,51 @@
       "characterId": "char-067",
       "quoteId": "CQ-070",
       "action": "add",
+      "userSelected": true,
+      "originalChecked": false
+    }
+  ],
+  "haseongRosterStatus": {
+    "total": 8,
+    "previouslySelected": 2,
+    "newlySelected": 6,
+    "nowSelected": 8,
+    "canonDirectVerification": 0
+  },
+  "latestHaseongSelections": [
+    {
+      "characterId": "char-068",
+      "quoteId": "CQ-071",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-069",
+      "quoteId": "CQ-072",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-072",
+      "quoteId": "CQ-073",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-073",
+      "quoteId": "CQ-074",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-074",
+      "quoteId": "CQ-075",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-075",
+      "quoteId": "CQ-076",
       "userSelected": true,
       "originalChecked": false
     }

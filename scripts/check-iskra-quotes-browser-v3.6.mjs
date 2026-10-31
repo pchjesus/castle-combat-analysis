@@ -62,7 +62,13 @@ const six=[
  ["char-063","주원","서 있어, 이 싸가지없는 새끼야."],
  ["char-064","이필도","휴- 살았나. 명절 떡값은 따따불이여, 영감님."],
  ["char-066","엄지","자유...? 그 놈의 죽음에서... 도망이라도 치고 싶은 거냐, 주로."],
- ["char-067","검지","어차피 시체 아냐? 왜 이렇게 예민하게 굴어? 시작부터 분위기 좆같아지게."]
+ ["char-067","검지","어차피 시체 아냐? 왜 이렇게 예민하게 굴어? 시작부터 분위기 좆같아지게."],
+ ["char-068","현석","짱구 더 굴릴 필요도 없다. 본능이 말한다. 하성의 자랑, 류지학이 피 냄새가 네놈한테서 난다."],
+ ["char-069","오지인","맹세코 당신의 승리를 의심하지 않습니다. 김태훈 회장님. 그 자리는 오직 당신의 것. 그리고 내가 그렇게 만들 거니까."],
+ ["char-072","조석중","뼈야 까짓 다시 붙는 거. 팔이 다 으스러져도... 니 놈을 꼭 눕혀주마!"],
+ ["char-073","조명식","살다 보니 이사님께서 격려를 하시는 날도 오네요. 귀한 거 받았는데 몇 초만 더 버티겠습니다."],
+ ["char-074","이경욱","꼭... 사십시오.."],
+ ["char-075","황보민철","그대로 시마이!"]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -131,6 +137,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori, 5 Gold/Hotel and existing other cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori, 5 Gold/Hotel, 6 new Haseong and existing other cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

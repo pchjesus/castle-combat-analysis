@@ -40,9 +40,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 66 || publicQuotes.counts?.userProvided !== 66 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 66 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 66-character quotes');
+    if (publicQuotes.quotes?.length !== 72 || publicQuotes.counts?.userProvided !== 72 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 72 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 72-character quotes');
     if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
         !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
     for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
@@ -127,7 +127,18 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     }
     if(publicQuotes.quotes.find(q=>q.characterId==='char-065')?.exactText!=='그런 식으론... 그런 식으론 회장님은 평생 최민욱의 그늘에서 벗어날 수 없습니다.')
       throw Error('Juro legacy quote changed');
-    console.log('PASS: public HTTPS / + 6 dependent assets, 66 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+
+    if(publicQuotes.haseongRosterStatus?.nowSelected!==8||publicQuotes.haseongRosterStatus?.canonDirectVerification!==0)
+      throw Error('Haseong 8/8 missing');
+    for(const [id,name,verbatim] of [["char-068","현석","짱구 더 굴릴 필요도 없다. 본능이 말한다. 하성의 자랑, 류지학이 피 냄새가 네놈한테서 난다."],["char-069","오지인","맹세코 당신의 승리를 의심하지 않습니다. 김태훈 회장님. 그 자리는 오직 당신의 것. 그리고 내가 그렇게 만들 거니까."],["char-072","조석중","뼈야 까짓 다시 붙는 거. 팔이 다 으스러져도... 니 놈을 꼭 눕혀주마!"],["char-073","조명식","살다 보니 이사님께서 격려를 하시는 날도 오네요. 귀한 거 받았는데 몇 초만 더 버티겠습니다."],["char-074","이경욱","꼭... 사십시오.."],["char-075","황보민철","그대로 시마이!"]]){
+      const q=publicQuotes.quotes.find(q=>q.characterId===id);
+      if(!q||q.characterName!==name||q.exactText!==verbatim||q.display?.isCanonChecked!==false||q.provenance?.scoringImpact!=='none')
+        throw Error('Published Haseong quote mismatch '+name);
+    }
+    if(publicQuotes.quotes.find(q=>q.characterId==='char-070')?.exactText!=='오늘 두 악인이 죽어 세상에 득이 되게 하소서.'||
+       publicQuotes.quotes.find(q=>q.characterId==='char-071')?.exactText!=='일어나라. 주변이 어두워 앞이 안 보이는 것 같아도, 아직 밤이 아니다.')
+      throw Error('Existing Haseong quote changed');
+    console.log('PASS: public HTTPS / + 6 dependent assets, 72 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;
