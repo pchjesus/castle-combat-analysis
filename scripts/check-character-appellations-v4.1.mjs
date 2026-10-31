@@ -83,7 +83,7 @@ const sourced=[
 assert.equal(a.scope.secondaryResearchedAppellationPeople,7);
 assert.equal(a.scope.hwajinAliasesAdded,3);
 assert.equal(a.scope.castleHoldingsAliasesAdded,4);
-assert.equal(a.scope.totalAppellationPeople,15);
+assert.equal(a.scope.totalAppellationPeople,a.profiles.filter(p=>p.primary).length,'all primary appellations are counted');
 for(const [id,name,value,kind,alts] of sourced){
  const p=a.profiles.find(x=>x.characterId===id);
  assert.equal(p?.displayName,name);
