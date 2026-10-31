@@ -5,7 +5,7 @@
   "scope": {
     "userSelectedAppellationPeople": 8,
     "iskraCodenameAnimalMeanings": 19,
-    "uniqueCharacterCount": 36,
+    "uniqueCharacterCount": 37,
     "originalComicDirectChecks": 0,
     "shownOnlyWhenKnown": true,
     "excludedUserChoice": [
@@ -16,10 +16,11 @@
       }
     ],
     "secondaryResearchedAppellationPeople": 7,
-    "totalAppellationPeople": 15,
+    "totalAppellationPeople": 16,
     "hwajinAliasesAdded": 3,
     "castleHoldingsAliasesAdded": 4,
-    "moriJapaneseNamesAdded": 2
+    "moriJapaneseNamesAdded": 2,
+    "dsSecurityAliasesAdded": 1
   },
   "policy": {
     "categories": [
@@ -70,6 +71,12 @@
         "https://d.namu.moe/w/임무열",
         "https://namu.moe/w/오도화"
       ]
+    },
+    {
+      "type": "fan-wiki-secondary",
+      "description": "Yoon Deoksu's epithet (하이에나) in secondary character infobox",
+      "url": "https://namu.moe/w/윤덕수(캐슬)",
+      "verification": "secondary-read-original-comic-unchecked"
     }
   ],
   "profiles": [
@@ -627,6 +634,23 @@
         "sourceUrl": "https://namu.moe/w/오도화",
         "originalChecked": false
       },
+      "review": {
+        "state": "secondary-verified-original-panel-pending",
+        "originalChecked": false
+      }
+    },
+    {
+      "characterId": "char-076",
+      "displayName": "윤덕수",
+      "primary": {
+        "value": "하이에나",
+        "kind": "epithet",
+        "selectedBy": "user-approved-2026-11-01",
+        "sourceType": "fan-wiki-secondary",
+        "sourceUrl": "https://namu.moe/w/윤덕수(캐슬)",
+        "originalChecked": false
+      },
+      "alternates": [],
       "review": {
         "state": "secondary-verified-original-panel-pending",
         "originalChecked": false

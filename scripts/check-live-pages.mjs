@@ -40,9 +40,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     const quotes = content['data/quotation-review.v0.1.json'];
     if (quotes.quotationCandidates.length !== 0) throw Error('Unapproved published quotation');
     const publicQuotes = content['data/character-quotes.v3.4.DRAFT.json'];
-    if (publicQuotes.quotes?.length !== 72 || publicQuotes.counts?.userProvided !== 72 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
-        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 72 ||
-        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 72-character quotes');
+    if (publicQuotes.quotes?.length !== 76 || publicQuotes.counts?.userProvided !== 76 || publicQuotes.counts?.originalDirectlyVerified !== 0 ||
+        new Set(publicQuotes.quotes.map(q=>q.id)).size !== 76 ||
+        publicQuotes.quotes.find(q=>q.characterId==='char-033')?.representativePriority !== 'first' || publicQuotes.iskraInitialRosterStatus?.userSelected !== 19 || publicQuotes.iskraInitialRosterStatus?.pending !== 0) throw Error('Missing/mismatched published 76-character quotes');
     if (!html.includes('x.quotes.length>=36') || !html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length') ||
         !html.includes('hero-quote-more') || !html.includes('<details class="hero-quote-more">') || !html.includes('"name":"코모도"')) throw Error('Stale HTML quotation or Komodo data');
     for(const [id,name] of [["char-006","김대건"],["char-003","표영"],["char-005","한태철"],["char-007","여민수"],["char-009","구일화"]]){
@@ -52,9 +52,9 @@ for (let attempt = 1; attempt <= 12; attempt++) {
       if(!publicQuotes.quotes.some(q=>q.characterId===id&&q.characterName===name))throw Error('Missing next five Baekui '+name);
     }
     const appellations=content['data/character-appellations.v1.0.DRAFT.json'];
-    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==36||
-       new Set(appellations.profiles.map(p=>p.characterId)).size!==36||
-       appellations.profiles.filter(p=>p.primary).length!==15||
+    if(appellations.schemaVersion!=='v1.0-draft'||appellations.profiles?.length!==37||
+       new Set(appellations.profiles.map(p=>p.characterId)).size!==37||
+       appellations.profiles.filter(p=>p.primary).length!==16||
        appellations.profiles.filter(p=>p.codenameMeaning&&p.codenameMeaning.originalChecked===false).length!==22||
        appellations.profiles.find(p=>p.characterId==='char-004')?.alternates?.[0]?.value!=='볼크'||
        appellations.profiles.find(p=>p.characterId==='char-042')?.primary!==null||
@@ -138,7 +138,20 @@ for (let attempt = 1; attempt <= 12; attempt++) {
     if(publicQuotes.quotes.find(q=>q.characterId==='char-070')?.exactText!=='오늘 두 악인이 죽어 세상에 득이 되게 하소서.'||
        publicQuotes.quotes.find(q=>q.characterId==='char-071')?.exactText!=='일어나라. 주변이 어두워 앞이 안 보이는 것 같아도, 아직 밤이 아니다.')
       throw Error('Existing Haseong quote changed');
-    console.log('PASS: public HTTPS / + 6 dependent assets, 72 displayed user quotes, 15 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
+
+    if(publicQuotes.dsSecurityRosterStatus?.nowSelected!==4||publicQuotes.dsSecurityRosterStatus?.originalDirectlyVerified!==0)
+       throw Error('Missing DS 4/4 coverage');
+    for(const [id,name,text] of [["char-076","윤덕수","다 필요 없어. 내가 직접 처리한다."],["char-077","강창석","회암시에 악귀가 돌아왔다! 덜덜 떨어라, 이 회암시 것들아!!"],["char-078","김혁주","내 구역도 아닌데 나라고 이러고 싶겠습니까."],["char-079","강만재","하, 이 쥐방울 같은 새X. 잘 걸렸다, 씨X놈아."]]){
+      const q=publicQuotes.quotes.find(q=>q.characterId===id);
+      if(!q||q.characterName!==name||q.exactText!==text||q.provenance.scoringImpact!=='none'||q.display.isCanonChecked!==false)
+        throw Error('Published DS quote mismatch '+name);
+    }
+    const yoon=appellations.profiles.find(p=>p.characterId==='char-076');
+    if(yoon?.primary?.value!=='하이에나'||yoon.primary.originalChecked!==false||appellations.scope.dsSecurityAliasesAdded!==1)
+       throw Error('DS Yoon epithet unverified/missing');
+    for(const id of ['char-077','char-078','char-079'])if(appellations.profiles.some(p=>p.characterId===id))
+       throw Error('Unexpected DS epithet '+id);
+    console.log('PASS: public HTTPS / + 6 dependent assets, 76 displayed user quotes, 16 user-and-sourced labels, 19 Iskra animal meanings, corrected Komodo, original v2.4 UI and unscored drafts');
     process.exit(0);
   } catch (error) {
     lastError = error;

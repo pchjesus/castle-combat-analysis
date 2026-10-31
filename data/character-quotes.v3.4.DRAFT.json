@@ -5,7 +5,7 @@
   "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 72,
+    "userProvided": 76,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -2248,6 +2248,130 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-077",
+      "characterId": "char-076",
+      "characterName": "윤덕수",
+      "exactText": "다 필요 없어. 내가 직접 처리한다.",
+      "theme": "독단·직접 개입",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "fan-wiki-secondary",
+        "sourceName": "나무위키 명대사 항목 · 사용자 승인",
+        "sourceUrl": "https://namu.moe/w/윤덕수(캐슬)",
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "나무위키 참고 · 사용자 선정",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-078",
+      "characterId": "char-077",
+      "characterName": "강창석",
+      "exactText": "회암시에 악귀가 돌아왔다! 덜덜 떨어라, 이 회암시 것들아!!",
+      "theme": "귀환·위협",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-079",
+      "characterId": "char-078",
+      "characterName": "김혁주",
+      "exactText": "내 구역도 아닌데 나라고 이러고 싶겠습니까.",
+      "theme": "불평·변명",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-080",
+      "characterId": "char-079",
+      "characterName": "강만재",
+      "exactText": "하, 이 쥐방울 같은 새X. 잘 걸렸다, 씨X놈아.",
+      "theme": "도발·분노",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 제공 · 원작 직접 대조 대기",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -2753,6 +2877,39 @@
     {
       "characterId": "char-075",
       "quoteId": "CQ-076",
+      "userSelected": true,
+      "originalChecked": false
+    }
+  ],
+  "dsSecurityRosterStatus": {
+    "total": 4,
+    "previouslySelected": 0,
+    "newlySelected": 4,
+    "nowSelected": 4,
+    "originalDirectlyVerified": 0
+  },
+  "latestDsSelections": [
+    {
+      "characterId": "char-076",
+      "quoteId": "CQ-077",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-077",
+      "quoteId": "CQ-078",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-078",
+      "quoteId": "CQ-079",
+      "userSelected": true,
+      "originalChecked": false
+    },
+    {
+      "characterId": "char-079",
+      "quoteId": "CQ-080",
       "userSelected": true,
       "originalChecked": false
     }

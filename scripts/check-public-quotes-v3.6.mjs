@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,72);
+assert.equal(quotes.counts.userProvided,76);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,72);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,72);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,72);
+assert.equal(quotes.quotes.length,76);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,76);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,76);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -184,6 +184,23 @@ for(const [id,name,verbatim] of haseong){
 assert.equal(quotes.quotes.find(q=>q.characterId==='char-070')?.exactText,'오늘 두 악인이 죽어 세상에 득이 되게 하소서.');
 assert.equal(quotes.quotes.find(q=>q.characterId==='char-071')?.exactText,'일어나라. 주변이 어두워 앞이 안 보이는 것 같아도, 아직 밤이 아니다.');
 assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='haseong')).length,8);
+
+const dsQuotes=[["char-076","윤덕수","다 필요 없어. 내가 직접 처리한다."],["char-077","강창석","회암시에 악귀가 돌아왔다! 덜덜 떨어라, 이 회암시 것들아!!"],["char-078","김혁주","내 구역도 아닌데 나라고 이러고 싶겠습니까."],["char-079","강만재","하, 이 쥐방울 같은 새X. 잘 걸렸다, 씨X놈아."]];
+assert.deepEqual(quotes.dsSecurityRosterStatus,{total:4,previouslySelected:0,newlySelected:4,nowSelected:4,originalDirectlyVerified:0});
+assert.deepEqual(quotes.latestDsSelections.map(x=>x.characterId),dsQuotes.map(x=>x[0]));
+assert.deepEqual(quotes.latestDsSelections.map(x=>x.quoteId),['CQ-077','CQ-078','CQ-079','CQ-080']);
+for(const [id,name,verbatim] of dsQuotes){
+ const q=quotes.quotes.find(x=>x.characterId===id);
+ assert.ok(q,'missing DS quote '+name);
+ assert.equal(q.characterName,name);
+ assert.equal(q.exactText,verbatim);
+ assert.equal(q.verificationStatus,'user-transcribed-secondary');
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.sceneVerified,false);
+ assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
+assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='ds-security')).length,4);
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -192,4 +209,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: 72 quotes, Haseong 8/8, Gold Capital 1/1 and Hotel Castle 5/5, Iskra/Seonjin preserved');
+console.log('PASS: 76 quotes, DS Security 4/4, Haseong 8/8, Gold Capital/Hotel Castle preserved');

@@ -89,13 +89,23 @@ try{
    assert.equal(await page.locator('.hero-appellation-main').count(),0,'Japanese name not a primary epithet');
    assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'keep Mori representative quote');
   }
+  await page.goto(host+'/#character=char-076&view=overview',{waitUntil:'networkidle'});
+  await page.locator('.hero-appellation-main strong').waitFor();
+  assert.equal((await page.locator('.hero-title').innerText()).trim(),'윤덕수');
+  assert.equal((await page.locator('.hero-appellation-main strong').innerText()).trim(),'하이에나');
+  assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'DS Yoon quote maintained');
+  for(const id of ['char-077','char-078','char-079']){
+   await page.goto(host+'/#character='+id+'&view=overview',{waitUntil:'networkidle'});
+   assert.equal(await page.locator('.hero-appellations').count(),0,'no invented DS epithet '+id);
+   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'DS quote still visible '+id);
+  }
   await page.goto(host+'/#character=char-004&view=evidence',{waitUntil:'networkidle'});
   await page.locator('.hero-appellation-main strong').waitFor();
   assert.equal((await page.locator('.hero-appellation-main strong').innerText()).trim(),'싸움귀신');
   assert.equal(await page.locator('.identity-hero .hero-quote').count(),1,'appellation shown on other tabs without breaking quotes');
   assert.deepEqual(errors,[],'no JS or asset error '+viewport.width);
   await page.close();
-  console.log('PASS viewport '+viewport.width+'x'+viewport.height+': 8 curated + 7 sourced labels, 2 Japanese names, 19 Iskra animals, quote and tab regression');
+  console.log('PASS viewport '+viewport.width+'x'+viewport.height+': 8 curated + 8 sourced labels, 2 Japanese names, 19 Iskra animals, quote and tab regression');
  }
 }finally{
  await browser?.close();

@@ -68,7 +68,11 @@ const six=[
  ["char-072","조석중","뼈야 까짓 다시 붙는 거. 팔이 다 으스러져도... 니 놈을 꼭 눕혀주마!"],
  ["char-073","조명식","살다 보니 이사님께서 격려를 하시는 날도 오네요. 귀한 거 받았는데 몇 초만 더 버티겠습니다."],
  ["char-074","이경욱","꼭... 사십시오.."],
- ["char-075","황보민철","그대로 시마이!"]
+ ["char-075","황보민철","그대로 시마이!"],
+ ["char-076","윤덕수","다 필요 없어. 내가 직접 처리한다."],
+ ["char-077","강창석","회암시에 악귀가 돌아왔다! 덜덜 떨어라, 이 회암시 것들아!!"],
+ ["char-078","김혁주","내 구역도 아닌데 나라고 이러고 싶겠습니까."],
+ ["char-079","강만재","하, 이 쥐방울 같은 새X. 잘 걸렸다, 씨X놈아."]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -137,6 +141,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori, 5 Gold/Hotel, 6 new Haseong and existing other cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori, 5 Gold/Hotel, 6 new Haseong, 4 new DS and existing other cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}
