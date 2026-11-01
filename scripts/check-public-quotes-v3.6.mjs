@@ -99,7 +99,7 @@ assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.quoteId),['CQ-01
 assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.action),['replace','add','add','add','add','add']);
 const choi=quotes.quotes.find(q=>q.characterId==='char-056');
 assert.equal(choi.id,'CQ-011','preserve old quote ID when replacing representative text');
-assert.equal(choi.exactText,'나의 성에도 겨울이 오겠습니까?');
+assert.equal(choi.exactText,'나의 성에도 겨울이 오겠습니까.');
 assert.equal(choi.provenance.sourceUrl,'https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323');
 assert.equal(choi.provenance.originalVerifiedByAssistant,false);
 assert.equal(choi.provenance.sceneVerified,false);
@@ -231,7 +231,7 @@ for(const correction of quotes.punctuationNormalization.edits){
  assert.equal(quotes.quotes.find(x=>x.id===correction.id)?.exactText,correction.after);
  assert.equal(correction.after.slice(0,-1),correction.before,'only terminal punctuation added');
 }
-assert.equal(quotes.choiMinukQuoteRevision.replacementExactText,'나의 성에도 겨울이 오겠습니까?');
+assert.equal(quotes.choiMinukQuoteRevision.replacementExactText,'나의 성에도 겨울이 오겠습니까.');
 for(const q of quotes.quotes)assert.match(q.exactText.trim(),/.+[.!?。！？…][)”’"']*$/u,'terminal punctuation missing: '+q.characterName);
 assert.ok(html.includes("$('#mobile-menu')?.focus({preventScroll:true})"));
 assert.ok(!html.includes("render();$('#character-search')?.focus();});"),'opening the mobile sidebar must not open the keyboard');

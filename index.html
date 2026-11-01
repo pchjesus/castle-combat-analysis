@@ -311,8 +311,15 @@ async function loadDraftData(){
  }catch(e){console.warn('Optional character appellations unavailable',e);}
  render();
 }
+// Preserve the character index's expanded scroll position through DOM replacements.
+// On mobile this also survives drawer close/reopen after choosing a character.
+let sidebarScrollTop=0;
 function render(){
+ const previousSidebar=$('#sidebar');
+ if(previousSidebar&&!previousSidebar.classList.contains('collapsed'))sidebarScrollTop=previousSidebar.scrollTop;
  root.innerHTML=`<div class="app ${state.sidebarCollapsed?'sidebar-collapsed':''}"><div class="mobile-backdrop ${state.sidebarOpen?'show':''}" data-close-sidebar="true"></div>${sidebar()}<div class="app-main">${header()}<main class="content">${topTitle()}<div id="current-panel" role="tabpanel" aria-labelledby="tab-${state.view}" class="view-panel">${state.view==='overview'?overview():state.view==='stats'?stats():state.view==='evidence'?evidence():review()}</div><footer class="footer" aria-label="팬 프로젝트 및 저작권 안내"><div class="footer-copy"><strong>비공식 · 비영리 팬 제작 프로젝트</strong><p>이 사이트는 웹툰 《캐슬》을 개인적으로 감상·연구하기 위해 만든 비공식 팬 프로젝트의 공개 읽기 전용 시안입니다. 네이버웹툰이나 원작 권리자와 제휴·협력한 공식 서비스가 아니며, 표시된 분석은 원작의 공식 전투력이나 작가의 판단을 대변하지 않습니다.</p><p>원작 및 관련 이미지·캐릭터의 저작권은 각 권리자에게 있습니다. 본 안내문은 저작물의 복제·게시 허락을 의미하지 않습니다. 원작 이미지 게시에는 권리 관계에 대한 별도 확인이 필요합니다.</p></div><div class="footer-meta"><span>PUBLIC MVP · CANON VERIFICATION PENDING</span><a href="https://github.com/pchjesus/castle-combat-analysis" rel="noopener noreferrer" target="_blank">프로젝트 GitHub ↗</a></div></footer></main></div></div>`;
+ const nextSidebar=$('#sidebar');
+ if(nextSidebar&&!nextSidebar.classList.contains('collapsed'))nextSidebar.scrollTop=sidebarScrollTop;
  bindEvents();
 }
 function bindEvents(){

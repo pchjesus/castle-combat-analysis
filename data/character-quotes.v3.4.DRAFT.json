@@ -45,7 +45,7 @@
       "id": "CQ-011",
       "characterId": "char-056",
       "characterName": "최민욱",
-      "exactText": "나의 성에도 겨울이 오겠습니까?",
+      "exactText": "나의 성에도 겨울이 오겠습니까.",
       "theme": "권력과 몰락·자신의 성에 찾아올 겨울",
       "selectionStatus": "user-nominated",
       "representativePriority": null,
@@ -2959,13 +2959,14 @@
     "characterId": "char-056",
     "quoteId": "CQ-011",
     "previousExactText": "난 오직 나의 기준으로 진짜와 가짜를 가려낸다. 너 같은 남자에게 진짜 명예가 있는거야.",
-    "replacementExactText": "나의 성에도 겨울이 오겠습니까?",
+    "replacementExactText": "나의 성에도 겨울이 오겠습니까.",
     "userApproved": true,
     "reason": "user explicitly requested replacement rather than additional quote",
     "secondarySource": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323",
     "secondarySourceEpisode": "1부 107화 (fan-post attribution, not original-checked)",
     "originalDirectChecked": false,
-    "punctuationUpdatedByUserRequest": "2026-11-01"
+    "punctuationUpdatedByUserRequest": "2026-11-01",
+    "punctuationCorrection": "2026-11-01: User specified '.' instead of '?' at the end of the line; original comic-panel direct verification remains pending."
   },
   "castleHoldingsInitialRosterStatus": {
     "total": 7,
@@ -3227,7 +3228,7 @@
   ],
   "punctuationNormalization": {
     "date": "2026-11-01",
-    "rule": "Add terminal punctuation only when absent; for interrogatives use ?; preserve original transcribed body",
+    "rule": "Preserve the user's specified terminal punctuation and add missing punctuation where requested, without changing quote bodies.",
     "userRequested": true,
     "originalComicDirectVerification": false,
     "edits": [
@@ -3235,7 +3236,7 @@
         "id": "CQ-011",
         "name": "최민욱",
         "before": "나의 성에도 겨울이 오겠습니까",
-        "after": "나의 성에도 겨울이 오겠습니까?"
+        "after": "나의 성에도 겨울이 오겠습니까."
       },
       {
         "id": "CQ-024",
@@ -3249,7 +3250,8 @@
         "before": "뭐긴 뭐야, '재앙' 이지",
         "after": "뭐긴 뭐야, '재앙' 이지."
       }
-    ]
+    ],
+    "correctionNote": "CQ-011 user correction from inferred '?' to '.'; original comic panel not directly verified."
   },
   "latestThreeGroupsSelections": [
     {

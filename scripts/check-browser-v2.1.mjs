@@ -27,6 +27,29 @@ async function inspect(viewport){
   page.on('response',r=>{if(r.url().includes('127.0.0.1')&&r.status()>=400)errors.push(r.status()+' '+r.url());});
   await page.goto('http://127.0.0.1:'+port+'/',{waitUntil:'networkidle'});
   assert.match(await page.title(),/캐슬/);
+  // Selecting lower roster entries must preserve sidebar scroll after a full DOM rerender.
+  if(viewport.width<=760)await page.locator('#mobile-menu').click();
+  await page.locator('#sidebar').evaluate(el=>{el.scrollTop=el.scrollHeight-el.clientHeight;});
+  const firstOffset=await page.locator('#sidebar').evaluate(el=>el.scrollTop);
+  assert.ok(firstOffset>400,'lower entries require a scrollable character index');
+  await page.locator('.character-btn[data-character="char-108"]').click();
+  assert.equal((await page.locator('.hero-title').innerText()).trim(),'드미트리');
+  const afterFirst=await page.locator('#sidebar').evaluate(el=>el.scrollTop);
+  assert.ok(Math.abs(afterFirst-firstOffset)<=2,'sidebar scroll reset on character selection');
+  if(viewport.width<=760){
+    assert.ok(!(await page.locator('#sidebar').getAttribute('class')).includes('open'),'drawer closes on selection');
+    await page.locator('#mobile-menu').click();
+    assert.equal(await page.locator('#character-search').evaluate(el=>el===document.activeElement),false,
+      'reopening should not activate the software keyboard');
+  }
+  assert.ok(Math.abs((await page.locator('#sidebar').evaluate(el=>el.scrollTop))-firstOffset)<=2,
+    'sidebar must reopen at the previous scroll position');
+  await page.locator('.character-btn[data-character="char-107"]').click();
+  assert.equal((await page.locator('.hero-title').innerText()).trim(),'바실리');
+  assert.ok(Math.abs((await page.locator('#sidebar').evaluate(el=>el.scrollTop))-firstOffset)<=2,
+    'repeated lower-list selections must preserve the position');
+  console.log('PASS sidebar scroll persistence: '+viewport.width+'x'+viewport.height);
+  await page.goto('http://127.0.0.1:'+port+'/',{waitUntil:'networkidle'});
   assert.equal(await page.locator('.pilot-timeline-item').count(),1,'pilot timeline should connect');
   if(viewport.width>=761){
     const before=await page.locator('#sidebar').evaluate(el=>el.getBoundingClientRect().width);

@@ -85,7 +85,7 @@ for (let attempt = 1; attempt <= 12; attempt++) {
        publicQuotes.castleHoldingsInitialRosterStatus?.canonDirectVerification!==0||
        publicQuotes.castleHoldingsInitialRosterStatus?.representativeReplacements!==1)
        throw Error('Castle Holdings 7/7 selection and unverified provenance mismatch');
-    for(const [id,name,verbatim] of [["char-056","최민욱","나의 성에도 겨울이 오겠습니까?"],["char-057","마학영","저는 끝까지 남아 내가 존경하던 그때의 최민욱의 명예를 지키겠습니다."],["char-058","마준영","형의 방식으로.\n우리 형제의 가치를 보여드리겠습니다, 회장님."],["char-059","이정화","공무원 새끼들이 X발 고함은.. 대장님 일 보시는데 방해되게."],["char-060","정단","현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다."],["char-061","사인진","태훈아, 이 동생은 참 실망했다. 짜치는 줄은 알았지만 자기 여자 시체를 놔두고 그길로 줄행랑을 칠 줄이야. 니가 그러고도 사람 새끼냐?"],["char-062","마크","밥값 못하면 폐기처분이 순리라서."]]){
+    for(const [id,name,verbatim] of [["char-056","최민욱","나의 성에도 겨울이 오겠습니까."],["char-057","마학영","저는 끝까지 남아 내가 존경하던 그때의 최민욱의 명예를 지키겠습니다."],["char-058","마준영","형의 방식으로.\n우리 형제의 가치를 보여드리겠습니다, 회장님."],["char-059","이정화","공무원 새끼들이 X발 고함은.. 대장님 일 보시는데 방해되게."],["char-060","정단","현 시간부로. 내 뒤로 선 자는 캐슬 경호대가 아니다."],["char-061","사인진","태훈아, 이 동생은 참 실망했다. 짜치는 줄은 알았지만 자기 여자 시체를 놔두고 그길로 줄행랑을 칠 줄이야. 니가 그러고도 사람 새끼냐?"],["char-062","마크","밥값 못하면 폐기처분이 순리라서."]]){
       const q=publicQuotes.quotes.find(q=>q.characterId===id);
       if(!q||q.characterName!==name||q.exactText!==verbatim||q.provenance?.scoringImpact!=='none'||q.display?.isCanonChecked!==false)
         throw Error('Published Castle Holdings quote mismatch: '+name);
