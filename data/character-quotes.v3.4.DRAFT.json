@@ -1,11 +1,11 @@
 {
   "schemaVersion": "v3.4-character-quotes-preview",
   "state": "feature-branch-preview-not-canon-verified",
-  "asOf": "2026-10-25",
-  "source": "Thirty-one user-curated character quotations, including all nineteen initial Iskra roster members. Direct original panel verification remains pending.",
+  "asOf": "2026-11-02",
+  "source": "User-curated representative quotations for 107 of 109 roster characters; direct original comic verification pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
-    "userProvided": 86,
+    "userProvided": 107,
     "originalDirectlyVerified": 0,
     "approvedCanon": 0
   },
@@ -2682,6 +2682,659 @@
         "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
         "isCanonChecked": false
       }
+    },
+    {
+      "id": "CQ-091",
+      "characterId": "char-099",
+      "characterName": "강민성",
+      "exactText": "민욱아, 우린 이미 많은 것을 이뤘어. 이 이상 피를 흘린다면 명분 없는 헛된 욕망이다. 이 야욕이... 언젠가 너를 통째로 집어 삼킬 거다.",
+      "theme": "파천·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-092",
+      "characterId": "char-100",
+      "characterName": "도지웅",
+      "exactText": "전국의 남자들이 뜻을 하나로 모으니 '백의(百意)'고, 약하지만 뭉치면 성을 무너뜨리니 '백의(白蟻)'다.",
+      "theme": "파천·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-093",
+      "characterId": "char-101",
+      "characterName": "차일국",
+      "exactText": "이 차일국의 대접이 왜 이리 비루한가! 제대로 된 걸 보내라, 대국 놈들아!",
+      "theme": "파천·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-094",
+      "characterId": "char-102",
+      "characterName": "권수찬",
+      "exactText": "짜식들이 남의 집 칼을 훔쳐 써-",
+      "theme": "파천·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-095",
+      "characterId": "char-103",
+      "characterName": "표성",
+      "exactText": "어깨너머 보기만 해도 한 십 년을 그 짓만 한 사람처럼 기술을 써버리는걸요.",
+      "theme": "파천·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-summary-user-selected",
+        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-096",
+      "characterId": "char-104",
+      "characterName": "위길성",
+      "exactText": "넌 깜 안 돼, 똥개 새끼야.",
+      "theme": "대국·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-097",
+      "characterId": "char-105",
+      "characterName": "백강회",
+      "exactText": "꿈도 야무지지, 회암시 깡촌 달건이가 어딜 감히 대한민국 조폭 일번지에 기웃댑니까. 안 그래, 차일국 씨?",
+      "theme": "대국·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-098",
+      "characterId": "char-106",
+      "characterName": "쌍개",
+      "exactText": "나가 대국 3석, 인천 쌍개여. 반갑소. 이름은 들었네, 차일국이.",
+      "theme": "대국·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-099",
+      "characterId": "char-107",
+      "characterName": "바실리",
+      "exactText": "다브로 빠좔로바치, 라씨야!",
+      "theme": "기타·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-summary-user-selected",
+        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-100",
+      "characterId": "char-108",
+      "characterName": "드미트리",
+      "exactText": "아뿔싸.. 계산 착오다. 애초에 내 수준을 훨씬 상회하는 자였다..",
+      "theme": "기타·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-101",
+      "characterId": "char-109",
+      "characterName": "훌리안 카스티요",
+      "exactText": "거 새끼들 좀 참지, 격조 떨어지게 비명은.",
+      "theme": "기타·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-102",
+      "characterId": "char-015",
+      "characterName": "남일호",
+      "exactText": "우린 불휘다.",
+      "theme": "불휘의 정체성·필담",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none",
+        "deliveryMode": "written-note",
+        "contextNote": "사용자 설명: 노트에 직접 적어 전달한 문장. 원작 직접 대조 미실시."
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-103",
+      "characterId": "char-016",
+      "characterName": "어광득",
+      "exactText": "제기랄 거! 엔간치 하고 고마 좀 자빠져 있어라!! 설마하니 우리가 피우진 당신을 직이겠나!!",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-104",
+      "characterId": "char-017",
+      "characterName": "도학수",
+      "exactText": "복수도 하고! X바 한몫도 단단히 챙겨서 간 사람들 남은 식구들도 챙겨줘야 할 거 아닙니까?",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-105",
+      "characterId": "char-018",
+      "characterName": "최혁진",
+      "exactText": "어쩌시겠습니까. 전 어느 쪽이든 따르겠습니다. 우진 형님.",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-summary-user-selected",
+        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-106",
+      "characterId": "char-019",
+      "characterName": "김성준",
+      "exactText": "대건이가 원하는 건 당신이 흔들리지 않고 앞으로 나아가는 겁니다. 원하는 바를 꼭 이루십시오. 저도 돕겠습니다.",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-summary-user-selected",
+        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-107",
+      "characterId": "char-020",
+      "characterName": "신원일",
+      "exactText": "어이구.. 수민아, 수민아... 그놈이 우리랑 무슨 대단한 인연이라고 나선단 말이니.",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-108",
+      "characterId": "char-021",
+      "characterName": "장호",
+      "exactText": "씨X, 그래도.. 고생만 죽도록 한 우리 대건이 형님 출세하는 건 보고 뒤지나 싶었는데.. 그땐 내가.. 양복 한 벌 끝장나는 걸로 해드리려고 했는데..",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-109",
+      "characterId": "char-022",
+      "characterName": "인수",
+      "exactText": "회장, 회장은 여기서 제일 큰형입니다. 형이면 형답게 해요.",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-summary-user-selected",
+        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-110",
+      "characterId": "char-023",
+      "characterName": "원용",
+      "exactText": "난 솔직히 서운한데. 요즘 회장은 너무 북구 일에만 신경을 써.",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자 직접 제공·선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
+    },
+    {
+      "id": "CQ-111",
+      "characterId": "char-024",
+      "characterName": "남용",
+      "exactText": "윤덕수한테 숨 한번 못 쉬던 그런 한심한 쉐끼들을..! 우리 형님이 얼마나 뒤에서 챙겨줬었는데, 그런 니가 우리 이슬 형님을 팔아치워?",
+      "theme": "백의·인물 서사",
+      "selectionStatus": "user-nominated",
+      "representativePriority": null,
+      "verificationStatus": "user-transcribed-secondary",
+      "publicationStatus": "branch-preview-requested",
+      "provenance": {
+        "sourceType": "secondary-summary-user-selected",
+        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceUrl": null,
+        "originalVerifiedByAssistant": false,
+        "originalVerifiedByUserInThisTurn": false,
+        "userStatesExactMatchWithOriginal": null,
+        "sceneVerified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "rightsReview": "not-established",
+        "scoringImpact": "none"
+      },
+      "display": {
+        "enabledInPreview": true,
+        "sourceLabel": "사용자 선정 · 원작 대조 대기",
+        "verificationLabel": "원작 대조 대기 · 정식 원문 확정 아님",
+        "isCanonChecked": false
+      }
     }
   ],
   "priorityCharacterId": "char-033",
@@ -2780,7 +3433,7 @@
       "userSelected": true
     }
   ],
-  "lastUserCurationDate": "2026-11-01",
+  "lastUserCurationDate": "2026-11-02",
   "verifiedFromOriginalCount": 0,
   "previousIskraUserSelections": [
     {
@@ -3341,5 +3994,175 @@
       "nowSelected": 1
     },
     "originalComicDirectChecks": 0
+  },
+  "lastTwentyOneSelections": [
+    {
+      "characterId": "char-099",
+      "quoteId": "CQ-091",
+      "group": "파천",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-100",
+      "quoteId": "CQ-092",
+      "group": "파천",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-101",
+      "quoteId": "CQ-093",
+      "group": "파천",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-102",
+      "quoteId": "CQ-094",
+      "group": "파천",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-103",
+      "quoteId": "CQ-095",
+      "group": "파천",
+      "sourceBasis": "user-selected-secondary",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-104",
+      "quoteId": "CQ-096",
+      "group": "대국",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-105",
+      "quoteId": "CQ-097",
+      "group": "대국",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-106",
+      "quoteId": "CQ-098",
+      "group": "대국",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-107",
+      "quoteId": "CQ-099",
+      "group": "기타",
+      "sourceBasis": "user-selected-secondary",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-108",
+      "quoteId": "CQ-100",
+      "group": "기타",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-109",
+      "quoteId": "CQ-101",
+      "group": "기타",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-015",
+      "quoteId": "CQ-102",
+      "group": "백의",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-016",
+      "quoteId": "CQ-103",
+      "group": "백의",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-017",
+      "quoteId": "CQ-104",
+      "group": "백의",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-018",
+      "quoteId": "CQ-105",
+      "group": "백의",
+      "sourceBasis": "user-selected-secondary",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-019",
+      "quoteId": "CQ-106",
+      "group": "백의",
+      "sourceBasis": "user-selected-secondary",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-020",
+      "quoteId": "CQ-107",
+      "group": "백의",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-021",
+      "quoteId": "CQ-108",
+      "group": "백의",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-022",
+      "quoteId": "CQ-109",
+      "group": "백의",
+      "sourceBasis": "user-selected-secondary",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-023",
+      "quoteId": "CQ-110",
+      "group": "백의",
+      "sourceBasis": "user-provided",
+      "selectionStatus": "user-selected-unverified"
+    },
+    {
+      "characterId": "char-024",
+      "quoteId": "CQ-111",
+      "group": "백의",
+      "sourceBasis": "user-selected-secondary",
+      "selectionStatus": "user-selected-unverified"
+    }
+  ],
+  "rosterQuoteCloseout": {
+    "totalCharacters": 109,
+    "userSelected": 107,
+    "selectedBeforeThisBatch": 86,
+    "selectedInThisBatch": 21,
+    "intentionallyNoQuote": [
+      {
+        "characterId": "char-014",
+        "name": "송익천",
+        "reason": "user elected to skip"
+      },
+      {
+        "characterId": "char-047",
+        "name": "몽키",
+        "reason": "user-requested hold"
+      }
+    ],
+    "originalComicDirectChecks": 0,
+    "writtenNoteQuotationCharacterId": "char-015",
+    "notScoringEvidence": true
   }
 }

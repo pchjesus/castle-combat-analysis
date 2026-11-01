@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,86);
+assert.equal(quotes.counts.userProvided,107);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,86);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,86);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,86);
+assert.equal(quotes.quotes.length,107);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,107);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,107);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -226,13 +226,25 @@ for(const [id,name,verbatim] of nextQuotes){
 for(const [org,count] of [['yamaguchi-gumi',4],['dongcheon-bang',3],['anti-yamaguchi-alliance',3],['hong-kong-factions',1]]){
  assert.equal(quotes.quotes.filter(q=>roster.characters.find(c=>c.id===q.characterId)?.initialOrganizationId===org).length,count,org);
 }
+
+// v5.2: user-selected quotes and intentional two-person exclusions.
+const closeoutQuotes=[["char-099","강민성","민욱아, 우린 이미 많은 것을 이뤘어. 이 이상 피를 흘린다면 명분 없는 헛된 욕망이다. 이 야욕이... 언젠가 너를 통째로 집어 삼킬 거다."],["char-100","도지웅","전국의 남자들이 뜻을 하나로 모으니 '백의(百意)'고, 약하지만 뭉치면 성을 무너뜨리니 '백의(白蟻)'다."],["char-101","차일국","이 차일국의 대접이 왜 이리 비루한가! 제대로 된 걸 보내라, 대국 놈들아!"],["char-102","권수찬","짜식들이 남의 집 칼을 훔쳐 써-"],["char-103","표성","어깨너머 보기만 해도 한 십 년을 그 짓만 한 사람처럼 기술을 써버리는걸요."],["char-104","위길성","넌 깜 안 돼, 똥개 새끼야."],["char-105","백강회","꿈도 야무지지, 회암시 깡촌 달건이가 어딜 감히 대한민국 조폭 일번지에 기웃댑니까. 안 그래, 차일국 씨?"],["char-106","쌍개","나가 대국 3석, 인천 쌍개여. 반갑소. 이름은 들었네, 차일국이."],["char-107","바실리","다브로 빠좔로바치, 라씨야!"],["char-108","드미트리","아뿔싸.. 계산 착오다. 애초에 내 수준을 훨씬 상회하는 자였다.."],["char-109","훌리안 카스티요","거 새끼들 좀 참지, 격조 떨어지게 비명은."],["char-015","남일호","우린 불휘다."],["char-016","어광득","제기랄 거! 엔간치 하고 고마 좀 자빠져 있어라!! 설마하니 우리가 피우진 당신을 직이겠나!!"],["char-017","도학수","복수도 하고! X바 한몫도 단단히 챙겨서 간 사람들 남은 식구들도 챙겨줘야 할 거 아닙니까?"],["char-018","최혁진","어쩌시겠습니까. 전 어느 쪽이든 따르겠습니다. 우진 형님."],["char-019","김성준","대건이가 원하는 건 당신이 흔들리지 않고 앞으로 나아가는 겁니다. 원하는 바를 꼭 이루십시오. 저도 돕겠습니다."],["char-020","신원일","어이구.. 수민아, 수민아... 그놈이 우리랑 무슨 대단한 인연이라고 나선단 말이니."],["char-021","장호","씨X, 그래도.. 고생만 죽도록 한 우리 대건이 형님 출세하는 건 보고 뒤지나 싶었는데.. 그땐 내가.. 양복 한 벌 끝장나는 걸로 해드리려고 했는데.."],["char-022","인수","회장, 회장은 여기서 제일 큰형입니다. 형이면 형답게 해요."],["char-023","원용","난 솔직히 서운한데. 요즘 회장은 너무 북구 일에만 신경을 써."],["char-024","남용","윤덕수한테 숨 한번 못 쉬던 그런 한심한 쉐끼들을..! 우리 형님이 얼마나 뒤에서 챙겨줬었는데, 그런 니가 우리 이슬 형님을 팔아치워?"]];
+assert.deepEqual(quotes.lastTwentyOneSelections.map(x=>x.characterId),closeoutQuotes.map(x=>x[0]));
+assert.deepEqual(quotes.lastTwentyOneSelections.map(x=>x.quoteId),Array.from({length:21},(_,i)=>'CQ-'+String(i+91).padStart(3,'0')));
+assert.deepEqual(quotes.rosterQuoteCloseout.intentionallyNoQuote.map(x=>x.characterId),['char-014','char-047']);
+for(const [id,name,verbatim] of closeoutQuotes){const x=quotes.quotes.find(q=>q.characterId===id);assert.ok(x);assert.equal(x.characterName,name);assert.equal(x.exactText,verbatim);assert.equal(x.provenance.originalVerifiedByAssistant,false);assert.equal(x.provenance.sceneVerified,false);assert.equal(x.provenance.scoringImpact,'none');assert.equal(x.display.isCanonChecked,false);}
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-015').provenance.deliveryMode,'written-note');
+for(const [org,n] of [['baekui',23],['pacheon',5],['daeguk',3],['other',3]])assert.equal(quotes.quotes.filter(q=>roster.characters.find(c=>c.id===q.characterId)?.initialOrganizationId===org).length,n);
 assert.deepEqual(quotes.punctuationNormalization.edits.map(x=>x.id),['CQ-011','CQ-024','CQ-034']);
 for(const correction of quotes.punctuationNormalization.edits){
  assert.equal(quotes.quotes.find(x=>x.id===correction.id)?.exactText,correction.after);
  assert.equal(correction.after.slice(0,-1),correction.before,'only terminal punctuation added');
 }
 assert.equal(quotes.choiMinukQuoteRevision.replacementExactText,'나의 성에도 겨울이 오겠습니까.');
-for(const q of quotes.quotes)assert.match(q.exactText.trim(),/.+[.!?。！？…][)”’"']*$/u,'terminal punctuation missing: '+q.characterName);
+for(const q of quotes.quotes){
+ if(q.characterId==='char-102'){assert.equal(q.exactText,'짜식들이 남의 집 칼을 훔쳐 써-','intentional trailing hyphen preserved');continue;}
+ assert.match(q.exactText.trim(),/.+[.!?。！？…][)”’"']*$/u,'terminal punctuation missing: '+q.characterName);
+}
 assert.ok(html.includes("$('#mobile-menu')?.focus({preventScroll:true})"));
 assert.ok(!html.includes("render();$('#character-search')?.focus();});"),'opening the mobile sidebar must not open the keyboard');
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
@@ -243,4 +255,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: 86 quotes, 3 grouped factions + Tony Jin, three terminal punctuation repairs, and mobile focus contract');
+console.log('PASS: 107 quotes, 3 grouped factions + Tony Jin, three terminal punctuation repairs, and mobile focus contract');
