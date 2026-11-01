@@ -23,13 +23,13 @@ assert.deepEqual(old.quotationCandidates,[],'canonical-only quote registry must 
 assert.equal(pilot.evidence.length,12);
 assert.equal(pilot.statements.length,7);
 assert.equal(quotes.schemaVersion,'v3.4-character-quotes-preview');
-assert.equal(quotes.counts.userProvided,76);
+assert.equal(quotes.counts.userProvided,86);
 assert.equal(quotes.counts.originalDirectlyVerified,0);
 assert.deepEqual(quotes.iskraInitialRosterStatus,{total:19,userSelected:19,pending:0,canonDirectVerification:0});
 assert.equal(quotes.counts.approvedCanon,0);
-assert.equal(quotes.quotes.length,76);
-assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,76);
-assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,76);
+assert.equal(quotes.quotes.length,86);
+assert.equal(new Set(quotes.quotes.map(q=>q.id)).size,86);
+assert.equal(new Set(quotes.quotes.map(q=>q.characterId)).size,86);
 for(const q of quotes.quotes){
  assert.ok(roster.characters.some(c=>c.id===q.characterId&&c.name===q.characterName));
  assert.equal(q.verificationStatus,'user-transcribed-secondary');
@@ -46,7 +46,7 @@ assert.equal(quotes.quotes.find(q=>q.representativePriority==='first').character
 assert.deepEqual(quotes.previousIskraUserSelections.map(q=>q.characterId),['char-026','char-027','char-035','char-034','char-043','char-030']);
 assert.deepEqual(quotes.latestUserSelections.map(q=>q.characterId),["char-029","char-032","char-041","char-031","char-036","char-037","char-038","char-039","char-040"]);
 assert.deepEqual(quotes.latestUserSelections.map(q=>q.quoteId),["CQ-027","CQ-028","CQ-029","CQ-030","CQ-031","CQ-032","CQ-033","CQ-034","CQ-035"]);
-for(const record of [{"characterId":"char-029","text":"혹독한 훈련 속에서도 언제나 꿈꿔 왔습니다. '아무르' 티그로와 함께 싸우는 꿈을."},{"characterId":"char-032","text":"좀 이따 보자고."},{"characterId":"char-041","text":"아무르 티그로. 네가 이스크라를 먹어라. 그리고 극동의 패자가 돼라."},{"characterId":"char-031","text":"어이, 걱정 마. 그쪽까진 갈 일도 없어."},{"characterId":"char-036","text":"상대는 이 업계 '최고'다. 그에 맞는 예우가 필요하지. 틈도 주지 말고 질식시켜 죽여버린다."},{"characterId":"char-037","text":"이런... 바로 날개를 꺾긴 힘든가..."},{"characterId":"char-038","text":"아니 - 잡았다."},{"characterId":"char-039","text":"뭐긴 뭐야, '재앙' 이지"},{"characterId":"char-040","text":"오늘부터 이 분이... 내가 받들 '신'이다!"}]) assert.equal(quotes.quotes.find(x=>x.characterId===record.characterId)?.exactText,record.text);
+for(const record of [{"characterId":"char-029","text":"혹독한 훈련 속에서도 언제나 꿈꿔 왔습니다. '아무르' 티그로와 함께 싸우는 꿈을."},{"characterId":"char-032","text":"좀 이따 보자고."},{"characterId":"char-041","text":"아무르 티그로. 네가 이스크라를 먹어라. 그리고 극동의 패자가 돼라."},{"characterId":"char-031","text":"어이, 걱정 마. 그쪽까진 갈 일도 없어."},{"characterId":"char-036","text":"상대는 이 업계 '최고'다. 그에 맞는 예우가 필요하지. 틈도 주지 말고 질식시켜 죽여버린다."},{"characterId":"char-037","text":"이런... 바로 날개를 꺾긴 힘든가..."},{"characterId":"char-038","text":"아니 - 잡았다."},{"characterId":"char-039","text":"뭐긴 뭐야, '재앙' 이지."},{"characterId":"char-040","text":"오늘부터 이 분이... 내가 받들 '신'이다!"}]) assert.equal(quotes.quotes.find(x=>x.characterId===record.characterId)?.exactText,record.text);
 assert.ok(html.includes('x.quotes.length>=36'));
 assert.ok(html.includes('new Set(x.quotes.map(q=>q.id)).size===x.quotes.length'));
 assert.ok(html.includes('h(primary.exactText)'),'escape visible quote');
@@ -99,7 +99,7 @@ assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.quoteId),['CQ-01
 assert.deepEqual(quotes.latestCastleHoldingsSelections.map(x=>x.action),['replace','add','add','add','add','add']);
 const choi=quotes.quotes.find(q=>q.characterId==='char-056');
 assert.equal(choi.id,'CQ-011','preserve old quote ID when replacing representative text');
-assert.equal(choi.exactText,'나의 성에도 겨울이 오겠습니까');
+assert.equal(choi.exactText,'나의 성에도 겨울이 오겠습니까?');
 assert.equal(choi.provenance.sourceUrl,'https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=241323');
 assert.equal(choi.provenance.originalVerifiedByAssistant,false);
 assert.equal(choi.provenance.sceneVerified,false);
@@ -201,6 +201,40 @@ for(const [id,name,verbatim] of dsQuotes){
  assert.equal(q.display.isCanonChecked,false);
 }
 assert.equal(quotes.quotes.filter(q=>roster.characters.some(c=>c.id===q.characterId&&c.initialOrganizationId==='ds-security')).length,4);
+
+const nextQuotes=[["char-089","하야부사","그렇다면, 젊음의 패기 같은 한심한 거 말고 보여줄 게 더 남아있단 거냐?"],["char-090","토이시","..정말 갈 데까지 갔구나, 이놈.. 가네무라 히데아키."],["char-091","고로","이와시로.. '회장님'."],["char-092","모자준","부지런히 처리해 봤자 이름도 없는 놈이라 일한 티가 안 나니, 원. 그래도 할 건 해야겠지."],["char-094","천쿤","잔말 말고 길이나 뚫어! 누군 그만큼 못 죽여서 안 나대냐!?"],["char-093","우강","지금 불붙은 놈들은 그 기류가 사뭇 다르다. 특히나 뺀질한... 이놈!"],["char-095","히데","그럼에도 한 치의 부끄러움조차 느끼지 않고… 기어이 뻘밭을 기어나가 쟁취하는 것이 이 가네무라 히데아키의 방식이다."],["char-096","쿄지","나오쇼. 오야로 모신 정이 있으니 한 번은 뚫어 주겠수. 난 하루일지라도 붙어 먹기로 했으면 적어도 당일까진 의리는 지키자는 주의라."],["char-097","후지타","최 상도 캐슬을 뺏긴 마당에, 이와시로라고 천년만년 변고가 없을까...!"],["char-098","토니 진","글쎄다. 오늘 니놈들의 머리통을 싸그리 회수한다면.. 돈줄 끊긴 화진의 유기견들이 너희 동천방으로 좌표를 찍지 않을까?"]];
+assert.deepEqual(quotes.latestThreeGroupsSelections.map(x=>x.characterId),nextQuotes.map(x=>x[0]));
+assert.deepEqual(quotes.latestThreeGroupsSelections.map(x=>x.quoteId),Array.from({length:10},(_,i)=>'CQ-'+String(i+81).padStart(3,'0')));
+assert.deepEqual(quotes.threeGroupsRosterStatus,{
+ 'yamaguchi-gumi':{total:4,existingSelected:1,newSelected:3,nowSelected:4},
+ 'dongcheon-bang':{total:3,existingSelected:0,newSelected:3,nowSelected:3},
+ 'anti-yamaguchi-alliance':{total:3,existingSelected:0,newSelected:3,nowSelected:3},
+ 'hong-kong-factions':{total:1,existingSelected:0,newSelected:1,nowSelected:1},
+ originalComicDirectChecks:0
+});
+assert.equal(quotes.quotes.find(q=>q.characterId==='char-088')?.exactText,"맹수의 기분이 곧.. 약자의 '질서'다, 김신.");
+for(const [id,name,verbatim] of nextQuotes){
+ const q=quotes.quotes.find(x=>x.characterId===id);
+ assert.ok(q,'new quote missing '+name);
+ assert.equal(q.characterName,name);
+ assert.equal(q.exactText,verbatim);
+ assert.equal(q.provenance.originalVerifiedByAssistant,false);
+ assert.equal(q.provenance.sceneVerified,false);
+ assert.equal(q.provenance.scoringImpact,'none');
+ assert.equal(q.display.isCanonChecked,false);
+}
+for(const [org,count] of [['yamaguchi-gumi',4],['dongcheon-bang',3],['anti-yamaguchi-alliance',3],['hong-kong-factions',1]]){
+ assert.equal(quotes.quotes.filter(q=>roster.characters.find(c=>c.id===q.characterId)?.initialOrganizationId===org).length,count,org);
+}
+assert.deepEqual(quotes.punctuationNormalization.edits.map(x=>x.id),['CQ-011','CQ-024','CQ-034']);
+for(const correction of quotes.punctuationNormalization.edits){
+ assert.equal(quotes.quotes.find(x=>x.id===correction.id)?.exactText,correction.after);
+ assert.equal(correction.after.slice(0,-1),correction.before,'only terminal punctuation added');
+}
+assert.equal(quotes.choiMinukQuoteRevision.replacementExactText,'나의 성에도 겨울이 오겠습니까?');
+for(const q of quotes.quotes)assert.match(q.exactText.trim(),/.+[.!?。！？…][)”’"']*$/u,'terminal punctuation missing: '+q.characterName);
+assert.ok(html.includes("$('#mobile-menu')?.focus({preventScroll:true})"));
+assert.ok(!html.includes("render();$('#character-search')?.focus();});"),'opening the mobile sidebar must not open the keyboard');
 assert.equal(quotes.characterQuoteDisplayContract.futureExtraQuotesAllowed,true);
 assert.ok(html.includes('${quotationPanel()}'),'quote appears inside shared character hero');
 assert.ok(!html.includes('overviewBase()+quotationPanel()'),'quote must not repeat after overview');
@@ -209,4 +243,4 @@ assert.ok(html.includes('x.counts?.userProvided===x.quotes.length'));
 const jsStart=html.indexOf('/* CASTLE — read-only'),jsEnd=html.indexOf('</script>',jsStart);
 assert.ok(jsStart>=0&&jsEnd>jsStart);
 new vm.Script(html.slice(jsStart,jsEnd));
-console.log('PASS: 76 quotes, DS Security 4/4, Haseong 8/8, Gold Capital/Hotel Castle preserved');
+console.log('PASS: 86 quotes, 3 grouped factions + Tony Jin, three terminal punctuation repairs, and mobile focus contract');

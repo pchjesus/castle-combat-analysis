@@ -343,7 +343,7 @@ function bindEvents(){
  state.search=e.target.value;const list=filteredCharacters();$('#result-count').textContent=list.length+'명';$('#character-list').innerHTML=characterButtons(list);
  $('#character-list').querySelectorAll('[data-character]').forEach(el=>el.addEventListener('click',()=>setCharacter(el.dataset.character)));
  });
- $('#mobile-menu').addEventListener('click',()=>{state.sidebarOpen=!state.sidebarOpen;render();$('#character-search')?.focus();});
+ $('#mobile-menu').addEventListener('click',()=>{state.sidebarOpen=!state.sidebarOpen;render();$('#mobile-menu')?.focus({preventScroll:true});});
  document.querySelectorAll('[data-close-sidebar]').forEach(el=>el.addEventListener('click',()=>{state.sidebarOpen=false;render();$('#mobile-menu')?.focus();}));
  document.querySelector('.view-tabs').addEventListener('keydown', e=>{
  if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;

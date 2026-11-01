@@ -72,7 +72,17 @@ const six=[
  ["char-076","윤덕수","다 필요 없어. 내가 직접 처리한다."],
  ["char-077","강창석","회암시에 악귀가 돌아왔다! 덜덜 떨어라, 이 회암시 것들아!!"],
  ["char-078","김혁주","내 구역도 아닌데 나라고 이러고 싶겠습니까."],
- ["char-079","강만재","하, 이 쥐방울 같은 새X. 잘 걸렸다, 씨X놈아."]
+ ["char-079","강만재","하, 이 쥐방울 같은 새X. 잘 걸렸다, 씨X놈아."],
+ ["char-089","하야부사","그렇다면, 젊음의 패기 같은 한심한 거 말고 보여줄 게 더 남아있단 거냐?"],
+ ["char-090","토이시","..정말 갈 데까지 갔구나, 이놈.. 가네무라 히데아키."],
+ ["char-091","고로","이와시로.. '회장님'."],
+ ["char-092","모자준","부지런히 처리해 봤자 이름도 없는 놈이라 일한 티가 안 나니, 원. 그래도 할 건 해야겠지."],
+ ["char-094","천쿤","잔말 말고 길이나 뚫어! 누군 그만큼 못 죽여서 안 나대냐!?"],
+ ["char-093","우강","지금 불붙은 놈들은 그 기류가 사뭇 다르다. 특히나 뺀질한... 이놈!"],
+ ["char-095","히데","그럼에도 한 치의 부끄러움조차 느끼지 않고… 기어이 뻘밭을 기어나가 쟁취하는 것이 이 가네무라 히데아키의 방식이다."],
+ ["char-096","쿄지","나오쇼. 오야로 모신 정이 있으니 한 번은 뚫어 주겠수. 난 하루일지라도 붙어 먹기로 했으면 적어도 당일까진 의리는 지키자는 주의라."],
+ ["char-097","후지타","최 상도 캐슬을 뺏긴 마당에, 이와시로라고 천년만년 변고가 없을까...!"],
+ ["char-098","토니 진","글쎄다. 오늘 니놈들의 머리통을 싸그리 회수한다면.. 돈줄 끊긴 화진의 유기견들이 너희 동천방으로 좌표를 찍지 않을까?"]
 ];
 const server=createServer(async (req,res)=>{
  try{
@@ -141,6 +151,6 @@ try{
    await injected.close();
    console.log('PASS: expandable extra quotation tested with synthetic browser-only fixture');
   }
-  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': all 19 Iskra, 10 Baekui, 8 Hwajin, 7 Castle Holdings, 5 new Seonjin, 3 new Mori, 5 Gold/Hotel, 6 new Haseong, 4 new DS and existing other cards, Aquila, Ryu, Komodo');
+  console.log('PASS browser viewport '+viewport.width+'x'+viewport.height+': 19 Iskra, 10 Baekui, 8 Hwajin, 7 Holdings, 5 Seonjin, 3 Mori, 5 Gold/Hotel, 6 Haseong, 4 DS, and 10 newly selected faction/Tony quote cards, Aquila, Ryu, Komodo');
  }
 }finally{await browser?.close();await new Promise(r=>server.close(r));}

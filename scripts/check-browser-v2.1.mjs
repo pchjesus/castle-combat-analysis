@@ -64,7 +64,15 @@ async function inspect(viewport){
     });
     assert.deepEqual(geometry,{inside:true,overlap:false,touch:true,mark:true},'brand alignment');
   }
-  if(viewport.width<=760)await page.locator('#mobile-menu').click();
+  if(viewport.width<=760){
+   await page.locator('#mobile-menu').click();
+   assert.equal(await page.locator('#sidebar').getAttribute('class').then(v=>v.includes('open')),true,'mobile drawer opens');
+   assert.equal(await page.locator('#character-search').evaluate(el=>el===document.activeElement),false,'opening drawer must not focus input or trigger keyboard');
+   assert.equal(await page.locator('#mobile-menu').evaluate(el=>el===document.activeElement),true,'menu button keeps keyboard focus');
+   await page.locator('#character-search').click();
+   assert.equal(await page.locator('#character-search').evaluate(el=>el===document.activeElement),true,'manual tap should still focus search input');
+   await page.locator('#mobile-menu').focus();
+  }
   if(process.env.SCREENSHOT_DIR&&viewport.width<=760){await mkdir(process.env.SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:resolve(process.env.SCREENSHOT_DIR,'drawer-'+viewport.width+'.png')});}
   await page.locator('#org-select').selectOption('iskra');
   assert.equal(await page.locator('#result-count').innerText(),'19명');
