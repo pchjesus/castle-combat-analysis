@@ -1,0 +1,741 @@
+{
+  "schemaVersion": "v5.3-three-person-axis-draft",
+  "date": "2026-11-03",
+  "bases": [
+    "data/pilot-evidence.v2.1.json",
+    "data/pilot-review-queue.v2.2.json"
+  ],
+  "meta": {
+    "pilotCharacters": 3,
+    "candidateBattles": 3,
+    "evidenceRecords": 12,
+    "canonDirectChecks": 0,
+    "confirmedBattlePhases": 0,
+    "approvedScores": 0
+  },
+  "principles": [
+    "Canon Fact → Combat Context → Interpretation → Evaluation → Calculation",
+    "primary/secondary/context are not numeric multipliers",
+    "8-axis/10-axis/80:20 all unapproved",
+    "specialty mastery is separate from observed attack outcome",
+    "unobserved ability is not zero"
+  ],
+  "records": [
+    {
+      "recordId": "A01",
+      "subjectCharacterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "source": {
+        "ids": [
+          "pilot:SA"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "차문 부근 견제사격으로 상대의 대응을 제한했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "사격 위치·방패·엄폐·상대 반응"
+      },
+      "interpretation": {
+        "hypothesis": "사격기술과 실제 견제 효과",
+        "opposingExplanation": "상대의 엄폐·차문 등 물리적 제약",
+        "evidenceRoleUncertainty": "구스타프의 방패·엄폐가 효과에 미친 영향"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "사격 전문기술",
+        "secondaryAxisCandidate": "전술·판단",
+        "attributionRule": "사격 숙련을 독립 확인하고 공격 실효성은 결과로 분리",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": null,
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "차문·엄폐·방패의 정확한 위치와 시간 순서를 컷별 기록",
+          "사격으로 상대의 선택지가 실제 제한됐는지 방해물 영향과 분리"
+        ]
+      }
+    },
+    {
+      "recordId": "A02",
+      "subjectCharacterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "source": {
+        "ids": [
+          "pilot:SA"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "측면에서 사격을 시도한 경호원을 사격했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "위협 출현→인지→전환→발사→결과, 구스타프 동시 행동"
+      },
+      "interpretation": {
+        "hypothesis": "제3자 경호원에 대한 표적 전환과 돌발 반응",
+        "opposingExplanation": "사전 조준 또는 제3자 사선 영향",
+        "evidenceRoleUncertainty": "제3자에 대한 사격 성과를 구스타프에 대한 공격 실효성으로 오인할 위험"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "사격 전문기술",
+        "secondaryAxisCandidate": "반응속도",
+        "attributionRule": "경호원 명중을 구스타프에 대한 직접 성과로 계산 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": null,
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "경호원의 식별과 위치·선제 조준 여부 확인",
+          "구스타프에 대한 성과와 제3자 대응을 분리",
+          "경호원 위협의 출현 → 아킬라 인지 → 표적 전환 → 발사 → 결과를 별도 기록하고, 그 사이 구스타프의 행동을 함께 대조",
+          "블루 경호원이라는 2차 식별은 후보로 두고 참가자 수·ID와 동시 사선을 원작에서 확인"
+        ]
+      }
+    },
+    {
+      "recordId": "A03",
+      "subjectCharacterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "source": {
+        "ids": [
+          "pilot:SA"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "재장전, 이동 및 복수 총기 운용을 결합했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "리볼버 잔탄·차문 접근/타격·재이격·샷건 장전 시계열"
+      },
+      "interpretation": {
+        "hypothesis": "총기 장전·전환 숙련과 돌발 적응",
+        "opposingExplanation": "준비된 루틴이었을 가능성",
+        "evidenceRoleUncertainty": "계획된 무장 운용을 예상 밖 변수에 대한 적응으로 오인할 위험"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "사격 전문기술",
+        "secondaryAxisCandidate": "상황대응력",
+        "attributionRule": "무기 전환 기술과 예상 밖 상황 대응은 별도 증거 필요",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": null,
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "재장전·총기 교체·거리 변화를 컷 순서대로 정리",
+          "계획된 숙련과 예상 밖 대응의 구분",
+          "리볼버 탄 소진·재장전, 차문을 향한 접근·발차기, 재이격·사격, 샷건 장전의 순서를 컷별로 분리",
+          "차문·유리·방패의 방호와 아킬라의 명중·피해·거리 통제 성과를 각각 기록; 사전 계획인지 돌발 대응인지 보류"
+        ]
+      }
+    },
+    {
+      "recordId": "A04",
+      "subjectCharacterId": "char-033",
+      "battleCandidateId": "pilot-A",
+      "source": {
+        "ids": [
+          "pilot:SA"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "근접 공방에서 구스타프의 무장·공격을 견제했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "서로의 무기·동작·실제 명중 여부"
+      },
+      "interpretation": {
+        "hypothesis": "근접 무장기술·맨손·완력·방어",
+        "opposingExplanation": "무기/거리 우위나 상대의 실패",
+        "evidenceRoleUncertainty": "무장 활용과 맨손 신체능력을 혼합 평가할 위험"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "근접 전문기술",
+        "secondaryAxisCandidate": "방어·생존력",
+        "attributionRule": "단일 근접 공방을 신체/방어/기술에 중복 가산 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P2",
+        "chapterCandidate": null,
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "무장·맨손 동작과 유효타·방어 성공을 분리",
+          "근접 기술과 신체 역량 중복 평가 경계"
+        ]
+      }
+    },
+    {
+      "recordId": "L01",
+      "subjectCharacterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "source": {
+        "ids": [
+          "pilot:SL"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "표영의 급소를 연속 타격해 제압했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "표영 상태·타격 순서·급소·제압 시점"
+      },
+      "interpretation": {
+        "hypothesis": "맨손 타격의 정밀성·연속성과 실제 제압",
+        "opposingExplanation": "표영의 기존 부상 또는 방어 조건",
+        "evidenceRoleUncertainty": "기술·속도·공격 실효성에 동일 연속타를 중복 가산할 위험"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "맨손 전문기술",
+        "secondaryAxisCandidate": "공격 실효성",
+        "attributionRule": "공격 동작과 제압 결과를 다른 관찰로 기록",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "급소 공격의 정확한 횟수·순서·표영 상태를 확인",
+          "기술·기동·공격 결과의 동일 행동 중복 위험 확인"
+        ]
+      }
+    },
+    {
+      "recordId": "L02",
+      "subjectCharacterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "source": {
+        "ids": [
+          "pilot:SL"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "라텔의 흉부에 사격을 명중시켰다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "사격 위치·방탄 조끼·피격 후 행동·시간 출처"
+      },
+      "interpretation": {
+        "hypothesis": "사격 명중·방호·기능 손상",
+        "opposingExplanation": "방탄 장비로 무력화가 없을 가능성",
+        "evidenceRoleUncertainty": "명중과 실질 무력화 효과는 별개; 0.5초 숫자 2차자료에만 존재"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "사격 전문기술",
+        "secondaryAxisCandidate": "반응속도",
+        "attributionRule": "2차 자료 0.5초 표현을 원작 공식 수치로 쓰지 않음",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "명중 여부와 방탄 장비·피해·전투 지속 여부 각각 확인",
+          "특정 소요 시간 수치는 원작에 존재하는지 독립 검증"
+        ]
+      }
+    },
+    {
+      "recordId": "L03",
+      "subjectCharacterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "source": {
+        "ids": [
+          "pilot:SL"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "탄창 없는 총기를 이용한 기만 후 관절 공격을 했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "총기 잔탄·상대 인식·기만 의도·후속 관절 공격"
+      },
+      "interpretation": {
+        "hypothesis": "계획적 빈 총기 기만과 돌발 대응",
+        "opposingExplanation": "탄창 상태나 상대 인식이 다를 가능성",
+        "evidenceRoleUncertainty": "계획적 기만과 돌발 대응 구분 및 동일 기만의 중복 가산 필요"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "전술·판단",
+        "secondaryAxisCandidate": "맨손 전문기술",
+        "attributionRule": "기만과 관절기 기술의 독립 근거가 없으면 중복 가산 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "총탄 잔량·기만의 의도와 상대의 인지 상태 확인",
+          "후속 공격이 유도에 따른 것인지 우연인지 검증"
+        ]
+      }
+    },
+    {
+      "recordId": "L04",
+      "subjectCharacterId": "char-087",
+      "battleCandidateId": "pilot-L",
+      "source": {
+        "ids": [
+          "pilot:SR"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "라텔 재교전에서 무장 시도를 읽고 대응했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "3명 진입/이탈·부상·무장·동시 사선 시계열"
+      },
+      "interpretation": {
+        "hypothesis": "순차 교전과 실제 동시 다수전",
+        "opposingExplanation": "라텔·표영·크리사의 교대만 있었을 가능성",
+        "evidenceRoleUncertainty": "29화 후속 교전을 L03과 한 사건으로 중복 계산할 위험"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "전술·판단",
+        "secondaryAxisCandidate": "상황대응력",
+        "attributionRule": "확인 안 된 순차전을 1:2 또는 1:3으로 확정 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": "캐슬2 28~29화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "2부 28~29화 장면 후보에서 표영·라텔·크리사 개입을 실제 시점별 기록",
+          "연속 교전을 동시 다수전으로 왜곡하지 않기",
+          "표영·라텔·크리사의 진입·이탈·재진입 구간을 나눠 실제 공격이 겹친 구간이 있는지 확인",
+          "각 상대의 교전 직전/직후 부상·방호·기능을 기록하고 제압·교대·사살 결과를 구분"
+        ]
+      }
+    },
+    {
+      "recordId": "R01",
+      "subjectCharacterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "source": {
+        "ids": [
+          "pilot:SJ"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "빠른 연속 공방으로 최달천의 템포와 호흡을 흔들었다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "류지학 발놀림·검격 템포·최달천 호흡 변화"
+      },
+      "interpretation": {
+        "hypothesis": "검격 속도와 실제 이동·거리조절",
+        "opposingExplanation": "상대 피로를 본인 지속전으로 오인",
+        "evidenceRoleUncertainty": "상대 피로 유발을 류지학의 지속전으로 직접 환산할 수 없음"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "속도·기동력",
+        "secondaryAxisCandidate": "도검 전문기술",
+        "attributionRule": "기동 95 가설은 독립적인 이동 근거 없으면 보류",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "1부 99~100화 후보에서 최달천 호흡·움직임의 실제 장면을 구분",
+          "상대 피로 유도와 류지학 자신의 지속력 분리"
+        ]
+      }
+    },
+    {
+      "recordId": "R02",
+      "subjectCharacterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "source": {
+        "ids": [
+          "pilot:SJ"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "최달천이 무리한 공격을 시도한 틈을 포착했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "상대 공격 원인·거리·시간 압박·빈틈 발생 순간"
+      },
+      "interpretation": {
+        "hypothesis": "계획적 틈 유도와 순간 판단·반응",
+        "opposingExplanation": "최달천이 스스로 무리한 공격을 선택",
+        "evidenceRoleUncertainty": "사전 유도인지 순간 포착인지 확정할 수 없음"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "전술·판단",
+        "secondaryAxisCandidate": "반응속도",
+        "attributionRule": "전술/반응 구분 근거 없는 동시 가산 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P2",
+        "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "상대 공격 선택을 유도했는지 순간 대응했는지 구분",
+          "공격 전후 거리·시간 압박 기록"
+        ]
+      }
+    },
+    {
+      "recordId": "R03",
+      "subjectCharacterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "source": {
+        "ids": [
+          "pilot:SJ"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "틈을 이용한 절단 기술로 승부를 결정했다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "도검 궤적·공격 부위·상대 방어·실제 기능 변화"
+      },
+      "interpretation": {
+        "hypothesis": "쌍검 숙련의 정확성과 결정타 결과",
+        "opposingExplanation": "상대 선행 손상·취약 상태가 결과에 기여",
+        "evidenceRoleUncertainty": "기술 정확도와 결정적 성과를 동일한 기여로 중복 가산할 위험"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "도검 전문기술",
+        "secondaryAxisCandidate": "공격 실효성",
+        "attributionRule": "전문기술과 공격 실효성을 이중 가산 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P2",
+        "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "도검 부위·상대 기능 저하·결과의 인과를 분리",
+          "결정타를 공격·기술·상황 대응 모두에 중복 가산하지 않기"
+        ]
+      }
+    },
+    {
+      "recordId": "R04",
+      "subjectCharacterId": "char-071",
+      "battleCandidateId": "pilot-R",
+      "source": {
+        "ids": [
+          "pilot:SM",
+          "pilot:SC"
+        ],
+        "type": "secondary-community-summary",
+        "actuallyChecked": "secondary-only",
+        "originalSceneDirectChecked": false
+      },
+      "canonFact": {
+        "status": "not-directly-verified",
+        "factText": null,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null
+      },
+      "secondaryDescription": "교전 후 왼팔/왼쪽 상지 기능 제약이 언급된다는 서술",
+      "combatContext": {
+        "verified": false,
+        "weapon": null,
+        "distance": null,
+        "cover": null,
+        "injury": null,
+        "fatigue": null,
+        "goal": null,
+        "priorKnowledge": null,
+        "timeline": null,
+        "itemsToVerify": "상지 부상 순간·직후 기술 변화·피로·시간 제약"
+      },
+      "interpretation": {
+        "hypothesis": "방어 실패·부상 후 기능·지속력의 구별",
+        "opposingExplanation": "손상 발생 시점 불명·후속 교전 손상 혼재",
+        "evidenceRoleUncertainty": "부상의 발생 방식과 피로 누적은 구별해야 함"
+      },
+      "evaluation": {
+        "primaryAxisCandidate": "방어·생존력",
+        "secondaryAxisCandidate": "지속전",
+        "attributionRule": "부상 한 건으로 방어와 지속전 모두 자동 감점 금지",
+        "score": null,
+        "confidence": null,
+        "evidenceReadiness": "unassessed",
+        "approved": false,
+        "scoringImpact": "none"
+      },
+      "originalReview": {
+        "priority": "P1",
+        "chapterCandidate": "캐슬 1부 99~100화 (2차자료 회차 후보)",
+        "chapterStatus": "unverified-secondary-hint",
+        "questions": [
+          "부상이 발생한 정확한 시점과 이후 상지 기능 변화 확인",
+          "누적 피로와 부상으로 인한 감소를 구분",
+          "왼쪽 상지 손상 전후의 공격·방어 동작과 이후 현석 교전의 손상을 따로 기록",
+          "시간 제약의 명시적 근거와 위험 감수 선택을 구분하고, 급해서 맞았다는 대안 설명은 인과 미확정으로 기록",
+          "최달천의 호흡·템포 변화는 상대 피로 항목에만 먼저 기록; 류지학 자신의 수행 유지 근거와 분리"
+        ]
+      }
+    }
+  ],
+  "validationPriorities": [
+    [
+      "A02",
+      "A03"
+    ],
+    [
+      "L03",
+      "L04"
+    ],
+    [
+      "R01",
+      "R04"
+    ],
+    [
+      "A01",
+      "A04",
+      "L01",
+      "L02",
+      "R02",
+      "R03"
+    ]
+  ]
+}

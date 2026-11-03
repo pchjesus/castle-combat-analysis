@@ -18,6 +18,8 @@ on:
       - 'scripts/check-character-appellations-v4.1.mjs'
       - 'scripts/check-character-appellations-browser-v4.1.mjs'
       - 'scripts/check-public-quotes-v3.6.mjs'
+      - 'data/research/three-person-axis-attribution.v5.3.DRAFT.json'
+      - 'scripts/check-three-person-axis-v5.3.mjs'
       - 'scripts/check-iskra-quotes-browser-v3.6.mjs'
       - 'scripts/check-live-pages.mjs'
       - '.github/workflows/pages.yml'
@@ -43,6 +45,7 @@ jobs:
           node scripts/check-pilot-v2.1.mjs
           node scripts/check-character-images.mjs
           node scripts/check-public-quotes-v3.6.mjs
+          node scripts/check-three-person-axis-v5.3.mjs
           node scripts/check-character-appellations-v4.1.mjs
   browser-regression:
     runs-on: ubuntu-latest

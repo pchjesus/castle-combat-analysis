@@ -1,7 +1,7 @@
 {
   "schemaVersion": "v3.4-character-quotes-preview",
   "state": "feature-branch-preview-not-canon-verified",
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-03",
   "source": "User-curated representative quotations for 107 of 109 roster characters; direct original comic verification pending.",
   "publicBranchPublishingInstruction": true,
   "counts": {
@@ -3123,15 +3123,15 @@
       "id": "CQ-105",
       "characterId": "char-018",
       "characterName": "최혁진",
-      "exactText": "어쩌시겠습니까. 전 어느 쪽이든 따르겠습니다. 우진 형님.",
-      "theme": "백의·인물 서사",
+      "exactText": "머리털 끝까지 신경들 곤두세워라. 경호대를 카바칠 수 있는 건 우리 선진 출신밖에 없다.",
+      "theme": "경호 경계·선진 출신",
       "selectionStatus": "user-nominated",
       "representativePriority": null,
       "verificationStatus": "user-transcribed-secondary",
       "publicationStatus": "branch-preview-requested",
       "provenance": {
-        "sourceType": "secondary-summary-user-selected",
-        "sourceName": "2차 자료 제안 · 사용자 선정",
+        "sourceType": "user-provided-transcription",
+        "sourceName": "사용자가 직접 제공한 최혁진 대표 명대사",
         "sourceUrl": null,
         "originalVerifiedByAssistant": false,
         "originalVerifiedByUserInThisTurn": false,
@@ -3433,7 +3433,7 @@
       "userSelected": true
     }
   ],
-  "lastUserCurationDate": "2026-11-02",
+  "lastUserCurationDate": "2026-11-03",
   "verifiedFromOriginalCount": 0,
   "previousIskraUserSelections": [
     {
@@ -4164,5 +4164,14 @@
     "originalComicDirectChecks": 0,
     "writtenNoteQuotationCharacterId": "char-015",
     "notScoringEvidence": true
+  },
+  "choiHyeokjinQuoteRevision": {
+    "characterId": "char-018",
+    "quoteId": "CQ-105",
+    "previousExactText": "어쩌시겠습니까. 전 어느 쪽이든 따르겠습니다. 우진 형님.",
+    "replacementExactText": "머리털 끝까지 신경들 곤두세워라. 경호대를 카바칠 수 있는 건 우리 선진 출신밖에 없다.",
+    "revisionDate": "2026-11-03",
+    "userRequested": true,
+    "originalDirectChecked": false
   }
 }
