@@ -1,0 +1,635 @@
+{
+  "schemaVersion": "v5.4-primary-six-source-conflict-draft",
+  "date": "2026-11-03",
+  "basedOnCommit": "4d41a0b5aa5462479ec059d7e447b79bb9bac827",
+  "source": "v5.3 three-person-axis research + refreshed secondary/official web lookup",
+  "classification": "source-lead and review protocol; not original-canon verified",
+  "counts": {
+    "targetEvidence": 6,
+    "originalVerified": 0,
+    "confirmedPhases": 0,
+    "approvedScores": 0,
+    "modelChanges": 0
+  },
+  "sourceCatalog": {
+    "S-O2": {
+      "type": "official-series-index",
+      "title": "캐슬2: 만인지상",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=807178",
+      "verifiedWhat": "작품 및 회차 목록의 존재",
+      "notVerified": "해당 회차 컷/교전 사실"
+    },
+    "S-O1": {
+      "type": "official-series-index",
+      "title": "캐슬",
+      "url": "https://m.comic.naver.com/webtoon/list?titleId=736744",
+      "verifiedWhat": "작품 및 회차 목록의 존재",
+      "notVerified": "해당 회차 컷/교전 사실"
+    },
+    "S-A": {
+      "type": "secondary-fan-edited",
+      "title": "아킬라(캐슬)/전투력",
+      "url": "https://d.namu.moe/w/%EC%95%84%ED%82%AC%EB%9D%BC%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "verifiedWhat": "2차 자료의 설명을 확인",
+      "notVerified": "원작 개별 동작/회차/정확한 초 단위"
+    },
+    "S-A-51": {
+      "type": "community-opinion",
+      "title": "솔직히 이스크라 블루가 제일 이해안감",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=castlewebtoon&no=310467",
+      "verifiedWhat": "커뮤니티 글의 2부 51화 언급",
+      "notVerified": "A02·A03 각 장면의 실제 포함 및 발생 순서"
+    },
+    "S-L-STORY": {
+      "type": "secondary-fan-edited",
+      "title": "리천(캐슬)/작중 행적",
+      "url": "https://dark.namu.moe/w/%EB%A6%AC%EC%B2%9C%28%EC%BA%90%EC%8A%AC%29/%EC%9E%91%EC%A4%91%20%ED%96%89%EC%A0%81",
+      "verifiedWhat": "표영 상대 총기 속임수·라텔·크리사 순차 서술",
+      "notVerified": "원작 정확한 동작/대상/Phase"
+    },
+    "S-L-COMBAT": {
+      "type": "secondary-fan-edited",
+      "title": "리천(캐슬)/전투력",
+      "url": "https://m.namu.moe/w/%EB%A6%AC%EC%B2%9C%28%EC%BA%90%EC%8A%AC%29/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "verifiedWhat": "라텔 상대 빈 총기 서술",
+      "notVerified": "작중 행적 문서와의 동일 사건 여부"
+    },
+    "S-L-RATEL": {
+      "type": "secondary-fan-edited",
+      "title": "라텔(캐슬)",
+      "url": "https://www.namu.moe/w/%EB%9D%BC%ED%85%94%28%EC%BA%90%EC%8A%AC%29",
+      "verifiedWhat": "29화 재교전과 크리사 개입의 2차 서술",
+      "notVerified": "참가자 시간적 겹침/피해 원인"
+    },
+    "S-R": {
+      "type": "secondary-fan-edited",
+      "title": "류지학/전투력",
+      "url": "https://www.namu.moe/w/%EB%A5%98%EC%A7%80%ED%95%99/%EC%A0%84%ED%88%AC%EB%A0%A5",
+      "verifiedWhat": "최달천 호흡·검격 템포, 후속 현석전 2차 서술",
+      "notVerified": "정확한 부상 시점·부위/기량 변화"
+    },
+    "S-R-WITNESS": {
+      "type": "secondary-fan-edited",
+      "title": "이경욱",
+      "url": "https://www.namu.moe/w/%EC%9D%B4%EA%B2%BD%EC%9A%B1",
+      "verifiedWhat": "1부 99~100화 주변 인물 언급의 2차 서술",
+      "notVerified": "정확한 대사와 상지 손상의 원인"
+    },
+    "S-R-WITNESS2": {
+      "type": "secondary-fan-edited",
+      "title": "조명식(캐슬)",
+      "url": "https://m.namu.moe/w/%EC%A1%B0%EB%AA%85%EC%8B%9D%28%EC%BA%90%EC%8A%AC%29",
+      "verifiedWhat": "1부 99~100화 TF 동행과 목격자의 2차 서술",
+      "notVerified": "독립적 원작 확인; 동일 위키 편집자료"
+    }
+  },
+  "records": [
+    {
+      "recordId": "A02",
+      "characterId": "char-033",
+      "parentBattleId": "pilot-A",
+      "baseEvidenceIds": [
+        "A02"
+      ],
+      "verificationStatus": "original-direct-not-checked",
+      "sourceVerification": {
+        "sourceIds": [
+          "S-A",
+          "S-A-51",
+          "S-O2"
+        ],
+        "sourceKinds": [
+          "secondary-fan-edited",
+          "community-opinion",
+          "official-series-index"
+        ],
+        "secondaryCrossReferencesNotIndependentOriginalProof": true
+      },
+      "officialEpisodeStatus": "official-title-index-only-not-scene-proof",
+      "provisionalEpisodeLeads": [
+        {
+          "workPart": "2부",
+          "episode": 51,
+          "sourceIds": [
+            "S-A-51"
+          ],
+          "status": "community-only-episode-hint-not-confirmed"
+        }
+      ],
+      "canonFact": {
+        "verified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "observedAction": null
+      },
+      "candidateSecondarySummaries": [
+        "측면의 제3자 경호원이 공격을 시도했다고 2차 서술",
+        "아킬라가 경호원 쪽으로 표적을 바꾸어 사격했다는 2차 서술"
+      ],
+      "orderToCheck": [
+        "경호원 위치/은폐 여부",
+        "경호원 손/무장/조준 동작의 시작",
+        "아킬라 시선·자세 변화",
+        "아킬라 발사와 경호원 손상",
+        "구스타프 행동이 동시에 있었는지"
+      ],
+      "interpretationAlternatives": [
+        "새로운 위협을 인지하고 사격한 즉각 반응",
+        "이미 파악한 사선에서 미리 준비해 둔 사격",
+        "경호원 사격과 구스타프의 행동을 혼합한 2차 기술"
+      ],
+      "attributionGuard": "명중 기술은 사격 전문성 검토 대상. 반응은 위협 출현 이후 인지·대응이 명확할 때만 별도 후보. 경호원 성과를 구스타프 상대 결과로 가산 금지.",
+      "criticalFalsifier": "아킬라의 시선이 경호원의 위협 출현 이전에 그 위치를 향해 있었는가?",
+      "explicitConflicts": null,
+      "unresolved": [
+        "제3자 실제 신원/수",
+        "사격 성공 여부와 결과",
+        "다른 공격과 겹치는 시간"
+      ],
+      "evaluation": {
+        "primaryAxisCandidate": "사격 전문기술",
+        "secondaryAxisCandidate": "반응속도",
+        "score": null,
+        "evidenceReadiness": "unassessed",
+        "modelSelection": "unconfirmed",
+        "scoringImpact": "none",
+        "userApproved": false
+      }
+    },
+    {
+      "recordId": "A03",
+      "characterId": "char-033",
+      "parentBattleId": "pilot-A",
+      "baseEvidenceIds": [
+        "A03"
+      ],
+      "verificationStatus": "original-direct-not-checked",
+      "sourceVerification": {
+        "sourceIds": [
+          "S-A",
+          "S-A-51",
+          "S-O2"
+        ],
+        "sourceKinds": [
+          "secondary-fan-edited",
+          "community-opinion",
+          "official-series-index"
+        ],
+        "secondaryCrossReferencesNotIndependentOriginalProof": true
+      },
+      "officialEpisodeStatus": "official-title-index-only-not-scene-proof",
+      "provisionalEpisodeLeads": [
+        {
+          "workPart": "2부",
+          "episode": 51,
+          "sourceIds": [
+            "S-A-51"
+          ],
+          "status": "nearby-arc-lead-not-this-scene-verified"
+        }
+      ],
+      "canonFact": {
+        "verified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "observedAction": null
+      },
+      "candidateSecondarySummaries": [
+        "리볼버 탄 소진 및 스피드로더 장전으로 설명됨",
+        "구스타프의 접근과 아킬라의 차문 타격·이격을 같은 공방으로 설명함",
+        "한 손의 리볼버와 다른 손의 샷건 장전을 동시 운용으로 설명함"
+      ],
+      "orderToCheck": [
+        "재장전 직전 잔탄 유무",
+        "구스타프가 반격·접근하기 시작한 컷",
+        "아킬라 차문 접근 및 발차기의 순서",
+        "접촉 전후 실제 거리 변화",
+        "리볼버/샷건의 양손 점유와 장전·발사 단계"
+      ],
+      "interpretationAlternatives": [
+        "장전 위험을 해소하기 위한 사전 루틴",
+        "위협 변화 뒤 새롭게 선택한 즉흥적 전법",
+        "동시 장전처럼 보이나 컷 사이 시간 생략이 있는 경우"
+      ],
+      "attributionGuard": "복수 총기 운용의 숙련과 기동을 분리. 예상 밖 변수→행동 수정이 독립 입증되지 않으면 상황대응 가산 불가.",
+      "criticalFalsifier": "차문 접근은 상대의 새 행동을 본 뒤 선택했는가, 미리 준비한 동작이었는가?",
+      "explicitConflicts": null,
+      "unresolved": [
+        "정확한 거리",
+        "상황 전개 중 각 총기 발사/장전 시점",
+        "상대 실피해 여부"
+      ],
+      "evaluation": {
+        "primaryAxisCandidate": "사격 전문기술",
+        "secondaryAxisCandidate": "상황대응력",
+        "score": null,
+        "evidenceReadiness": "unassessed",
+        "modelSelection": "unconfirmed",
+        "scoringImpact": "none",
+        "userApproved": false
+      }
+    },
+    {
+      "recordId": "L03",
+      "characterId": "char-087",
+      "parentBattleId": "pilot-L",
+      "baseEvidenceIds": [
+        "L03"
+      ],
+      "verificationStatus": "original-direct-not-checked",
+      "sourceVerification": {
+        "sourceIds": [
+          "S-L-STORY",
+          "S-L-COMBAT",
+          "S-O2"
+        ],
+        "sourceKinds": [
+          "secondary-fan-edited",
+          "secondary-fan-edited",
+          "official-series-index"
+        ],
+        "secondaryCrossReferencesNotIndependentOriginalProof": true
+      },
+      "officialEpisodeStatus": "official-title-index-only-not-scene-proof",
+      "provisionalEpisodeLeads": [
+        {
+          "workPart": "2부",
+          "episodeRange": [
+            27,
+            29
+          ],
+          "sourceIds": [
+            "S-L-STORY",
+            "S-L-COMBAT"
+          ],
+          "status": "secondary-only-range; individual movement chapter unconfirmed"
+        }
+      ],
+      "canonFact": {
+        "verified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "observedAction": null
+      },
+      "candidateSecondarySummaries": [
+        "작중 행적은 표영에게 총기를 이용한 속임수를 사용했다고 서술함",
+        "전투력 요약은 라텔 상대 빈 총기 기만에 관해 서술함"
+      ],
+      "orderToCheck": [
+        "표영 상대 속임수 장면의 총기·탄창·약실 상태",
+        "라텔 상대 속임수/관절공격 장면의 총기 상태",
+        "두 사건이 동일한 소품/연속 단계인지",
+        "각 장면의 화자·표적·반응과 후속 공격",
+        "실제로 기만 의도가 표현되거나 행동으로 입증되는지"
+      ],
+      "interpretationAlternatives": [
+        "표영과 라텔에게 서로 다른 두 기만을 사용했을 가능성",
+        "같은 사건에 관한 2차 자료의 대상 기재 오류",
+        "빈 총기의 실제 탄창/약실 상태를 잘못 요약한 가능성"
+      ],
+      "attributionGuard": "대상·무장·사건 동일성이 결정되기 전 전술·판단 점수 근거로 중복 채택 불가. 목적/속임/상대 판단 변화가 확인돼야 심리전 또는 전술 후보.",
+      "criticalFalsifier": "표영에게 쓴 총기 속임수와 라텔에게 썼다는 빈 총기 속임수는 정확히 어떤 컷의 어떤 행동인가?",
+      "explicitConflicts": {
+        "kind": "actor-attribution-divergence",
+        "firstSource": "S-L-STORY",
+        "firstReportedTarget": "표영",
+        "secondSource": "S-L-COMBAT",
+        "secondReportedTarget": "라텔",
+        "resolution": "unresolved; do not merge or choose arbitrarily"
+      },
+      "unresolved": [
+        "기만 대상",
+        "사건 수(1건 또는 2건)",
+        "탄창 존재 여부",
+        "관절 공격과 인과 관계"
+      ],
+      "evaluation": {
+        "primaryAxisCandidate": "전술·판단",
+        "secondaryAxisCandidate": "맨손 전문기술",
+        "score": null,
+        "evidenceReadiness": "unassessed",
+        "modelSelection": "unconfirmed",
+        "scoringImpact": "none",
+        "userApproved": false
+      }
+    },
+    {
+      "recordId": "L04",
+      "characterId": "char-087",
+      "parentBattleId": "pilot-L",
+      "baseEvidenceIds": [
+        "L04"
+      ],
+      "verificationStatus": "original-direct-not-checked",
+      "sourceVerification": {
+        "sourceIds": [
+          "S-L-STORY",
+          "S-L-RATEL",
+          "S-O2"
+        ],
+        "sourceKinds": [
+          "secondary-fan-edited",
+          "secondary-fan-edited",
+          "official-series-index"
+        ],
+        "secondaryCrossReferencesNotIndependentOriginalProof": true
+      },
+      "officialEpisodeStatus": "official-title-index-only-not-scene-proof",
+      "provisionalEpisodeLeads": [
+        {
+          "workPart": "2부",
+          "episodeRange": [
+            28,
+            31
+          ],
+          "sourceIds": [
+            "S-L-STORY",
+            "S-L-RATEL"
+          ],
+          "status": "secondary-only-overlapping-events; exact scenes unconfirmed"
+        }
+      ],
+      "canonFact": {
+        "verified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "observedAction": null
+      },
+      "candidateSecondarySummaries": [
+        "표영의 재개입과 라텔의 재교전이 시간상 가까이 서술됨",
+        "크리사가 이후 난입해 표영/라텔 측을 도운 것으로 서술됨"
+      ],
+      "orderToCheck": [
+        "표영 교전 이탈/재진입",
+        "라텔의 첫 진입과 부상 직전/직후",
+        "표영의 시간 벌기 또는 개입",
+        "라텔의 관절 정복/재전투",
+        "크리사의 난입/리천과의 직접 교전",
+        "실제로 둘 이상이 동시에 리천을 공격한 컷"
+      ],
+      "interpretationAlternatives": [
+        "순차적으로 다른 상대를 처리한 교전",
+        "잠깐 공격이 중첩된 혼합 교전",
+        "동시 다수전을 과장한 2차 요약"
+      ],
+      "attributionGuard": "상대 수와 지속 시간을 전투 Phase별로 표기하기 전 1:2/1:3 성과·승률·다수전 가중치 금지.",
+      "criticalFalsifier": "각 시점에 리천을 동시에 직접 공격한 인물은 몇 명인가?",
+      "explicitConflicts": null,
+      "unresolved": [
+        "동시 공격 성립 여부",
+        "각 인물 피해 및 기량 저하",
+        "L03과 동일 동작 반복 인용 여부"
+      ],
+      "evaluation": {
+        "primaryAxisCandidate": "전술·판단",
+        "secondaryAxisCandidate": "상황대응력",
+        "score": null,
+        "evidenceReadiness": "unassessed",
+        "modelSelection": "unconfirmed",
+        "scoringImpact": "none",
+        "userApproved": false
+      }
+    },
+    {
+      "recordId": "R01",
+      "characterId": "char-071",
+      "parentBattleId": "pilot-R",
+      "baseEvidenceIds": [
+        "R01"
+      ],
+      "verificationStatus": "original-direct-not-checked",
+      "sourceVerification": {
+        "sourceIds": [
+          "S-R",
+          "S-R-WITNESS",
+          "S-O1"
+        ],
+        "sourceKinds": [
+          "secondary-fan-edited",
+          "secondary-fan-edited",
+          "official-series-index"
+        ],
+        "secondaryCrossReferencesNotIndependentOriginalProof": true
+      },
+      "officialEpisodeStatus": "official-title-index-only-not-scene-proof",
+      "provisionalEpisodeLeads": [
+        {
+          "workPart": "1부",
+          "episodeRange": [
+            99,
+            100
+          ],
+          "sourceIds": [
+            "S-R",
+            "S-R-WITNESS"
+          ],
+          "status": "secondary-only; official series exists, scene not checked"
+        }
+      ],
+      "canonFact": {
+        "verified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "observedAction": null
+      },
+      "candidateSecondarySummaries": [
+        "빠른 공격 템포로 최달천의 호흡을 흔들었다는 2차 해석",
+        "무리한 공격 이후 결정타가 형성됐다는 2차 서술"
+      ],
+      "orderToCheck": [
+        "첫 공방에서 발놀림/실제 위치 이동이 보이는 컷",
+        "검격 시작과 종료 시 상대와의 거리",
+        "최달천 호흡·자세 변화의 발생 원인",
+        "최달천의 기존 피로·선행 교전 상태",
+        "검격 속도와 방어 실패/체력 고갈의 인과"
+      ],
+      "interpretationAlternatives": [
+        "검격 속도가 직접적으로 상대의 템포를 압박",
+        "사전 교전/기존 체력 소모가 호흡 악화에 기여",
+        "2차 자료가 팔/검 속도와 이동 속도를 섞어 서술"
+      ],
+      "attributionGuard": "몸 전체의 이동·접근·이탈이 확인되지 않으면 기동축 평가 보류. 상대 피로는 류지학 자신의 지속력 근거가 아님.",
+      "criticalFalsifier": "공격 속도와 별개의 위치·거리 제어가 확인되는가?",
+      "explicitConflicts": null,
+      "unresolved": [
+        "실제 이동의 종류",
+        "호흡 변화의 원인",
+        "류지학 자신의 피로 변화"
+      ],
+      "evaluation": {
+        "primaryAxisCandidate": "속도·기동력",
+        "secondaryAxisCandidate": "도검 전문기술",
+        "score": null,
+        "evidenceReadiness": "unassessed",
+        "modelSelection": "unconfirmed",
+        "scoringImpact": "none",
+        "userApproved": false
+      }
+    },
+    {
+      "recordId": "R04",
+      "characterId": "char-071",
+      "parentBattleId": "pilot-R",
+      "baseEvidenceIds": [
+        "R04"
+      ],
+      "verificationStatus": "original-direct-not-checked",
+      "sourceVerification": {
+        "sourceIds": [
+          "S-R",
+          "S-R-WITNESS",
+          "S-R-WITNESS2",
+          "S-O1"
+        ],
+        "sourceKinds": [
+          "secondary-fan-edited",
+          "secondary-fan-edited",
+          "secondary-fan-edited",
+          "official-series-index"
+        ],
+        "secondaryCrossReferencesNotIndependentOriginalProof": true
+      },
+      "officialEpisodeStatus": "official-title-index-only-not-scene-proof",
+      "provisionalEpisodeLeads": [
+        {
+          "workPart": "1부",
+          "episodeRange": [
+            99,
+            100
+          ],
+          "sourceIds": [
+            "S-R",
+            "S-R-WITNESS",
+            "S-R-WITNESS2"
+          ],
+          "status": "secondary-only; cause and timeline unverified"
+        }
+      ],
+      "canonFact": {
+        "verified": false,
+        "workPart": null,
+        "episode": null,
+        "sceneLocator": null,
+        "observedAction": null
+      },
+      "candidateSecondarySummaries": [
+        "최달천전 이후 류지학 왼쪽 상지 기능 저하를 언급하는 2차 서술",
+        "별개 후속 현석전에서 총상을 입었다는 2차 서술"
+      ],
+      "orderToCheck": [
+        "최달천전 왼쪽 상지 손상 직전의 동작",
+        "실제 부상 사건의 공격자/부위/발생시점",
+        "이후 팔 사용 또는 방어·검격 변화",
+        "현석전 이전의 부상과 현석전의 신규 총상 구분",
+        "상태 변화가 통증·손상·피로·목적 제약 중 무엇 때문인지"
+      ],
+      "interpretationAlternatives": [
+        "최달천전에서 실제 기능 저하가 발생",
+        "원작 발언은 단순 예상이며 기능 저하는 직접 관찰되지 않은 경우",
+        "후속 현석전 손상을 최달천전 손상에 잘못 합성한 경우"
+      ],
+      "attributionGuard": "최달천전 손상과 이후 현석전 손상은 서로 다른 사건으로 기록. 부상 1건으로 방어와 지속전에 자동 이중 감점 금지.",
+      "criticalFalsifier": "최달천전 직후 실제 왼팔 사용 불능 장면이 있는가, 목격자 평가만 있는가?",
+      "explicitConflicts": {
+        "kind": "injury-event-conflation-risk",
+        "events": [
+          "최달천전 왼쪽 상지 손상 후보",
+          "후속 현석전 총상 후보"
+        ],
+        "resolution": "separate temporal events; do not combine damage or infer continuity"
+      },
+      "unresolved": [
+        "부상 기점·부위/정도",
+        "발언자와 원문 진위",
+        "기능저하 여부",
+        "시간 압박 인과"
+      ],
+      "evaluation": {
+        "primaryAxisCandidate": "방어·생존력",
+        "secondaryAxisCandidate": "지속전",
+        "score": null,
+        "evidenceReadiness": "unassessed",
+        "modelSelection": "unconfirmed",
+        "scoringImpact": "none",
+        "userApproved": false
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "title": "A02 2부 51화 단서",
+      "status": "community-only",
+      "description": "블루 경호원 교전의 2부 51화 단서는 비공식 게시물에서만 확인. 본편 컷을 직접 대조하지 않았으므로 A02/A03 확정 회차로 사용하지 않음."
+    },
+    {
+      "id": "F02",
+      "title": "L03 기만 대상 불일치",
+      "status": "secondary-conflict",
+      "description": "리천 작중 행적의 표영 속임수와 전투력 설명의 라텔 빈 총기 기만은 동일 사건인지 미확인. 두 개의 독립 교전일 수도 있어 미통합 유지."
+    },
+    {
+      "id": "F03",
+      "title": "L04 교전 구간",
+      "status": "sequence-unverified",
+      "description": "라텔·표영·크리사의 교대/동시 진입이 검수되지 않음. 1:2/1:3 성과 생성 금지."
+    },
+    {
+      "id": "F04",
+      "title": "R01 기동·검격 분리",
+      "status": "construct-boundary",
+      "description": "최달천의 호흡 변화가 류지학의 몸 전체 이동속도·지속력을 직접 입증하지 않음."
+    },
+    {
+      "id": "F05",
+      "title": "R04 손상 사건 분리",
+      "status": "injury-timeline-unverified",
+      "description": "최달천전 왼쪽 상지 손상과 현석전 총상은 서로 다른 후보 사건. 실제 부상/기능 변화는 원작 대조 전."
+    }
+  ],
+  "manualReviewOrder": [
+    {
+      "batch": 1,
+      "recordIds": [
+        "L03",
+        "L04"
+      ],
+      "suggestedRead": "2부 27~31화 근처 (2차 자료 후보)",
+      "purpose": "기만 대상/순차교전/동시 참가 여부 정리",
+      "note": "위 범위는 원작 직접 확인 아님"
+    },
+    {
+      "batch": 2,
+      "recordIds": [
+        "A02",
+        "A03"
+      ],
+      "suggestedRead": "2부 51화 근처 (커뮤니티 후보)",
+      "purpose": "경호원·구스타프·차문·총기 조작 순서 확인",
+      "note": "51화는 2차 단서이며 원작 확인 전"
+    },
+    {
+      "batch": 3,
+      "recordIds": [
+        "R01",
+        "R04"
+      ],
+      "suggestedRead": "1부 99~100화 및 이후 현석전",
+      "purpose": "검격/기동 구별과 부상 사건 분리",
+      "note": "원작 회차 및 손상 기점 검수 필요"
+    }
+  ],
+  "invariantContract": {
+    "doesNotModifyBaseFiles": true,
+    "hasDirectPanelText": false,
+    "scoreCreated": false,
+    "noNumericEvidenceMultipliers": true,
+    "phaseAssignmentsConfirmed": false,
+    "characterRostersChanged": false
+  }
+}
